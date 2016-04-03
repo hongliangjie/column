@@ -6,10 +6,10 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: 期望最大化
+title: 期望最大化, 洪亮劼的专栏
 email: hongliangjie@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  洪亮劼关于技术, 团队和管理的博客
+  洪亮劼关于技术, 团队和管理的专栏
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hongliangjie.github.io" # the base hostname & protocol for your site
 twitter_username: hongliangjie

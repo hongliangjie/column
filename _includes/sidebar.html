@@ -9,7 +9,7 @@
   </div>
 
   <nav class="sidebar-nav">
-    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">首页</a>
+    <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}/">专栏首页</a>
 
     {% comment %}
       The code below dynamically generates a sidebar nav of pages with
@@ -24,12 +24,13 @@
         {% endif %}
       {% endif %}
     {% endfor %}
+    <a class="sidebar-nav-item" href="http://cn.hongliangjie.com" target="_blank">我的主页</a>
     <span class="sidebar-nav-item">当前版本: v{{ site.version }}</span>
   </nav>
 
   <div class="sidebar-item">
     <p>
-      &copy; {{ site.time | date: '%Y' }}。保留全部权利。
+      &copy; {{ site.time | date: '%Y' }}。保留全部权利。<a href="../atom.xml">RSS</a>
     </p>
   </div>
 </div>

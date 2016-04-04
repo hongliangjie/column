@@ -7,7 +7,7 @@ relative_permalinks: false
 # Setup
 title:               期望最大化
 tagline:             '洪亮劼的专栏'
-description:         '洪亮劼关于技术, 团队和管理的专栏'
+description:         '雅虎研究院资深科学家，长期从事机器学习、大数据分析、个性化系统架构的研究，分享技术、管理、团队和业界思考的专栏'
 url:                 http://hongliangjie.github.io
 baseurl:             ''
 paginate:            5

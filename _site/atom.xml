@@ -4,7 +4,7 @@
  <title>期望最大化</title>
  <link href="http://hongliangjie.github.io/atom.xml" rel="self"/>
  <link href="http://hongliangjie.github.io/"/>
- <updated>2016-04-05T20:50:49-07:00</updated>
+ <updated>2016-04-05T22:23:29-07:00</updated>
  <id>http://hongliangjie.github.io</id>
  <author>
    <name>洪亮劼</name>
@@ -17,12 +17,12 @@
    <link href="http://hongliangjie.github.io/%E7%AB%99%E5%8A%A1/2014/04/05/start-column/"/>
    <updated>2014-04-05T00:00:00-07:00</updated>
    <id>http://hongliangjie.github.io/%E7%AB%99%E5%8A%A1/2014/04/05/start-column</id>
-   <content type="html">&lt;p&gt;经过一段时间的思考，我决定开一个技术、管理和团队的专栏，分享和探讨关于大数据、人工智能（AI）及机器学习（Machine Learning）的话，以及这些相关技术的行业思考。在已经有不少优质内容（包括博客、微信公众号）的情况下，我希望这个专栏能够更加专注、专业，少一些关注个别技术的细节，多一些对数据在一个生态系统中的把握以及行业动态的分析。&lt;/p&gt;
+   <content type="html">&lt;p&gt;经过一段时间的思考，我决定开一个技术、管理和团队的专栏，分享和探讨关于大数据、人工智能（AI）及机器学习（Machine Learning）的话题，以及这些相关技术的行业思考。在已经有不少优质内容（包括博客、微信公众号）的情况下，我希望这个专栏能够更加专注、专业，少一些关注个别技术的细节，多一些对数据在一个生态系统中的把握以及行业动态的分析。&lt;/p&gt;
 
 &lt;p&gt;在接下来的文章中，我准备着重分享和探讨如下这些方面的内容：&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;机器学习、人工智能和大数据相关领域的核心技术，分享如何应用这些核心技术到生产实践中。解析从算法到产品模块的距离和取舍（Compromise）。&lt;/li&gt;
+  &lt;li&gt;机器学习、人工智能和大数据相关领域的核心技术，如何应用这些核心技术到生产实践中。解析从单一算法到产品流程的距离和取舍（Compromise）。&lt;/li&gt;
   &lt;li&gt;什么是数据驱动(Data-Driven)的团队，如何构建具有核心竞争力的大数据团队。&lt;/li&gt;
   &lt;li&gt;如何设计和开发智能型数据驱动产品，作为产品经理，如何在产品功能和数据驱动之间寻求动态平衡。&lt;/li&gt;
 &lt;/ol&gt;

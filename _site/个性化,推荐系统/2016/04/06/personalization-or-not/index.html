@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      个性化推荐是不是伪命题 &middot; 期望最大化
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18798718-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+
+  <body class="theme-base-08 sidebar-overlay">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>雅虎研究院资深科学家，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">专栏首页</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">关于</a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+    <a class="sidebar-nav-item" href="http://cn.hongliangjie.com" target="_blank">我的主页</a>
+    <span class="sidebar-nav-item">当前版本: v1.0.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2016。保留全部权利。<a href="../atom.xml">RSS</a>
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">期望最大化</a>
+            <small>洪亮劼的专栏</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">个性化推荐是不是伪命题</h1>
+  <span class="post-date">
+    2016年
+      4月
+      6号</span>
+  <p>最近，有一位网友在微博上说，<a href="http://weibo.com/1830516311/Dp4Vs81ih?from=page_1005051830516311_profile&amp;wvr=6&amp;mod=weibotime&amp;type=comment">推荐是不是个伪命题？连续几天试用了据说很好的某头条，某资讯以及某快报，感觉逃脱不了看什么就是什么的套路</a>。也有人说，这是Exploitation &amp; Exploration出了问题，没有很好得Exploration导致的结果。那么，个性化推荐到底是不是伪命题呢？本篇文章就要尝试分析和探讨这个“千篇一律”的问题。</p>
+
+<h2 id="section">推荐是为了预测用户喜好的物品吗</h2>
+<hr />
+
+<p>要知道个性化推荐是不是伪命题，我们就必须从个性化推荐的目标说起。推荐系统，顾名思义，就是要给用户推荐用户可能会交互或者用户可能喜爱的物品，比如Amazon的商品、Netflix的电影、LinkedIn的工作以及Yahoo的新闻等。当然，这只是一个非常肤浅的定义。我们等会儿会看到这个定义的问题。</p>
+
+<p><img src="/assets/netflix.jpg" alt="" /></p>
+
+<p>自从Netflix Prize以来，推荐系统的研究和生产实际，基于以上这个关于推荐的肤浅定义，把整个系统的模型简化成了——预测用户对于某个事物的喜爱，也就是人们常说的Rating Prediction的问题<sub>[3]</sub>。Collaborative Filtering，特别是基于Matrix Factorization<sub>[2]</sub>和Latent Factor Model<sub>[1]</sub>的各种方法及其变种大行其道，一时间似乎成为了推荐系统的代名词。于是，很多实际系统的设计者和开发着，不管自己产品的真实定位究竟如何，都选择利用协同过滤来打造自己的推荐系统。</p>
+
+<p>协同过滤是否有效呢？答案是肯定的。当然，这有一个巨大的前提，那就是，如果我们的产品，真的采用这个推荐的肤浅定义，仅仅注重于推荐用户是否喜欢的东西。协同过滤，辅佐以Machine Learning的很多手段（比如Tree-based Models)，常常能够在Rating Prediction这个问题上有不俗的成绩。然而，用户在使用产品一段时间以后就会往往得出微博上那位网友的体验。产品经理也会常常陷入困境，不知道如何改进产品。</p>
+
+<p>注意，有一些Rating Prediction的变种问题，其实质还是在优化用户对某一类事物的喜爱。比如，不仅仅预测单个物品的评分，而是看用户在一个物品列表中选择了哪些物品（代表作<sub>[7]</sub>）。也就是看用户是否更<strong>偏好</strong>某些物品。尽管这样似乎更准确抓住了推荐问题的产品定义，但依然没有能够摆脱优化用户喜好所带来的问题。</p>
+
+<p>实际上，任何以用户喜好为目标的推荐系统，不管优化对象是简单的点击率（Click-Through-Rate）还是驻留时间（Dwell-Time）<sub>[4]</sub>，抑或是上面提到的评分，都很难逃脱上述问题。那么为什么优化用户喜好就会带来上述问题呢？</p>
+
+<p>原因很直观，要想优化用户喜好，那就必然强调用户的历史行为。协同过滤或者是机器学习导向的算法，都试图充分挖掘单个用户以及群体用户的喜好，并且加以推崇到极致（Optimization)。打个比方，如果你才查看了Amazon上的某款最新的相机，一般的推荐系统就会显示很多相似的相机或者其他各种相机配套产品，并希望最大化这<strong>单次</strong>点击（或者查询）的“收益”。在这些系统看来，既然你已经“表达了”对相机兴趣，那么系统就要抓住这么一个机会。如果你不单单是偶然看了一次相机，而是研究了一小会儿以后，推荐系统就会认为你已经表达了很“<strong>强烈</strong>”的对相机的喜好，那好，让你的整个屏幕都充满相机吧。也许有人可能会想到Discount用户短期内的一些行为这种做法，而对用户长期的一些行为更加关注。这种方法也许可以缓解“满屏相机”的现象，但是很难从根本上解决问题，况且这个Discount的参数也很难调试。于是，长期优化用户喜好，在绝大多数情况下，用户就会产生Filtering Bubble的效果，也就是说，用户自己只能看见自己喜欢的东西，并且不断强化。而从整个系统来讲，很难跳出推荐的东西千篇一律的效果。</p>
+
+<p><img src="/assets/filter_bubble.jpg" alt="" /></p>
+
+<p>当然，这里还有一个更加严重的问题，这也是新闻推荐经常容易出现的问题。那就是，一些“资深用户”（Engaged Users），因为比常人更多得和一个系统交互，看了各种各样的新闻，有时可能完全不是因为喜欢，而是消磨时间或者随便看着玩儿，强化优化用户喜好的推荐系统很可能无法分辨这样的行为。过度优化“喜好”，可能带来的结果就是系统误认为这些用户什么都喜欢。我们下面还会深入讨论这个问题。</p>
+
+<p>只优化用户喜好的<strong>根本问题</strong>，其实是<strong>忽略了大视野</strong>（Big Picture）。那么，什么是推荐系统的大视野呢？这里先卖一个关子，我们到文章的最后再来揭晓。</p>
+
+<h2 id="section-1">看一步走一步的优化策略</h2>
+<hr />
+
+<p>上一节我们剖析了优化用户喜好的问题。熟悉推荐系统的人可能会说，这有很成熟的解决方案啊，Exploitation &amp; Exploration（E &amp; E）就是专门干这个的。那么，E &amp; E是不是就解决问题了呢？</p>
+
+<p>我们先来看看E &amp; E究竟是干什么的。E &amp; E的核心思想<sub>[5]</sub>是，我们在优化某些目标函数的时候，从一个时间维度来看，当信息不足或者决策不确定性（Uncertainty）很大的时候，我们需要平衡两类决策：</p>
+
+<ol>
+  <li>选择现在可能最佳的方案</li>
+  <li>选择现在不确定的一些方案，但未来可能会有高收益的方案</li>
+</ol>
+
+<p>在做这两类决策的过程中，我们也逐渐对所有决策的不确定性不断更新不断加以新的认识。于是，<strong>最终</strong>，从时间的维度上来看，我们在不确定性的干扰下，依然能够去<strong>优化</strong>目标函数。</p>
+
+<p>举个例子，比如一个用户看新闻，如果这个用户只点击娱乐类的新闻，作为推荐系统而言，虽然我们知道下面接着显示娱乐新闻可能是比较不错的选择，但是<strong>完全忽视</strong>显示其他类别新闻则显得整个系统高估了自己对用户的认知。于是，一个比较现代的推荐系统，往往会兼顾一些其他类别，看看用户是否对其他类别是不是也有兴趣。这就是E &amp; E的典型案例。</p>
+
+<p>然而，E &amp; E并不能解决我们之前提到的“千篇一律”的问题。原因倒不是说E &amp; E本身可能会有什么问题，原因的核心还是，我们是否<strong>优化用户喜好</strong>。也就是说，即便有E &amp; E，只要我们的目标函数是用户喜好及其变种，那么，整个系统依然会<strong>收敛</strong>（Converge）到“满屏相机”的状态。因为，也许用户<em>就是</em>对相机喜好最大。那系统在现实了一些其他类别的东西之后，发现用户没有太大兴趣，于是就“安全”得觉得，可以放心现实用户喜欢的类别了。</p>
+
+<p>也就是说，E &amp; E没有错，错的是我们要优化用户喜好这件事情。或者换句话说，我们如果知道，一个用户真心只喜欢相机，而且在尝试给用户看了各种其他类别以后，系统是不是就以非常大的概率显示相机呢，而基本或者完全忽略其他类型的物品呢？</p>
+
+<h2 id="section-2">复杂的人类行为</h2>
+<hr />
+
+<p>我们在第一节提到了一点用户行为的不确定性和复杂性（短期行为和长期行为的区别）。这里我们再讨论一下因为复杂的人类行为给推荐系统所带来的麻烦。也就是说，推荐系统目前只能“千篇一律”也部分因为建模水平有限。</p>
+
+<p>还是以新闻推荐为例子，用户在使用产品的时候，显然是有一些潜在的<em>意图</em>（Intents）和使用习惯。比如，有一些用户，习惯于阅读所有的排在重要版面的新闻，<strong>不管</strong>这些新闻是否真的激起用户的兴趣。这类似于搜索问题（Search）中的<em>位置偏见</em>（Position Bias）——用户以为排在前面的就是重要的，就是需要他们阅读的。盲目认为用户点击了的就是用户喜欢的，往往是导致“越来越富”（Rich-Get-Richer）现象的一个简单原因。</p>
+
+<p>当然，简单尝试去除这种偏见，也需要注意到，的确是有用户是习惯<strong>读完所有重要新闻</strong>的。也就是说即便是去除偏见，粗看，用户的行为依然杂乱无章，今天看伊朗问题，明天看世界杯，后天看巴西政府丑闻，大后天看Kim Kardashian，貌似喜欢所有的话题和类别。这里的核心问题还是，只对喜好建模，就无法检测到用户的行为在“目的性”这一维度的差异性，于是误判用户喜欢很多类别的事物。这类的例子其实有很多，比如在奥斯卡季，用户看了最新的一批奥斯卡获奖电影，涵盖很多类别，但这并不代表用户真的就喜欢这些类别。</p>
+
+<p>同样在“意图”上容易误判的是有突发事件的时候，比如四年一度的世界杯（或者其他时间）。很多用户在短期内阅读了大量足球信息，而大多数这类用户都是平时<strong>完全</strong>对足球没有兴趣的人。这种在短时间内<strong>过度</strong>对于某一个类别新闻进行信息消费（Content Consumption），会对以喜好为基础的推荐系统造成极大困扰。系统很难<em>忘却</em>这些用户的行为，或者说系统很难甄别那些该被忘掉。</p>
+
+<p>要抓住用户的行为，理解用户的意图，那么就对推荐系统的构建提出了更高要求。即便是优化用户喜好，为了评测系统是否能够区分短期、长期喜好和不同的阅读习惯，对数据的采集，系统的评价体系以及最终模型的更新都提出了更高的要求。</p>
+
+<p>当然，这一节我们是要说明，“千篇一律”问题的复杂性在于，我们需要判断是否是现有模型和系统对于哪怕就是优化用户喜好也没有做好。</p>
+
+<h2 id="section-3">巧妇难为无米之炊</h2>
+<hr />
+
+<p>在最终讨论“满屏相机”问题的解决方案之前，我们再来看一个可以很容易侦测到的问题，这也是经常导致一个推荐结果“千篇一律”的罪魁祸首之一。那就是，系统的物品池（Item Pool）太小。换句话说，就是根本没什么东西可以推荐。</p>
+
+<p>这个问题虽然说起来非常容易理解，但却是很多内容推荐平台（比如新闻推荐、视频推荐）的核心短板，也就是缺乏优质内容。比方说，用户喜欢看科幻文章，但遗憾的是，整个平台也许就只有几篇科幻文章，于是系统没法给用户提供更好的推荐。自然，用户也就只能反复看见剩下的东西在屏幕上占据显著的位置。</p>
+
+<p>然后这个问题说起来容易，真正要去着手解决却很麻烦。核心难点是，茫茫互联网，到哪里去获取优质内容。这个问题，我们留到以后再来探讨。</p>
+
+<h2 id="section-4">推荐系统的大视野</h2>
+<hr />
+
+<p>在卖了一个大关子以后，我们在最后这节讨论一下如何解决“千篇一律”的核心问题，那就是把握住推荐系统的<em>视野</em>。</p>
+
+<p>推荐系统，或者说任何用户系统，的视野，就是如果把为用户提供服务（这里是推荐物品）作为<strong>一个环节</strong>，<strong>和其他子系统协同来达到整个产品生态系统</strong>的<strong>健康</strong>。这里的核心的核心，是整个产品生态系统的健康。</p>
+
+<p>什么是推荐系统所在的整个生态系统的健康？以新闻平台来说，这里涉及：</p>
+
+<ol>
+  <li>单个用户是否能够长期活跃，单个用户是否能在这里得到帮助，得到成长</li>
+  <li>用户族群（Community）是否得到保护，是否促进了不同形态的用户群的增长</li>
+  <li>信息提供商是否能够通过平台得到自己的收益（比如，投放的信息获得了广告收益；增加了知名度等）</li>
+  <li>信息提供商的多样性，良性的竞争关系。（比如不是单个信息来源占据了绝大多数的信息来源等）</li>
+</ol>
+
+<p>还有很多很多。一旦把这些因素考虑进系统，并且加以量化，融合进目标函数（比如，一个简化版的代表作<sub>[6]</sub>），我们就可以清晰得看到，优化这么一个目标，至少在理论上和实践中，都很难提供“千篇一律”的推荐结果，原因就是那样的结果，会最终流失用户、信息提供商，最终让产品僵化。</p>
+
+<p>也可以这么说，“千篇一律”的问题核心，简单说来就是，优化目标过于简单，没有把产品的健康考虑进去。</p>
+
+<p>说到这里，貌似这个问题已经“解决”了，其实不然，原因是，如何定义出一个健康指标，不仅仅是一个技术活儿，甚至是一个艺术活儿，这里就不仅仅是数据科学以及机器学习的范畴了，我们以后再讨论相关话题。</p>
+
+<h2 id="section-5">结论</h2>
+<hr />
+
+<p>本篇文章讨论了个性化推荐不是伪问题，而是一个非常深的产品问题，我们需要考虑时时刻刻优化产品的全局健康。</p>
+
+<h2 id="section-6">参考文献</h2>
+<hr />
+<ol>
+  <li>Deepak Agarwal and Bee-Chung Chen. 2009. <strong>Regression-based latent factor models</strong>. In Proceedings of the 15th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. ACM, New York, NY, USA, 19-28.</li>
+  <li>Yehuda Koren. 2010. <strong>Factor in the neighbors: Scalable and accurate collaborative filtering</strong>. ACM Transactions on Knowledge Discovery from Data 4, 1, Article 1 (January 2010), 24 pages.</li>
+  <li>Robert M. Bell and Yehuda Koren. 2007. <strong>Lessons from the Netflix prize challenge</strong>. ACM SIGKDD Explorations Newsletter - Special Issue on Visual Analytics 9, 2 (December 2007), 75-79.</li>
+  <li>Xing Yi, Liangjie Hong, Erheng Zhong, Nanthan Nan Liu, and Suju Rajan. 2014. <strong>Beyond clicks: dwell time for personalization</strong>. In Proceedings of the 8th ACM Conference on Recommender Systems. ACM, New York, NY, USA, 113-120.</li>
+  <li>Lihong Li, Wei Chu, John Langford, and Robert E. Schapire. 2010. <strong>A contextual-bandit approach to personalized news article recommendation</strong>. In Proceedings of the 19th International Conference on World Wide Web. ACM, New York, NY, USA, 661-670.</li>
+  <li>Deepak Agarwal, Bee-Chung Chen, Pradheep Elango, and Xuanhui Wang. 2011. <strong>Click shaping to optimize multiple objectives</strong>. In Proceedings of the 17th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. ACM, New York, NY, USA, 132-140.</li>
+  <li>Alexandros Karatzoglou, Linas Baltrunas, and Yue Shi. 2013. <strong>Learning to rank for recommender systems</strong>. In Proceedings of the 7th ACM Conference on Recommender Systems. ACM, New York, NY, USA, 493-494.</li>
+</ol>
+
+</div>
+
+<div class="related">
+  <h2>相关文章</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/06/data-scientists/">
+            究竟什么事数据科学家（Data Scientists）
+            <small>06 Apr 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E7%AB%99%E5%8A%A1/2014/04/05/start-column/">
+            我为什么开设这个专栏
+            <small>05 Apr 2014</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

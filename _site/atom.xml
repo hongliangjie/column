@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>期望最大化</title>
- <link href="http://hongliangjie.github.io/atom.xml" rel="self"/>
- <link href="http://hongliangjie.github.io/"/>
- <updated>2016-04-07T11:52:42-07:00</updated>
- <id>http://hongliangjie.github.io</id>
+ <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
+ <link href="http://column.hongliangjie.com/"/>
+ <updated>2016-04-07T13:36:33-07:00</updated>
+ <id>http://column.hongliangjie.com</id>
  <author>
    <name>洪亮劼</name>
    <email>hongliangjie@gmail.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>个性化推荐是不是伪命题</title>
-   <link href="http://hongliangjie.github.io/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/"/>
+   <link href="http://column.hongliangjie.com/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/"/>
    <updated>2016-04-07T00:00:00-07:00</updated>
-   <id>http://hongliangjie.github.io/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not</id>
+   <id>http://column.hongliangjie.com/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not</id>
    <content type="html">&lt;p&gt;最近，有一位网友在微博上说，&lt;a href=&quot;http://weibo.com/1830516311/Dp4Vs81ih?from=page_1005051830516311_profile&amp;amp;wvr=6&amp;amp;mod=weibotime&amp;amp;type=comment&quot;&gt;推荐是不是个伪命题？连续几天试用了据说很好的某头条，某资讯以及某快报，感觉逃脱不了看什么就是什么的套路&lt;/a&gt;。也有人说，这是Exploitation &amp;amp; Exploration出了问题，没有很好得Exploration导致的结果。那么，个性化推荐到底是不是伪命题呢？为什么很多推荐系统过了一段时间以后就老是推荐类似的东西呢？本篇文章就要尝试分析和探讨这个“千篇一律”的问题。&lt;/p&gt;
 
 &lt;h2 id=&quot;section&quot;&gt;推荐是为了预测用户喜好的物品吗&lt;/h2&gt;
@@ -138,9 +138,9 @@
  
  <entry>
    <title>我为什么开设这个专栏</title>
-   <link href="http://hongliangjie.github.io/%E7%AB%99%E5%8A%A1/2016/04/05/start-column/"/>
+   <link href="http://column.hongliangjie.com/%E7%AB%99%E5%8A%A1/2016/04/05/start-column/"/>
    <updated>2016-04-05T00:00:00-07:00</updated>
-   <id>http://hongliangjie.github.io/%E7%AB%99%E5%8A%A1/2016/04/05/start-column</id>
+   <id>http://column.hongliangjie.com/%E7%AB%99%E5%8A%A1/2016/04/05/start-column</id>
    <content type="html">&lt;p&gt;经过一段时间的思考，我决定开一个技术、管理和团队的专栏，分享和探讨关于大数据、人工智能（AI）及机器学习（Machine Learning）的话题，以及这些相关技术的行业思考。在已经有不少优质内容（包括博客、微信公众号）的情况下，我希望这个专栏能够更加专注、专业，少一些关注个别技术的细节，多一些对数据在一个生态系统中的把握以及行业动态的分析。&lt;/p&gt;
 
 &lt;p&gt;在接下来的文章中，我准备着重分享和探讨如下这些方面的内容：&lt;/p&gt;

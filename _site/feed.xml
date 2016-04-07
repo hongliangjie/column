@@ -3,10 +3,10 @@
   <channel>
     <title>期望最大化</title>
     <description>雅虎研究院资深科学家，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
-    <link>http://hongliangjie.github.io/</link>
-    <atom:link href="http://hongliangjie.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 Apr 2016 11:52:42 -0700</pubDate>
-    <lastBuildDate>Thu, 07 Apr 2016 11:52:42 -0700</lastBuildDate>
+    <link>http://column.hongliangjie.com/</link>
+    <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 07 Apr 2016 13:36:33 -0700</pubDate>
+    <lastBuildDate>Thu, 07 Apr 2016 13:36:33 -0700</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
@@ -129,8 +129,8 @@
 &lt;/ol&gt;
 </description>
         <pubDate>Thu, 07 Apr 2016 00:00:00 -0700</pubDate>
-        <link>http://hongliangjie.github.io/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/</link>
-        <guid isPermaLink="true">http://hongliangjie.github.io/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/</guid>
+        <link>http://column.hongliangjie.com/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/</guid>
         
         
         <category>个性化,推荐系统</category>
@@ -156,8 +156,8 @@
 &lt;p&gt;最后，为什么这个专栏叫“期望最大化”，这源自于一个机器学习里有名的算法：Expectation Maximization，不断在现有参数下更新模型对周围的认知然后又不断更新模型的参数，最终能够达到一个局部最优解。这个专栏也希望像这个算法一样，不断提升自己的认识，不求最完美，但求能够促进业界的分享和交流。&lt;/p&gt;
 </description>
         <pubDate>Tue, 05 Apr 2016 00:00:00 -0700</pubDate>
-        <link>http://hongliangjie.github.io/%E7%AB%99%E5%8A%A1/2016/04/05/start-column/</link>
-        <guid isPermaLink="true">http://hongliangjie.github.io/%E7%AB%99%E5%8A%A1/2016/04/05/start-column/</guid>
+        <link>http://column.hongliangjie.com/%E7%AB%99%E5%8A%A1/2016/04/05/start-column/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E7%AB%99%E5%8A%A1/2016/04/05/start-column/</guid>
         
         
         <category>站务</category>

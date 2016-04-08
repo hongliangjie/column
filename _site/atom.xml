@@ -4,13 +4,31 @@
  <title>期望最大化</title>
  <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
  <link href="http://column.hongliangjie.com/"/>
- <updated>2016-04-07T13:36:33-07:00</updated>
+ <updated>2016-04-07T18:34:44-07:00</updated>
  <id>http://column.hongliangjie.com</id>
  <author>
    <name>洪亮劼</name>
    <email>hongliangjie@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>论推荐系统的Exploitation和Exploration</title>
+   <link href="http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/07/exploration/"/>
+   <updated>2016-04-07T18:34:44-07:00</updated>
+   <id>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/07/exploration</id>
+   <content type="html">
+</content>
+ </entry>
+ 
+ <entry>
+   <title>究竟什么事数据科学家</title>
+   <link href="http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/07/data-scientists/"/>
+   <updated>2016-04-07T18:34:44-07:00</updated>
+   <id>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/07/data-scientists</id>
+   <content type="html">&lt;p&gt;http://blog.fastforwardlabs.com/post/142353528013/where-do-you-put-your-data-scientists&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>个性化推荐是不是伪命题</title>

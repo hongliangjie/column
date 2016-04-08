@@ -5,9 +5,35 @@
     <description>雅虎研究院资深科学家，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
     <link>http://column.hongliangjie.com/</link>
     <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 Apr 2016 13:36:33 -0700</pubDate>
-    <lastBuildDate>Thu, 07 Apr 2016 13:36:33 -0700</lastBuildDate>
+    <pubDate>Thu, 07 Apr 2016 18:34:44 -0700</pubDate>
+    <lastBuildDate>Thu, 07 Apr 2016 18:34:44 -0700</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>论推荐系统的Exploitation和Exploration</title>
+        <description>
+</description>
+        <pubDate>Thu, 07 Apr 2016 18:34:44 -0700</pubDate>
+        <link>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/07/exploration/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/07/exploration/</guid>
+        
+        
+        <category>数据科学</category>
+        
+      </item>
+    
+      <item>
+        <title>究竟什么事数据科学家</title>
+        <description>&lt;p&gt;http://blog.fastforwardlabs.com/post/142353528013/where-do-you-put-your-data-scientists&lt;/p&gt;
+</description>
+        <pubDate>Thu, 07 Apr 2016 18:34:44 -0700</pubDate>
+        <link>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/07/data-scientists/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/07/data-scientists/</guid>
+        
+        
+        <category>数据科学</category>
+        
+      </item>
     
       <item>
         <title>个性化推荐是不是伪命题</title>

@@ -5,30 +5,88 @@
     <description>雅虎研究院资深科学家，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
     <link>http://column.hongliangjie.com/</link>
     <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 07 Apr 2016 18:34:44 -0700</pubDate>
-    <lastBuildDate>Thu, 07 Apr 2016 18:34:44 -0700</lastBuildDate>
+    <pubDate>Mon, 11 Apr 2016 22:34:58 -0700</pubDate>
+    <lastBuildDate>Mon, 11 Apr 2016 22:34:58 -0700</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
         <title>论推荐系统的Exploitation和Exploration</title>
-        <description>
+        <description>&lt;p&gt;上一篇文章讲到，一个推荐系统，如果片面优化用户的喜好，很可能导致千篇一律的推荐结果。文中曾经用了一节来讨论为什么使用Exploitation &amp;amp; Exploration (E &amp;amp; E)结果可能依然不能“免俗”。其实，E &amp;amp; E是推荐系统里很有意思，但也非常有争议的一个算法。一方面，大家都基本明白这类算法的目的，每年有很多相关论文发表。另一方面，这是工业界对于部署这类算法非常谨慎，有的产品经理甚至视之为“洪水猛兽”。这篇文章就是要分析一下导致这个现象的一些因素。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;走一步看一步的策略&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;这里再简单阐述一下什么是E &amp;amp; E。简单来说，就是我们在优化某些目标函数的时候，从一个时间维度来看，当信息不足或者决策不确定性（Uncertainty）很大的时候，我们需要平衡两类决策：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;选择现在可能最佳的方案&lt;/li&gt;
+  &lt;li&gt;选择现在不确定的一些方案，但未来可能会有高收益的方案&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;在做这两类决策的过程中，我们也逐渐对所有决策的不确定性不断更新不断加以新的认识。于是，&lt;strong&gt;最终&lt;/strong&gt;，从时间的维度上来看，我们在不确定性的干扰下，依然能够去&lt;strong&gt;优化&lt;/strong&gt;目标函数。&lt;/p&gt;
+
+&lt;p&gt;也就是说，E &amp;amp; E可以看做是一个&lt;em&gt;优化过程&lt;/em&gt;，需要多次迭代才能找到比较好的方案。&lt;/p&gt;
+
+&lt;h2 id=&quot;e--e&quot;&gt;E &amp;amp; E的应用历史&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;早期把E &amp;amp; E应用于新闻推荐系统的文章（比如&lt;sub&gt;[1,2,4]&lt;/sub&gt;）主要关注于Yahoo Today Module这一产品，这也基本上是最早E &amp;amp; E出现在互联网应用的尝试，目的是为了优化点击率（CTR）。而更早一些的奠基性的文章（如&lt;sub&gt;[3]&lt;/sub&gt;）则是在广告的数据集上展示的实验结果。&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Deepak Agarwal，现任LinkedIn VP Of Engineering，主管Machine Learning和Relevance，是早年Yahoo推荐系统的缔造者之一，也是推荐系统的学术权威之一。其著作《Statistical Methods for Recommender Systems》是初学者必不可少的入门教材。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Bee-Chung Chen，现任LinkedIn Senior Staff Software Engineer，其PhD导师Raghu Ramakrishnan现在是微软的CTO for Data和Technical Fellow（此人是早期知识图谱Knowledge Graph概念的推崇者）。Bee-Chung是Deepak在Yahoo年代的老部下，并且追随其到LinkedIn。他们是很多工作的共同作者。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Lihong Li，现任微软研究院资深研究员。其在Yahoo的一系列有关Contextual Multi-Armed Bandit以及Thompson Sampling的文章奠定了其在这个领域的权威位置。他在WSDM 2015做的关于如何连接线下和线上系统的评估的讲座&lt;sub&gt;[5]&lt;/sub&gt;，是非常有价值的学术资料。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Yahoo Today Module其实为E &amp;amp; E提供了一些很多学者和工业界人士忽视了的条件和成功因素。如果不考虑这些因素，鲁莽得使用这些文献相似的算法到其他场景，这可能产生很差的效果。那么是哪些因素呢？主要由两点：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;相对少量的优质资源&lt;/strong&gt;： Yahoo Today Module每天的Content Pool其实并不大。这里面都是网站编辑精选了的大概100篇文章。这些文章原本的质量就非常高。无论是这里面的任何一组，用户体验都没有明显变差。Content Pool每天都人为更换。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;非常大的用户量&lt;/strong&gt;：有亿万级的用户可能最终是从算法&lt;em&gt;随机&lt;/em&gt;产生的文章排序中选择了阅读的文章。然而，因为用户数量巨大，所以算法就相对比较容易Converge到稳定的方案。也就是前面讲的，优化CTR的状态。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;正因为有了（1）和（2），Deepak他们享受了在后来学者们所无法想象的“奢侈”，比如运行Epsilon-Greedy这种简单粗暴的E &amp;amp; E算法，甚至是&lt;strong&gt;完全随机&lt;/strong&gt;显示新闻，收集到了很多&lt;em&gt;无偏&lt;/em&gt;（Unbiased）的数据，为很多学术工作奠定了数据基础。时至今日，也有很多后续学者基于Yahoo Today Module的随机数据进行算法改进。&lt;/p&gt;
+
+&lt;p&gt;没有了这两条因素，Deepak的解决方案可能都没法在当时的Yahoo施行。原因很简单，如果资源良莠不齐，如果资源数量非常大，那么在仅有的几个展示位置，优质资源显示的可能性在短期内就会比较小（因为系统对于大多数的资源还有很高的不确定性，需要Explore）。而由于优质资源显示得少了，用户就会明显感受到体验的下降，直接可能就是更倾向于不点击甚至放弃使用产品。于是用户不Engage这样的行为又进一步减缓了系统学习资源的不确定性的速度。这时也许现在的亿万级用户数都没法满足学习所有资源的用户数量（毕竟所有用户只有一部分会落入Exploration）。&lt;/p&gt;
+
+&lt;p&gt;Deepak后来在LinkedIn推了相似的思路&lt;sub&gt;[6]&lt;/sub&gt;，但是为了模拟Today Module的这些条件，则是对用户的内容流里的数据进行了大规模的过滤。这样只有少数的信息符合高质量的要求，并且能够在用户数允许的情况下Explore到合适的解决方案。&lt;/p&gt;
+
+&lt;h2 id=&quot;e--e-1&quot;&gt;E &amp;amp; E的产品部署难点&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;我们在上一节探讨了E &amp;amp; E的早期产品历史。这一节，我们来讲一下E &amp;amp; E的产品部署难点。这些难点是高于具体E &amp;amp; E算法选择（比如选某一个UCB或者某一个Thompson Sampling)的产品工程解决方案的抉择。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;参考文献&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+  &lt;li&gt;Lihong Li, Wei Chu, John Langford, and Robert E. Schapire. &lt;strong&gt;A Contextual-Bandit Approach to Personalized News Article Recommendation&lt;/strong&gt;. In Proceedings of WWW 2010.&lt;/li&gt;
+  &lt;li&gt;Deepak Agarwal, Bee-Chung Chen, Pradheep Elango. &lt;strong&gt;Explore/Exploit Schemes for Web Content Optimization&lt;/strong&gt;. In Proceedings of ICDM 2009.&lt;/li&gt;
+  &lt;li&gt;John Langford, Alexander Strehl, and Jennifer Wortman. &lt;strong&gt;Exploration Scavenging&lt;/strong&gt;. In Proceedings of ICML 2008.&lt;/li&gt;
+  &lt;li&gt;Lihong Li, Wei Chu, John Langford, and Xuanhui Wang. &lt;strong&gt;Unbiased Offline Evaluation of Contextual-Bandit-Based News Article Recommendation Algorithms&lt;/strong&gt;. In Proceedings of WSDM 2011.&lt;/li&gt;
+  &lt;li&gt;Lihong Li. &lt;strong&gt;Offline Evaluation and Optimization for Interactive Systems&lt;/strong&gt;。 In Proceedings of WSDM 2015.&lt;/li&gt;
+  &lt;li&gt;Deepak Agarwal. &lt;strong&gt;Recommending items to users: an explore/exploit perspective&lt;/strong&gt;. In Proceedings of the 1st Workshop on User Engagement Optimization at CIKM 2013.&lt;/li&gt;
+&lt;/ol&gt;
 </description>
-        <pubDate>Thu, 07 Apr 2016 18:34:44 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/07/exploration/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/07/exploration/</guid>
+        <pubDate>Mon, 11 Apr 2016 22:34:58 -0700</pubDate>
+        <link>http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/11/exploration/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/11/exploration/</guid>
         
         
-        <category>数据科学</category>
+        <category>推荐系统</category>
         
       </item>
     
       <item>
-        <title>究竟什么事数据科学家</title>
-        <description>&lt;p&gt;http://blog.fastforwardlabs.com/post/142353528013/where-do-you-put-your-data-scientists&lt;/p&gt;
+        <title>究竟什么是数据科学家</title>
+        <description>&lt;p&gt;这篇文章主要是讨论和阐述，如何构建一个数据团队中的核心问题，究竟什么是数据科学家。
+http://blog.fastforwardlabs.com/post/142353528013/where-do-you-put-your-data-scientists&lt;/p&gt;
 </description>
-        <pubDate>Thu, 07 Apr 2016 18:34:44 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/07/data-scientists/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/07/data-scientists/</guid>
+        <pubDate>Mon, 11 Apr 2016 22:34:58 -0700</pubDate>
+        <link>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/11/data-scientists/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/11/data-scientists/</guid>
         
         
         <category>数据科学</category>

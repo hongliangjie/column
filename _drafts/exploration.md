@@ -39,7 +39,41 @@ Deepak后来在LinkedIn推了相似的思路<sub>[6]</sub>，但是为了模拟T
 
 ## E & E的产品部署难点
 ***
-我们在上一节探讨了E & E的早期产品历史。这一节，我们来讲一下E & E的产品部署难点。这些难点是高于具体E & E算法选择（比如选某一个UCB或者某一个Thompson Sampling)的产品工程解决方案的抉择。
+我们在上一节探讨了E & E的早期产品历史。这一节，我们来讲一下E & E的产品部署难点。这些难点是普遍高于具体E & E算法选择（比如选某一个UCB或者某一个Thompson Sampling)的产品工程解决方案的抉择。
+
+### 难点一：如何上线测试
+***
+这看上去不应该是难点，但实际上需要额外小心。传统E & E文献，只是把问题抽象为每一次访问需要做一个决策的选择。然而，文献却没有说，这些访问是否来自同一个用户。那么，理论上，E & E应该对所有的访问不加区别，不管是否是同一个用户。虽然理论上这样做没有问题，但实际上，用户体验会有很大的差别。特别是一些推荐网站，用户希望自己前后两次对网站的访问保持**一致性**。如何不加区分得E & E，很可能对于同一个用户来说，产生某一次访问内容的策略和另外一次策略非常不一样，导致两次看见的内容迥异。同时，这会对用户熟悉产品界面，寻找喜爱的内容产生非常大的障碍。
+
+那么，我们对某一部分用户Exploit，对另外一部分用户Explore，这样会好一些吗？这其实就是用“牺牲”少部分用户的代价来换取绝大多数人的体验一致性。这样实现也是最直观的，因为很多在线系统的A/B测试系统是根据用户来进行逻辑分割的。也就是说，某一部分用户一定会进入某一个Bucket，而另一批用户会进入另外一个Bucket。这样，E & E可以很容易和Bucket System一致起来，很容易部署。当然，这样做也是有潜在风险的。那就是，那部分老是Explore的用户，在当了别人的小白鼠以后，很可能有些人就永远放弃了产品。
+
+其实，选择一个更好的部署模式，目前并没有公开的文献以及比较能够通用的方案。这方面其实是一个值得思考的研究课题。
+
+### 难点二：如何评测
+***
+对现代推荐系统（以及很多类似系统）来说，在线系统的评测，也就是说如何衡量一个算法或者一个功能的好坏，往往是依赖于复杂的A/B测试系统。这里的逻辑很简单，那就是，把一群人分为**相等**的两份（可以扩展到多份），一部分看A系统结果，另一部分人看B系统结果，然后根据一些用户指标（比如点击率）来决定究竟是A系统好还是B系统。也就是说，A/B测试系统是按照人群来分的。对于同一个人来说，在某一段时间内，一般是只能看到A**或者**B系统，但**不**是**都**能看见。
+
+那么，这样的A/B评测系统就和前面的上线模式产生了冲突。对于第一种上线模式来说，其实已经打破了A/B评测系统的基本假设，也就是全部用户都在一个系统（这个系统是既Exploit也Explore）中，于是也就没法知道这个系统的好坏（因为没有比较）。而对于第二种上线模式来说，虽然匹配A/B测试系统，但其实很难来评价说一个Bucket在Exploit，另外一个Bucket在Explore，这样的设置整体对系统的影响，因为在Explore的Bucket一般来说用户体验会降低，于是很难看出来这样做有什么好处。
+
+其实这里的核心是，如何为E & E开发对照试验的问题。比较简单的一个思路是，我们至少需要四个Bucket。一组Bucket A1 + A2是一个系统相应的Exploit和Explore，另外一组Bucket B1 + B2是另外一个系统相应的Exploit和Explore。那么在比较Bucket Performance，我们需要综合比较(A1 + A2)和（B1 + B2）。当然，这只是一个非常粗浅的方案，依然会有细节问题，取决于具体的系统和产品。
+
+### 难点三：如何平衡产品
+***
+通过前面两个难点可以看出，E & E**几乎一定**会导致产品的用户体验下降，至少在短期内。如何弥补这一点，技术上其实比较困难。比如做Deepak那样的过滤是一种思路，那就是只在优质内容里Explore。当然，有人会说，这样其实也没有多大的意义。然而，一旦把质量的闸门打开了，那就会对用户体验带来很大的影响。
+
+这也是很多产品经理对于E & E非常谨慎的原因。能不做就不做。而且，在牺牲了用户体验的结果后，E & E所带来的好处其实很难评测，这主要是线上产品的评测机制和评测原理所决定的。目前还没有比较统一的解决方案。如何能够做到“用户友好型”E & E呢？
+
+这里面可以有两种思路：
+
+1. 不是所有人群的所有访问都适合做Exploration。但是和传统的E & E不同的是，做“反向E & E”。也就是说，我们只针对非常Engaged的人做Exploration，而并不是新用户或者是还没有那么Engaged的人群。这个思路是和现在E & E完全相反，但是更加人性化。
+1. 夹带“私货”。也就是更改E & E的算法，使得高质量的内容和低质量的内容能够相伴产生，并且高质量的内容更有几率排在前面。这样用户体验的损失可控。这个思路我们在<sub>[7]</sub>里有所尝试，效果不错。
+
+其实，E & E和产品的结合点应该是工程和研究的重点，但很遗憾的是，碍于数据和其他方面的因素，这方面的研究工作几乎没有。
+
+## 结论
+***
+
+本篇文章讨论了推荐系统中Exploitation和Exploration的使用，分享了这方面的历史，探讨了工程和产品的技术难点，希望这篇文章能够为相关方向抛砖引玉。
 
 
 ## 参考文献
@@ -49,4 +83,5 @@ Deepak后来在LinkedIn推了相似的思路<sub>[6]</sub>，但是为了模拟T
 1. John Langford, Alexander Strehl, and Jennifer Wortman. **Exploration Scavenging**. In Proceedings of ICML 2008.
 1. Lihong Li, Wei Chu, John Langford, and Xuanhui Wang. **Unbiased Offline Evaluation of Contextual-Bandit-Based News Article Recommendation Algorithms**. In Proceedings of WSDM 2011.
 1. Lihong Li. **Offline Evaluation and Optimization for Interactive Systems**。 In Proceedings of WSDM 2015.
-1. Deepak Agarwal. **Recommending items to users: an explore/exploit perspective**. In Proceedings of the 1st Workshop on User Engagement Optimization at CIKM 2013.
+1. Deepak Agarwal. **Recommending Items to Users: An Explore/Exploit Perspective**. In Proceedings of the 1st Workshop on User Engagement Optimization at CIKM 2013.
+1. Liangjie Hong and Adnan Boz. **An Unbiased Data Collection and Content Exploitation/Exploration Strategy for Personalization**. ArXiv. 2016.

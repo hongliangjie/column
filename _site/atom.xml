@@ -4,23 +4,13 @@
  <title>期望最大化</title>
  <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
  <link href="http://column.hongliangjie.com/"/>
- <updated>2016-04-13T14:06:15-07:00</updated>
+ <updated>2016-04-13T14:06:55-07:00</updated>
  <id>http://column.hongliangjie.com</id>
  <author>
    <name>洪亮劼</name>
    <email>hongliangjie@gmail.com</email>
  </author>
 
- 
- <entry>
-   <title>究竟什么是数据科学家</title>
-   <link href="http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/13/data-scientists/"/>
-   <updated>2016-04-13T14:06:15-07:00</updated>
-   <id>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/04/13/data-scientists</id>
-   <content type="html">&lt;p&gt;这篇文章主要是讨论和阐述，如何构建一个数据团队中的核心问题，究竟什么是数据科学家。
-http://blog.fastforwardlabs.com/post/142353528013/where-do-you-put-your-data-scientists&lt;/p&gt;
-</content>
- </entry>
  
  <entry>
    <title>论推荐系统的Exploitation和Exploration</title>

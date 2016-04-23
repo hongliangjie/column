@@ -1,6 +1,6 @@
 ---
 layout: post
-title:The Hard Thing About Hard Things
+title: The Hard Thing About Hard Things
 categories: 读书
 ---
 Note to self: It's a good idea to ask, "What am i not doing?"

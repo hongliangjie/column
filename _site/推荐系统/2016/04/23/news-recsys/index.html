@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      新闻推荐，追逐卡戴珊的“屁股” &middot; 期望最大化
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18798718-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+
+  <body class="theme-base-08 sidebar-overlay">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>雅虎研究院高级研发经理兼资深科学家，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">专栏首页</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">关于</a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+    <a class="sidebar-nav-item" href="http://cn.hongliangjie.com" target="_blank">我的主页</a>
+    <span class="sidebar-nav-item">当前版本: v1.0.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2016。保留全部权利。<a href="../atom.xml">RSS</a>
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">期望最大化</a>
+            <small>洪亮劼的专栏</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="post">
+  <h1 class="post-title">新闻推荐，追逐卡戴珊的“屁股”</h1>
+  <span class="post-date">
+    2016年
+      4月
+      23号</span>
+  <p>前一阵子，有一篇新闻文章叫<a href="http://www.businessinsider.com/yahoo-reporters-frustrated-competing-against-kim-kardashians-ass-2016-4">“雅虎记者的困扰：与卡戴珊的屁股竞争”</a>，讲的是雅虎公司的一群高级记者所写的文章与推荐系统所推荐的文章相互竞争协调的事情，里面提到的现象可能很多做推荐系统开发的人都感同身受，似曾相识。那么今天，我们不谈具体的公司具体的案例，而来聊一下推荐系统开发中遇到“<strong>推荐结果和自己的直觉不相符合怎么办</strong>”这个事情该怎么办。</p>
+
+<h2 id="section">记者和编辑的抱怨</h2>
+<hr />
+
+<p>你是一个内容平台（网站或者是App）的推荐系统工程师，在忙了好几个月之后，最新的个性化新闻推荐系统终于上线了。你满心欢喜得看着最新的系统推动着各类指标上扬，正在为自己的又一个成就而感到高兴。这时候，产品经理发来邮件，说公司的一些高级编辑对现在推荐结果非常不满意。具体说来，就是这些高薪聘请的编辑发现自己的文章没法占据推荐的头条了，于是认为新系统“不和谐”。下面一个步骤，往往是产品经理屈从于高级编辑的一些意见，希望推荐系统能够在编辑撰写的文章和算法推荐的文章中达到一个平衡。而你，作为工程师，觉得这是一种侮辱，不愿意这么做。</p>
+
+<p>很多做算法和模型的工程师，特别是推荐领域的，一般很难理解或者是很难推崇编辑的作用。一方面，这是因为工程师并不清楚编辑究竟能为系统带来什么，另一方面也在于专业训练中，模型基本上都是优化<strong>用户体验</strong>的。显然，几个编辑，很难说就代表了广大用户群的需求。于是，工程师和编辑之间的矛盾自然就产生了。</p>
+
+<p><img src="/assets/news_editor.jpg" alt="" /></p>
+
+<p>说到底，这种矛盾主要还是是价值观的差别。编辑，从内容生产者（Producer）的角度来思考问题，长期持有的态度是<strong>我想要用户看什么</strong>。特别是从比较强势的传统媒体培养起来的人，这样的观念尤为明显。在这样的价值观导向下，内容平台往往成为了某一些编辑的价值传输筒，因此选择的内容常常带有很强烈的主观色彩。工程师，则喜欢从<strong>用户想要看什么</strong>的角度入手，从内容消费者（Consumer)的角度来看问题，优化广大用户的体验。工程师更相信数据、相信代码，不喜欢价值观导向。乍一看，现代的内容推荐系统应该尽量避免编辑的干扰，从指标优化的角度来把内容推荐完全看成是工程问题，减少主观因素。</p>
+
+<p>然而，现实中，这样做，对于一个推荐系统来说，可能有很差的实际效果。原因是这样的，现在用户喜欢的取决于你给用户之前看了什么，你没给用户看过的，用户因为不知道，所以没法给你反馈是否喜欢。这在之前的文章“<a href="/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/">个性化推荐是不是伪命题</a>”和“<a href="/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/13/exploration/">论推荐系统的Exploitation和Exploration</a>”中都有详细的阐述。核心思想，就是要有一个机制，使得用户的现在喜好和系统的长期健康运行得到平衡。这方面，编辑的作用就可以得到体现了。比如，一个新闻网站，娱乐新闻一定是最吸引眼球的。那么，是不是只给用户看这类的新闻呢？即便作为工程师和产品经理，你知道显示这类的新闻，访问量会长期爆表，但这可能对网站的长期发展是不利的（下面会提到一个问题）。于是，你就想在牺牲流量的情况下，放一些其他的内容。这时候，编辑就是最适合寻找或者原创这样内容的人选。实际上，编辑选择的内容，可以很好得融合到Exploitation &amp; Exploration策略的Prior Knowledge里面，使得Exploration不至于过于“荒腔走板”。</p>
+
+<p>编辑另一个很重要角色还在于处理突发事件的时候，比一个机器学习驱动的推荐系统要有效得多。在那个时候，数据中还没有很多的强信号，很难知道某个突发事件之后的流行程度。于是，编辑可以在第一时间，绕过现有的机器学习系统，为一些新闻的抢先报道，赢得时间。</p>
+
+<h2 id="section-1">用户群和格调的错位</h2>
+<hr />
+
+<p>当你开发了一款百万人亦或是千万人使用的新闻推荐系统之后，你一方面可能醉心于不断创新高的报表数据，另一方面，你可能会觉得推荐的文章充斥娱乐花边新闻庸俗不堪。有时候，作为产品经理，你甚至会对工程和算法团队产生深刻的质疑，希望产品“格调”能够有所提高。</p>
+
+<p><img src="/assets/reading.jpg" alt="" /></p>
+
+<p>前面一小节已经从<em>战术</em>层面来探讨了这种情况下如何协调编辑和工程师。那么，作为产品经理来说，战略上怎么办呢？这里面最关键的点，是<strong>你产品的盈利模式所需要的人群和你产品目前的使用人群之间，究竟是否有错位</strong>，如果有，会不会是致命的。</p>
+
+<p>举一个简单的例子，你的网站是一个依靠广告收入的媒体平台。通过后台数据分析，你知道，点击广告和对广告内容有转化（Conversion）的群体是年龄30-50岁的小城镇人口，并且在这个年龄段里，女性的点击率还要高于男性。然而，你网站的新闻则吸引的是18-30岁的大城市人口，其中20-25岁人的点击量是最多的。于是，这就产生了一组矛盾。一方面，你网站有很高的点击率，而且依靠推荐系统的推荐结果（学习用户行为）进一步强化了现在高频使用人群的行为。而另一方面，贡献你网站收入来源的群体则有可能会被推荐结果所忽视，甚至被赶走。</p>
+
+<p>所以这时，是一个很需要多个部门联合考虑的决策。有两个很显然的方向，第一，保持住现在的内容消费群体，尝试引入（Onboard）适合这个群体的广告商；第二，保持住现在的广告消费群体，尝试冷启动（Cold-Start）一些有可能对现在广告消费群体感兴趣的内容。</p>
+
+<p>决策一的不易之处是，广告商有时候是通过销售以及其他相对成本比较高的方式获得的，很难轻易更换。产品经理可以采取的方法是，开始接洽和寻找是否有可能扩展广告商群体。这是一个长期的过程。决策二的不易之处在于，如何能够找到广告消费用户所喜欢的内容，也许这些内容根本就在你的网站上不存在。于是，这里面存在要去获取（Acquire）内容的情况。这也很不容易，牵涉到“获取啥”和“到哪儿找”的问题。</p>
+
+<p>第三个维度，需要产品经理考虑的是，根据产品的原始定位，也许产品需要的目标人群和现在内容以及广告消费人群均有差距。那么，这个时候，需要内容策略和广告策略都要调整，而且还牵涉到用户群的获取问题（Acquisition），则决策更加不易。</p>
+
+<p>值得注意的是，这小节讨论的问题，都是<strong>用户群体</strong>的错位问题，而不是产品经理或者工程师自己对产品结果的感官问题。因为产品经理或者工程师很可能既不是产品的内容消费群体也不是产品的广告消费群体，很容易这个时候主观代入，产生<strong>我认为内容应该什么样</strong>的问题。</p>
+
+<h2 id="section-2">个性化的重要性</h2>
+<hr />
+
+<p>前面两节谈了比较<em>抽象</em>的产品战术和战略的问题，这一节我们谈一点具体的技术问题。虽然在之前的文章“<a href="/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/">个性化推荐是不是伪命题</a>”中，我们已经谈论过，推荐结果“千篇一律”的问题。但“推荐结果不符合你的预期”依然有可能是建模和算法出了问题。</p>
+
+<p><img src="/assets/personalized.png" alt="" /></p>
+
+<p>比较常见的一个误区是，推荐系统通过学习用户行为能够<em>自动</em>对用户做个性化推荐。比如流行模型Latent Factor Model<sub>[1]</sub>，或者Factorization Machine<sub>[3]</sub>，虽然能够对用户进行推荐，但是推荐结果很可能不是真正个性化的。这里面的一个问题是，这些模型都是通过优化一个<strong>平均情况</strong>来学习模型参数的。也就是说，通常情况下，一个比较好的模型是能够“解释”大多数用户的行为，但不一定在某一些个别用户上有比较优异的表现。学习出来的模型往往是保住了“大部分”用户的准确度而牺牲了少部分用户。</p>
+
+<p>当然，上面这个解释其实有可能是非常不对的。因为模型有可能是对用户交互数据进行建模，而绝大多数的数据则可能是少部分用户产生了大部分数据（一些用户“狂”点某一部分内容），于是模型倾向于<em>过度</em>解释这部分数据。而大多数用户并没有产生很多交互数据，于是模型就倾向于忽略这部分所可能产生的错误。所以，真实情况可能是，小部分人满意了，而大部分人被牺牲了。</p>
+
+<p>目前对于这方面的问题，学术圈和工业圈其实并没有比较标准的方案。去年NIPS Workshop中有一篇文章<sub>[2]</sub>谈论了一些探索。不过，依然，如何衡量一个系统已经充分个性化，如何真正学习个性化模型，还是有待于解决的问题。</p>
+
+<h2 id="section-3">结论</h2>
+<hr />
+
+<p>本篇文章讨论了推荐系统中，推荐结果不满意的情况。文章展开说了编辑和工程师的关系，以及产品经理要在不满意的推荐结果面前做怎样的决策。最后，我们也分析了推荐模型的问题，提出了改进的方向。</p>
+
+<h2 id="section-4">参考文献</h2>
+<hr />
+<ol>
+  <li>Deepak Agarwal and Bee-Chung Chen. 2009. <strong>Regression-based latent factor models</strong>. In Proceedings of the 15th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. ACM, New York, NY, USA, 19-28.</li>
+  <li>Daniel Crankshaw, Xin Wang, Joseph Gonzalez and Michael Franklin. <strong>Scalable Training and Serving of Personalized Models</strong>. NIPS Workshop 2015.</li>
+  <li>Steffen Rendle. <strong>Factorization Machines with libFM</strong>. ACM Transactions on Intelligent Systems and Technology (TIST) 3, 3, Article 57 (May 2012), 22 pages.</li>
+</ol>
+
+</div>
+
+<div class="related">
+  <h2>相关文章</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/13/exploration/">
+            论推荐系统的Exploitation和Exploration
+            <small>13 Apr 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/">
+            个性化推荐是不是伪命题
+            <small>07 Apr 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E7%AB%99%E5%8A%A1/2016/04/05/start-column/">
+            我为什么开设这个专栏
+            <small>05 Apr 2016</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

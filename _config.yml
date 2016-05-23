@@ -5,8 +5,8 @@ permalink:           pretty
 relative_permalinks: false
 
 # Setup
-title:               期望最大化
-tagline:             '洪亮劼的专栏'
+title:               期望最大化（洪亮劼的专栏）
+tagline:             '分享技术、管理、团队和业界的思考'
 description:         '雅虎研究院高级研发经理兼资深科学家，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。'
 url:                 http://column.hongliangjie.com
 baseurl:             ''

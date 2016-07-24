@@ -4,13 +4,69 @@
  <title>期望最大化（洪亮劼的专栏）</title>
  <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
  <link href="http://column.hongliangjie.com/"/>
- <updated>2016-06-23T09:36:02-07:00</updated>
+ <updated>2016-07-24T16:17:27-07:00</updated>
  <id>http://column.hongliangjie.com</id>
  <author>
    <name>洪亮劼</name>
    <email>hongliangjie@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>只有偏执狂才能生存</title>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/07/24/intel/"/>
+   <updated>2016-07-24T16:17:27-07:00</updated>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/07/24/intel</id>
+   <content type="html">&lt;p&gt;今年初，Intel传奇领导人物Andrew Grove病逝。Grove在90年代WinTel的时代曾经给中国的早期IT产业带来巨大启发。他所著的《只有偏执狂才能生存》（Only The Paranoid Survide）则影响了好几代人，而我则在那时也买了一本来看。当然，那个年代，因为年少，自然也就不能理解对于危机管理的门道，纯粹是看一个热闹。最近买了原版英文来阅读，感触良多，在这篇文章里和大家分享分享。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;战略拐点&lt;/h2&gt;
+&lt;hr /&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>一个公司是否应该开设研究院</title>
+   <link href="http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/07/24/industrial-labs/"/>
+   <updated>2016-07-24T16:17:27-07:00</updated>
+   <id>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/07/24/industrial-labs</id>
+   <content type="html">&lt;p&gt;第一则消息：最近听说某个互联网大公司正在组建研究院，要在人工智能领域的人才贮备和技术深度方面抢占先机。第二则消息：Andrew Ng已经领导百度在硅谷的研究院快两年了，微博上有人问，如何评价Andrew Ng的这两年。这两个消息放在一起，我们在这篇文章里，谈论一下，科技公司，要不要建立研究院，如果要，什么样的组织架构才是合适的，有利于企业发展的。&lt;/p&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;研究院&lt;/h2&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>究竟什么是数据科学家</title>
+   <link href="http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/07/24/data-scientists/"/>
+   <updated>2016-07-24T16:17:27-07:00</updated>
+   <id>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/07/24/data-scientists</id>
+   <content type="html">&lt;p&gt;这篇文章主要是讨论和阐述，如何构建一个数据团队中的核心问题，究竟什么是数据科学家。
+http://blog.fastforwardlabs.com/post/142353528013/where-do-you-put-your-data-scientists&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>The Hard Thing About Hard Things</title>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6/2016/07/24/ben-horowitz/"/>
+   <updated>2016-07-24T16:17:27-07:00</updated>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6/2016/07/24/ben-horowitz</id>
+   <content type="html">&lt;p&gt;Note to self: It’s a good idea to ask, “What am i not doing?”&lt;/p&gt;
+
+&lt;p&gt;I don’t believe in statistics. I believe in calculus.&lt;/p&gt;
+
+&lt;p&gt;It’s the ability to focus and make the best move when there are no good moves.&lt;/p&gt;
+
+&lt;p&gt;Keep death in mind at all times.&lt;/p&gt;
+
+&lt;p&gt;Don’t put it all on your shoulders.&lt;/p&gt;
+
+&lt;p&gt;There is always a move.&lt;/p&gt;
+
+&lt;p&gt;In the technology game, tomorrow looks nothing like today. If you survive long enough to see tomorrow, it may bring you the answer that seems so impossible today.&lt;/p&gt;
+
+&lt;p&gt;Ironically, the key to an emotional discussion is to take the emotion out of it.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>怎样招聘一名科学家</title>

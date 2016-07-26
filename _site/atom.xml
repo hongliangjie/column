@@ -4,7 +4,7 @@
  <title>期望最大化（洪亮劼的专栏）</title>
  <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
  <link href="http://column.hongliangjie.com/"/>
- <updated>2016-07-25T01:06:20-07:00</updated>
+ <updated>2016-07-25T23:32:01-07:00</updated>
  <id>http://column.hongliangjie.com</id>
  <author>
    <name>洪亮劼</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>只有偏执狂才能生存</title>
    <link href="http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/07/25/intel/"/>
-   <updated>2016-07-25T01:06:20-07:00</updated>
+   <updated>2016-07-25T23:32:01-07:00</updated>
    <id>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/07/25/intel</id>
    <content type="html">&lt;p&gt;今年初，Intel传奇领导人物安德鲁格罗夫（Andrew Grove）病逝。格罗夫的很多思想在90年代WinTel时代曾对中国的早期IT产业带来巨大启发。他所领导的Intel几乎是个人电脑时代的代名词。而他所著的《只有偏执狂才能生存》作为危机管理的经典著作，影响了好几代人。最近买了这本书的原版来阅读，感触良多，在这篇文章中和大家分享一些读书心得。&lt;/p&gt;
 
@@ -41,14 +41,32 @@
   &lt;li&gt;在第二个互联网时代风云驰骋的谷歌公司，面对Facebook的社交网络的挑战时，并没有完全体会到“战略拐点”的内涵。虽然高层下重金推广Google Plus，以期与Facebook一决高下，但实际上却因为丢不了自己的搜索老本行，并没有给Facebook带来多大的挑战。谷歌的搜索优势没有成为其转进到社交媒体这一“战略拐点”的武器。&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;类似的例子还有很多，数不胜数。&lt;/p&gt;
+&lt;p&gt;类似的例子还有很多，数不胜数。不过令人遗憾的是，尽管格罗夫的书里提供了丰富的指导思想，大多数过去曾经成功的公司在面对“战略拐点”的时候都深陷自己辉煌过去的泥潭，无法自拔。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;直面现实&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;在“战略拐点”面前，格罗夫描绘的，其实是非常惨淡的现实。其中有这么几点值得重视：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;伤亡&lt;/strong&gt;：也就是有人要做牺牲，普通员工和管理人员，底层、中层、高层。每一个人都有可能在这个转变中不在公司继续下去。必须要接受这样的伤亡。而且，书中讲得非常清楚，从公司最高层，高管，就必须要认识到。今天开会的高管们，其中有一些人是无法继续留下去的。不管这些人员过去有多成功。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;混沌&lt;/strong&gt;：最开始的时候，甚至在一段时间内，整个公司，包括管理层，是看不清楚前面的路的。这也就是所谓的“摸着石头过河”。大家要能够适应这样的混沌。更重要的是要坦诚大家不知道前面的路，谁也不清楚知道。不要不懂装懂。因为这个时候如果不愿面对自己的无知，又会让过去的经验来指导自己如何前行。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;学习&lt;/strong&gt;：在面对拐点的情况下，一定是面对一个不熟悉的环境。从高层到底层都需要用新的视野，新的技能来武装之自己。于是，学习就是必不可少的一个环节。千万不要以为能够用以前的知识来顺应变化。拐点的本质在于以前的知识现在不适用了。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;除了这些需要主动关注的因素以外，还有一些，作为人，需要被动注意的点。比如，书中提到&lt;/p&gt;
+
+&lt;p&gt;战略拐点的核心思想在于管理层是否能够在这样混沌的犹如过茫茫沙漠一般的“死亡之谷”的过程中，有一套方法论支撑下来。格罗夫的这本书其实就是这样的一个著作。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;大鸣大放与专注唯一&lt;/h2&gt;
+&lt;hr /&gt;
 </content>
  </entry>
  
  <entry>
    <title>一个公司是否应该开设研究院</title>
    <link href="http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/07/25/industrial-labs/"/>
-   <updated>2016-07-25T01:06:20-07:00</updated>
+   <updated>2016-07-25T23:32:01-07:00</updated>
    <id>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/07/25/industrial-labs</id>
    <content type="html">&lt;p&gt;第一则消息：最近听说某个互联网大公司正在组建研究院，要在人工智能领域的人才贮备和技术深度方面抢占先机。第二则消息：Andrew Ng已经领导百度在硅谷的研究院快两年了，微博上有人问，如何评价Andrew Ng的这两年。这两个消息放在一起，我们在这篇文章里，谈论一下，科技公司，要不要建立研究院，如果要，什么样的组织架构才是合适的，有利于企业发展的。&lt;/p&gt;
 
@@ -59,7 +77,7 @@
  <entry>
    <title>究竟什么是数据科学家</title>
    <link href="http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/07/25/data-scientists/"/>
-   <updated>2016-07-25T01:06:20-07:00</updated>
+   <updated>2016-07-25T23:32:01-07:00</updated>
    <id>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/07/25/data-scientists</id>
    <content type="html">&lt;p&gt;这篇文章主要是讨论和阐述，如何构建一个数据团队中的核心问题，究竟什么是数据科学家。
 http://blog.fastforwardlabs.com/post/142353528013/where-do-you-put-your-data-scientists&lt;/p&gt;
@@ -69,7 +87,7 @@ http://blog.fastforwardlabs.com/post/142353528013/where-do-you-put-your-data-sci
  <entry>
    <title>The Hard Thing About Hard Things</title>
    <link href="http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6/2016/07/25/ben-horowitz/"/>
-   <updated>2016-07-25T01:06:20-07:00</updated>
+   <updated>2016-07-25T23:32:01-07:00</updated>
    <id>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6/2016/07/25/ben-horowitz</id>
    <content type="html">&lt;p&gt;Note to self: It’s a good idea to ask, “What am i not doing?”&lt;/p&gt;
 

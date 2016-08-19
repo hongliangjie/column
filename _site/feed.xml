@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>期望最大化（洪亮劼的专栏）</title>
-    <description>雅虎研究院高级研发经理兼资深科学家，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
+    <description>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
     <link>http://column.hongliangjie.com/</link>
     <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 13 Aug 2016 23:19:50 -0700</pubDate>
-    <lastBuildDate>Sat, 13 Aug 2016 23:19:50 -0700</lastBuildDate>
+    <pubDate>Fri, 19 Aug 2016 09:09:57 -0700</pubDate>
+    <lastBuildDate>Fri, 19 Aug 2016 09:09:57 -0700</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
         <title>现代科技公司HR的鸿沟</title>
-        <description>&lt;p&gt;之前参加过一次经理培训（Manager Training），在这次培训中&lt;/p&gt;
+        <description>&lt;p&gt;之前参加过一次经理培训（Manager Training），在这次培训中。我们有了。&lt;/p&gt;
 
 &lt;h2 id=&quot;section&quot;&gt;研究院&lt;/h2&gt;
 </description>
-        <pubDate>Sat, 13 Aug 2016 23:19:50 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2016/08/13/manager-training/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2016/08/13/manager-training/</guid>
+        <pubDate>Fri, 19 Aug 2016 09:09:57 -0700</pubDate>
+        <link>http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2016/08/19/manager-training/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2016/08/19/manager-training/</guid>
         
         
         <category>管理</category>
@@ -30,9 +30,9 @@
 
 &lt;h2 id=&quot;section&quot;&gt;研究院&lt;/h2&gt;
 </description>
-        <pubDate>Sat, 13 Aug 2016 23:19:50 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/08/13/industrial-labs/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/08/13/industrial-labs/</guid>
+        <pubDate>Fri, 19 Aug 2016 09:09:57 -0700</pubDate>
+        <link>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/08/19/industrial-labs/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/08/19/industrial-labs/</guid>
         
         
         <category>数据科学</category>
@@ -44,9 +44,9 @@
         <description>&lt;p&gt;这篇文章主要是讨论和阐述，如何构建一个数据团队中的核心问题，究竟什么是数据科学家。
 http://blog.fastforwardlabs.com/post/142353528013/where-do-you-put-your-data-scientists&lt;/p&gt;
 </description>
-        <pubDate>Sat, 13 Aug 2016 23:19:50 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/08/13/data-scientists/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/08/13/data-scientists/</guid>
+        <pubDate>Fri, 19 Aug 2016 09:09:57 -0700</pubDate>
+        <link>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/08/19/data-scientists/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/08/19/data-scientists/</guid>
         
         
         <category>数据科学</category>
@@ -71,9 +71,9 @@ http://blog.fastforwardlabs.com/post/142353528013/where-do-you-put-your-data-sci
 
 &lt;p&gt;Ironically, the key to an emotional discussion is to take the emotion out of it.&lt;/p&gt;
 </description>
-        <pubDate>Sat, 13 Aug 2016 23:19:50 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6/2016/08/13/ben-horowitz/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6/2016/08/13/ben-horowitz/</guid>
+        <pubDate>Fri, 19 Aug 2016 09:09:57 -0700</pubDate>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6/2016/08/19/ben-horowitz/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6/2016/08/19/ben-horowitz/</guid>
         
         
         <category>读书</category>

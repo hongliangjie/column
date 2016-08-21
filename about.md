@@ -3,7 +3,7 @@ layout: page
 title: 关于
 ---
 
-# 洪亮劼，博士
+# 洪亮劼，博士 -- Etsy数据科学主管
 
 <br/>
 <img align="right" src="/assets/hongliangjie.jpg" style="width: 190px;height:176px;margin-left:20px;">

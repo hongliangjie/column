@@ -80,3 +80,10 @@ title: 关于
 
 * [Google Scholar](https://scholar.google.com/citations?user=4uaSNpYAAAAJ)
 * [DBLP](http://dblp.uni-trier.de/pers/hd/h/Hong:Liangjie.html)
+
+***
+
+## 代表性演讲
+
+* *Personalization@Yahoo* 于小红书, 中国上海, 2016年六月。
+* *Beyond Clicks: Dwell Time in Personalization* 于Twitter, 美国旧金山, 2015年六月.

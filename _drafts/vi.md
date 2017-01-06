@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Variational Inference
-categories: Bayesian Inference,Variational Inference
+categories: 论文每日读
 ---
 Note to self: It's a good idea to ask, "What am i not doing?"
 

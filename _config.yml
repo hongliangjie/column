@@ -5,12 +5,12 @@ permalink:           pretty
 relative_permalinks: false
 
 # Setup
-title:               内部草稿
-tagline:             '研究内容草稿'
+title:               期望最大化（洪亮劼的专栏）
+tagline:             '分享技术、管理、团队和业界的思考'
 description:         'Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。'
-url:                 http://draft.hongliangjie.com
+url:                 http://column.hongliangjie.com
 baseurl:             ''
-paginate:            10
+paginate:            5
 
 # About/contact
 author:

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: The Hard Thing About Hard Things
-categories: 读书
+title: Variational Inference
+categories: 论文每日读
 ---
 Note to self: It's a good idea to ask, "What am i not doing?"
 

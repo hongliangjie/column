@@ -3,14 +3,18 @@ layout: post
 title: Variational Inference
 categories: 论文每日读
 ---
-[资料下载](http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf)
+Note to self: It's a good idea to ask, "What am i not doing?"
 
-在之前介绍的NIPS 2016介绍关于GAN的Tutorial中，Ian Goodfellow提到了除了GAN之外的Generative Models，其中最近几年比较火热的要数Variational Inference（VI)所带动的Graphical Models和Deep Learning（DL）的结合，以及VI本身在受到DL框架影响下走入的Automated Variational Inference的道路。
+I don't believe in statistics. I believe in calculus.
 
-在今年NIPS 2016上，VI研究的领军人物David Blei及其实验室的Rajesh Ranganath，外加来自Google DeepMind的Shakir Mohamed一起做了一场关于VI现代方法以及前沿研究的Tutorial，内容非常详实也极具参考价值，同时也是对于曾经对VI有所了解的研究者来说很好的复习和重新学习的机会。在这篇短文里，我们就来导读一下这个Tutorial的内容。
+It's the ability to focus and make the best move when there are no good moves.
 
-## 信息点一 对于VI的基础和历史介绍
-Tutorial把VI前后二十多年的发展，从八十年代开始借鉴统计物理的思想到九十年代后期Jordan写成著名的Review Paper，再到近期的发展动向，整个VI发展的主要脉络很清晰的表达了出来。重要的学者以及工作也都在Tutorial有所提及。由于David Blei的关系，Tutorial的基础部分很自然用到了LDA作为经典的模型案例。相信不少读者都是通过LDA来学习掌握VI的基本思想的。这部分的内容可以帮助大家复习VI到底要干什么以及什么是ELBO的概念。在熟悉了ELBO的概念之后，很自然的，传统VI的基本思路就是通过Mean-Field Approximation来对Variational Distribution进行分解和逼近。另外，在传统的VI的基础上如何衍生出Stochastic Optimization也是在这一波新发展之前的VI的最重要的革新。
+Keep death in mind at all times.
 
-## 信息点二 现代VI发展方向之自动化
-熟悉DL的读者都知道，现代DL Framework如Tensorflow、Theano、MxNet等的核心就是能够对Neural Networks自动求导并且能够对Computational Graph进行自动运算，通过运算而优化目标函数。这样的好处是，不管模型怎么变化，优化过程都很类似。传统的Graphical Models则没有享受这样的便利。
+Don't put it all on your shoulders.
+
+There is always a move.
+
+In the technology game, tomorrow looks nothing like today. If you survive long enough to see tomorrow, it may bring you the answer that seems so impossible today.
+
+Ironically, the key to an emotional discussion is to take the emotion out of it.

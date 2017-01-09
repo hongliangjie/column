@@ -1,11 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
+<<<<<<< HEAD
  <title>内部草稿</title>
  <link href="http://draft.hongliangjie.com/atom.xml" rel="self"/>
  <link href="http://draft.hongliangjie.com/"/>
  <updated>2017-01-05T23:35:13-05:00</updated>
  <id>http://draft.hongliangjie.com</id>
+=======
+ <title>期望最大化（洪亮劼的专栏）</title>
+ <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
+ <link href="http://column.hongliangjie.com/"/>
+ <updated>2016-11-06T17:03:52-05:00</updated>
+ <id>http://column.hongliangjie.com</id>
+>>>>>>> parent of 3056f54... changes
  <author>
    <name>洪亮劼</name>
    <email>hongliangjie@gmail.com</email>

@@ -5,38 +5,30 @@
     <description>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
     <link>http://draft.hongliangjie.com/</link>
     <atom:link href="http://draft.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 05 Jan 2017 23:35:13 -0500</pubDate>
-    <lastBuildDate>Thu, 05 Jan 2017 23:35:13 -0500</lastBuildDate>
+    <pubDate>Sun, 08 Jan 2017 23:37:25 -0500</pubDate>
+    <lastBuildDate>Sun, 08 Jan 2017 23:37:25 -0500</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
         <title>Variational Inference</title>
-        <description>&lt;p&gt;Note to self: It’s a good idea to ask, “What am i not doing?”&lt;/p&gt;
+        <description>&lt;p&gt;&lt;a href=&quot;http://www.cs.columbia.edu/~blei/talks/2016_NIPS_VI_tutorial.pdf&quot;&gt;资料下载&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;I don’t believe in statistics. I believe in calculus.&lt;/p&gt;
+&lt;p&gt;在之前介绍的NIPS 2016介绍关于GAN的Tutorial中，Ian Goodfellow提到了除了GAN之外的Generative Models，其中最近几年比较火热的要数Variational Inference（VI)所带动的Graphical Models和Deep Learning（DL）的结合，以及VI本身在受到DL框架影响下走入的Automated Variational Inference的道路。&lt;/p&gt;
 
-&lt;p&gt;It’s the ability to focus and make the best move when there are no good moves.&lt;/p&gt;
+&lt;p&gt;在今年NIPS 2016上，VI研究的领军人物David Blei及其实验室的Rajesh Ranganath，外加来自Google DeepMind的Shakir Mohamed一起做了一场关于VI现代方法以及前沿研究的Tutorial，内容非常详实也极具参考价值，同时也是对于曾经对VI有所了解的研究者来说很好的复习和重新学习的机会。在这篇短文里，我们就来导读一下这个Tutorial的内容。&lt;/p&gt;
 
-&lt;p&gt;Keep death in mind at all times.&lt;/p&gt;
+&lt;h2 id=&quot;vi&quot;&gt;信息点一 对于VI的基础和历史介绍&lt;/h2&gt;
+&lt;p&gt;Tutorial把VI前后二十多年的发展，从八十年代开始借鉴统计物理的思想到九十年代后期Jordan写成著名的Review Paper，再到近期的发展动向，整个VI发展的主要脉络很清晰的表达了出来。重要的学者以及工作也都在Tutorial有所提及。由于David Blei的关系，Tutorial的基础部分很自然用到了LDA作为经典的模型案例。相信不少读者都是通过LDA来学习掌握VI的基本思想的。这部分的内容可以帮助大家复习VI到底要干什么以及什么是ELBO的概念。在熟悉了ELBO的概念之后，很自然的，传统VI的基本思路就是通过Mean-Field Approximation来对Variational Distribution进行分解和逼近。另外，在传统的VI的基础上如何衍生出Stochastic Optimization也是在这一波新发展之前的VI的最重要的革新。&lt;/p&gt;
 
-&lt;p&gt;Don’t put it all on your shoulders.&lt;/p&gt;
-
-&lt;p&gt;There is always a move.&lt;/p&gt;
-
-&lt;p&gt;In the technology game, tomorrow looks nothing like today. If you survive long enough to see tomorrow, it may bring you the answer that seems so impossible today.&lt;/p&gt;
-
-&lt;p&gt;Ironically, the key to an emotional discussion is to take the emotion out of it.&lt;/p&gt;
+&lt;h2 id=&quot;vi-1&quot;&gt;信息点二 现代VI发展方向之自动化&lt;/h2&gt;
+&lt;p&gt;熟悉DL的读者都知道，现代DL Framework如Tensorflow、Theano、MxNet等的核心就是能够对Neural Networks自动求导并且能够对Computational Graph进行自动运算，通过运算而优化目标函数。这样的好处是，不管模型怎么变化，优化过程都很类似。传统的Graphical Models则没有享受这样的便利。&lt;/p&gt;
 </description>
-        <pubDate>Thu, 05 Jan 2017 23:35:13 -0500</pubDate>
-        <link>http://draft.hongliangjie.com/bayesian/inference,variational/inference/2017/01/05/vi/</link>
-        <guid isPermaLink="true">http://draft.hongliangjie.com/bayesian/inference,variational/inference/2017/01/05/vi/</guid>
+        <pubDate>Sun, 08 Jan 2017 23:37:25 -0500</pubDate>
+        <link>http://draft.hongliangjie.com/%E8%AE%BA%E6%96%87%E6%AF%8F%E6%97%A5%E8%AF%BB/2017/01/08/vi/</link>
+        <guid isPermaLink="true">http://draft.hongliangjie.com/%E8%AE%BA%E6%96%87%E6%AF%8F%E6%97%A5%E8%AF%BB/2017/01/08/vi/</guid>
         
         
-        <category>Bayesian</category>
-        
-        <category>Inference,Variational</category>
-        
-        <category>Inference</category>
+        <category>论文每日读</category>
         
       </item>
     

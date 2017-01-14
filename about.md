@@ -6,7 +6,7 @@ title: 关于
 # 洪亮劼，博士 -- Etsy数据科学主管
 
 <br/>
-<img align="right" src="/assets/hongliangjie.jpg" style="width: 190px;height:176px;margin-left:20px;">
+<img align="right" src="/assets/hongliangjie2.jpg" style="width: 285px;height:226.5px;margin-left:20px;">
 我目前担任总部位于纽约的电子商务平台[Etsy](https://www.etsy.com/)的**数据科学主管**（Head of Data Science），管理和领导一个一流的数据科学家团队。当前的主要职责是为Etsy提供全方位的数据科学支持，包括个性化与推荐、搜索、计算广告、图像处理及深度学习和文字信息挖掘等多方面的基于机器学习的产品优化方案。
 
 在加入Etsy之前，我于2013年到2016年担任[雅虎研究院（Yahoo Research）](https://research.yahoo.com/)的**高级研发经理**。在雅虎研究院工作期间，我亲自领导并参与了多项大数据大规模机器学习系统的研发工作，包括雅虎首页千万级用户个性化推荐系统、雅虎移动搜索千万级用户搜索优化系统以及大型个性化广告系统，对如何在产品中使用机器学习数据分析，以及如何在工程中实现高级机器学习模型有独到见解。

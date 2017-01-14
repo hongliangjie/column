@@ -86,6 +86,7 @@ title: 关于
 ## 大众文章
 
 * [知人知面需知心——论人工智能技术在推荐系统中的应用](http://geek.csdn.net/news/detail/112318)
+* [2016年 AI 技术发展综述](http://geek.csdn.net/news/detail/132057)
 * [ICML 2016精选论文](http://geek.csdn.net/news/detail/126623)
 * [SIGIR 2016信息检索精选论文](http://geek.csdn.net/news/detail/133916)
 

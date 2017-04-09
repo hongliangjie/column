@@ -86,16 +86,18 @@ title: 关于
 ## 大众文章
 
 * [知人知面需知心——论人工智能技术在推荐系统中的应用](http://geek.csdn.net/news/detail/112318)
-* [WSDM 2017精选论文解读](http://geek.csdn.net/news/detail/172475)
-* [2016年 AI 技术发展综述](http://geek.csdn.net/news/detail/132057)
-* [ICML 2016精选论文](http://geek.csdn.net/news/detail/126623)
-* [SIGIR 2016信息检索精选论文](http://geek.csdn.net/news/detail/133916)
+* [WSDM 2017 精选论文解读](http://geek.csdn.net/news/detail/172475)
+* [2016年 AI技术发展综述](http://geek.csdn.net/news/detail/132057)
+* [NIPS 2016 十大机器学习精选论文](http://geek.csdn.net/news/detail/189766)
+* [ICML 2016 精选论文](http://geek.csdn.net/news/detail/126623)
+* [SIGIR 2016 信息检索精选论文](http://geek.csdn.net/news/detail/133916)
 
 ***
 
 ## 代表性演讲
 
-* *GB-CENT* 于Global Predictive Analytics Conference,，美国圣塔克拉拉，2017年3月
+* *GB-CENT* 于Lehigh University，美国宾夕法尼亚州，2017年4月
+* *GB-CENT* 于Global Predictive Analytics Conference，美国圣塔克拉拉，2017年3月
 * *GB-CENT* 于Predictive Analytics Innovation Summit，美国圣地亚哥，2017年2月
 * *Personalization@Yahoo* 于小红书, 中国上海, 2016年六月。
 * *Beyond Clicks: Dwell Time in Personalization* 于Twitter, 美国旧金山, 2015年六月.

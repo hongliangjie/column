@@ -11,7 +11,7 @@
 
   <title>
     
-      数据科学发展的一些感悟 &middot; 期望最大化（洪亮劼的专栏）
+      WWW 2017文章精读（一） &middot; 期望最大化（洪亮劼的专栏）
     
   </title>
 
@@ -111,37 +111,26 @@
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 <div class="post">
-  <h1 class="post-title">数据科学发展的一些感悟</h1>
+  <h1 class="post-title">WWW 2017文章精读（一）</h1>
   <span class="post-date">
     2017年
-      3月
-      2号</span>
-  <p>上个星期，我参加了位于San Diego召开的一个工业界数据科学会议Predictive Analytics Innovation Summit。在这里分享一些参会后对于数据科学在工业界发展状况及前景的感悟。</p>
+      4月
+      13号</span>
+  <p>我们在这里对WWW 2017文章Beyond Globally Optimal: Focused Learning for Improved Recommendations进行一个简单的分析解读。</p>
 
-<h2 id="section">感悟一：数据科学的思潮席卷各个行业</h2>
-<hr />
-<p><img src="/assets/san_diego.jpg" alt="" />
-参加会议的代表来自各行各业，有互联网公司的数据佼佼者诸如Google、Bing、Netflix、Etsy（我所代表的公司）、Groupon；也有传统的金融产业公司Bloomberg、American Express、Visa；电信公司Verizon；保险公司Zurich；还有更传统的生产行业公司Bosch、Honeywell、Ford、GE Digital；以及一些你可能通常意义下不会认为是数据公司的代表诸如Weather.Com。除了这些有演讲内容的公司以外，还有不少医药行业的公司包括FDA的代表，以及很多其他行业的与会人员。总之从整体上看，对于数据科学的热衷已经席卷了各行各业。每一个行业都开设了诸如Chief Data Scientist、VP of Data Science的高端职位以及开始招聘各类数据科学家（Data Scientist）团队。每一个行业都在介绍自己是如何希望能够建立“数据驱动”（Data-Driven）的文化以及自己如何从数据中获益。每一个行业又是那么急切想从互联网公司、特别是已经在数据的使用和文化上有所建树的公司上得到启发和灵感。</p>
+<p><a href="http://alexbeutel.com/papers/www2017_focused_learning.pdf">全文PDF</a></p>
 
-<h2 id="section-1">感悟二：数据科学到底是什么，大家并不清楚</h2>
-<hr />
-<p><img src="/assets/san_diego2.jpg" alt="" />
-虽然数据科学的浪潮已经深入各个行业，但大家对于到底什么是“数据科学”，甚至什么是“机器学习”、“深度学习”抑或“人工智能”，其实都有一种“雾里看花”的感觉。很多公司其实并不太清楚这些感念之间的区别或者异同。比较传统的一些公司，甚至是把以前存在过的Business Analysis或者是Business Intelligence部门直接转换成为数据科学部门，感觉有一种为了抓住这个目前的浪潮不惜偷梁换柱的意味。而且究竟数据科学，甚至是人工智能的标签，能为各个企业带来什么根本的变化，大家其实可能心里有不太一样的期待，或者是并没有真正去了解自己的期望究竟是什么。比如有些企业其实只是把数据科学认知为简单的数据分析、有的企业其实也没有太多太大的数据需要真正复杂的数据科学流程和高端的数据科学人才。</p>
+<p>这篇文章来自一群前CMU的学者，目前在Google和Pinterest。那么这篇文章试图解决什么问题呢？具体说来，就是作者们发现，传统的推荐系统，基于优化一个全局的目标函数，通常情况下往往只能给出一个非常有“偏差”（Skewed）的预测分布。也就是说，传统的推荐系统追求的是平均表现情况，在很多情况下的预测其实是十分不准确的。这个情况在评价指标是Root Mean Squared Error（RMSE）的时候，就显得尤为明显。</p>
 
-<h2 id="section-2">感悟三：数据科学人才极度匮乏</h2>
-<hr />
-<p><img src="/assets/bootcamp.jpg" alt="" />
-尽管不同行业的各个企业可能还没有搞清楚数据科学到底意味着什么，但有一个共同的趋势，那就是各个行业的企业都发现了相关人才的极度匮乏。一方面，因为大家对数据科学的不确定性造成了其实各个企业并不是特别清楚自己需要的人才究竟是什么样的，也就造成了无法从现在的人才市场里清晰分别优质人才。另一方面，相对于几年前的“数据分析”人才而言，那时候公司还比较能够清晰得从统计背景的候选人中挑选，时至今日，数据科学或者人工智能人才需要全方面的背景，这使得入行门槛急剧增加。于是，目前造成的短期困境就是很多企业有大量职位空缺，但是从候选人池中很难找到如意的从事数据科学的相关人选。</p>
+<p>这篇文章的作者是这么定义了一个叫做Focused Learning的问题，那就是如果让模型在一个局部的数据上能够表现出色。那么，为什么需要模型在一个局部的数据上表现出色呢？作者们做了这么一件事情，那就是对每个用户，以及每一个物品的预测误差（Error）进行了分析统计，发现有不小比例的用户的预测误差比较大，也有不小比例的物品的预测误差比较大。作者们发现模型在一些数据上存在着系统性的误差较大的问题，而不是偶然发生的情况。</p>
 
-<h2 id="section-3">感悟四：公司之间的巨大鸿沟</h2>
-<hr />
-<p><img src="/assets/gap.jpg" alt="" />
-因为对于数据科学认识的匮乏和以及对于公司如何来利用数据科学的混沌，以及由于人才的匮乏这两个显著的特征所带来的另外一个目前一个比较明显的现象就是，传统行业或者互联网的中小企业和目前利用数据科学的佼佼者甚至是人工智能的领军企业只有有非常大的鸿沟。从数据驱动文化上，到如何利用数据上，到具体的技术链条上，到人才的管理和挖掘上，领先的企业已经把大部分的其他玩家给远远抛在脑后。行业与行业之间的鸿沟也非常明显。互联网企业已经建立起了一整套的数据工具、规范和流程以及人才池的培养，紧跟其后的是金融企业（这也是最近一段时间以来大家所宣扬的FinTech带来的结果），然后其他大部分行业都要远远落后。这里面也需要注意的是，从各行各业的对于数据的需求来看，并不是盲目地照搬互联网企业的所谓的成功经验就能够轻而易举地搭上这个数据及智能的快车。其实这也可能表明，很可能没有一个普世的数据策略，每个行业需要摸索最适合自己发展的行业数据科学文化和标准。</p>
+<p>作者们又从理论上进行了对这个问题一番讨论。这里的讨论十分巧妙，大概的思路就是，假定现在在全局最优的情况下，模型的参数的梯度已经为0了，但模型的Loss依然不为0（这种情况很常见）。那么，就一定存在部分数据的参数梯度不为0，因为某一部分数据的Loss不为0。这也就证明了部分数据的模型参数在这些数据上的表现一定不是最优的。值得注意的是，这个证明非常普遍，和具体的模型是什么类型没有关系。</p>
 
-<h2 id="section-4">感悟五：数据浪潮方兴未艾</h2>
-<hr />
-<p><img src="/assets/wave.jpg" alt="" />
-如果我们长期只看少部分互联网尖端企业而言，那么我们很容易陷入当前阶段已经达到人工智能高峰的假象。当然，也不能说这就是假象，只是说少部分企业在他们所在的领域有着巨大的优势。但是如果我们放眼所有行业而言，目前可以说还是数据科学方兴未艾的阶段，有着大量的机会。对于互联网从业人员来说，如何能够从自身的一些优势出发，走到其他行业中去，恐怕是接下来一个阶段大家需要思考的问题。</p>
+<p>在有了这么一番讨论之后，那么作者们如何解决这个问题呢？这篇文章走了Hyper-parameter Optimization的道路。文章展示了这在普通的Matrix Factorization里面是如何做到。具体说来，就是对于某个Focused Set做Hyper-parameter的调优，使得当前的Hyper-parameter能够在Focused Set上能够有最好表现。而这组参数自然是针对不同的Focused Set有不同的选择。文章提到的另外一个思路，则是对Focused Set以及非Focused Set的Hyper-parameter进行区分对待，这样有助于最后的模型能够有一个比较Flexible的表达。</p>
+
+<p>文章在实验的部分针对几种不同的Focused Set进行了比较实验。比如，针对Cold-Start的物品，针对Outlier的物品，以及更加复杂的libFM模型都进行了实验。我们在这里就不去复述了。总体来说，Focused Learning在不同的数据集上都得到了比较好的提升效果。同时，作者们还针对为什么Focused Learning能够Work进行了一番探讨，总体看来，Focused Learning既照顾了Global的信息，同时又通过附加的Hyper-parameter调优对某一个局部的数据进行优化，所以往往好于Global的模型以及也好于单独的Local模型。</p>
+
+<p>本文非常适合对推荐系统有兴趣的学者和工程人员精读。</p>
 
 </div>
 <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a></div>
@@ -152,18 +141,18 @@
     
       <li>
         <h3>
-          <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/13/www2017-beyond-globally-optimal/">
-            WWW 2017文章精读（一）
-            <small>13 Apr 2017</small>
+          <a href="/%E7%AE%A1%E7%90%86/2017/04/09/research-labs/">
+            论互联网公司与研究院
+            <small>09 Apr 2017</small>
           </a>
         </h3>
       </li>
     
       <li>
         <h3>
-          <a href="/%E7%AE%A1%E7%90%86/2017/04/09/research-labs/">
-            论互联网公司与研究院
-            <small>09 Apr 2017</small>
+          <a href="/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2017/03/02/san_diego/">
+            数据科学发展的一些感悟
+            <small>02 Mar 2017</small>
           </a>
         </h3>
       </li>

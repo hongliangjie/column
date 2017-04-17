@@ -4,7 +4,7 @@
  <title>期望最大化（洪亮劼的专栏）</title>
  <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
  <link href="http://column.hongliangjie.com/"/>
- <updated>2017-04-16T22:37:50-04:00</updated>
+ <updated>2017-04-16T22:58:19-04:00</updated>
  <id>http://column.hongliangjie.com</id>
  <author>
    <name>洪亮劼</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>WWW 2017文章精读（二）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/16/www2017-collaborative-metric-learning/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/16/www2017-cml/"/>
    <updated>2017-04-16T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/16/www2017-collaborative-metric-learning</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/16/www2017-cml</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Collaborative Metric Learning进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.cs.cornell.edu/~ylongqi/paper/HsiehYCLBE17.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;

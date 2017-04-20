@@ -4,13 +4,38 @@
  <title>期望最大化（洪亮劼的专栏）</title>
  <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
  <link href="http://column.hongliangjie.com/"/>
- <updated>2017-04-16T22:58:19-04:00</updated>
+ <updated>2017-04-19T21:42:13-04:00</updated>
  <id>http://column.hongliangjie.com</id>
  <author>
    <name>洪亮劼</name>
    <email>hongliangjie@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>WWW 2017文章精读（三）</title>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/19/www2017-cloud/"/>
+   <updated>2017-04-19T00:00:00-04:00</updated>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/19/www2017-cloud</id>
+   <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Usage Patterns and the Economics of the Public Cloud进行一个简单的分析解读。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://vita.mcafee.cc/PDF/EconPublicCloud.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这篇文章的作者群来自微软研究院和Uber。作者之一的R. Preston McAfee是著名的经济学家，曾在雅虎担任副总裁和首席经济学家，2012年以后到Google的Strategic Technology担任总监，2014年之后到微软担任首席经济学家。这篇文章是探讨现在第三方云计算平台（比如Amazon的AWS或是微软的Azure）是否能采用动态价格（Dynamic Pricing）的计价模式，特别是在所谓的“巅峰负载”（Peak-Load）的时候。&lt;/p&gt;
+
+&lt;p&gt;首先，这篇文章对“云服务”模式进行了一个简单的介绍。这部分内容还是有很强的科普意义。这里面有一点可能比较容易忽视的科普点是，客户公司（Firm）需要对服务和软件进行重写才能使用云服务商提供的Auto-Scaling等方便的服务。如果客户公司仅仅是简单得把运行在传统数据中心上的服务给部署到云服务商的设施上面的话，则很难能够真正利用云服务的“易伸缩性”（Elastic）。&lt;/p&gt;
+
+&lt;p&gt;紧接着，作者们对于其他工业怎么采用动态价格进行了简单的介绍。动态价格有两个条件，那就是Capacity在短期内是恒定的（Fixed）并且恒定的一部分陈本（Cost）是总成本不小的一部分。当然这都是对于服务商而言。目前我们对于动态价格的主要认识，来源于电力、航空和酒店这些行业。云服务如果按照刚才那个条件来说，是具备动态价格的一些先决条件的。因此，作者们认为应该对云服务的供需进行研究来看如何设计动态价格的策略，也就是说，作者们想看一看现在的云服务的使用率是不是不够优化，为动态服务提供了可操作的空间。&lt;/p&gt;
+
+&lt;p&gt;这篇文章能够被WWW录取的一个重要原因可能是因为结果比较出人意料。作者们通过对微软的云服务数据（虽然在文中没有明说）进行分析得出，当前的云服务使用率（主要是从VM这个角度来说）的差别度（Variation） ，不管是看单个客户还是整体数据中心这个级别，都在5%以下。意思就是说，从云服务商这个整体来说，并没有出现特别大的服务需求起落。作者们的确从单个客户的数据中看到了使用率的震荡（Fluctuation），但是在云服务商这个层级，这样的震荡随着不同的客户数据，从而达到了整体“抵消”（Average Out）的效果。&lt;/p&gt;
+
+&lt;p&gt;作者们认为这样的现实数据为现在的计费模型，也就是恒定的价格（Static Price）提供了一定的基础。同时，目前的可以预测的使用率也为服务商充分利用资源提供了保证。这一点与电力系统不同，电力系统为在巅峰时刻的用电一般必须调用额外的设备。当然，作者们也认为这样的使用数据，以及计费模型，是现在多数客户都简单把原来的软件系统给搬运到云计算平台上，而并没有充分利用云服务的Auto-Scaling有关系。&lt;/p&gt;
+
+&lt;p&gt;为了对以后的可能性进行探索，作者们又从CPU的使用率这个级别进行分析。与VM的使用率不同的是，CPU的使用率看出了比较大的幅度。平均的最高CPU使用率比巅峰时期CPU使用率要小40%左右。因此，如果服务商能够通过CPU使用率来进行计价，或者VM资源能够在不使用的时候自动关闭，则为动态价格提供了一种可能性。作者们的与测试，这可能是未来的一种模式。&lt;/p&gt;
+
+&lt;p&gt;总体来说，这篇文章算是科普性质的一篇文章。对于动态价格，以及云服务商的计价模式有兴趣的读者可以泛读本文。&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>WWW 2017文章精读（二）</title>

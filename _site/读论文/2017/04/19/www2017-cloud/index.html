@@ -11,7 +11,7 @@
 
   <title>
     
-      WWW 2017文章精读（二） &middot; 期望最大化（洪亮劼的专栏）
+      WWW 2017文章精读（三） &middot; 期望最大化（洪亮劼的专栏）
     
   </title>
 
@@ -111,36 +111,28 @@
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 <div class="post">
-  <h1 class="post-title">WWW 2017文章精读（二）</h1>
+  <h1 class="post-title">WWW 2017文章精读（三）</h1>
   <span class="post-date">
     2017年
       4月
-      16号</span>
-  <p>我们在这里对WWW 2017文章Collaborative Metric Learning进行一个简单的分析解读。</p>
+      19号</span>
+  <p>我们在这里对WWW 2017文章Usage Patterns and the Economics of the Public Cloud进行一个简单的分析解读。</p>
 
-<p><a href="http://www.cs.cornell.edu/~ylongqi/paper/HsiehYCLBE17.pdf">全文PDF</a></p>
+<p><a href="http://vita.mcafee.cc/PDF/EconPublicCloud.pdf">全文PDF</a></p>
 
-<p><a href="http://www.cs.cornell.edu/~ylongqi/publication/www17b/">论文的项目页面</a></p>
+<p>这篇文章的作者群来自微软研究院和Uber。作者之一的R. Preston McAfee是著名的经济学家，曾在雅虎担任副总裁和首席经济学家，2012年以后到Google的Strategic Technology担任总监，2014年之后到微软担任首席经济学家。这篇文章是探讨现在第三方云计算平台（比如Amazon的AWS或是微软的Azure）是否能采用动态价格（Dynamic Pricing）的计价模式，特别是在所谓的“巅峰负载”（Peak-Load）的时候。</p>
 
-<p>这篇文章的作者群来自于加州大学洛杉矶分校（University of California at Los Angeles）以及康奈尔科技大学（Cornell Tech）。 文章的核心思想是如何把Metric Learning和Collaborative Filtering（CF）结合起来从而达到更好的推荐效果。</p>
+<p>首先，这篇文章对“云服务”模式进行了一个简单的介绍。这部分内容还是有很强的科普意义。这里面有一点可能比较容易忽视的科普点是，客户公司（Firm）需要对服务和软件进行重写才能使用云服务商提供的Auto-Scaling等方便的服务。如果客户公司仅仅是简单得把运行在传统数据中心上的服务给部署到云服务商的设施上面的话，则很难能够真正利用云服务的“易伸缩性”（Elastic）。</p>
 
-<p>那么这篇文章为什么会想到把Metric Learning结合到CF上面呢？文章做了比较详细的交代。这里面的重点来自于传统的基于Matrix Factorization的CF模型都使用了Dot-Product来衡量用户向量（User Vector）和物品向量（Item Vector）的距离。也就是说，如果Dot-Product的值大， 就代表两个向量相近，值小就代表距离远。对于Dot-Product的默认使用已经让广大研究人员和实践者都没有怎么去质疑过其合理性。文章这里指出，Dot-Product并不是一个合理的距离测度，因此可能会带来对于相似度的学习不准确的问题。</p>
+<p>紧接着，作者们对于其他工业怎么采用动态价格进行了简单的介绍。动态价格有两个条件，那就是Capacity在短期内是恒定的（Fixed）并且恒定的一部分陈本（Cost）是总成本不小的一部分。当然这都是对于服务商而言。目前我们对于动态价格的主要认识，来源于电力、航空和酒店这些行业。云服务如果按照刚才那个条件来说，是具备动态价格的一些先决条件的。因此，作者们认为应该对云服务的供需进行研究来看如何设计动态价格的策略，也就是说，作者们想看一看现在的云服务的使用率是不是不够优化，为动态服务提供了可操作的空间。</p>
 
-<p>这里简单说一下什么是一个合理的距离测度。一个距离测度需要满足一些条件，而其中比较普遍的条件是所谓的“三角不等式”。所谓的“三角不等式”关系其实也就是说，距离的大小是有传递性的。举例来说，就是如果X与Y和Z都相近，那么Y和Z也应该相近。也就是说，相似度是可以传播的，在使用一个合理的距离测度的情况下。然而，文章指出Dot-Product并不具备这样的相似传递性，因此在实践中常常会不能有效得学习到数据中全部的信息。</p>
+<p>这篇文章能够被WWW录取的一个重要原因可能是因为结果比较出人意料。作者们通过对微软的云服务数据（虽然在文中没有明说）进行分析得出，当前的云服务使用率（主要是从VM这个角度来说）的差别度（Variation） ，不管是看单个客户还是整体数据中心这个级别，都在5%以下。意思就是说，从云服务商这个整体来说，并没有出现特别大的服务需求起落。作者们的确从单个客户的数据中看到了使用率的震荡（Fluctuation），但是在云服务商这个层级，这样的震荡随着不同的客户数据，从而达到了整体“抵消”（Average Out）的效果。</p>
 
-<p>Metric Learning就是如何在一定的假设下，进行有效距离测度学习的工具。文章使用了一种Relaxed Version的Metric Learning，叫做Large-Margin Nearest Neighbor（LMNN）来学习数据之间的相似度。LMNN简单说来，就是同一个类型的数据应该更加紧密聚集在一起（通过Euclidean Distance），而不同类的数据应该远离。同时，同类的数据和不同类的数据之间保持一个Margin（模型的一个参数）的安全距离。</p>
+<p>作者们认为这样的现实数据为现在的计费模型，也就是恒定的价格（Static Price）提供了一定的基础。同时，目前的可以预测的使用率也为服务商充分利用资源提供了保证。这一点与电力系统不同，电力系统为在巅峰时刻的用电一般必须调用额外的设备。当然，作者们也认为这样的使用数据，以及计费模型，是现在多数客户都简单把原来的软件系统给搬运到云计算平台上，而并没有充分利用云服务的Auto-Scaling有关系。</p>
 
-<p>作者们把这个概念拿过来，应用在CF的场景下，做了进一步的简化，那就是把“相同类数据聚合”这个部分去掉了，仅仅留下了“不同类远离”这个部分。作者们认为，一个物品可能被多个人喜欢，那么在这样的含义下，很难说清楚，到底怎么聚类比较有意义。具体说来，一个用户所喜欢的物品要远离这个用户所不喜欢的物品，同时这个距离会被一个与Rank（这里所说的Rank是指物品的排序）有关Weight所控制。也就是Rank越大，所产生的Penalty就越大。文章具体采用了一个叫Weighted Approximate Rank Pairwise Loss（WARP）的Loss来对Rank进行Penalty。这个WARP是早几年的时候还在Google的Weston等人提出的，目的是要对排在Rank比较大的正样本（Positive Instance）做比较大的Penalty。这里就不复述WARP的细节了。</p>
+<p>为了对以后的可能性进行探索，作者们又从CPU的使用率这个级别进行分析。与VM的使用率不同的是，CPU的使用率看出了比较大的幅度。平均的最高CPU使用率比巅峰时期CPU使用率要小40%左右。因此，如果服务商能够通过CPU使用率来进行计价，或者VM资源能够在不使用的时候自动关闭，则为动态价格提供了一种可能性。作者们的与测试，这可能是未来的一种模式。</p>
 
-<p>除了外加WARP的Metric learning，这篇文章还为整个模型的目标函数加了不少“作料”。“作料一”就是使用了Deep Learning来学习从物品的Feature到物品的Latent Vector的映射。这解决了Cold-start的问题。“作料二”则是对物品和用户的Latent Vector都做了正则化，使得学习起来更加Robust。</p>
-
-<p>文章简单描述了一下整个模型的训练过程。整个模型的目标函数由三个部分组成：Metric Learning的部分，加Deep Learning的部分，外加正则化的部分。比较意外的是，文章并没有提及模型在训练好以后如何在Test数据上进行Inference。</p>
-
-<p>文章在一系列标准数据集上做了测试，对比的Baseline也比较完整。总体说来，提出的模型都能达到最好的效果，有些在目前比较好的模型基础上能够提高10%以上，这比较令人吃惊。比较遗憾的是，文章并没有很好的展示这个模型的三个模块究竟是不是都必须。值得一提的是，文章指出使用了WARP的任何模型（包括本文章提出的模型）都要好于其他的模型。</p>
-
-<p>这篇文章总的来说还是可以参考。虽然有一些细节很值得推敲，但是，提出把Metric Learning引入到CF里来说，还是有一定价值的。</p>
-
-<p>建议对推荐系统正在研究的学者精读，对推荐系统有兴趣的实践者泛读。</p>
+<p>总体来说，这篇文章算是科普性质的一篇文章。对于动态价格，以及云服务商的计价模式有兴趣的读者可以泛读本文。</p>
 
 </div>
 <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a></div>
@@ -151,9 +143,9 @@
     
       <li>
         <h3>
-          <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/19/www2017-cloud/">
-            WWW 2017文章精读（三）
-            <small>19 Apr 2017</small>
+          <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/16/www2017-cml/">
+            WWW 2017文章精读（二）
+            <small>16 Apr 2017</small>
           </a>
         </h3>
       </li>

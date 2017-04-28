@@ -11,7 +11,7 @@
 
   <title>
     
-      WWW 2017文章精读（四） &middot; 期望最大化（洪亮劼的专栏）
+      WWW 2017文章精读（五） &middot; 期望最大化（洪亮劼的专栏）
     
   </title>
 
@@ -115,36 +115,34 @@
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 <div class="post">
-  <h1 class="post-title">WWW 2017文章精读（四）</h1>
+  <h1 class="post-title">WWW 2017文章精读（五）</h1>
   <span class="post-date">
     2017年
       4月
-      26号</span>
-  <p>我们在这里对WWW 2017文章Modeling Consumer Preferences and Price Sensitivities from Large-Scale Grocery Shopping Transaction Logs进行一个简单的分析解读。</p>
+      27号</span>
+  <p>我们在这里对WWW 2017文章Streaming Recommender Systems进行一个简单的分析解读。</p>
 
-<p><a href="https://cseweb.ucsd.edu/~m5wan/paper/www17_mwan.pdf">全文PDF</a></p>
+<p><a href="http://www.yichang-cs.com/yahoo/WWW17_StreamingRec.pdf">全文PDF</a></p>
 
-<p>这篇文章的作者群来自加州大学圣地亚哥分校（University of California at San Diego）和微软研究院。最后一个作者Julian McAuley在加州大学圣地亚哥分校长期从事推荐系统以及用户模型的研究工作。建议对推荐系统有研究的朋友经常看看他又有什么新的研究成果这篇文章的特色在于希望把推荐系统的用户喜好建模和经济学里的对于价格的研究结合起来。作者们认为，在推荐系统领域，对于用户喜好建模已经是比较成熟的研究领域了，而对于价格，特别是价格的敏感度（Sensitivity）的研究还并不是很多。于是这篇文章就是要弥补这么一个研究缺失（Gap）。</p>
+<p>这篇文章的作者群来自雅虎研究院和University of Illinois at Urbana-Champaign。第一作者<a href="http://www.ifp.illinois.edu/~chang87">Shiyu Chang</a>，是今年来一位学术新星，目前在IBM华生研究院工作。这篇文章的核心思想是想提出一个完全基于流（Stream）信息的推荐系统框架。</p>
 
-<p>作者们首先提出了一个分三阶段（Three Stage）的概率模型，用来刻画用户选择购买商品时候的选择过程。具体来说，这篇文章把用户的行为分为了这么三个阶段：</p>
+<p>作者们认为，流信息和普通的静态数据有很大的区别：</p>
 
-<ul>
-  <li>类别选择（Category Purchase），也就是说，用户首先选择要购买哪个类别的商品。</li>
-  <li>产品选择（Product Choice），这里面就是在已经选定了一个类别以后，用户如何在这个类别里面选择商品。</li>
-  <li>数量购买（Purchase Quantity），选择要购买多少商品。</li>
-</ul>
+<ol>
+  <li>大量的数据流入系统，系统必须对这些数据进行实时的反应。比如用户和某一个物品进行了交互；比如有新的物品产生需要被系统识别到并且能够查询等等。</li>
+  <li>流入系统的数据的量是未知的。这部分信息无法在产生系统之前拿到。</li>
+  <li>随着时间的推移，数据会产生所谓的“概念漂移”（Concept Shift）的现象。用户的喜好也会随着时间的推移而发生变化。</li>
+</ol>
 
-<p>有了这三个阶段以后，用户的购买需求就成为了这三种概率的联合分布。</p>
+<p>于是，这篇文章就是希望从根本上来解决这些问题，提出一个基于信息流的推荐系统框架。</p>
 
-<p>为了对这三种行为有效建模，作者们首先提出了一个所谓的Feature-Based Matrix Factorization（FMF）的框架。总的说来，这是之前的LinkedIn提出的所谓的Generalized Linear Mixed Model（GLMix）变种。读者可以仔细参考原论文看看FMF的细节。这个FMF结合了全局特征（Global Features），物品特征，用户特征，以及用户和物品的隐含特征（Latent Features）。可以说是一个比较完善的框架体系。</p>
+<p>文章提出的模型是一个具有时间信息的概率图模型（Probabilistic Graphical Model）。核心思想就是所有的元素都有时间的概念。举例来说，用户对于某一个物品的喜爱也仅仅是一个时间点的信息，并不代表之后的时间点的信息。这一点来说，就给了用户喜好发生变化的可能性。模型的核心还是基于用户向量（User Vector）和物品向量（Item Vector）的点积。不过，这里的用户向量和物品向量都是某一个时间点的估计。这些向量都随着时间发生变化。具体说来，作者们定义了一个基于布朗随机运动（Brownian Motion）的变化过程来对用户向量随着时间变化的改变来建模。也就是说，下一个时间点的用户向量是一个基于上一个时间点的用户向量的高斯分布。同样的建模手段也用到了物品向量上。整个模型可以说还是比较直观的，从概念上来说，提出的这个框架其实非常类似用卡曼滤波（Kalman Filtering）来进行时间维度的建模。而用卡曼滤波建模也是过去在概率图模型里经常使用的技巧。</p>
 
-<p>有了FMF这个工具，我们再回到刚才的三个阶段的建模。作者们的思路就是用FMF的不同表达形式为三个阶段进行分别的建模。具体说来，类别选择的部分，采用了FMF的Logistic表达形式，也就是对每个类别进行简单的“是”还是“不是”的购买选择。产品选择的部分则采用了Multinomial Regression的形式，也就是在所有同类商品里面进行选择。第三部分数量购买则采用了Poisson Regression的形式。然而核心这三部分采用的是同样的一套思路。因为这三个部分的独立性，使得模型的学习可以把这三部分分来，有利于能够并行化。在整体的模型学习上，作者们还加上了AUC Optimization的“作料”。</p>
+<p>这个模型的难点是做模型的在线预测（Online Prediction）和离线模型参数估计（Offline Parameter Estimation）。对于在线预测的部分，作者们提出了一个叫Recursive Mean-field Approximation的技术。对于离线模型参数估计来说，作者们使用了标准的EM算法。总体来说，整个学习流程其实是比较复杂的。这也和其他使用类似卡曼滤波的方法类似。这也是概率图模型对时间信息处理的通病。</p>
 
-<p>接下来，作者们介绍了这篇文章的一个重点，那就是把价格因素引入到了整体框架中。其实思路还是很简单，就是直接把价格（在模型中用了Log Transformation）当做一个Feature，进行参数学习。这样做的好处还有直接可以计算所谓的价格敏感度，也就是购买一个东西的可能性的变化和价格变化的比值。这个数量可以用来描述价格的变化敏感度，可以让我们对价格做进一步的分析。</p>
+<p>文章实验的部分还是非常详尽的。文章在MovieLens的比较小的以及比较大的数据集上都做了实验，并且还加上了经典的Netflix的数据集。从Baseline的比较上来说，文章比较了传统的Probabilistic Matrix Factorization，经典的Time-SVD++算法（赢得Netflix大赛的算法）以及比较先进的Gaussian Process Factorization Machines。从实验的效果上来看，文章提出的方法在三个数据集上都有不错的效果。</p>
 
-<p>作者们在一个非公开的西雅图的商店数据集上，和公开的Dunnhumby数据集上做了实验。实验结果是三个阶段的模型都有不错的表现。并且作者们还利用价格敏感度进行了数据的进一步分析。这里就不复述了。</p>
-
-<p>这篇文章值得对推荐系统有研究的学者和实践者精读。</p>
+<p>这篇文章提出的方法因为其算法复杂性，很难应用在生产中。而且要想在这个模型上做进一步的扩展，只能使得算法的复杂性进一步提升。这篇文章适合对于推荐系统有研究的学者和实践者泛读。</p>
 
 </div>
 <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a></div>
@@ -155,9 +153,9 @@
     
       <li>
         <h3>
-          <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/">
-            WWW 2017文章精读（五）
-            <small>27 Apr 2017</small>
+          <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/">
+            WWW 2017文章精读（四）
+            <small>26 Apr 2017</small>
           </a>
         </h3>
       </li>

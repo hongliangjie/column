@@ -4,13 +4,44 @@
  <title>期望最大化（洪亮劼的专栏）</title>
  <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
  <link href="http://column.hongliangjie.com/"/>
- <updated>2017-04-26T23:56:00-04:00</updated>
+ <updated>2017-04-27T21:55:38-04:00</updated>
  <id>http://column.hongliangjie.com</id>
  <author>
    <name>洪亮劼</name>
    <email>hongliangjie@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>WWW 2017文章精读（五）</title>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/"/>
+   <updated>2017-04-27T00:00:00-04:00</updated>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream</id>
+   <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Streaming Recommender Systems进行一个简单的分析解读。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.yichang-cs.com/yahoo/WWW17_StreamingRec.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这篇文章的作者群来自雅虎研究院和University of Illinois at Urbana-Champaign。第一作者&lt;a href=&quot;http://www.ifp.illinois.edu/~chang87&quot;&gt;Shiyu Chang&lt;/a&gt;，是今年来一位学术新星，目前在IBM华生研究院工作。这篇文章的核心思想是想提出一个完全基于流（Stream）信息的推荐系统框架。&lt;/p&gt;
+
+&lt;p&gt;作者们认为，流信息和普通的静态数据有很大的区别：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;大量的数据流入系统，系统必须对这些数据进行实时的反应。比如用户和某一个物品进行了交互；比如有新的物品产生需要被系统识别到并且能够查询等等。&lt;/li&gt;
+  &lt;li&gt;流入系统的数据的量是未知的。这部分信息无法在产生系统之前拿到。&lt;/li&gt;
+  &lt;li&gt;随着时间的推移，数据会产生所谓的“概念漂移”（Concept Shift）的现象。用户的喜好也会随着时间的推移而发生变化。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;于是，这篇文章就是希望从根本上来解决这些问题，提出一个基于信息流的推荐系统框架。&lt;/p&gt;
+
+&lt;p&gt;文章提出的模型是一个具有时间信息的概率图模型（Probabilistic Graphical Model）。核心思想就是所有的元素都有时间的概念。举例来说，用户对于某一个物品的喜爱也仅仅是一个时间点的信息，并不代表之后的时间点的信息。这一点来说，就给了用户喜好发生变化的可能性。模型的核心还是基于用户向量（User Vector）和物品向量（Item Vector）的点积。不过，这里的用户向量和物品向量都是某一个时间点的估计。这些向量都随着时间发生变化。具体说来，作者们定义了一个基于布朗随机运动（Brownian Motion）的变化过程来对用户向量随着时间变化的改变来建模。也就是说，下一个时间点的用户向量是一个基于上一个时间点的用户向量的高斯分布。同样的建模手段也用到了物品向量上。整个模型可以说还是比较直观的，从概念上来说，提出的这个框架其实非常类似用卡曼滤波（Kalman Filtering）来进行时间维度的建模。而用卡曼滤波建模也是过去在概率图模型里经常使用的技巧。&lt;/p&gt;
+
+&lt;p&gt;这个模型的难点是做模型的在线预测（Online Prediction）和离线模型参数估计（Offline Parameter Estimation）。对于在线预测的部分，作者们提出了一个叫Recursive Mean-field Approximation的技术。对于离线模型参数估计来说，作者们使用了标准的EM算法。总体来说，整个学习流程其实是比较复杂的。这也和其他使用类似卡曼滤波的方法类似。这也是概率图模型对时间信息处理的通病。&lt;/p&gt;
+
+&lt;p&gt;文章实验的部分还是非常详尽的。文章在MovieLens的比较小的以及比较大的数据集上都做了实验，并且还加上了经典的Netflix的数据集。从Baseline的比较上来说，文章比较了传统的Probabilistic Matrix Factorization，经典的Time-SVD++算法（赢得Netflix大赛的算法）以及比较先进的Gaussian Process Factorization Machines。从实验的效果上来看，文章提出的方法在三个数据集上都有不错的效果。&lt;/p&gt;
+
+&lt;p&gt;这篇文章提出的方法因为其算法复杂性，很难应用在生产中。而且要想在这个模型上做进一步的扩展，只能使得算法的复杂性进一步提升。这篇文章适合对于推荐系统有研究的学者和实践者泛读。&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>WWW 2017文章精读（四）</title>

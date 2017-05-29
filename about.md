@@ -55,7 +55,7 @@ title: 关于
   [The Second Workshop on User Engagement Optimization at KDD 2014](http://www.ueo-workshop.com/)<br/>
   [The First Workshop on User Engagement Optimization at CIKM 2013](http://www.ueo-workshop.com/previous-editions/ueo-2013-at-cikm-2013/)
 * 国际会议程序委员会：<br/>
-  [SIGIR 2017](http://sigir.org/sigir2017/),[WSDM 2017](http://www.wsdm-conference.org/2017/), [WWW 2017](http://www.www2017.com.au/), [CIKM 2016](http://cikm2016.cs.iupui.edu/), [KDD 2016](http://www.kdd.org/kdd2016/), [SIGIR 2016](http://sigir.org/sigir2016/), [WWW 2016](http://www2016.ca/), [WSDM 2016](http://www.wsdm-conference.org/2016/), [IJCAI 2016](http://ijcai-16.org/), [ACL 2016](http://acl2016.org/), [EMNLP 2016](http://www.emnlp2016.net/), [CIKM 2015](http://www.cikm-2015.org/), [SIGIR 2015](http://www.sigir2015.org/), [KDD 2015](http://www.kdd.org/kdd2015/), [IUI 2015](http://iui.acm.org/2015/), [WWW 2015](http://www.www2015.it/), [AIRS 2015](http://airs-conference.org/2015/), [CIKM 2014](http://cikm2014.fudan.edu.cn/), [SIGIR 2014](http://sigir.org/sigir2014/), [WSDM 2014](http://www.wsdm-conference.org/2014/), [AAAI 2014](http://www.aaai.org/Conferences/AAAI/aaai14.php), [IEEE ICCC 2014 SNBD](http://www.ieee-iccc.org/index.html), [ICWSM 2013](http://www.icwsm.org/2013/index.php), [EMNLP-CoNLL 2012](http://emnlp-conll2012.unige.ch/)
+  [CIKM 2017](http://cikm2017.org/), [SIGIR 2017](http://sigir.org/sigir2017/),[WSDM 2017](http://www.wsdm-conference.org/2017/), [WWW 2017](http://www.www2017.com.au/), [CIKM 2016](http://cikm2016.cs.iupui.edu/), [KDD 2016](http://www.kdd.org/kdd2016/), [SIGIR 2016](http://sigir.org/sigir2016/), [WWW 2016](http://www2016.ca/), [WSDM 2016](http://www.wsdm-conference.org/2016/), [IJCAI 2016](http://ijcai-16.org/), [ACL 2016](http://acl2016.org/), [EMNLP 2016](http://www.emnlp2016.net/), [CIKM 2015](http://www.cikm-2015.org/), [SIGIR 2015](http://www.sigir2015.org/), [KDD 2015](http://www.kdd.org/kdd2015/), [IUI 2015](http://iui.acm.org/2015/), [WWW 2015](http://www.www2015.it/), [AIRS 2015](http://airs-conference.org/2015/), [CIKM 2014](http://cikm2014.fudan.edu.cn/), [SIGIR 2014](http://sigir.org/sigir2014/), [WSDM 2014](http://www.wsdm-conference.org/2014/), [AAAI 2014](http://www.aaai.org/Conferences/AAAI/aaai14.php), [IEEE ICCC 2014 SNBD](http://www.ieee-iccc.org/index.html), [ICWSM 2013](http://www.icwsm.org/2013/index.php), [EMNLP-CoNLL 2012](http://emnlp-conll2012.unige.ch/)
 * 国际期刊审稿：<br/>
   [Data Mining and Knowledge Discovery](http://www.springer.com/computer/database+management+&+information+retrieval/journal/10618)<br/>
   [ACM Transactions on Knowledge Discovery from Data](http://tkdd.acm.org/)<br/>
@@ -85,6 +85,7 @@ title: 关于
 
 ## 大众文章
 
+* [机器学习在电商领域的应用](http://weibo.com/ttarticle/p/show?id=2309404111989793265923)
 * [知人知面需知心——论人工智能技术在推荐系统中的应用](http://geek.csdn.net/news/detail/112318)
 * [WSDM 2017 精选论文解读](http://geek.csdn.net/news/detail/172475)
 * [2016年 AI技术发展综述](http://geek.csdn.net/news/detail/132057)

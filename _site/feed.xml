@@ -5,9 +5,45 @@
     <description>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
     <link>http://column.hongliangjie.com/</link>
     <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 10 Jun 2017 14:36:07 -0400</pubDate>
-    <lastBuildDate>Sat, 10 Jun 2017 14:36:07 -0400</lastBuildDate>
+    <pubDate>Sun, 11 Jun 2017 21:18:57 -0400</pubDate>
+    <lastBuildDate>Sun, 11 Jun 2017 21:18:57 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>AIStats 2017文章精读（二）</title>
+        <description>&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Less than a Single Pass: Stochastically Controlled Stochastic Gradient Method
+进行一个简单的分析解读。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/lei17a/lei17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这篇文章的作者们来自加州大学伯克利分校。作者之一的Michael Jordan是机器学习的权威学者之一，曾经在概率图模型的时期有突出的贡献。&lt;/p&gt;
+
+&lt;p&gt;这篇文章主要还是讨论的大规模Convex优化的场景。在这个方面，已经有了相当丰富的学术成果。那么，这篇文章的主要贡献在什么地方呢？这篇文章主要想在算法的准确性和算法的通讯陈本上下文章。&lt;/p&gt;
+
+&lt;p&gt;具体说来，这篇文章提出的算法是想在Stochastic Variance Reduced Gradient（SVRG）上进行更改。SVRG的主要特征就是利用全部数据的Gradient来对SGD的Variance进行控制。因此SVRG的计算成本（Computation Cost）是O((n+m)T)，这里n是数据的总数，m是Step-size，而T是论数。SVRG的通讯陈本也是这么多。这里面的主要陈本在于每一轮都需要对全局数据进行访问。&lt;/p&gt;
+
+&lt;p&gt;作者们提出了一种叫Stochastically Controlled Stochastic Gradient（SCSG）的新算法。总的来说，就是对SVRG进行了两个改进：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;每一轮并不用全局的数据进行Gradient的计算，而是从一个全局的子集Batch中估计Gradient。子集的大小是B。&lt;/li&gt;
+  &lt;li&gt;每一轮的SGD的更新数目也不是一个定值，而是一个和之前那个子集大小有关系，基于Geometric Distribution的随机数。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;剩下的更新步骤和SVRG一模一样。&lt;/p&gt;
+
+&lt;p&gt;然而，这样的改变之后，新算法的计算陈本成为了O((B+N)T)。也就是说，这是一个不依赖全局数据量大小的数值。而通过分析，作者们也比较了SCSG的通讯陈本和一些原本就为了通讯陈本而设计的算法，在很多情况下，SCSG的通讯陈本更优。&lt;/p&gt;
+
+&lt;p&gt;作者们通过MNIST数据集的实验发现，SCSG达到相同的准确度，需要比SVRG更少的轮数，和每一轮更少的数据。可以说，这个算法可能会成为SVRG的简单替代。&lt;/p&gt;
+
+&lt;p&gt;对于大规模机器学习有兴趣的读者可以泛读。&lt;/p&gt;
+</description>
+        <pubDate>Sun, 11 Jun 2017 00:00:00 -0400</pubDate>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</guid>
+        
+        
+        <category>读论文</category>
+        
+      </item>
     
       <item>
         <title>AIStats 2017文章精读（一）</title>
@@ -368,44 +404,6 @@
         
         
         <category>管理</category>
-        
-      </item>
-    
-      <item>
-        <title>数据科学发展的一些感悟</title>
-        <description>&lt;p&gt;上个星期，我参加了位于San Diego召开的一个工业界数据科学会议Predictive Analytics Innovation Summit。在这里分享一些参会后对于数据科学在工业界发展状况及前景的感悟。&lt;/p&gt;
-
-&lt;h2 id=&quot;感悟一数据科学的思潮席卷各个行业&quot;&gt;感悟一：数据科学的思潮席卷各个行业&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/san_diego.jpg&quot; alt=&quot;&quot; /&gt;
-参加会议的代表来自各行各业，有互联网公司的数据佼佼者诸如Google、Bing、Netflix、Etsy（我所代表的公司）、Groupon；也有传统的金融产业公司Bloomberg、American Express、Visa；电信公司Verizon；保险公司Zurich；还有更传统的生产行业公司Bosch、Honeywell、Ford、GE Digital；以及一些你可能通常意义下不会认为是数据公司的代表诸如Weather.Com。除了这些有演讲内容的公司以外，还有不少医药行业的公司包括FDA的代表，以及很多其他行业的与会人员。总之从整体上看，对于数据科学的热衷已经席卷了各行各业。每一个行业都开设了诸如Chief Data Scientist、VP of Data Science的高端职位以及开始招聘各类数据科学家（Data Scientist）团队。每一个行业都在介绍自己是如何希望能够建立“数据驱动”（Data-Driven）的文化以及自己如何从数据中获益。每一个行业又是那么急切想从互联网公司、特别是已经在数据的使用和文化上有所建树的公司上得到启发和灵感。&lt;/p&gt;
-
-&lt;h2 id=&quot;感悟二数据科学到底是什么大家并不清楚&quot;&gt;感悟二：数据科学到底是什么，大家并不清楚&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/san_diego2.jpg&quot; alt=&quot;&quot; /&gt;
-虽然数据科学的浪潮已经深入各个行业，但大家对于到底什么是“数据科学”，甚至什么是“机器学习”、“深度学习”抑或“人工智能”，其实都有一种“雾里看花”的感觉。很多公司其实并不太清楚这些感念之间的区别或者异同。比较传统的一些公司，甚至是把以前存在过的Business Analysis或者是Business Intelligence部门直接转换成为数据科学部门，感觉有一种为了抓住这个目前的浪潮不惜偷梁换柱的意味。而且究竟数据科学，甚至是人工智能的标签，能为各个企业带来什么根本的变化，大家其实可能心里有不太一样的期待，或者是并没有真正去了解自己的期望究竟是什么。比如有些企业其实只是把数据科学认知为简单的数据分析、有的企业其实也没有太多太大的数据需要真正复杂的数据科学流程和高端的数据科学人才。&lt;/p&gt;
-
-&lt;h2 id=&quot;感悟三数据科学人才极度匮乏&quot;&gt;感悟三：数据科学人才极度匮乏&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/bootcamp.jpg&quot; alt=&quot;&quot; /&gt;
-尽管不同行业的各个企业可能还没有搞清楚数据科学到底意味着什么，但有一个共同的趋势，那就是各个行业的企业都发现了相关人才的极度匮乏。一方面，因为大家对数据科学的不确定性造成了其实各个企业并不是特别清楚自己需要的人才究竟是什么样的，也就造成了无法从现在的人才市场里清晰分别优质人才。另一方面，相对于几年前的“数据分析”人才而言，那时候公司还比较能够清晰得从统计背景的候选人中挑选，时至今日，数据科学或者人工智能人才需要全方面的背景，这使得入行门槛急剧增加。于是，目前造成的短期困境就是很多企业有大量职位空缺，但是从候选人池中很难找到如意的从事数据科学的相关人选。&lt;/p&gt;
-
-&lt;h2 id=&quot;感悟四公司之间的巨大鸿沟&quot;&gt;感悟四：公司之间的巨大鸿沟&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/gap.jpg&quot; alt=&quot;&quot; /&gt;
-因为对于数据科学认识的匮乏和以及对于公司如何来利用数据科学的混沌，以及由于人才的匮乏这两个显著的特征所带来的另外一个目前一个比较明显的现象就是，传统行业或者互联网的中小企业和目前利用数据科学的佼佼者甚至是人工智能的领军企业只有有非常大的鸿沟。从数据驱动文化上，到如何利用数据上，到具体的技术链条上，到人才的管理和挖掘上，领先的企业已经把大部分的其他玩家给远远抛在脑后。行业与行业之间的鸿沟也非常明显。互联网企业已经建立起了一整套的数据工具、规范和流程以及人才池的培养，紧跟其后的是金融企业（这也是最近一段时间以来大家所宣扬的FinTech带来的结果），然后其他大部分行业都要远远落后。这里面也需要注意的是，从各行各业的对于数据的需求来看，并不是盲目地照搬互联网企业的所谓的成功经验就能够轻而易举地搭上这个数据及智能的快车。其实这也可能表明，很可能没有一个普世的数据策略，每个行业需要摸索最适合自己发展的行业数据科学文化和标准。&lt;/p&gt;
-
-&lt;h2 id=&quot;感悟五数据浪潮方兴未艾&quot;&gt;感悟五：数据浪潮方兴未艾&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/wave.jpg&quot; alt=&quot;&quot; /&gt;
-如果我们长期只看少部分互联网尖端企业而言，那么我们很容易陷入当前阶段已经达到人工智能高峰的假象。当然，也不能说这就是假象，只是说少部分企业在他们所在的领域有着巨大的优势。但是如果我们放眼所有行业而言，目前可以说还是数据科学方兴未艾的阶段，有着大量的机会。对于互联网从业人员来说，如何能够从自身的一些优势出发，走到其他行业中去，恐怕是接下来一个阶段大家需要思考的问题。&lt;/p&gt;
-</description>
-        <pubDate>Thu, 02 Mar 2017 00:00:00 -0500</pubDate>
-        <link>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2017/03/02/san_diego/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2017/03/02/san_diego/</guid>
-        
-        
-        <category>数据科学</category>
         
       </item>
     

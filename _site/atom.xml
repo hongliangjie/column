@@ -4,7 +4,7 @@
  <title>期望最大化（洪亮劼的专栏）</title>
  <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
  <link href="http://column.hongliangjie.com/"/>
- <updated>2017-06-12T21:24:15-04:00</updated>
+ <updated>2017-06-12T22:19:02-04:00</updated>
  <id>http://column.hongliangjie.com</id>
  <author>
    <name>洪亮劼</name>
@@ -19,8 +19,9 @@
    <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Decentralized Collaborative Learning of Personalized Models over Networks进行一个简单的分析解读。&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/vanhaesebrouck17a/vanhaesebrouck17a.pdf&quot;&gt;全文PDF&lt;/a&gt;
-&lt;a href=&quot;http://proceedings.mlr.press/v54/vanhaesebrouck17a/vanhaesebrouck17a-supp.pdf&quot;&gt;文章附加信息&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/vanhaesebrouck17a/vanhaesebrouck17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/vanhaesebrouck17a/vanhaesebrouck17a-supp.pdf&quot;&gt;文章附加信息&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;这篇文章的作者们来自法国的INRIA和里尔大学（Universite de Lille）。文章讨论了一个非常实用也有广泛应用的问题，那就是所谓的Decentralized Collaborative Learning的问题，或者是说如何学习有效的个人模型（Personalized Models）的问题。&lt;/p&gt;
 

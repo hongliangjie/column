@@ -7,6 +7,7 @@ categories: 读论文
 我们在这里对[AIStats 2017](http://www.aistats.org/)文章Decentralized Collaborative Learning of Personalized Models over Networks进行一个简单的分析解读。
 
 [全文PDF](http://proceedings.mlr.press/v54/vanhaesebrouck17a/vanhaesebrouck17a.pdf)
+
 [文章附加信息](http://proceedings.mlr.press/v54/vanhaesebrouck17a/vanhaesebrouck17a-supp.pdf)
 
 这篇文章的作者们来自法国的INRIA和里尔大学（Universite de Lille）。文章讨论了一个非常实用也有广泛应用的问题，那就是所谓的Decentralized Collaborative Learning的问题，或者是说如何学习有效的个人模型（Personalized Models）的问题。

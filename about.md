@@ -87,6 +87,7 @@ title: 关于
 
 * [机器学习在电商领域的应用](http://weibo.com/ttarticle/p/show?id=2309404111989793265923)
 * [知人知面需知心——论人工智能技术在推荐系统中的应用](http://geek.csdn.net/news/detail/112318)
+* [WWW 2017 精选论文](http://geek.csdn.net/news/detail/202634)
 * [WSDM 2017 精选论文解读](http://geek.csdn.net/news/detail/172475)
 * [2016年 AI技术发展综述](http://geek.csdn.net/news/detail/132057)
 * [NIPS 2016 十大机器学习精选论文](http://geek.csdn.net/news/detail/189766)
@@ -97,6 +98,7 @@ title: 关于
 
 ## 代表性演讲
 
+* *GB-CENT* 于Data Science PopUp, 美国纽约， 2017年6月
 * *GB-CENT* 于Machine Learning Innovation Summit，美国旧金山，2017年6月
 * *GB-CENT* 于Lehigh University，美国宾夕法尼亚州，2017年4月
 * *GB-CENT* 于Global Predictive Analytics Conference，美国圣塔克拉拉，2017年3月

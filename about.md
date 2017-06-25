@@ -98,10 +98,11 @@ title: 关于
 
 ## 代表性演讲
 
-* *GB-CENT* 于Data Science PopUp, 美国纽约， 2017年6月
-* *GB-CENT* 于Machine Learning Innovation Summit，美国旧金山，2017年6月
-* *GB-CENT* 于Lehigh University，美国宾夕法尼亚州，2017年4月
-* *GB-CENT* 于Global Predictive Analytics Conference，美国圣塔克拉拉，2017年3月
-* *GB-CENT* 于Predictive Analytics Innovation Summit，美国圣地亚哥，2017年2月
-* *Personalization@Yahoo* 于小红书, 中国上海, 2016年六月。
-* *Beyond Clicks: Dwell Time in Personalization* 于Twitter, 美国旧金山, 2015年六月.
+* **GB-CENT** 于中科院, 中国北京， 2017年6月
+* **GB-CENT** 于Data Science PopUp, 美国纽约， 2017年6月
+* **GB-CENT** 于Machine Learning Innovation Summit，美国旧金山，2017年6月
+* **GB-CENT** 于Lehigh University，美国宾夕法尼亚州，2017年4月
+* **GB-CENT** 于Global Predictive Analytics Conference，美国圣塔克拉拉，2017年3月
+* **GB-CENT** 于Predictive Analytics Innovation Summit，美国圣地亚哥，2017年2月
+* **Personalization@Yahoo** 于小红书, 中国上海, 2016年六月。
+* **Beyond Clicks: Dwell Time in Personalization** 于Twitter, 美国旧金山, 2015年六月.

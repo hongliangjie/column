@@ -3,10 +3,10 @@
   <channel>
     <title>期望最大化（洪亮劼的专栏）</title>
     <description>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Jul 2017 21:42:46 -0400</pubDate>
-    <lastBuildDate>Tue, 11 Jul 2017 21:42:46 -0400</lastBuildDate>
+    <link>http://column.hongliangjie.com/</link>
+    <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 11 Jul 2017 21:45:05 -0400</pubDate>
+    <lastBuildDate>Tue, 11 Jul 2017 21:45:05 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -64,8 +64,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 09 Jul 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</guid>
         
         
         <category>读论文</category>
@@ -98,8 +98,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 这篇文章对于大规模机器学习有兴趣的读者可以精读。&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</guid>
         
         
         <category>读论文</category>
@@ -137,8 +137,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;p&gt;这篇文章的基本思路和相关研究值得机器学习实践者学习。&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</guid>
         
         
         <category>读论文</category>
@@ -170,8 +170,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;p&gt;不过这篇文章提出的Model Propagation的算法应该说是直观可行，很适合对大规模机器学习有兴趣的学者和实验者精读。&lt;/p&gt;
 </description>
         <pubDate>Mon, 12 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</guid>
         
         
         <category>读论文</category>
@@ -206,8 +206,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;p&gt;对于大规模机器学习有兴趣的读者可以泛读。&lt;/p&gt;
 </description>
         <pubDate>Sun, 11 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</guid>
         
         
         <category>读论文</category>
@@ -237,8 +237,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;p&gt;这篇文章适合对推荐系统的Exploitation和Exploration有研究的学者泛读。&lt;/p&gt;
 </description>
         <pubDate>Sat, 10 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/</guid>
         
         
         <category>读论文</category>
@@ -266,8 +266,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;p&gt;这篇文章的具体技术比较繁复，很难看出能够直接在这个基础上再扩展算法。然而这篇文章提出的问题的确比较新颖，也是电商或者网络运营商（比如Uber、DiDi）等经常遇到的问题，所以，值得对相关技术有兴趣的读者泛读。&lt;/p&gt;
 </description>
         <pubDate>Sun, 30 Apr 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice/</guid>
         
         
         <category>读论文</category>
@@ -300,8 +300,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;p&gt;这篇文章对于研究如何用深度学习来做文档查询或者搜索的研究者和实践者而言，有不小的借鉴意义，值得精读。&lt;/p&gt;
 </description>
         <pubDate>Fri, 28 Apr 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search/</guid>
         
         
         <category>读论文</category>
@@ -335,8 +335,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;p&gt;这篇文章提出的方法因为其算法复杂性，很难应用在生产中。而且要想在这个模型上做进一步的扩展，只能使得算法的复杂性进一步提升。这篇文章适合对于推荐系统有研究的学者和实践者泛读。&lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Apr 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/</guid>
         
         
         <category>读论文</category>
@@ -372,8 +372,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;p&gt;这篇文章值得对推荐系统有研究的学者和实践者精读。&lt;/p&gt;
 </description>
         <pubDate>Wed, 26 Apr 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/</guid>
         
         
         <category>读论文</category>

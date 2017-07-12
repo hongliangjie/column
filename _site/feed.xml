@@ -3,11 +3,74 @@
   <channel>
     <title>期望最大化（洪亮劼的专栏）</title>
     <description>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
-    <link>http://column.hongliangjie.com/</link>
-    <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 25 Jun 2017 09:44:55 +0800</pubDate>
-    <lastBuildDate>Sun, 25 Jun 2017 09:44:55 +0800</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 11 Jul 2017 21:42:46 -0400</pubDate>
+    <lastBuildDate>Tue, 11 Jul 2017 21:42:46 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>Google Scholar 2017学术指标之人工智能篇</title>
+        <description>&lt;p&gt;近日，Google Scholar发布了一个&lt;a href=&quot;https://scholar.googleblog.com/2017/07/2017-scholar-metrics-released.html&quot;&gt;2017年的“学术指标”&lt;/a&gt;，主要是对各个学科的众多领域的学术刊物（包括期刊、会议论文集以及在线论文出版集）做出了排名。这个排名主要是依靠&lt;a href=&quot;https://en.wikipedia.org/wiki/H-index&quot;&gt;H5-Index&lt;/a&gt;这一指标。我们在这篇文章里，对人工智能相关的领域学术出版刊物的排名进行一个简单的分析和导读。&lt;/p&gt;
+
+&lt;h2 id=&quot;人工智能主类&quot;&gt;人工智能主类&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/google_ai.png&quot; alt=&quot;&quot; /&gt;
+因为收率了在线论文出版集（主要是ArXiv），借着深度学习（Deep Learning）的春风，ArXiv的Learning子类成为了目前最有影响力的出版集。当然，考虑到目前在深度学习以及更加广阔的机器学习领域已经有了把论文的某一个版本率先发表到ArXiv的习惯，Learning子类的实际影响力可能要打一些折扣。不过，不可否认的则是这样的发布学术结果的方式的确对计算机科学（Computer Science）原本的发表模式有了很深远的挑战和影响。
+&lt;img src=&quot;/assets/google_ai_learning.png&quot; alt=&quot;&quot; /&gt;
+有意思的是，尽管引用度排名靠前的大多数文章最终都在传统的会议或者期刊上面发表，排名第四的&lt;a href=&quot;https://arxiv.org/abs/1212.5701&quot;&gt;ADADELTA: An Adaptive Learning Rate Method&lt;/a&gt;（应用数超过900）则并没有在任何传统刊物上有出版。还有引用度超过500的&lt;a href=&quot;https://arxiv.org/abs/1312.5602&quot;&gt;Playing Atari with Deep Reinforcement Learning&lt;/a&gt;也没有在传统的刊物上发表出版。这些都显示了ArXiv作为当前出版渠道的重要补充的这一作用。我们再来看一下传统刊物中排名第一的NIPS的排名靠前的文章：
+&lt;img src=&quot;/assets/google_ai_nips.png&quot; alt=&quot;&quot; /&gt;
+首先我们发现的是，排名靠前的无一例外地都是和深度学习有密切联系的文章。排名第一的则是Hinton及其学生提出的&lt;a href=&quot;http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks&quot;&gt;AlexNet&lt;/a&gt;的这一开创性的研究成果，一举奠定了深度学习在计算机视觉领域的主导地位的历史性文章。排名第二的则是提出目前在NLP等领域广泛使用的&lt;a href=&quot;http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality&quot;&gt;Word2Vec&lt;/a&gt;的论文，也可以说实至名归。总之，NIPS排名靠前的论文还是非常有含金量的标志性研究成果。和NIPS齐名的机器学习会议ICML也在排名上位列第4。
+&lt;img src=&quot;/assets/google_ai_icml.png&quot; alt=&quot;&quot; /&gt;
+和NIPS类似的也是排位靠前的文章基本上被深度学习相关的研究成果所把持。相比之下，排位稍微靠后的期刊&lt;a href=&quot;http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385&quot;&gt;IEEE Transactions on Neural Networks and Learning Systems&lt;/a&gt;以及&lt;a href=&quot;http://www.jmlr.org/&quot;&gt;The Journal of Machine Learning Research&lt;/a&gt;则多了不少机器学习其他领域的研究成果。
+&lt;img src=&quot;/assets/google_ai_jmlr.png&quot; alt=&quot;&quot; /&gt;
+比如，最近几年又重新红火起来的大规模Bayesian Inference的代表作&lt;a href=&quot;http://www.jmlr.org/papers/volume14/hoffman13a/hoffman13a.pdf&quot;&gt;Stochastic variational inference&lt;/a&gt;以及开创了Moment Matching旧瓶装新酒的&lt;a href=&quot;http://www.jmlr.org/papers/volume15/anandkumar14b/anandkumar14b.pdf&quot;&gt;Tensor decompositions for learning latent variable models&lt;/a&gt;也都名列前茅。通过我们这里简单的分析和总结，不难发现最近五年AI界的成果还是集中在深度学习界，而且是传统刊物NIPS和ICML都成为了推动深度学习发展的重要领军会议。而ArXiv则在这个过程中发挥着不可替代的辅助性作用。&lt;/p&gt;
+
+&lt;h2 id=&quot;计算机视觉&quot;&gt;计算机视觉&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/google_cv.png&quot; alt=&quot;&quot; /&gt;
+我们看了人工智能主类之后，我们来关注一下几个人工智能的分类的动态。那么要说最近几年发展得最迅猛的人工智能分支，无疑要数计算机视觉技术。不过，相比于人工智能主类的好几大主流会刊的情况，在计算机视觉领域，目前的格局依然是&lt;a href=&quot;https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition&quot;&gt;CVPR&lt;/a&gt;和&lt;a href=&quot;http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34&quot;&gt;PAMI&lt;/a&gt;独秀的情况。而ArXiv的补充作用在这里也显示得很明显。
+&lt;img src=&quot;/assets/google_cv_cvpr.png&quot; alt=&quot;&quot; /&gt;
+我们来看看CVPR的这几年的有影响力的工作，无疑都和ImageNet的主要进步联系起来。比如排名第一的&lt;a href=&quot;http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf&quot;&gt;Going Deeper With Convolutions&lt;/a&gt;所代表的GoogleNet，以及排名第二的&lt;a href=&quot;http://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf&quot;&gt;Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation&lt;/a&gt;所提出的R-CNN和排名第三的&lt;a href=&quot;http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf&quot;&gt;Deep Residual Learning for Image Recognition&lt;/a&gt;所提出的ResNet。这些都是最近几年借助大幅度提高ImageNet的效果而在CV领域获得重点关注的文章。&lt;/p&gt;
+
+&lt;h2 id=&quot;计算语言学&quot;&gt;计算语言学&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/google_nlp.png&quot; alt=&quot;&quot; /&gt;
+人工智能在计算语言学的应用主要体现在自然语言处理（NLP）等领域。借着深度学习在NLP领域的影响和发展，ArXiv成为一个主要的文章发表场所似乎也是顺利成长的事情了。和人工智能主类相似的情况是，在ArXiv上面发布的重要文章最后都在相应的会议或者期刊有所发表，唯一例外的是有3600多引用的&lt;a href=&quot;https://arxiv.org/abs/1301.3781&quot;&gt;Efficient Estimation of Word Representations in Vector Space&lt;/a&gt;。从分布的情况上看，过去几年的大多数影响力大的文章主要分为在Word2Vec方面做文章，以及在Machine Translation或者Sequence Model方面做文章。排名第二第三的依然是NLP领域传统的旗舰会议ACL和EMNLP。
+&lt;img src=&quot;/assets/google_nlp_acl.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/google_nlp_emnlp.png&quot; alt=&quot;&quot; /&gt;
+我们可以看到深度学习，特别是学习文字的Embedding（包括字、文章段落等等）占据了很重要的一个研究方向。另外一个重要的研究方向就是机器翻译，特别是如何应用深度学习在这方面的成果。需要特别注意的是，斯坦福大学&lt;a href=&quot;https://nlp.stanford.edu/manning/&quot;&gt;Christopher Manning&lt;/a&gt;的研究组最近几年可以说是成果颇丰。高排名的好几篇ACL以及EMNLP都看得见他的身影。&lt;/p&gt;
+
+&lt;h2 id=&quot;数据挖掘和信息系统&quot;&gt;数据挖掘和信息系统&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/google_dm_1.png&quot; alt=&quot;&quot; /&gt;
+&lt;img src=&quot;/assets/google_dm_2.png&quot; alt=&quot;&quot; /&gt;
+Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp; Analysis”和“Database &amp;amp; Information Systems”。然而在实际中这两类的文章和成果经常交叉出现，于是我们这里就一起讨论这两个分类。一个比较有意思的情况就是，ArXiv还并没有成为这个领域的主要发布工具。传统的&lt;a href=&quot;http://www.kdd.org/&quot;&gt;KDD&lt;/a&gt;以及&lt;a href=&quot;https://en.wikipedia.org/wiki/International_World_Wide_Web_Conference&quot;&gt;WWW&lt;/a&gt;依然占据着重要的成果发布平台的地位。我们来看一下KDD的最新经典论文：
+&lt;img src=&quot;/assets/google_dm_kdd.png&quot; alt=&quot;&quot; /&gt;
+可以说是涉及范围十分广泛。从Social Network Analysis到Time Series Analysis再到一般性质的Data Mining的算法和工具，KDD还是展现了这个发布平台的包容性和多样性。其中排名第二的&lt;a href=&quot;http://dl.acm.org/citation.cfm?id=2623623&quot;&gt;Knowledge vault: a web-scale approach to probabilistic knowledge fusion&lt;/a&gt;，这一讲述Google的知识图谱的技术论文和在2016年才发表的&lt;a href=&quot;http://dl.acm.org/citation.cfm?id=2939785&quot;&gt;XGBoost: A Scalable Tree Boosting System&lt;/a&gt;在短时间内吸引了不少相关学者的关注。下面我们来看看WWW的情况：
+&lt;img src=&quot;/assets/google_dm_www.png&quot; alt=&quot;&quot; /&gt;
+可以看出过去5年来，关于Social Media（以Twitter为主）和关于Social Network Analysis的相关研究还是如火如荼。而纵观KDD和WWW都可以看到斯坦福大学的明星学者&lt;a href=&quot;https://cs.stanford.edu/people/jure/&quot;&gt;Jure Leskovec&lt;/a&gt;的强大存在。&lt;/p&gt;
+
+&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;我们仅仅是在这里总结了和人工智能有关的几个分类的趋势。总体说来有这么几个特点：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;人工智能和机器学习的核心领域目前基本上完全围绕着深度学习展开。&lt;/li&gt;
+  &lt;li&gt;计算机视觉和自然语言处理目前也是和深度学习有很强的联系。&lt;/li&gt;
+  &lt;li&gt;数据挖掘相关的研究依然非常多样化。&lt;/li&gt;
+  &lt;li&gt;ArXiv已经成为了非常强有力的辅助性研究成果发布平台。然而有影响力的文章最终还是在核心刊物上发表。&lt;/li&gt;
+  &lt;li&gt;传统的NIPS、ICML、CVPR、ACL、EMNLP、KDD和WWW依然是人工智能的核心研究成果发布刊物。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Sun, 09 Jul 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</guid>
+        
+        
+        <category>读论文</category>
+        
+      </item>
     
       <item>
         <title>AIStats 2017文章精读（五）</title>
@@ -34,9 +97,9 @@
 &lt;p&gt;虽然这篇文章提出的算法简单可行，并且也有不错的实验结果。但是比较令人遗憾的是，作者们并没有给出更多的分析，证明这样做的确可以让参数达到全局最优或者局部最优。
 这篇文章对于大规模机器学习有兴趣的读者可以精读。&lt;/p&gt;
 </description>
-        <pubDate>Sun, 18 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</guid>
+        <pubDate>Sun, 18 Jun 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</guid>
         
         
         <category>读论文</category>
@@ -73,9 +136,9 @@
 
 &lt;p&gt;这篇文章的基本思路和相关研究值得机器学习实践者学习。&lt;/p&gt;
 </description>
-        <pubDate>Sat, 17 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</guid>
+        <pubDate>Sat, 17 Jun 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</guid>
         
         
         <category>读论文</category>
@@ -106,9 +169,9 @@
 
 &lt;p&gt;不过这篇文章提出的Model Propagation的算法应该说是直观可行，很适合对大规模机器学习有兴趣的学者和实验者精读。&lt;/p&gt;
 </description>
-        <pubDate>Mon, 12 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</guid>
+        <pubDate>Mon, 12 Jun 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</guid>
         
         
         <category>读论文</category>
@@ -142,9 +205,9 @@
 
 &lt;p&gt;对于大规模机器学习有兴趣的读者可以泛读。&lt;/p&gt;
 </description>
-        <pubDate>Sun, 11 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</guid>
+        <pubDate>Sun, 11 Jun 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</guid>
         
         
         <category>读论文</category>
@@ -173,9 +236,9 @@
 
 &lt;p&gt;这篇文章适合对推荐系统的Exploitation和Exploration有研究的学者泛读。&lt;/p&gt;
 </description>
-        <pubDate>Sat, 10 Jun 2017 00:00:00 +0800</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/</guid>
+        <pubDate>Sat, 10 Jun 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/</guid>
         
         
         <category>读论文</category>
@@ -202,9 +265,9 @@
 
 &lt;p&gt;这篇文章的具体技术比较繁复，很难看出能够直接在这个基础上再扩展算法。然而这篇文章提出的问题的确比较新颖，也是电商或者网络运营商（比如Uber、DiDi）等经常遇到的问题，所以，值得对相关技术有兴趣的读者泛读。&lt;/p&gt;
 </description>
-        <pubDate>Sun, 30 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice/</guid>
+        <pubDate>Sun, 30 Apr 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice/</guid>
         
         
         <category>读论文</category>
@@ -236,9 +299,9 @@
 
 &lt;p&gt;这篇文章对于研究如何用深度学习来做文档查询或者搜索的研究者和实践者而言，有不小的借鉴意义，值得精读。&lt;/p&gt;
 </description>
-        <pubDate>Fri, 28 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search/</guid>
+        <pubDate>Fri, 28 Apr 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search/</guid>
         
         
         <category>读论文</category>
@@ -271,9 +334,9 @@
 
 &lt;p&gt;这篇文章提出的方法因为其算法复杂性，很难应用在生产中。而且要想在这个模型上做进一步的扩展，只能使得算法的复杂性进一步提升。这篇文章适合对于推荐系统有研究的学者和实践者泛读。&lt;/p&gt;
 </description>
-        <pubDate>Thu, 27 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/</guid>
+        <pubDate>Thu, 27 Apr 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/</guid>
         
         
         <category>读论文</category>
@@ -308,38 +371,9 @@
 
 &lt;p&gt;这篇文章值得对推荐系统有研究的学者和实践者精读。&lt;/p&gt;
 </description>
-        <pubDate>Wed, 26 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/</guid>
-        
-        
-        <category>读论文</category>
-        
-      </item>
-    
-      <item>
-        <title>WWW 2017文章精读（三）</title>
-        <description>&lt;p&gt;我们在这里对WWW 2017文章Usage Patterns and the Economics of the Public Cloud进行一个简单的分析解读。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://vita.mcafee.cc/PDF/EconPublicCloud.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;这篇文章的作者群来自微软研究院和Uber。作者之一的R. Preston McAfee是著名的经济学家，曾在雅虎担任副总裁和首席经济学家，2012年以后到Google的Strategic Technology担任总监，2014年之后到微软担任首席经济学家。这篇文章是探讨现在第三方云计算平台（比如Amazon的AWS或是微软的Azure）是否能采用动态价格（Dynamic Pricing）的计价模式，特别是在所谓的“巅峰负载”（Peak-Load）的时候。&lt;/p&gt;
-
-&lt;p&gt;首先，这篇文章对“云服务”模式进行了一个简单的介绍。这部分内容还是有很强的科普意义。这里面有一点可能比较容易忽视的科普点是，客户公司（Firm）需要对服务和软件进行重写才能使用云服务商提供的Auto-Scaling等方便的服务。如果客户公司仅仅是简单得把运行在传统数据中心上的服务给部署到云服务商的设施上面的话，则很难能够真正利用云服务的“易伸缩性”（Elastic）。&lt;/p&gt;
-
-&lt;p&gt;紧接着，作者们对于其他工业怎么采用动态价格进行了简单的介绍。动态价格有两个条件，那就是Capacity在短期内是恒定的（Fixed）并且恒定的一部分陈本（Cost）是总成本不小的一部分。当然这都是对于服务商而言。目前我们对于动态价格的主要认识，来源于电力、航空和酒店这些行业。云服务如果按照刚才那个条件来说，是具备动态价格的一些先决条件的。因此，作者们认为应该对云服务的供需进行研究来看如何设计动态价格的策略，也就是说，作者们想看一看现在的云服务的使用率是不是不够优化，为动态服务提供了可操作的空间。&lt;/p&gt;
-
-&lt;p&gt;这篇文章能够被WWW录取的一个重要原因可能是因为结果比较出人意料。作者们通过对微软的云服务数据（虽然在文中没有明说）进行分析得出，当前的云服务使用率（主要是从VM这个角度来说）的差别度（Variation） ，不管是看单个客户还是整体数据中心这个级别，都在5%以下。意思就是说，从云服务商这个整体来说，并没有出现特别大的服务需求起落。作者们的确从单个客户的数据中看到了使用率的震荡（Fluctuation），但是在云服务商这个层级，这样的震荡随着不同的客户数据，从而达到了整体“抵消”（Average Out）的效果。&lt;/p&gt;
-
-&lt;p&gt;作者们认为这样的现实数据为现在的计费模型，也就是恒定的价格（Static Price）提供了一定的基础。同时，目前的可以预测的使用率也为服务商充分利用资源提供了保证。这一点与电力系统不同，电力系统为在巅峰时刻的用电一般必须调用额外的设备。当然，作者们也认为这样的使用数据，以及计费模型，是现在多数客户都简单把原来的软件系统给搬运到云计算平台上，而并没有充分利用云服务的Auto-Scaling有关系。&lt;/p&gt;
-
-&lt;p&gt;为了对以后的可能性进行探索，作者们又从CPU的使用率这个级别进行分析。与VM的使用率不同的是，CPU的使用率看出了比较大的幅度。平均的最高CPU使用率比巅峰时期CPU使用率要小40%左右。因此，如果服务商能够通过CPU使用率来进行计价，或者VM资源能够在不使用的时候自动关闭，则为动态价格提供了一种可能性。作者们的与测试，这可能是未来的一种模式。&lt;/p&gt;
-
-&lt;p&gt;总体来说，这篇文章算是科普性质的一篇文章。对于动态价格，以及云服务商的计价模式有兴趣的读者可以泛读本文。&lt;/p&gt;
-</description>
-        <pubDate>Wed, 19 Apr 2017 00:00:00 +0800</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/19/www2017-cloud/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/19/www2017-cloud/</guid>
+        <pubDate>Wed, 26 Apr 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/</guid>
         
         
         <category>读论文</category>

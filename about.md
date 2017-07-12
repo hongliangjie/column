@@ -11,7 +11,7 @@ title: 关于
 
 在加入Etsy之前，我于2013年到2016年在[雅虎研究院（Yahoo Research）](https://research.yahoo.com/)工作，历任**科学家**、**资深科学家**和**高级研发经理**职位。在雅虎研究院工作期间，我亲自领导并参与了多项大数据大规模机器学习系统的研发工作，包括雅虎首页千万级用户个性化推荐系统、雅虎移动搜索千万级用户搜索优化系统以及大型个性化广告系统，对如何在产品中使用机器学习数据分析，以及如何在工程中实现高级机器学习模型有独到见解。
 
-我长期从事机器学习与人工智能的基础以及应用研究，对推荐系统、搜索引擎、计算广告学、社交网络以及自然语言处理等领域有深入理解，在国际顶级学术会议中发表重要论文20余篇，文章引用量超过[2000次（H-Index：18）](https://scholar.google.com/citations?user=4uaSNpYAAAAJ)。同时，我也长期担任多个国际著名会议及期刊的评审委员会成员和审稿人，并且组织过多个关于推荐、搜索、用户体验优化的国际研讨会。我拥有3项美国专利。
+我长期从事机器学习与人工智能的基础以及应用研究，对推荐系统、搜索引擎、计算广告学、社交网络以及自然语言处理等领域有深入理解，在国际顶级学术会议中发表重要论文20余篇，文章引用量超过[2000次（H-Index：17）](https://scholar.google.com/citations?user=4uaSNpYAAAAJ)。同时，我也长期担任多个国际著名会议及期刊的评审委员会成员和审稿人，并且组织过多个关于推荐、搜索、用户体验优化的国际研讨会。我拥有3项美国专利。
 
 ***
 
@@ -55,7 +55,7 @@ title: 关于
   [The Second Workshop on User Engagement Optimization at KDD 2014](http://www.ueo-workshop.com/)<br/>
   [The First Workshop on User Engagement Optimization at CIKM 2013](http://www.ueo-workshop.com/previous-editions/ueo-2013-at-cikm-2013/)
 * 国际会议程序委员会：<br/>
-  [WSDM 2018](http://www.wsdm-conference.org/2018/),[CIKM 2017](http://cikm2017.org/), [SIGIR 2017](http://sigir.org/sigir2017/),[WSDM 2017](http://www.wsdm-conference.org/2017/), [WWW 2017](http://www.www2017.com.au/), [CIKM 2016](http://cikm2016.cs.iupui.edu/), [KDD 2016](http://www.kdd.org/kdd2016/), [SIGIR 2016](http://sigir.org/sigir2016/), [WWW 2016](http://www2016.ca/), [WSDM 2016](http://www.wsdm-conference.org/2016/), [IJCAI 2016](http://ijcai-16.org/), [ACL 2016](http://acl2016.org/), [EMNLP 2016](http://www.emnlp2016.net/), [CIKM 2015](http://www.cikm-2015.org/), [SIGIR 2015](http://www.sigir2015.org/), [KDD 2015](http://www.kdd.org/kdd2015/), [IUI 2015](http://iui.acm.org/2015/), [WWW 2015](http://www.www2015.it/), [AIRS 2015](http://airs-conference.org/2015/), [CIKM 2014](http://cikm2014.fudan.edu.cn/), [SIGIR 2014](http://sigir.org/sigir2014/), [WSDM 2014](http://www.wsdm-conference.org/2014/), [AAAI 2014](http://www.aaai.org/Conferences/AAAI/aaai14.php), [IEEE ICCC 2014 SNBD](http://www.ieee-iccc.org/index.html), [ICWSM 2013](http://www.icwsm.org/2013/index.php), [EMNLP-CoNLL 2012](http://emnlp-conll2012.unige.ch/)
+  [WWW 2018](https://www2018.thewebconf.org/), [WSDM 2018](http://www.wsdm-conference.org/2018/),[CIKM 2017](http://cikm2017.org/), [SIGIR 2017](http://sigir.org/sigir2017/),[WSDM 2017](http://www.wsdm-conference.org/2017/), [WWW 2017](http://www.www2017.com.au/), [CIKM 2016](http://cikm2016.cs.iupui.edu/), [KDD 2016](http://www.kdd.org/kdd2016/), [SIGIR 2016](http://sigir.org/sigir2016/), [WWW 2016](http://www2016.ca/), [WSDM 2016](http://www.wsdm-conference.org/2016/), [IJCAI 2016](http://ijcai-16.org/), [ACL 2016](http://acl2016.org/), [EMNLP 2016](http://www.emnlp2016.net/), [CIKM 2015](http://www.cikm-2015.org/), [SIGIR 2015](http://www.sigir2015.org/), [KDD 2015](http://www.kdd.org/kdd2015/), [IUI 2015](http://iui.acm.org/2015/), [WWW 2015](http://www.www2015.it/), [AIRS 2015](http://airs-conference.org/2015/), [CIKM 2014](http://cikm2014.fudan.edu.cn/), [SIGIR 2014](http://sigir.org/sigir2014/), [WSDM 2014](http://www.wsdm-conference.org/2014/), [AAAI 2014](http://www.aaai.org/Conferences/AAAI/aaai14.php), [IEEE ICCC 2014 SNBD](http://www.ieee-iccc.org/index.html), [ICWSM 2013](http://www.icwsm.org/2013/index.php), [EMNLP-CoNLL 2012](http://emnlp-conll2012.unige.ch/)
 * 国际期刊审稿：<br/>
   [Data Mining and Knowledge Discovery](http://www.springer.com/computer/database+management+&+information+retrieval/journal/10618)<br/>
   [ACM Transactions on Knowledge Discovery from Data](http://tkdd.acm.org/)<br/>
@@ -98,11 +98,12 @@ title: 关于
 
 ## 代表性演讲
 
-* **GB-CENT** 于中科院, 中国北京， 2017年6月
-* **GB-CENT** 于Data Science PopUp, 美国纽约， 2017年6月
+* **人工智能在Etsy电商平台中的技术实践** 于Machine Learning Summit，中国北京，2017年6月
+* **GB-CENT** 于中科院，中国北京，2017年6月
+* **GB-CENT** 于Data Science PopUp，美国纽约, 2017年6月
 * **GB-CENT** 于Machine Learning Innovation Summit，美国旧金山，2017年6月
 * **GB-CENT** 于Lehigh University，美国宾夕法尼亚州，2017年4月
 * **GB-CENT** 于Global Predictive Analytics Conference，美国圣塔克拉拉，2017年3月
 * **GB-CENT** 于Predictive Analytics Innovation Summit，美国圣地亚哥，2017年2月
-* **Personalization@Yahoo** 于小红书, 中国上海, 2016年六月。
-* **Beyond Clicks: Dwell Time in Personalization** 于Twitter, 美国旧金山, 2015年六月.
+* **Personalization@Yahoo** 于小红书，中国上海，2016年六月
+* **Beyond Clicks: Dwell Time in Personalization** 于Twitter，美国旧金山，2015年六月

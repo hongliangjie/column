@@ -5,9 +5,38 @@
     <description>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
     <link>http://column.hongliangjie.com/</link>
     <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 11 Jul 2017 21:45:05 -0400</pubDate>
-    <lastBuildDate>Tue, 11 Jul 2017 21:45:05 -0400</lastBuildDate>
+    <pubDate>Thu, 27 Jul 2017 21:13:53 -0400</pubDate>
+    <lastBuildDate>Thu, 27 Jul 2017 21:13:53 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>ACL 2017文章精读（一）</title>
+        <description>&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章Multimodal Word Distributions进行一个简单的分析解读。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1704.08424&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/benathi/word2gm&quot;&gt;代码地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;文章作者&lt;a href=&quot;https://stat.cornell.edu/people/phds/ben-athiwaratkun&quot;&gt;Ben Athiwaratkun&lt;/a&gt;是康奈尔大学统计科学系的博士生。而Andrew Gordon Wilson则是新近加入康奈尔大学Operation Research以及Information Engineering的助理教授。其之前在卡内基梅隆大学担任研究员，师从Eric Xing教授和Alex Smola教授。再之前，其则在University of Cambridge的Zoubin Ghahramani手下攻读博士学位。&lt;/p&gt;
+
+&lt;p&gt;这篇文章主要是要研究Word Embedding，其核心思想其实很直观，那就是想用Gaussian Mixture Model去表示每一个Word的Embedding。最早的自然语言处理（NLP）是采用了One-Hot-Encoding的Bag of Word的形式来处理每个字。这样的形式自然是无法抓住文字之间的语义和更多有价值的信息的。那么，之前Word2Vec的想法则是学习一个每个Word的Embedding，也就是一个实数的向量，用于表示这个Word的语义。当然，如何构造这么一个向量又如何学习这个向量成为了诸多研究的核心课题。&lt;/p&gt;
+
+&lt;p&gt;在ICLR 2015会议上，来自UMass的Luke Vilnis 和Andrew McCallum在 “Word Representations via Gaussian Embedding”这篇文章中提出了用分布的思想来看待这个实数向量的思想。具体说来，就是认为这个向量是某个高斯分布的期望，然后通过学习高斯分布的参数（也就是期望和方差）来最终学习到Word的Embedding Distribution。这一步可以说是扩展了Word Embedding这一思想。然而，用一个分布来表达每一个字的最直接的缺陷则是无法表达很多字的多重意思，这也就是带来了这篇文章的想法。&lt;/p&gt;
+
+&lt;p&gt;这篇文章是希望通过Gaussian Mixture Model的形式来学习每个Word的Embedding。也就是说，每个字的Embedding不是一个高斯分布的期望了，而是多个高斯分布的综合。这样，就给了很多Word多重意义的自由度。在有了这么一个模型的基础上，文章采用了类似Skip-Gram的来学习模型的参数。具体说来，文章沿用了Luke和Andrew的那篇文章所定义的一个叫Max-margin Ranking Objective的目标函数，并且采用了Expected Likelihood Kernel来作为衡量两个分布之间相似度的工具。这里就不详细展开了，有兴趣的读者可以精读这部分细节。&lt;/p&gt;
+
+&lt;p&gt;文章通过UKWAC和Wackypedia数据集学习了所有的Word Embedding。所有试验中，文章采用了K=2的Gaussian Mixture Model（文章也有K=3的结果）。比较当然有之前Luke的工作以及其他各种Embedding的方法，比较的内容有Word Similarity以及对于Polysemous的字的比较。总之，文章提出的方法非常有效果。&lt;/p&gt;
+
+&lt;p&gt;这篇文章因为也有源代码（基于Tensorflow），推荐有兴趣的读者精读。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 27 Jul 2017 00:00:00 -0400</pubDate>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</guid>
+        
+        
+        <category>读论文</category>
+        
+      </item>
     
       <item>
         <title>Google Scholar 2017学术指标之人工智能篇</title>
@@ -337,43 +366,6 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
         <pubDate>Thu, 27 Apr 2017 00:00:00 -0400</pubDate>
         <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/</link>
         <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/</guid>
-        
-        
-        <category>读论文</category>
-        
-      </item>
-    
-      <item>
-        <title>WWW 2017文章精读（四）</title>
-        <description>&lt;p&gt;我们在这里对WWW 2017文章Modeling Consumer Preferences and Price Sensitivities from Large-Scale Grocery Shopping Transaction Logs进行一个简单的分析解读。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://cseweb.ucsd.edu/~m5wan/paper/www17_mwan.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;这篇文章的作者群来自加州大学圣地亚哥分校（University of California at San Diego）和微软研究院。最后一个作者Julian McAuley在加州大学圣地亚哥分校长期从事推荐系统以及用户模型的研究工作。建议对推荐系统有研究的朋友经常看看他又有什么新的研究成果这篇文章的特色在于希望把推荐系统的用户喜好建模和经济学里的对于价格的研究结合起来。作者们认为，在推荐系统领域，对于用户喜好建模已经是比较成熟的研究领域了，而对于价格，特别是价格的敏感度（Sensitivity）的研究还并不是很多。于是这篇文章就是要弥补这么一个研究缺失（Gap）。&lt;/p&gt;
-
-&lt;p&gt;作者们首先提出了一个分三阶段（Three Stage）的概率模型，用来刻画用户选择购买商品时候的选择过程。具体来说，这篇文章把用户的行为分为了这么三个阶段：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;类别选择（Category Purchase），也就是说，用户首先选择要购买哪个类别的商品。&lt;/li&gt;
-  &lt;li&gt;产品选择（Product Choice），这里面就是在已经选定了一个类别以后，用户如何在这个类别里面选择商品。&lt;/li&gt;
-  &lt;li&gt;数量购买（Purchase Quantity），选择要购买多少商品。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;有了这三个阶段以后，用户的购买需求就成为了这三种概率的联合分布。&lt;/p&gt;
-
-&lt;p&gt;为了对这三种行为有效建模，作者们首先提出了一个所谓的Feature-Based Matrix Factorization（FMF）的框架。总的说来，这是之前的LinkedIn提出的所谓的Generalized Linear Mixed Model（GLMix）变种。读者可以仔细参考原论文看看FMF的细节。这个FMF结合了全局特征（Global Features），物品特征，用户特征，以及用户和物品的隐含特征（Latent Features）。可以说是一个比较完善的框架体系。&lt;/p&gt;
-
-&lt;p&gt;有了FMF这个工具，我们再回到刚才的三个阶段的建模。作者们的思路就是用FMF的不同表达形式为三个阶段进行分别的建模。具体说来，类别选择的部分，采用了FMF的Logistic表达形式，也就是对每个类别进行简单的“是”还是“不是”的购买选择。产品选择的部分则采用了Multinomial Regression的形式，也就是在所有同类商品里面进行选择。第三部分数量购买则采用了Poisson Regression的形式。然而核心这三部分采用的是同样的一套思路。因为这三个部分的独立性，使得模型的学习可以把这三部分分来，有利于能够并行化。在整体的模型学习上，作者们还加上了AUC Optimization的“作料”。&lt;/p&gt;
-
-&lt;p&gt;接下来，作者们介绍了这篇文章的一个重点，那就是把价格因素引入到了整体框架中。其实思路还是很简单，就是直接把价格（在模型中用了Log Transformation）当做一个Feature，进行参数学习。这样做的好处还有直接可以计算所谓的价格敏感度，也就是购买一个东西的可能性的变化和价格变化的比值。这个数量可以用来描述价格的变化敏感度，可以让我们对价格做进一步的分析。&lt;/p&gt;
-
-&lt;p&gt;作者们在一个非公开的西雅图的商店数据集上，和公开的Dunnhumby数据集上做了实验。实验结果是三个阶段的模型都有不错的表现。并且作者们还利用价格敏感度进行了数据的进一步分析。这里就不复述了。&lt;/p&gt;
-
-&lt;p&gt;这篇文章值得对推荐系统有研究的学者和实践者精读。&lt;/p&gt;
-</description>
-        <pubDate>Wed, 26 Apr 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/</guid>
         
         
         <category>读论文</category>

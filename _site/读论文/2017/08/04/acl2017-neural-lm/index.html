@@ -11,7 +11,7 @@
 
   <title>
     
-      WWW 2017文章精读（一） &middot; 期望最大化（洪亮劼的专栏）
+      ACL 2017文章精读（二） &middot; 期望最大化（洪亮劼的专栏）
     
   </title>
 
@@ -119,26 +119,27 @@
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 <div class="post">
-  <h1 class="post-title">WWW 2017文章精读（一）</h1>
+  <h1 class="post-title">ACL 2017文章精读（二）</h1>
   <span class="post-date">
     2017年
-      4月
-      13号</span>
-  <p>我们在这里对WWW 2017文章Beyond Globally Optimal: Focused Learning for Improved Recommendations进行一个简单的分析解读。</p>
+      8月
+      4号</span>
+  <p>我们在这里对<a href="http://acl2017.org/">ACL 2017</a>文章Topically Driven Neural Language Model进行一个简单的分析解读。</p>
 
-<p><a href="http://alexbeutel.com/papers/www2017_focused_learning.pdf">全文PDF</a></p>
+<p><a href="https://arxiv.org/abs/1704.08012">全文PDF</a></p>
 
-<p>这篇文章来自一群前CMU的学者，目前在Google和Pinterest。那么这篇文章试图解决什么问题呢？具体说来，就是作者们发现，传统的推荐系统，基于优化一个全局的目标函数，通常情况下往往只能给出一个非常有“偏差”（Skewed）的预测分布。也就是说，传统的推荐系统追求的是平均表现情况，在很多情况下的预测其实是十分不准确的。这个情况在评价指标是Root Mean Squared Error（RMSE）的时候，就显得尤为明显。</p>
+<p><a href="https://github.com/jhlau/topically-driven-language-model">代码地址</a></p>
 
-<p>这篇文章的作者是这么定义了一个叫做Focused Learning的问题，那就是如果让模型在一个局部的数据上能够表现出色。那么，为什么需要模型在一个局部的数据上表现出色呢？作者们做了这么一件事情，那就是对每个用户，以及每一个物品的预测误差（Error）进行了分析统计，发现有不小比例的用户的预测误差比较大，也有不小比例的物品的预测误差比较大。作者们发现模型在一些数据上存在着系统性的误差较大的问题，而不是偶然发生的情况。</p>
+<p>这篇文章的作者都来自于澳大利亚的研究人员。第一作者Jey Han Lau目前在澳大利亚的IBM进行Topic Model以及NLP方面的研究，之前也在第二作者Timothy Baldwin的实验室做过研究。第二作者Timothy Baldwin和第三作者Trevor Cohn都是在墨尔本大学长期从事NLP的研究的教授。</p>
 
-<p>作者们又从理论上进行了对这个问题一番讨论。这里的讨论十分巧妙，大概的思路就是，假定现在在全局最优的情况下，模型的参数的梯度已经为0了，但模型的Loss依然不为0（这种情况很常见）。那么，就一定存在部分数据的参数梯度不为0，因为某一部分数据的Loss不为0。这也就证明了部分数据的模型参数在这些数据上的表现一定不是最优的。值得注意的是，这个证明非常普遍，和具体的模型是什么类型没有关系。</p>
+<p>这篇文章的核心思想是想彻底用Neural的思想来做结合Topic Model和Language Model。当然，既然这两种模型都是文字处理方面的核心模型，自然之前就有人曾经想过要这么做。不过之前的不少尝试都是要么还想保留LDA的一些部件或者往传统的LDA模型上去靠，要么是并没有和Language Model结合起来。这篇文章的主要卖点是完全用深度学习的“语言”来构建了整个模型，并且模型中的Topic Model模型部分的结果会成为驱动Language Model部分的成分。</p>
 
-<p>在有了这么一番讨论之后，那么作者们如何解决这个问题呢？这篇文章走了Hyper-parameter Optimization的道路。文章展示了这在普通的Matrix Factorization里面是如何做到。具体说来，就是对于某个Focused Set做Hyper-parameter的调优，使得当前的Hyper-parameter能够在Focused Set上能够有最好表现。而这组参数自然是针对不同的Focused Set有不同的选择。文章提到的另外一个思路，则是对Focused Set以及非Focused Set的Hyper-parameter进行区分对待，这样有助于最后的模型能够有一个比较Flexible的表达。</p>
+<p>概括说来，文章提出了一个有两个组成部分的模型的集合（文章管这个模型叫tdlm）。第一个部分就是所谓的Topic Model的部分。我们已经提过，这里的Topic Model和LDA已经相去甚远。这里的思路是这样的，首先，从一个文字表达的矩阵中（有可能就直接是传统的Word Embedding），通过Convolutional Filters转换成为一些文字的特征表达（Feature Vector）。文章里面选用的是线性的转换方式。这些Convolutional Filters都是作用在文字的一个Window上面，所以从概念上讲，这一个步骤很类似Word Embedding。得到这些Feature Vector以后，作者们又使用了一个Max-Over-Time的Pooling动作（也就是每一组文字的Feature Vector中最大值），从而产生了文档的表达。注意，这里依然学到的依然是比较直接的Embedding。然后，作者们定义了这么一组Topic的产生形式。首先，是有一个“输入Topic矩阵”。这个矩阵和已经得到的文档特征一起，产生一个叫做Attention的向量。这个Attention的向量再和“输出Topic矩阵”一起作用，产生最终的文档Topic向量。这也就是这部分模型的主要部分。最终，这个文档Topic向量通过用于预测文档中的每一个字来被学习到。有了这个文档Topic向量以后，作者们把这个信息用在了一个基于LSTM的Language Model上面。这一部分，其实就是用了一个类似于GRU的功能，把Topic的信息给附加在Language Model上。</p>
 
-<p>文章在实验的部分针对几种不同的Focused Set进行了比较实验。比如，针对Cold-Start的物品，针对Outlier的物品，以及更加复杂的libFM模型都进行了实验。我们在这里就不去复述了。总体来说，Focused Learning在不同的数据集上都得到了比较好的提升效果。同时，作者们还针对为什么Focused Learning能够Work进行了一番探讨，总体看来，Focused Learning既照顾了Global的信息，同时又通过附加的Hyper-parameter调优对某一个局部的数据进行优化，所以往往好于Global的模型以及也好于单独的Local模型。</p>
+<p>文章在训练的时候，采用了Joint训练的方式，并且使用了Google发布的Word2Vec已经Pre-trained的Word Embedding。所采用的种种参数也都在文章中已经有所介绍。
+文章在好一些数据集上做了实验。对于Topic的部分来说，文章主要是和LDA做比较，用了Perplexity这个传统的测量，还比较了Topic Coherence等。总体说来，提出的模型和LDA不相上下。Language Model的部分来说，提出的模型也在APNews、IMDB和BNC上都有不错的Perplexity值。</p>
 
-<p>本文非常适合对推荐系统有兴趣的学者和工程人员精读。</p>
+<p>总体说来，这篇文章值得文字挖掘的研究者和NLP的研究者泛读。</p>
 
 </div>
 <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a></div>
@@ -146,15 +147,6 @@
 <div class="related">
   <h2>相关文章</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/">
-            ACL 2017文章精读（二）
-            <small>04 Aug 2017</small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -170,6 +162,15 @@
           <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/">
             Google Scholar 2017学术指标之人工智能篇
             <small>09 Jul 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/">
+            AIStats 2017文章精读（五）
+            <small>18 Jun 2017</small>
           </a>
         </h3>
       </li>

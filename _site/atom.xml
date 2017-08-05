@@ -4,13 +4,37 @@
  <title>期望最大化（洪亮劼的专栏）</title>
  <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
  <link href="http://column.hongliangjie.com/"/>
- <updated>2017-07-27T21:13:53-04:00</updated>
+ <updated>2017-08-04T23:47:40-04:00</updated>
  <id>http://column.hongliangjie.com</id>
  <author>
    <name>洪亮劼</name>
    <email>hongliangjie@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>ACL 2017文章精读（二）</title>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/"/>
+   <updated>2017-08-04T00:00:00-04:00</updated>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm</id>
+   <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章Topically Driven Neural Language Model进行一个简单的分析解读。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1704.08012&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/jhlau/topically-driven-language-model&quot;&gt;代码地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这篇文章的作者都来自于澳大利亚的研究人员。第一作者Jey Han Lau目前在澳大利亚的IBM进行Topic Model以及NLP方面的研究，之前也在第二作者Timothy Baldwin的实验室做过研究。第二作者Timothy Baldwin和第三作者Trevor Cohn都是在墨尔本大学长期从事NLP的研究的教授。&lt;/p&gt;
+
+&lt;p&gt;这篇文章的核心思想是想彻底用Neural的思想来做结合Topic Model和Language Model。当然，既然这两种模型都是文字处理方面的核心模型，自然之前就有人曾经想过要这么做。不过之前的不少尝试都是要么还想保留LDA的一些部件或者往传统的LDA模型上去靠，要么是并没有和Language Model结合起来。这篇文章的主要卖点是完全用深度学习的“语言”来构建了整个模型，并且模型中的Topic Model模型部分的结果会成为驱动Language Model部分的成分。&lt;/p&gt;
+
+&lt;p&gt;概括说来，文章提出了一个有两个组成部分的模型的集合（文章管这个模型叫tdlm）。第一个部分就是所谓的Topic Model的部分。我们已经提过，这里的Topic Model和LDA已经相去甚远。这里的思路是这样的，首先，从一个文字表达的矩阵中（有可能就直接是传统的Word Embedding），通过Convolutional Filters转换成为一些文字的特征表达（Feature Vector）。文章里面选用的是线性的转换方式。这些Convolutional Filters都是作用在文字的一个Window上面，所以从概念上讲，这一个步骤很类似Word Embedding。得到这些Feature Vector以后，作者们又使用了一个Max-Over-Time的Pooling动作（也就是每一组文字的Feature Vector中最大值），从而产生了文档的表达。注意，这里依然学到的依然是比较直接的Embedding。然后，作者们定义了这么一组Topic的产生形式。首先，是有一个“输入Topic矩阵”。这个矩阵和已经得到的文档特征一起，产生一个叫做Attention的向量。这个Attention的向量再和“输出Topic矩阵”一起作用，产生最终的文档Topic向量。这也就是这部分模型的主要部分。最终，这个文档Topic向量通过用于预测文档中的每一个字来被学习到。有了这个文档Topic向量以后，作者们把这个信息用在了一个基于LSTM的Language Model上面。这一部分，其实就是用了一个类似于GRU的功能，把Topic的信息给附加在Language Model上。&lt;/p&gt;
+
+&lt;p&gt;文章在训练的时候，采用了Joint训练的方式，并且使用了Google发布的Word2Vec已经Pre-trained的Word Embedding。所采用的种种参数也都在文章中已经有所介绍。
+文章在好一些数据集上做了实验。对于Topic的部分来说，文章主要是和LDA做比较，用了Perplexity这个传统的测量，还比较了Topic Coherence等。总体说来，提出的模型和LDA不相上下。Language Model的部分来说，提出的模型也在APNews、IMDB和BNC上都有不错的Perplexity值。&lt;/p&gt;
+
+&lt;p&gt;总体说来，这篇文章值得文字挖掘的研究者和NLP的研究者泛读。&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>ACL 2017文章精读（一）</title>

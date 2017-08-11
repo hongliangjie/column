@@ -11,7 +11,7 @@
 
   <title>
     
-      WWW 2017文章精读（七） &middot; 期望最大化（洪亮劼的专栏）
+      ACL 2017文章精读（五） &middot; 期望最大化（洪亮劼的专栏）
     
   </title>
 
@@ -119,28 +119,28 @@
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 
 <div class="post">
-  <h1 class="post-title">WWW 2017文章精读（七）</h1>
+  <h1 class="post-title">ACL 2017文章精读（五）</h1>
   <span class="post-date">
     2017年
-      4月
-      30号</span>
-  <p>我们在这里对WWW 2017文章Monetary Discount Strategies for Real-Time Promotion Campaign进行一个简单的分析解读。</p>
+      8月
+      7号</span>
+  <p>我们在这里对<a href="http://acl2017.org/">ACL 2017</a>文章From Language to Programs: Bridging Reinforcement Learning and Maximum Marginal Likelihood进行一个简单的分析解读。</p>
 
-<p><a href="http://oak.cs.ucla.edu/~chucheng/publication/www17.pdf">全文PDF</a></p>
+<p><a href="https://arxiv.org/abs/1704.07926">全文PDF</a></p>
 
-<p>这篇文章的来自于一批来自台湾国立成功大学的学者和一个叫Slice Technologies的公司。这篇文章要解决的是一个非常实际的在E-Commerce会遇到的问题，那就是如何进行实时的促销（Promotion Campaign）使得可以吸引用户而同时也可以达到利润最大化的目的。</p>
+<p><a href="https://github.com/kelvinguu/lang2program">代码地址</a></p>
 
-<p>作者们在这篇文章提出了一个叫做Real-Time Promotion（RTP）的概念，类比于广告里面经常提到的Real-Time Bidding。同时，这个RTP是一个针对某一个特定用户的一次性Deal。也就是说，这里面有了个性化的成分，使得能够对用户有一定的吸引力。然而，这个问题的难点是，如果能够做到在做RTP的同时，不影响到或者尽可能小的影响到用户对于品牌的一个认知，不至于让用户有负面的感觉。</p>
+<p>这篇文章的作者群来自斯坦福大学。主要的作者们来自Percy Liang的实验室。最近几年Percy Liang的实验室可以说收获颇丰，特别是在自然语言处理（NLP）和深度学习（Deep Learning）的结合上都有不错的显著成果。</p>
 
-<p>这篇文章的数据来源于这个叫Slice的公司。具体说来，Slice就是对百万用户的Receipts进行分析，从而对用户进行建模。这里面有一个基本的假设就是，如果一个用户已经以一定的价格（Price）购买了某种商品，那么，比这个价格低的价格，用户也一般愿意接受。而相反，用户可能不会接受比当前这个价格更高的价格。</p>
+<p>这篇文章里有好一些值得关注的内容。首先从总体上来说，这篇文章要解决的问题是怎么从一段文字翻译成为“程序”的问题。这可以说是一个很有价值的问题。如果这个问题能够可以容易解决，那么我们就可以教会计算机编写很多程序，而不一定需要知道程序语言的细微的很多东西。从细节上说，这个问题就是，给定一个输入的语句，一个模型需要把目前的状态转移到下一个目标状态上。这里面的难点是，对于同一个输入语句，从当前的状态到可能会到达多种目标状态。这些目标状态都有可能是对当前输入语句的一种描述。但是正确的描述其实是非常有限的，甚至是唯一的。那么，如何从所有的描述中，剥离开不正确的，找到唯一的或者少量的正确描述，就成为了这么一个问题的核心。</p>
 
-<p>首先，作者们定义了这个所谓Discount-Giving Strategy的问题。那就是在给定的Discount预算（Budget）的情况下，如何最大化利润。文章指出，这个问题很类似传统的背包问题（Knapsack）。当然，与背包问题的最大不同的就是在于，这个问题中的很多参数是未知的，比如顾客是否愿意购买，再比如当前的折扣价格。</p>
+<p>文章中采用了一个Neural Encoder-Decoder的模型架构。这种模型主要是对序列信息能够有比较好的效果。具体说来，那就是对于现在的输入语句，首先把输入语句变换成为一个语句向量，然后根据之前已经产生的程序状态，以及当前的语句向量，产生现在的程序状态。在这个整个的过程中，对于Encoder作者们采用了LSTM的架构，而对于Decoder作者们采用了普通的Feed-forward Network（原因文章中是为了简化）。另外一个比较有创新的地方就是作者们把过于已经产生程序状态重新给Embedding化（作者们说是叫Stack）。这有一点模仿普通数据结构的意思。</p>
 
-<p>在假设知道当前客户购买一个商品的价格分布的情况下，我们是可以得到最大化利润的一个表达的。然而遗憾的是，我们并不知道这个价格分布。于是在这篇文章里，作者们就提出了使用Kernel Density Estimation（KDE）来对价格分布进行估计。而得知了这个分布以后，我们就能够对每一个商品的所谓Cut-off Price进行一个准确的估计。这里的细节建议大家看文章。有了这些组成部分以后，作者们在这篇文章中提出了一个基于Thompson Sampling的办法，这样做的好处是可以对实时变化的数据进行很好的估计，同时也可以让整个优化过程更加Robust。</p>
+<p>那么，这个模型架构应该说还是比较经典的。文章这时候就引出了另外一个本文的主要贡献，那就是对模型学习的流程进行了改进。为了引出模型学习的改进，作者们首先讨论了两种学习训练模式的形式，那就是强化学习（Reinforcement Learning）以及MML（Maximum Marginal Likelihood）的目标函数的异同。文章中提出两者非常类似，不过比较小的区别造成了MML可以更加容易避开错误程序这一结果。文章又比较了基于REINFORCE算法的强化学习以及基于Numerical Integration以及Beam Search的MML学习的优劣。总体说来，REINFORCE算法对于这个应用来说非常容易陷入初始状态就不太优并且也很难Explore出来的情况。MML稍微好一些，但依然有类似问题。文章这里提出了Randomized Beam Search来解决。也就是说在做Beam Search的时候加入一些Exploration的成分。另外一个情况则是在做Gradient Updates的时候，当前的状态会对Gradient有影响，也就是说，如果当前状态差强人意，Gradient也许就无法调整到应该的情况。这里，作者们提出了一种叫Beta-Meritocratic的Gradient更新法则，来解决当前状态过于影响Gradient的情况。</p>
 
-<p>实验就是在Slice过去手机的Receipts来进行的Simulation。应该说，实验的结果还是证明了动态的实时优化对于曾家利润是有帮助的。</p>
+<p>实验的部分还是比较有说服里的，详细的模型参数也是一应俱全。对于提出的模型来说，在三个数据集上都有不错的表现。当然，从准确度上来说，这种从文字翻译到程序状态的任务离真正的实际应用还有一段距离。</p>
 
-<p>这篇文章的具体技术比较繁复，很难看出能够直接在这个基础上再扩展算法。然而这篇文章提出的问题的确比较新颖，也是电商或者网络运营商（比如Uber、DiDi）等经常遇到的问题，所以，值得对相关技术有兴趣的读者泛读。</p>
+<p>这篇文章适合对于最近所谓的Neural Programming有兴趣的读者泛读。对怎么改进强化学习或者MML有兴趣的读者精读。文章的“Related Work”部分也是非常详尽，有很多工作值得参考。</p>
 
 </div>
 <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a></div>
@@ -148,15 +148,6 @@
 <div class="related">
   <h2>相关文章</h2>
   <ul class="related-posts">
-    
-      <li>
-        <h3>
-          <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/">
-            ACL 2017文章精读（五）
-            <small>07 Aug 2017</small>
-          </a>
-        </h3>
-      </li>
     
       <li>
         <h3>
@@ -172,6 +163,15 @@
           <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/">
             ACL 2017文章精读（三）
             <small>05 Aug 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/">
+            ACL 2017文章精读（二）
+            <small>04 Aug 2017</small>
           </a>
         </h3>
       </li>

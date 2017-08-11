@@ -3,11 +3,40 @@
   <channel>
     <title>期望最大化（洪亮劼的专栏）</title>
     <description>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 06 Aug 2017 11:55:06 -0400</pubDate>
-    <lastBuildDate>Sun, 06 Aug 2017 11:55:06 -0400</lastBuildDate>
+    <link>http://column.hongliangjie.com/</link>
+    <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 10 Aug 2017 20:10:40 -0400</pubDate>
+    <lastBuildDate>Thu, 10 Aug 2017 20:10:40 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>ACL 2017文章精读（五）</title>
+        <description>&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章From Language to Programs: Bridging Reinforcement Learning and Maximum Marginal Likelihood进行一个简单的分析解读。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1704.07926&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/kelvinguu/lang2program&quot;&gt;代码地址&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这篇文章的作者群来自斯坦福大学。主要的作者们来自Percy Liang的实验室。最近几年Percy Liang的实验室可以说收获颇丰，特别是在自然语言处理（NLP）和深度学习（Deep Learning）的结合上都有不错的显著成果。&lt;/p&gt;
+
+&lt;p&gt;这篇文章里有好一些值得关注的内容。首先从总体上来说，这篇文章要解决的问题是怎么从一段文字翻译成为“程序”的问题。这可以说是一个很有价值的问题。如果这个问题能够可以容易解决，那么我们就可以教会计算机编写很多程序，而不一定需要知道程序语言的细微的很多东西。从细节上说，这个问题就是，给定一个输入的语句，一个模型需要把目前的状态转移到下一个目标状态上。这里面的难点是，对于同一个输入语句，从当前的状态到可能会到达多种目标状态。这些目标状态都有可能是对当前输入语句的一种描述。但是正确的描述其实是非常有限的，甚至是唯一的。那么，如何从所有的描述中，剥离开不正确的，找到唯一的或者少量的正确描述，就成为了这么一个问题的核心。&lt;/p&gt;
+
+&lt;p&gt;文章中采用了一个Neural Encoder-Decoder的模型架构。这种模型主要是对序列信息能够有比较好的效果。具体说来，那就是对于现在的输入语句，首先把输入语句变换成为一个语句向量，然后根据之前已经产生的程序状态，以及当前的语句向量，产生现在的程序状态。在这个整个的过程中，对于Encoder作者们采用了LSTM的架构，而对于Decoder作者们采用了普通的Feed-forward Network（原因文章中是为了简化）。另外一个比较有创新的地方就是作者们把过于已经产生程序状态重新给Embedding化（作者们说是叫Stack）。这有一点模仿普通数据结构的意思。&lt;/p&gt;
+
+&lt;p&gt;那么，这个模型架构应该说还是比较经典的。文章这时候就引出了另外一个本文的主要贡献，那就是对模型学习的流程进行了改进。为了引出模型学习的改进，作者们首先讨论了两种学习训练模式的形式，那就是强化学习（Reinforcement Learning）以及MML（Maximum Marginal Likelihood）的目标函数的异同。文章中提出两者非常类似，不过比较小的区别造成了MML可以更加容易避开错误程序这一结果。文章又比较了基于REINFORCE算法的强化学习以及基于Numerical Integration以及Beam Search的MML学习的优劣。总体说来，REINFORCE算法对于这个应用来说非常容易陷入初始状态就不太优并且也很难Explore出来的情况。MML稍微好一些，但依然有类似问题。文章这里提出了Randomized Beam Search来解决。也就是说在做Beam Search的时候加入一些Exploration的成分。另外一个情况则是在做Gradient Updates的时候，当前的状态会对Gradient有影响，也就是说，如果当前状态差强人意，Gradient也许就无法调整到应该的情况。这里，作者们提出了一种叫Beta-Meritocratic的Gradient更新法则，来解决当前状态过于影响Gradient的情况。&lt;/p&gt;
+
+&lt;p&gt;实验的部分还是比较有说服里的，详细的模型参数也是一应俱全。对于提出的模型来说，在三个数据集上都有不错的表现。当然，从准确度上来说，这种从文字翻译到程序状态的任务离真正的实际应用还有一段距离。&lt;/p&gt;
+
+&lt;p&gt;这篇文章适合对于最近所谓的Neural Programming有兴趣的读者泛读。对怎么改进强化学习或者MML有兴趣的读者精读。文章的“Related Work”部分也是非常详尽，有很多工作值得参考。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 07 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</guid>
+        
+        
+        <category>读论文</category>
+        
+      </item>
     
       <item>
         <title>ACL 2017文章精读（四）</title>
@@ -28,8 +57,8 @@
 &lt;p&gt;总体说来，这篇文章非常值得对时序模型有兴趣的读者精读。文章的“Related Work”部分也很精彩，对相关研究有兴趣的朋友可以参考这部分看看最近都有哪些工作很类似。&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</guid>
         
         
         <category>读论文</category>
@@ -63,8 +92,8 @@
 &lt;p&gt;可以说整个文章真正值得借鉴主要还是那个“软查询”的思想。整个流程也值得参考。但是训练的困难可能使得这个系统作为一个可以更加扩展的系统的价值不高。本文值得对对话系统有研究的人泛读。&lt;/p&gt;
 </description>
         <pubDate>Sat, 05 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</guid>
         
         
         <category>读论文</category>
@@ -91,8 +120,8 @@
 &lt;p&gt;总体说来，这篇文章值得文字挖掘的研究者和NLP的研究者泛读。&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</guid>
         
         
         <category>读论文</category>
@@ -120,8 +149,8 @@
 &lt;p&gt;这篇文章因为也有源代码（基于Tensorflow），推荐有兴趣的读者精读。&lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Jul 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</guid>
         
         
         <category>读论文</category>
@@ -183,8 +212,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 09 Jul 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</guid>
         
         
         <category>读论文</category>
@@ -217,8 +246,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 这篇文章对于大规模机器学习有兴趣的读者可以精读。&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</guid>
         
         
         <category>读论文</category>
@@ -256,8 +285,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;p&gt;这篇文章的基本思路和相关研究值得机器学习实践者学习。&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</guid>
         
         
         <category>读论文</category>
@@ -289,8 +318,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;p&gt;不过这篇文章提出的Model Propagation的算法应该说是直观可行，很适合对大规模机器学习有兴趣的学者和实验者精读。&lt;/p&gt;
 </description>
         <pubDate>Mon, 12 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</guid>
         
         
         <category>读论文</category>
@@ -325,39 +354,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;p&gt;对于大规模机器学习有兴趣的读者可以泛读。&lt;/p&gt;
 </description>
         <pubDate>Sun, 11 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</guid>
-        
-        
-        <category>读论文</category>
-        
-      </item>
-    
-      <item>
-        <title>AIStats 2017文章精读（一）</title>
-        <description>&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Stochastic Rank-1 Bandits进行一个简单的分析解读。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/katariya17a/katariya17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/katariya17a/katariya17a-supp.pdf&quot;&gt;文章附加信息&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;这篇文章的作者群来自于几个大学和Adobe Research。作者群中的Branislav Kveton和Zheng Wen在过去几年中发表过多篇关于Bandits的文章，值得关注。&lt;/p&gt;
-
-&lt;p&gt;这篇文章解决的问题是一个在应用中经常遇到的问题，那就是每一步Agent是从一对Row和Column的Arms中选择，并且得到他们的外积（Outer Product）作为Reward。这个设置从搜索中的Position-based Model以及从广告的推广中都有应用。&lt;/p&gt;
-
-&lt;p&gt;具体的设置是这样的，先假设我们有K行，L列。在每一个时间T步骤中有一个行（Row）向量u，从一个分布中抽取（Draw）出来，同时有一个列（Column）向量v，从另外一个分布中抽取出来。这两个抽取的动作是完全独立的。在这样的情况下， Agent在时间T，需要选择一个综合的Arm，也就是一个两维的坐标，i和j，从而在u和v的外积（Outer Product）这个矩阵中得到坐标为i和j的回报（Reward）。&lt;/p&gt;
-
-&lt;p&gt;文章指出，这个设置可以被当做是有K乘以L那么多个Arm的简单的Multi-armed Bandit。那么当然可以用UCB1或者是LinUCB去解。然而文章中分析了这样做的不现实性，最主要的难点在K和L都比较大的情况下，把这个场景的算法当做原始的Multi-armed Bandit就会有过大的Regret。&lt;/p&gt;
-
-&lt;p&gt;这篇文章提出了一个叫做Rank1Elim的算法来有效的解决这个问题。我们这里不提这个算法的细节。总体说来，这个算法的核心思想，就是减少行和列的数量，使得需要Explore的数量大大减少。这也就是算法中所谓Elimination的来历。那么，怎么来减少行列的数量呢？虽然作者们没有直接指出，不过这里采用和核心思想就是Clustering。也就是说，有相似回报（Reward）的行与列都归并在一起，并且只留下一个。这样，就能大大减少整个搜索空间。&lt;/p&gt;
-
-&lt;p&gt;文章主要的篇幅用在了证明上，这里就不去复述了。文章在MovenLens的数据集上做了一组实验，并且显示了比UCB1的Regret有非常大的提高。&lt;/p&gt;
-
-&lt;p&gt;这篇文章适合对推荐系统的Exploitation和Exploration有研究的学者泛读。&lt;/p&gt;
-</description>
-        <pubDate>Sat, 10 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</guid>
         
         
         <category>读论文</category>

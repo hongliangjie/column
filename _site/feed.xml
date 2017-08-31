@@ -5,9 +5,67 @@
     <description>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
     <link>http://column.hongliangjie.com/</link>
     <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 10 Aug 2017 20:10:40 -0400</pubDate>
-    <lastBuildDate>Thu, 10 Aug 2017 20:10:40 -0400</lastBuildDate>
+    <pubDate>Wed, 30 Aug 2017 23:25:06 -0400</pubDate>
+    <lastBuildDate>Wed, 30 Aug 2017 23:25:06 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>KDD 2017大会综述</title>
+        <description>&lt;p&gt;每年，Association for Computing Machinery（ACM）旗下的Special Interest Group (SIG) on Knowledge Discovery and Data Mining（简称SIGKDD）都要举办年度的SIGKDD Conference on Knowledge Discovery and Data Mining（KDD）大会，为学术界和工业界的数据科学学者、研究人员、工程师以及学生提供一个交流、学习和发展的平台。今年，The 23rd SIGKDD Conference on Knowledge Discovery and Data Mining（KDD）于2017年8月13日到17日在加拿大的Halifax, Nova Scotia举行。&lt;/p&gt;
+
+&lt;p&gt;KDD是数据挖掘以及数据科学领域的顶级会议。KDD最早从1989年开始的KDD 研讨班（Workshop）发展而来。当时的研讨班依托于IJCAI大会或者AAAI大会（另一个有影响力的人工智能大会），由Gregory Piatetsky-Shapiro创办。研讨班成功举办几届之后，1995年Usama Fayyad和Ramasamy (Sam) Uthurusamy把研讨班升级成为了会议，并且在加拿大的蒙特利尔举办了第一届的KDD大会。大会至今已经有20多年的历史。&lt;/p&gt;
+
+&lt;h2 id=&quot;大会主要奖项&quot;&gt;大会主要奖项&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;今年的SIGKDD创新奖（ Innovation Award）授予了加拿大Simon Fraser University计算科学学院的教授Jian Pei。Jian是数据挖掘界的著名华人学者，是ACM和IEEE的双料院士。其发表过200多篇论文，引用量多达7万多次，Google H-Index达到74。他和Jiawei Han以及Micheline Kamber合著的数据挖掘教材《Data mining: Concepts And Techniques》已经成为经典读物，引用数就多于3万次。Jian还是IEEE 旗下的数据挖掘权威期刊Transactions of Knowledge and Data Engineering （TKDE）的主编，并且是清华大学以及浙江大学的客座教授。在此之前，Jian已经获得过2015年的SIGKDD服务奖（ Service Award）、 2014年 IEEE旗下数据挖掘会议 ICDM 的研究贡献奖（Research Contributions Award） ，以及2008年KDD 最佳应用论文奖（Best Application Paper Award）、2014年PAKDD 最佳论文奖（Best Paper Award）等。Jian是数据挖掘领域权威Jianwei Han的博士生（2002年毕业）。这次创新奖主要还提及了Jian在Sequential Pattern Mining（SPM）数据挖掘算法和研究领域的主要贡献，包括FP-Growth 和PrefixSpan算法。这两个算法都是著名的SPM算法，其中FP-Growth的论文（Mining Frequent Patterns without Candidate Generation）引用高达7千多次，而PrefixSpan的论文（PrefixSpan: Mining Sequential Patterns Efficiently by Prefix-Projected Pattern Growth）引用也多达2千多次。&lt;/p&gt;
+
+&lt;p&gt;大会的另外一个重要奖项SIGKDD时间检验奖（Test of Time Award）授予了美国康奈尔大学信息科学系主任、计算机科学系教授Thorsten Joachims。这个时间检验奖主要是奖给过去10年左右的时间里在KDD的会议上发表的论文中最有影响力的工作（引用次数是其中一个指标）。Thorsten是机器学习界享有盛誉的学者，是ACM和AAAI的双料院士。所有论文超过4万次引用。他2001年在德国的多特蒙德大学博士毕业之后加入康奈尔大学从事机器学习的研究。在获得这个奖项之前，Thorsten获得过2017年ACM WSDM 的最佳论文奖（Best Paper Award）、2016年ACM SIGIR的时间检验奖（Test-of-Time Award）、2015年ACM KDD的时间检验奖、2009年ECML的最佳论文奖（Best Paper Award）、2009年ICML的10年最佳论文奖（Best 10-Year Paper Award）、2006年ACM KDD的最佳论文奖（Best Paper Award）、2005年ICML的最佳论文奖、2005年ICML的优秀学生论文奖、2005年ACM KDD的最佳学生论文奖等。这次时间检验奖授予Thorsten是为了表彰他的论文“Training Linear SVMs in Linear Time”。该论文也是2006年的KDD最佳论文，引用数超过1600多次。这篇文章解决的是大规模优化支持向量机（Support Vector Machines）的问题。在此之前的很多支持向量机的实现都无法达到线性的时间复杂度，因此也就无法应用到大规模的数据上。这篇文章是第一次提出了简单易行的支持向量机实现。算法对于分类问题（Classification）达到了O(SN)（其中S是非0的特征数目而N是数据点的个数），也就是实现了线性时间复杂度。算法本身简单、高效、易于实现，并且理论上可以扩展到Kernel的情况。Thorsten在他的软件包SVMLight中实现了该算法。这个软件包一度成为了支持向量机研究和开发的标准工具。&lt;/p&gt;
+
+&lt;p&gt;大会还把今年的SIGKDD服务奖（Service Award）颁给了香港科技大学计算机系主任Qiang Yang教授，以表彰他在近几年推动SIGKDD的各种活动发展，特别是SIGKDD在中国的分部（China Chapter）所做的努力。Qiang本人是ACM杰出科学家、AAAI院士、IEEE院士。在他的领导下，2016年，SIGKDD中国分部开始运营。2016年一年，中国分部就举行了超过10场活动，并且吸引了超过500名会员。Qiang在中国还举行了多场研讨班和各类讲座，分享了关于Transfer Learning以及Recommendation Systems相关的很多研究成果。Qiang Yang本人的论文有超过3万次的引用。&lt;/p&gt;
+
+&lt;p&gt;从会议论文的角度来看，这次会议的最佳研究类论文（Best Research Paper Award）授予了“ Accelerating Innovation Through Analogy Mining”，其作者群来自耶路撒冷希伯来大学以及卡内基梅隆大学。第二名则被“Toeplitz Inverse Covariance-Based Clustering of Multivariate Time Series”夺取，其作者群来自斯坦福大学。最佳应用数据科学论文（Best Applied Data Science Paper Award）被“HinDroid: An Intelligent Android Malware Detection System”取得，其作者群来自于西弗吉尼亚大学以及香港科技大学。第二名则被“DeepSD: Generating High Resolution Climate Change Projections”夺得，其作者群来自美国的东北大学以及美国NASA。&lt;/p&gt;
+
+&lt;h2 id=&quot;大会参与概况&quot;&gt;大会参与概况&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;今年的大会是在美国本土外举办的最大的一届KDD会议。整个大会有1656名参会者，来自51个国家和地区。其中美国的参会者是最多、其次是中国、加拿大、印度。会议的赞助金额达到了54万美元，是在美国本土外举办的最高记录。为赞助学生旅行，大会总共奖励了高达15多万美元的金额，创下了大会的记录。论文的投稿数达到了1143篇，也是创下了最新的记录。大会最终录用了130篇文章，录用率在8%左右。可以说依然保持了非常高的会议水平。&lt;/p&gt;
+
+&lt;p&gt;这次大会共有3个主题演讲（Keynote Speech）。64个报告演讲（Oral Presentation）和66个展板报告（Poster）。整个大会还有10个全天的研讨班（Workshop）和10个半天的闫天宝。大会包含了20个传统的讲座（Tutorial）以及8个实践（Hands-on）讲座。&lt;/p&gt;
+
+&lt;h2 id=&quot;大会主题演讲&quot;&gt;大会主题演讲&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;这次的大会主题演讲有一个特色，那就是三位女性科学家组成的主题演讲者群体。&lt;/p&gt;
+
+&lt;p&gt;大会第一个主题演讲来自Bin Yu，加州大学伯克利分校（University of California at Berkeley
+）统计学教授。Bin Yu是美国科学院院士（U.S. National Academy of Sciences）、美国艺术与科学学院院士（American Academy of Arts and Sciences），还是IEEE院士、IMS院士、 ASA院士以及 AAAS院士。她长期从事统计、机器学习方法的研究以及如何应用领域知识解决复杂问题。Bin还是微软和北京大学统计和信息科学联合实验室的创始人。Bin的演讲主题是“Three Principles of Data Science: Predictability, Stability, and Computability”，主要试图讲解的是Stability对于Predictability以及Interpretability的重要性。Bin认为自己提出的这三个要素是统计学习的根本思想之一，他们之间的联系尤为重要。紧接着，她通过如何应用深度模型（特别是卷积神经网CNN）对神经元的活动进行观测这一个项目解释了这三个要素在具体事例中的呈现。她在演讲的第二部分讲解了如何利用隐变量模型（Latent Variable Models）以及基于LASSO的模型来分析政治性的电视广告中的语气和政党倾向性。这两个项目都展现了Bin所谓的稳定性（Stability）对于预测性（Predictability）的重要性。&lt;/p&gt;
+
+&lt;p&gt;第二个主题演讲来自Cynthia Dwork，哈佛大学教授、微软研究院杰出科学家（Distinguished Scientist）。Cynthia是美国科学院院士（National Academy of Sciences）、美国工程院院士（National Academy of Engineering）、美国艺术与科学学院院士（American Academy of Arts and Sciences）、美国哲学学会院士（American Philosophical Society）以及ACM院士。Cynthia长期致力于基于隐私的数据分析（Privacy-Preserving Data Analysis）的工作，并且是著名的Differential Privacy思想的提出者之一。2015年获得理论计算机界的哥德尔奖。Cynthia演讲的主题是“What’s Fair?”。这个是一个近期越来越收到关注的题目，那就是人工智能或者机器学习算法会不会因为从过去的数据中学习从而带有过去的偏见。典型的偏见有比如在预测犯罪的时候，对某一个种族或者族群会有高于常规的预测率。这个演讲就是讨论了包括如何定义是否“公平”，如何算是有偏见，到底是个人偏见还是群体偏见等等问题。从现场的反应来看，总体感觉，算法的公平性或者偏见性是一个非常新、而且可能会有争议性的话题。Cynthia在这个场合提出来也是需要一定勇气和远见的。&lt;/p&gt;
+
+&lt;p&gt;第三个主题演讲来自Renée J. Miller，多伦多大学信息系统系主任、计算机系教授。Renée是加拿大皇家协会院士（Royal Society of Canada）、加拿大科学院院士（Canada’s National Academy）以及ACM院士。Renée是一个具有神秘色彩的学者。大会网站上并没有放她的照片，原因是她不愿意自己的相貌被搜索引擎给准确记住。Renée的演讲主题是“The Future of Data Integration”。应该说这个主题放在一个以数据科学为核心的会议上还是很应景的。毕竟，很多都说数据科学80%甚至更多的时间在处理数据而只有20%的时间在做真正的算法和模型革新。Renée从数据库领域出发，用非常浅显的语言讲解了这20年数据集成（Data Integration）领域的主要发现，以及如何利用这些核心算法来达到“发掘数据和整个数据格式”的作用。&lt;/p&gt;
+
+&lt;h2 id=&quot;大会的几个趋势&quot;&gt;大会的几个趋势&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;这次会议有这么几个趋势和亮点：&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;大家更加重视模型，特别是深度学习模型的可解释性。&lt;/li&gt;
+  &lt;li&gt;Causal Inference和Machine Learning的结合成为新方向。&lt;/li&gt;
+  &lt;li&gt;对算法和模型的去Bias成为一个新的课题。&lt;/li&gt;
+  &lt;li&gt;各大公司的招聘力度非常大，在某一天内就有Amazon、Microsoft、Airbnb、Snapchat、Pinterest以及其它公司的Happy Hour，感觉人才就在那么几家公司赶场。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;总体最大的感觉是KDD已经成为了数据科学的盛宴。&lt;/p&gt;
+</description>
+        <pubDate>Wed, 30 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://column.hongliangjie.com/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</guid>
+        
+        
+        <category>会议</category>
+        
+      </item>
     
       <item>
         <title>ACL 2017文章精读（五）</title>
@@ -320,42 +378,6 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
         <pubDate>Mon, 12 Jun 2017 00:00:00 -0400</pubDate>
         <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</link>
         <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</guid>
-        
-        
-        <category>读论文</category>
-        
-      </item>
-    
-      <item>
-        <title>AIStats 2017文章精读（二）</title>
-        <description>&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Less than a Single Pass: Stochastically Controlled Stochastic Gradient Method
-进行一个简单的分析解读。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/lei17a/lei17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;这篇文章的作者们来自加州大学伯克利分校。作者之一的Michael Jordan是机器学习的权威学者之一，曾经在概率图模型的时期有突出的贡献。&lt;/p&gt;
-
-&lt;p&gt;这篇文章主要还是讨论的大规模Convex优化的场景。在这个方面，已经有了相当丰富的学术成果。那么，这篇文章的主要贡献在什么地方呢？这篇文章主要想在算法的准确性和算法的通讯成本上下文章。&lt;/p&gt;
-
-&lt;p&gt;具体说来，这篇文章提出的算法是想在Stochastic Variance Reduced Gradient（SVRG）上进行更改。SVRG的主要特征就是利用全部数据的Gradient来对SGD的Variance进行控制。因此SVRG的计算成本（Computation Cost）是O((n+m)T)，这里n是数据的总数，m是Step-size，而T是论数。SVRG的通讯成本也是这么多。这里面的主要成本在于每一轮都需要对全局数据进行访问。&lt;/p&gt;
-
-&lt;p&gt;作者们提出了一种叫Stochastically Controlled Stochastic Gradient（SCSG）的新算法。总的来说，就是对SVRG进行了两个改进：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;每一轮并不用全局的数据进行Gradient的计算，而是从一个全局的子集Batch中估计Gradient。子集的大小是B。&lt;/li&gt;
-  &lt;li&gt;每一轮的SGD的更新数目也不是一个定值，而是一个和之前那个子集大小有关系，基于Geometric Distribution的随机数。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;剩下的更新步骤和SVRG一模一样。&lt;/p&gt;
-
-&lt;p&gt;然而，这样的改变之后，新算法的计算成本成为了O((B+N)T)。也就是说，这是一个不依赖全局数据量大小的数值。而通过分析，作者们也比较了SCSG的通讯成本和一些原本就为了通讯成本而设计的算法，在很多情况下，SCSG的通讯成本更优。&lt;/p&gt;
-
-&lt;p&gt;作者们通过MNIST数据集的实验发现，SCSG达到相同的准确度，需要比SVRG更少的轮数，和每一轮更少的数据。可以说，这个算法可能会成为SVRG的简单替代。&lt;/p&gt;
-
-&lt;p&gt;对于大规模机器学习有兴趣的读者可以泛读。&lt;/p&gt;
-</description>
-        <pubDate>Sun, 11 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/</guid>
         
         
         <category>读论文</category>

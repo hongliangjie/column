@@ -11,7 +11,7 @@ title: 关于
 
 在加入Etsy之前，我于2013年到2016年在[雅虎研究院（Yahoo Research）](https://research.yahoo.com/)工作，历任**科学家**、**资深科学家**和**高级研发经理**职位。在雅虎研究院工作期间，我亲自领导并参与了多项大数据大规模机器学习系统的研发工作，包括雅虎首页千万级用户个性化推荐系统、雅虎移动搜索千万级用户搜索优化系统以及大型个性化广告系统，对如何在产品中使用机器学习数据分析，以及如何在工程中实现高级机器学习模型有独到见解。
 
-我长期从事机器学习与人工智能的基础以及应用研究，对推荐系统、搜索引擎、计算广告学、社交网络以及自然语言处理等领域有深入理解，在国际顶级学术会议中发表重要论文20余篇，文章引用量超过[2000次（H-Index：17）](https://scholar.google.com/citations?user=4uaSNpYAAAAJ)。同时，我也长期担任多个国际著名会议及期刊的评审委员会成员和审稿人，并且组织过多个关于推荐、搜索、用户体验优化的国际研讨会。我拥有3项美国专利。
+我长期从事机器学习与人工智能的基础以及应用研究，对推荐系统、搜索引擎、计算广告学、社交网络以及自然语言处理等领域有深入理解，在国际顶级学术会议中发表重要论文20余篇，文章引用量超过[2100次（H-Index：17）](https://scholar.google.com/citations?user=4uaSNpYAAAAJ)。同时，我也长期担任多个国际著名会议及期刊的评审委员会成员和审稿人，并且组织过多个关于推荐、搜索、用户体验优化的国际研讨会。我拥有3项美国专利。
 
 ***
 
@@ -87,6 +87,7 @@ title: 关于
 
 * [机器学习在电商领域的应用](http://weibo.com/ttarticle/p/show?id=2309404111989793265923)
 * [知人知面需知心——论人工智能技术在推荐系统中的应用](http://geek.csdn.net/news/detail/112318)
+* [ACL 2017自然语言处理精选论文](http://geek.csdn.net/news/detail/236426)
 * [WWW 2017 精选论文](http://geek.csdn.net/news/detail/202634)
 * [WSDM 2017 精选论文解读](http://geek.csdn.net/news/detail/172475)
 * [2016年 AI技术发展综述](http://geek.csdn.net/news/detail/132057)
@@ -98,6 +99,8 @@ title: 关于
 
 ## 代表性演讲
 
+* **GB-CENT** 于Big Data Innovation Summit，美国波士顿，2017年9月
+* **人工智能在Etsy电商平台中的技术实践** 于Insights Data Science，美国纽约，2017年8月
 * **人工智能在Etsy电商平台中的技术实践** 于Machine Learning Summit，中国北京，2017年6月
 * **GB-CENT** 于中科院，中国北京，2017年6月
 * **GB-CENT** 于Data Science PopUp，美国纽约, 2017年6月

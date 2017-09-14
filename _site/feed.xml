@@ -3,10 +3,10 @@
   <channel>
     <title>期望最大化（洪亮劼的专栏）</title>
     <description>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
-    <link>http://column.hongliangjie.com/</link>
-    <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 30 Aug 2017 23:25:06 -0400</pubDate>
-    <lastBuildDate>Wed, 30 Aug 2017 23:25:06 -0400</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 13 Sep 2017 23:19:44 -0400</pubDate>
+    <lastBuildDate>Wed, 13 Sep 2017 23:19:44 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -59,8 +59,8 @@
 &lt;p&gt;总体最大的感觉是KDD已经成为了数据科学的盛宴。&lt;/p&gt;
 </description>
         <pubDate>Wed, 30 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</guid>
+        <link>http://localhost:4000/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</guid>
         
         
         <category>会议</category>
@@ -88,8 +88,8 @@
 &lt;p&gt;这篇文章适合对于最近所谓的Neural Programming有兴趣的读者泛读。对怎么改进强化学习或者MML有兴趣的读者精读。文章的“Related Work”部分也是非常详尽，有很多工作值得参考。&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</guid>
         
         
         <category>读论文</category>
@@ -115,8 +115,8 @@
 &lt;p&gt;总体说来，这篇文章非常值得对时序模型有兴趣的读者精读。文章的“Related Work”部分也很精彩，对相关研究有兴趣的朋友可以参考这部分看看最近都有哪些工作很类似。&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</guid>
         
         
         <category>读论文</category>
@@ -150,8 +150,8 @@
 &lt;p&gt;可以说整个文章真正值得借鉴主要还是那个“软查询”的思想。整个流程也值得参考。但是训练的困难可能使得这个系统作为一个可以更加扩展的系统的价值不高。本文值得对对话系统有研究的人泛读。&lt;/p&gt;
 </description>
         <pubDate>Sat, 05 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</guid>
         
         
         <category>读论文</category>
@@ -178,8 +178,8 @@
 &lt;p&gt;总体说来，这篇文章值得文字挖掘的研究者和NLP的研究者泛读。&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</guid>
         
         
         <category>读论文</category>
@@ -207,8 +207,8 @@
 &lt;p&gt;这篇文章因为也有源代码（基于Tensorflow），推荐有兴趣的读者精读。&lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Jul 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</guid>
         
         
         <category>读论文</category>
@@ -270,8 +270,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 09 Jul 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</guid>
         
         
         <category>读论文</category>
@@ -304,8 +304,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 这篇文章对于大规模机器学习有兴趣的读者可以精读。&lt;/p&gt;
 </description>
         <pubDate>Sun, 18 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</guid>
         
         
         <category>读论文</category>
@@ -343,8 +343,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;p&gt;这篇文章的基本思路和相关研究值得机器学习实践者学习。&lt;/p&gt;
 </description>
         <pubDate>Sat, 17 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</guid>
         
         
         <category>读论文</category>
@@ -376,8 +376,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;p&gt;不过这篇文章提出的Model Propagation的算法应该说是直观可行，很适合对大规模机器学习有兴趣的学者和实验者精读。&lt;/p&gt;
 </description>
         <pubDate>Mon, 12 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/</guid>
         
         
         <category>读论文</category>

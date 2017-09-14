@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>期望最大化（洪亮劼的专栏）</title>
- <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
- <link href="http://column.hongliangjie.com/"/>
- <updated>2017-08-30T23:25:06-04:00</updated>
- <id>http://column.hongliangjie.com</id>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2017-09-13T23:19:44-04:00</updated>
+ <id>http://localhost:4000</id>
  <author>
    <name>洪亮劼</name>
    <email>hongliangjie@gmail.com</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>KDD 2017大会综述</title>
-   <link href="http://column.hongliangjie.com/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/"/>
+   <link href="http://localhost:4000/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/"/>
    <updated>2017-08-30T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017</id>
+   <id>http://localhost:4000/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017</id>
    <content type="html">&lt;p&gt;每年，Association for Computing Machinery（ACM）旗下的Special Interest Group (SIG) on Knowledge Discovery and Data Mining（简称SIGKDD）都要举办年度的SIGKDD Conference on Knowledge Discovery and Data Mining（KDD）大会，为学术界和工业界的数据科学学者、研究人员、工程师以及学生提供一个交流、学习和发展的平台。今年，The 23rd SIGKDD Conference on Knowledge Discovery and Data Mining（KDD）于2017年8月13日到17日在加拿大的Halifax, Nova Scotia举行。&lt;/p&gt;
 
 &lt;p&gt;KDD是数据挖掘以及数据科学领域的顶级会议。KDD最早从1989年开始的KDD 研讨班（Workshop）发展而来。当时的研讨班依托于IJCAI大会或者AAAI大会（另一个有影响力的人工智能大会），由Gregory Piatetsky-Shapiro创办。研讨班成功举办几届之后，1995年Usama Fayyad和Ramasamy (Sam) Uthurusamy把研讨班升级成为了会议，并且在加拿大的蒙特利尔举办了第一届的KDD大会。大会至今已经有20多年的历史。&lt;/p&gt;
@@ -68,9 +68,9 @@
  
  <entry>
    <title>ACL 2017文章精读（五）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/"/>
    <updated>2017-08-07T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章From Language to Programs: Bridging Reinforcement Learning and Maximum Marginal Likelihood进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1704.07926&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -93,9 +93,9 @@
  
  <entry>
    <title>ACL 2017文章精读（四）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/"/>
    <updated>2017-08-06T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章Learning to Skim Text进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1704.06877&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -116,9 +116,9 @@
  
  <entry>
    <title>ACL 2017文章精读（三）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/"/>
    <updated>2017-08-05T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章Towards End-to-End Reinforcement Learning of Dialogue Agents for Information Access进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1609.00777&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -147,9 +147,9 @@
  
  <entry>
    <title>ACL 2017文章精读（二）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/"/>
    <updated>2017-08-04T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章Topically Driven Neural Language Model进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1704.08012&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -171,9 +171,9 @@
  
  <entry>
    <title>ACL 2017文章精读（一）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/"/>
    <updated>2017-07-27T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章Multimodal Word Distributions进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1704.08424&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -196,9 +196,9 @@
  
  <entry>
    <title>Google Scholar 2017学术指标之人工智能篇</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/"/>
    <updated>2017-07-09T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar</id>
    <content type="html">&lt;p&gt;近日，Google Scholar发布了一个&lt;a href=&quot;https://scholar.googleblog.com/2017/07/2017-scholar-metrics-released.html&quot;&gt;2017年的“学术指标”&lt;/a&gt;，主要是对各个学科的众多领域的学术刊物（包括期刊、会议论文集以及在线论文出版集）做出了排名。这个排名主要是依靠&lt;a href=&quot;https://en.wikipedia.org/wiki/H-index&quot;&gt;H5-Index&lt;/a&gt;这一指标。我们在这篇文章里，对人工智能相关的领域学术出版刊物的排名进行一个简单的分析和导读。&lt;/p&gt;
 
 &lt;h2 id=&quot;人工智能主类&quot;&gt;人工智能主类&lt;/h2&gt;
@@ -255,9 +255,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>AIStats 2017文章精读（五）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/"/>
    <updated>2017-06-18T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Communication-Efficient Learning of Deep Networks from Decentralized Data进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/mcmahan17a/mcmahan17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -285,9 +285,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>AIStats 2017文章精读（四）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/"/>
    <updated>2017-06-17T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Fast Bayesian Optimization of Machine Learning Hyper-parameters on Large Datasets进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/klein17a/klein17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -320,9 +320,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>AIStats 2017文章精读（三）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/"/>
    <updated>2017-06-12T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Decentralized Collaborative Learning of Personalized Models over Networks进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/vanhaesebrouck17a/vanhaesebrouck17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -349,9 +349,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>AIStats 2017文章精读（二）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/"/>
    <updated>2017-06-11T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Less than a Single Pass: Stochastically Controlled Stochastic Gradient Method
 进行一个简单的分析解读。&lt;/p&gt;
 
@@ -381,9 +381,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>AIStats 2017文章精读（一）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/"/>
    <updated>2017-06-10T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Stochastic Rank-1 Bandits进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/katariya17a/katariya17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -408,9 +408,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（七）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice/"/>
    <updated>2017-04-30T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Monetary Discount Strategies for Real-Time Promotion Campaign进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://oak.cs.ucla.edu/~chucheng/publication/www17.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -433,9 +433,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（六）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search/"/>
    <updated>2017-04-28T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Situational Context for Ranking in Personal Search进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://ciir-publications.cs.umass.edu/pub/web/getpdf.php?id=1268&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -463,9 +463,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（五）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/"/>
    <updated>2017-04-27T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Streaming Recommender Systems进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.yichang-cs.com/yahoo/WWW17_StreamingRec.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -494,9 +494,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（四）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/"/>
    <updated>2017-04-26T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Modeling Consumer Preferences and Price Sensitivities from Large-Scale Grocery Shopping Transaction Logs进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://cseweb.ucsd.edu/~m5wan/paper/www17_mwan.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -527,9 +527,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（三）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/19/www2017-cloud/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/19/www2017-cloud/"/>
    <updated>2017-04-19T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/19/www2017-cloud</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/19/www2017-cloud</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Usage Patterns and the Economics of the Public Cloud进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://vita.mcafee.cc/PDF/EconPublicCloud.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -552,9 +552,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（二）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/16/www2017-cml/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/16/www2017-cml/"/>
    <updated>2017-04-16T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/16/www2017-cml</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/16/www2017-cml</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Collaborative Metric Learning进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.cs.cornell.edu/~ylongqi/paper/HsiehYCLBE17.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -585,9 +585,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（一）</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/13/www2017-beyond-globally-optimal/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/13/www2017-beyond-globally-optimal/"/>
    <updated>2017-04-13T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/13/www2017-beyond-globally-optimal</id>
+   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/13/www2017-beyond-globally-optimal</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Beyond Globally Optimal: Focused Learning for Improved Recommendations进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://alexbeutel.com/papers/www2017_focused_learning.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -608,9 +608,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>论互联网公司与研究院</title>
-   <link href="http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2017/04/09/research-labs/"/>
+   <link href="http://localhost:4000/%E7%AE%A1%E7%90%86/2017/04/09/research-labs/"/>
    <updated>2017-04-09T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2017/04/09/research-labs</id>
+   <id>http://localhost:4000/%E7%AE%A1%E7%90%86/2017/04/09/research-labs</id>
    <content type="html">&lt;p&gt;随着吴恩达离开百度研究院，关于互联网公司设立研究院的话题又被推到了风口浪尖。一时间，大家对互联网公司到底该不该设立研究院、研究院在公司内部又该起到怎样的作用、怎么能够设置一个有效的研究院架构、怎么来衡量研究院是否成功等问题展开了激烈的讨论。我打算在这篇专栏文章里，以本人在雅虎研究院的经历为基础，来剖析一下现代高科技企业尤其是互联网公司如何设置一个成功的研究院，研究院究竟该如何运作。这篇文章是在公开领域少有的论述研究院的系统性文章，值得大家精读。&lt;/p&gt;
 
 &lt;h2 id=&quot;什么是研究院&quot;&gt;什么是研究院&lt;/h2&gt;
@@ -707,9 +707,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>数据科学发展的一些感悟</title>
-   <link href="http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2017/03/02/san_diego/"/>
+   <link href="http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2017/03/02/san_diego/"/>
    <updated>2017-03-02T00:00:00-05:00</updated>
-   <id>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2017/03/02/san_diego</id>
+   <id>http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2017/03/02/san_diego</id>
    <content type="html">&lt;p&gt;上个星期，我参加了位于San Diego召开的一个工业界数据科学会议Predictive Analytics Innovation Summit。在这里分享一些参会后对于数据科学在工业界发展状况及前景的感悟。&lt;/p&gt;
 
 &lt;h2 id=&quot;感悟一数据科学的思潮席卷各个行业&quot;&gt;感悟一：数据科学的思潮席卷各个行业&lt;/h2&gt;
@@ -741,9 +741,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>只有偏执狂才能生存</title>
-   <link href="http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/08/09/intel/"/>
+   <link href="http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/08/09/intel/"/>
    <updated>2016-08-09T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/08/09/intel</id>
+   <id>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/08/09/intel</id>
    <content type="html">&lt;p&gt;今年初，Intel传奇领导人物&lt;a href=&quot;https://en.wikipedia.org/wiki/Andrew_Grove&quot;&gt;安德鲁格罗夫（Andrew Grove）&lt;/a&gt;病逝。格罗夫的很多思想在90年代WinTel时代曾对中国的早期IT产业带来巨大启发。他所领导的Intel几乎是个人电脑时代的代名词。而他所著的&lt;a href=&quot;https://www.amazon.com/Only-Paranoid-Survive-Exploit-Challenge/dp/0385483821&quot;&gt;《只有偏执狂才能生存》&lt;/a&gt;作为危机管理的经典著作，影响了好几代人。最近买了这本书的原版来阅读，感触良多，在这篇文章中和大家分享一些读书心得。&lt;/p&gt;
 
 &lt;h2 id=&quot;战略拐点&quot;&gt;战略拐点&lt;/h2&gt;
@@ -820,9 +820,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>怎样招聘一名科学家</title>
-   <link href="http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/05/14/hire/"/>
+   <link href="http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/05/14/hire/"/>
    <updated>2016-05-14T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/05/14/hire</id>
+   <id>http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/05/14/hire</id>
    <content type="html">&lt;p&gt;看了&lt;a href=&quot;https://zhuanlan.zhihu.com/p/20865434&quot;&gt;韩春雨&lt;/a&gt;的事迹以后，很是感动，我于是在微博上谈论一下&lt;a href=&quot;http://weibo.com/3193816967/DuGAd9tmD&quot;&gt;简历背景是否等于一个人的成就和水平&lt;/a&gt;，里面谈及了一些在招聘科学家过程中的遇到的经历和水平的问题。后来，我感觉需要系统得总结一下招聘科学家的流程，一是为了记录下在招聘过程中的一些思考，另一方面也是为了帮助年轻学者或者博士生，能够提高自身的水平。当然，一个高水平的流程，也是对自己的一种鞭策。我时常也会想，在这样的流程里，我是否能够体现自己的能力和水平。&lt;/p&gt;
 
 &lt;h2 id=&quot;面试的目的&quot;&gt;面试的目的&lt;/h2&gt;
@@ -997,9 +997,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>新闻推荐，追逐卡戴珊的“屁股”</title>
-   <link href="http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/23/news-recsys/"/>
+   <link href="http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/23/news-recsys/"/>
    <updated>2016-04-23T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/23/news-recsys</id>
+   <id>http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/23/news-recsys</id>
    <content type="html">&lt;p&gt;前一阵子，有一篇新闻文章叫&lt;a href=&quot;http://www.businessinsider.com/yahoo-reporters-frustrated-competing-against-kim-kardashians-ass-2016-4&quot;&gt;“雅虎记者的困扰：与卡戴珊的屁股竞争”&lt;/a&gt;，讲的是雅虎公司的一群高级记者所写的文章与推荐系统所推荐的文章相互竞争协调的事情，里面提到的现象可能很多做推荐系统开发的人都感同身受，似曾相识。那么今天，我们不谈具体的公司具体的案例，而来聊一下推荐系统开发中遇到“&lt;strong&gt;推荐结果和自己的直觉不相符合怎么办&lt;/strong&gt;”这个事情该怎么办。&lt;/p&gt;
 
 &lt;h2 id=&quot;记者和编辑的抱怨&quot;&gt;记者和编辑的抱怨&lt;/h2&gt;
@@ -1066,9 +1066,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>论推荐系统的Exploitation和Exploration</title>
-   <link href="http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/13/exploration/"/>
+   <link href="http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/13/exploration/"/>
    <updated>2016-04-13T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/13/exploration</id>
+   <id>http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/13/exploration</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/&quot;&gt;上一篇文章&lt;/a&gt;讲到，一个推荐系统，如果片面优化用户的喜好，很可能导致千篇一律的推荐结果。文中曾经用了一节来讨论为什么使用Exploitation &amp;amp; Exploration (E &amp;amp; E)结果可能依然不能“免俗”。其实，E &amp;amp; E是推荐系统里很有意思，但也非常有争议的一个算法。一方面，大家都基本明白这类算法的目的，每年有很多相关论文发表。另一方面，这是工业界对于部署这类算法非常谨慎，有的产品经理甚至视之为“洪水猛兽”。这篇文章就是要分析一下导致这个现象的一些因素。&lt;/p&gt;
 
 &lt;h2 id=&quot;走一步看一步的策略&quot;&gt;走一步看一步的策略&lt;/h2&gt;
@@ -1200,9 +1200,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>个性化推荐是不是伪命题</title>
-   <link href="http://column.hongliangjie.com/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/"/>
+   <link href="http://localhost:4000/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/"/>
    <updated>2016-04-07T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not</id>
+   <id>http://localhost:4000/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not</id>
    <content type="html">&lt;p&gt;最近，有一位网友在微博上说，&lt;a href=&quot;http://weibo.com/1830516311/Dp4Vs81ih?from=page_1005051830516311_profile&amp;amp;wvr=6&amp;amp;mod=weibotime&amp;amp;type=comment&quot;&gt;推荐是不是个伪命题？连续几天试用了据说很好的某头条，某资讯以及某快报，感觉逃脱不了看什么就是什么的套路&lt;/a&gt;。也有人说，这是Exploitation &amp;amp; Exploration出了问题，没有很好得Exploration导致的结果。那么，个性化推荐到底是不是伪命题呢？为什么很多推荐系统过了一段时间以后就老是推荐类似的东西呢？本篇文章就要尝试分析和探讨这个“千篇一律”的问题。&lt;/p&gt;
 
 &lt;h2 id=&quot;推荐是为了预测用户喜好的物品吗&quot;&gt;推荐是为了预测用户喜好的物品吗&lt;/h2&gt;
@@ -1324,9 +1324,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>我为什么开设这个专栏</title>
-   <link href="http://column.hongliangjie.com/%E7%AB%99%E5%8A%A1/2016/04/05/start-column/"/>
+   <link href="http://localhost:4000/%E7%AB%99%E5%8A%A1/2016/04/05/start-column/"/>
    <updated>2016-04-05T00:00:00-04:00</updated>
-   <id>http://column.hongliangjie.com/%E7%AB%99%E5%8A%A1/2016/04/05/start-column</id>
+   <id>http://localhost:4000/%E7%AB%99%E5%8A%A1/2016/04/05/start-column</id>
    <content type="html">&lt;p&gt;经过一段时间的思考，我决定开一个技术、管理和团队的专栏，分享和探讨关于大数据、人工智能（AI）及机器学习（Machine Learning）的话题，以及这些相关技术的行业思考。在已经有不少优质内容（包括博客、微信公众号）的情况下，我希望这个专栏能够更加专注、专业，少一些关注个别技术的细节，多一些对数据在一个生态系统中的把握以及行业动态的分析。&lt;/p&gt;
 
 &lt;p&gt;在接下来的文章中，我准备着重分享和探讨如下这些方面的内容：&lt;/p&gt;

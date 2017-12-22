@@ -85,6 +85,8 @@ title: 关于
 
 ## 大众文章
 
+* [数据科学家基础能力之概率统计](http://www.10tiao.com/html/680/201710/2655161654/1.html)
+* [为什么想学好人工智能，就一定要建立起系统的概念？](http://it.sohu.com/20171106/n521562601.shtml)
 * [机器学习在电商领域的应用](http://weibo.com/ttarticle/p/show?id=2309404111989793265923)
 * [知人知面需知心——论人工智能技术在推荐系统中的应用](http://geek.csdn.net/news/detail/112318)
 * [ACL 2017自然语言处理精选论文](http://geek.csdn.net/news/detail/236426)
@@ -99,7 +101,7 @@ title: 关于
 
 ## 代表性演讲
 
-* **A Gradient-based Framework for Personalization** 于印第安纳大学，2017年11月 
+* **A Gradient-based Framework for Personalization** 于印第安纳大学，2017年11月
 * **A Gradient-based Framework for Personalization** 于Global Artificial Intelligence Conference，美国纽约， 2017年10月
 * **GB-CENT** 于Big Data Innovation Summit，美国波士顿，2017年9月
 * **人工智能在Etsy电商平台中的技术实践** 于Insights Data Science，美国纽约，2017年8月
@@ -112,3 +114,9 @@ title: 关于
 * **GB-CENT** 于Predictive Analytics Innovation Summit，美国圣地亚哥，2017年2月
 * **Personalization@Yahoo** 于小红书，中国上海，2016年六月
 * **Beyond Clicks: Dwell Time in Personalization** 于Twitter，美国旧金山，2015年六月
+
+***
+
+## 媒体报道
+
+* [美国Etsy公司数据科学主管洪亮劼博士应邀访问计算机网络信息中心](http://www.cnic.cas.cn/hzjl/gjhz/hzdt/201706/t20170627_4818841.html)

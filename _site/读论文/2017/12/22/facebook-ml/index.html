@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Facebook的应用机器学习平台 &middot; 期望最大化（洪亮劼的专栏）
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18798718-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+
+  <body class="theme-base-08 sidebar-overlay">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">专栏首页</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">关于</a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+    <span class="sidebar-nav-item">当前版本: v1.0.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2017。保留全部权利。<a href="../atom.xml">RSS</a>
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">期望最大化（洪亮劼的专栏）</a>
+            <small>分享技术、管理、团队和业界的思考</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<div class="post">
+  <h1 class="post-title">Facebook的应用机器学习平台</h1>
+  <span class="post-date">
+    2017年
+      12月
+      22号</span>
+  <p>我们在这里对Facebook应用机器学习（Applied Machine Learning）组发布的文章<a href="https://research.fb.com/publications/applied-machine-learning-at-facebook-a-datacenter-infrastructure-perspective/">Applied Machine Learning at Facebook: A Datacenter Infrastructure Perspective</a>进行一个简单的分析解读。这篇文章可以让我们对Facebook里机器学习平台以及各个产品应用这个平台的情况有一个很不错的了解。</p>
+
+<p><a href="https://research.fb.com/wp-content/uploads/2017/12/hpca-2018-facebook.pdf">全文PDF</a></p>
+
+<p>这篇文章的作者群来自Facebook的17位工程师和科学家。这些人可能仅仅是整个平台的骨干成员。可以看出整个Facebook的机器学习平台是一个有非常多人协作搭建的复杂环境。</p>
+
+<p>这篇文章可以说是帮助外界解惑了很多迷思或者说是误解。同时，也给了大家一个学习大型互联网公司构建机器学习平台的机会。文章首先提出了一系列的重要观察：</p>
+
+<ul>
+  <li>Facebook有很多机器学习的应用场景。计算机视觉的应用仅仅是一个小部分。</li>
+  <li>Facebook有一个很丰富的机器学习库，包括Support Vector Machines、Logistic Regression、GBDT、MultiLayer Perceptron、CNN和RNN。</li>
+  <li>Facebook目前的机器学习场景同时利用GPU和CPU。在训练的时候，有很多是根据需要使用GPU和CPU，但是在Inference的时候，绝大多数还是使用CPU。</li>
+  <li>Facebook的机器学习架构很在乎分布式训练。</li>
+</ul>
+
+<p>文章中列举了一些主要的Facebook机器学习应用场景包括我们熟知的News Feed、Ads和Search以外，还包括一些不那么为人知的应用，如Sigma（Facebook内部的Anomaly Detection的框架）、Lumos（看似是Image的Embedding和信息提取工具）、Facer（Facebook人脸识别框架）、Language Translation（顾名思义，就是一个语言翻译的平台）以及Speech Recognition（顾名思义，一个语音识别的平台）。由此可见，机器学习在Facebook里已经有了很广泛的应用。</p>
+
+<p>那么，这些应用究竟在使用什么模型呢？Facer在使用SVM。Sigma在使用GBDT。Ads、News Feed和Sigma都在使用MLP。而Lumos、Facer在使用CNN。Text Understanding、Translation、Speech Recognition在使用RNN。</p>
+
+<p>对于深度学习框架方面，目前Facebook支持两个框架：Caffe2和PyTorch。它们分别是生产环境和研究环境。作者们阐述了一下为什么要让这两个环境各不同。简而言之就是这两个环境的需求不用，一个要求稳定高效，一个要求能够灵活多变。当然，作者们也看到了多个深度学习框架带来的潜在问题。于是作者们提到了一个叫做Open Neural Network Exchange（ONNX）的交换格式。想来这个交换格式就是为了加快从一个框架到另外一个框架的转换速度。</p>
+
+<p>从模型训练的时效性来看，有些应用的训练是每天，比如News Feed，而Search是每个小时，而其他应用则有些是每个星期或者每好几个月。而在Inference来看，第一，作者们提到了，不同的应用有可能需要不同的Inference的架构（Architecture）。同时，作者们还提到了并不是一开始就需要最精确的预测，有时候可以先展现给用户看没那么精确的结果，然后更加精确的结果可以算好以后再推给用户。</p>
+
+<p>这篇文章还有很多细节的点值得关注。总之，如果你对机器学习在大型互联网公司的应用有兴趣，并且也想知道平台、软硬件的整体架构信息，这篇文章是一个不错的阅读材料。</p>
+
+</div>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<div class="related">
+  <h2>相关文章</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/">
+            KDD 2017大会综述
+            <small>30 Aug 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/">
+            ACL 2017文章精读（五）
+            <small>07 Aug 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/">
+            ACL 2017文章精读（四）
+            <small>06 Aug 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

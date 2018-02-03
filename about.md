@@ -11,7 +11,33 @@ title: 关于
 
 在加入Etsy之前，我于2013年到2016年在[雅虎研究院（Yahoo Research）](https://research.yahoo.com/)工作，历任**科学家**、**资深科学家**和**高级研发经理**职位。在雅虎研究院工作期间，我亲自领导并参与了多项大数据大规模机器学习系统的研发工作，包括雅虎首页千万级用户个性化推荐系统、雅虎移动搜索千万级用户搜索优化系统以及大型个性化广告系统，对如何在产品中使用机器学习数据分析，以及如何在工程中实现高级机器学习模型有独到见解。
 
-我长期从事机器学习与人工智能的基础以及应用研究，对推荐系统、搜索引擎、计算广告学、社交网络以及自然语言处理等领域有深入理解，在国际顶级学术会议中发表重要论文20余篇，文章引用量超过[2200次（H-Index：18）](https://scholar.google.com/citations?user=4uaSNpYAAAAJ)。同时，我也长期担任多个国际著名会议及期刊的评审委员会成员和审稿人，并且组织过多个关于推荐、搜索、用户体验优化的国际研讨会。我拥有3项美国专利。
+我长期从事机器学习与人工智能的基础以及应用研究，对推荐系统、搜索引擎、计算广告学、社交网络以及自然语言处理等领域有深入理解，在国际顶级学术会议中发表重要论文20余篇，文章引用量超过[2300次（H-Index：18）](https://scholar.google.com/citations?user=4uaSNpYAAAAJ)。同时，我也长期担任多个国际著名会议及期刊的评审委员会成员和审稿人，并且组织过多个关于推荐、搜索、用户体验优化的国际研讨会。我拥有4项美国专利。
+
+***
+
+## 访谈及媒体报道
+
+* [从雅虎到Etsy，机器学习与人工智能专家洪亮劼的技术初心](http://www.miaopai.com/show/UB-7jSRluJO2oWFoVMEUBXr-iazGEKHm7X1uNQ__.htm)
+* [对话AI专家洪亮劼：这次，我们全方位聊聊人工智能](https://mp.weixin.qq.com/s/8helfVF5jGcBQmze23Eeag)
+* [美国Etsy公司数据科学主管洪亮劼博士应邀访问计算机网络信息中心](http://www.cnic.cas.cn/hzjl/gjhz/hzdt/201706/t20170627_4818841.html)
+
+***
+
+## 大众文章
+
+* [AI工程师vs产品团队，如何从相杀到相爱？](https://mp.weixin.qq.com/s/VcJKB_rdaoDcjID75yxzKw)
+* [来自Google团队的点击率系统模型](https://mp.weixin.qq.com/s/hs5oO56HLGxPJYy2pnt6HQ)
+* [数据科学家基础能力之概率统计](http://www.10tiao.com/html/680/201710/2655161654/1.html)
+* [为什么想学好人工智能，就一定要建立起系统的概念？](http://it.sohu.com/20171106/n521562601.shtml)
+* [机器学习在电商领域的应用](http://weibo.com/ttarticle/p/show?id=2309404111989793265923)
+* [知人知面需知心——论人工智能技术在推荐系统中的应用](http://geek.csdn.net/news/detail/112318)
+* [ACL 2017自然语言处理精选论文](http://geek.csdn.net/news/detail/236426)
+* [WWW 2017 精选论文](http://geek.csdn.net/news/detail/202634)
+* [WSDM 2017 精选论文解读](http://geek.csdn.net/news/detail/172475)
+* [2016年 AI技术发展综述](http://geek.csdn.net/news/detail/132057)
+* [NIPS 2016 十大机器学习精选论文](http://geek.csdn.net/news/detail/189766)
+* [ICML 2016 精选论文](http://geek.csdn.net/news/detail/126623)
+* [SIGIR 2016 信息检索精选论文](http://geek.csdn.net/news/detail/133916)
 
 ***
 
@@ -55,7 +81,7 @@ title: 关于
   [The Second Workshop on User Engagement Optimization at KDD 2014](http://www.ueo-workshop.com/)<br/>
   [The First Workshop on User Engagement Optimization at CIKM 2013](http://www.ueo-workshop.com/previous-editions/ueo-2013-at-cikm-2013/)
 * 国际会议程序委员会：<br/>
-  [WWW 2018](https://www2018.thewebconf.org/), [WSDM 2018](http://www.wsdm-conference.org/2018/), [CIKM 2017](http://cikm2017.org/), [SIGIR 2017](http://sigir.org/sigir2017/), [WSDM 2017](http://www.wsdm-conference.org/2017/), [WWW 2017](http://www.www2017.com.au/), [CIKM 2016](http://cikm2016.cs.iupui.edu/), [KDD 2016](http://www.kdd.org/kdd2016/), [SIGIR 2016](http://sigir.org/sigir2016/), [WWW 2016](http://www2016.ca/), [WSDM 2016](http://www.wsdm-conference.org/2016/), [IJCAI 2016](http://ijcai-16.org/), [ACL 2016](http://acl2016.org/), [EMNLP 2016](http://www.emnlp2016.net/), [CIKM 2015](http://www.cikm-2015.org/), [SIGIR 2015](http://www.sigir2015.org/), [KDD 2015](http://www.kdd.org/kdd2015/), [IUI 2015](http://iui.acm.org/2015/), [WWW 2015](http://www.www2015.it/), [AIRS 2015](http://airs-conference.org/2015/), [CIKM 2014](http://cikm2014.fudan.edu.cn/), [SIGIR 2014](http://sigir.org/sigir2014/), [WSDM 2014](http://www.wsdm-conference.org/2014/), [AAAI 2014](http://www.aaai.org/Conferences/AAAI/aaai14.php), [IEEE ICCC 2014 SNBD](http://www.ieee-iccc.org/index.html), [ICWSM 2013](http://www.icwsm.org/2013/index.php), [EMNLP-CoNLL 2012](http://emnlp-conll2012.unige.ch/)
+  [KDD 2018](http://www.kdd.org/kdd2018/), [SIGIR 2018](http://sigir.org/sigir2018/), [WWW 2018](https://www2018.thewebconf.org/), [WSDM 2018](http://www.wsdm-conference.org/2018/), [CIKM 2017](http://cikm2017.org/), [SIGIR 2017](http://sigir.org/sigir2017/), [WSDM 2017](http://www.wsdm-conference.org/2017/), [WWW 2017](http://www.www2017.com.au/), [CIKM 2016](http://cikm2016.cs.iupui.edu/), [KDD 2016](http://www.kdd.org/kdd2016/), [SIGIR 2016](http://sigir.org/sigir2016/), [WWW 2016](http://www2016.ca/), [WSDM 2016](http://www.wsdm-conference.org/2016/), [IJCAI 2016](http://ijcai-16.org/), [ACL 2016](http://acl2016.org/), [EMNLP 2016](http://www.emnlp2016.net/), [CIKM 2015](http://www.cikm-2015.org/), [SIGIR 2015](http://www.sigir2015.org/), [KDD 2015](http://www.kdd.org/kdd2015/), [IUI 2015](http://iui.acm.org/2015/), [WWW 2015](http://www.www2015.it/), [AIRS 2015](http://airs-conference.org/2015/), [CIKM 2014](http://cikm2014.fudan.edu.cn/), [SIGIR 2014](http://sigir.org/sigir2014/), [WSDM 2014](http://www.wsdm-conference.org/2014/), [AAAI 2014](http://www.aaai.org/Conferences/AAAI/aaai14.php), [IEEE ICCC 2014 SNBD](http://www.ieee-iccc.org/index.html), [ICWSM 2013](http://www.icwsm.org/2013/index.php), [EMNLP-CoNLL 2012](http://emnlp-conll2012.unige.ch/)
 * 国际期刊审稿：<br/>
   [Data Mining and Knowledge Discovery](http://www.springer.com/computer/database+management+&+information+retrieval/journal/10618)<br/>
   [ACM Transactions on Knowledge Discovery from Data](http://tkdd.acm.org/)<br/>
@@ -83,24 +109,9 @@ title: 关于
 
 ***
 
-## 大众文章
-
-* [数据科学家基础能力之概率统计](http://www.10tiao.com/html/680/201710/2655161654/1.html)
-* [为什么想学好人工智能，就一定要建立起系统的概念？](http://it.sohu.com/20171106/n521562601.shtml)
-* [机器学习在电商领域的应用](http://weibo.com/ttarticle/p/show?id=2309404111989793265923)
-* [知人知面需知心——论人工智能技术在推荐系统中的应用](http://geek.csdn.net/news/detail/112318)
-* [ACL 2017自然语言处理精选论文](http://geek.csdn.net/news/detail/236426)
-* [WWW 2017 精选论文](http://geek.csdn.net/news/detail/202634)
-* [WSDM 2017 精选论文解读](http://geek.csdn.net/news/detail/172475)
-* [2016年 AI技术发展综述](http://geek.csdn.net/news/detail/132057)
-* [NIPS 2016 十大机器学习精选论文](http://geek.csdn.net/news/detail/189766)
-* [ICML 2016 精选论文](http://geek.csdn.net/news/detail/126623)
-* [SIGIR 2016 信息检索精选论文](http://geek.csdn.net/news/detail/133916)
-
-***
-
 ## 代表性演讲
 
+* **从点击率提升到用户长期行为优化：浅谈人工智能技术在电商搜索的落地应用** 于AICon 2018，中国北京，2018年1月
 * **A Gradient-based Framework for Personalization** 于印第安纳大学，2017年11月
 * **A Gradient-based Framework for Personalization** 于Global Artificial Intelligence Conference，美国纽约， 2017年10月
 * **GB-CENT** 于Big Data Innovation Summit，美国波士顿，2017年9月
@@ -114,9 +125,3 @@ title: 关于
 * **GB-CENT** 于Predictive Analytics Innovation Summit，美国圣地亚哥，2017年2月
 * **Personalization@Yahoo** 于小红书，中国上海，2016年六月
 * **Beyond Clicks: Dwell Time in Personalization** 于Twitter，美国旧金山，2015年六月
-
-***
-
-## 媒体报道
-
-* [美国Etsy公司数据科学主管洪亮劼博士应邀访问计算机网络信息中心](http://www.cnic.cas.cn/hzjl/gjhz/hzdt/201706/t20170627_4818841.html)

@@ -15,29 +15,40 @@ title: 关于
 
 ***
 
+## 经典专栏文章
+
+*  [论互联网公司与研究院](http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2017/04/09/research-labs/)
+*  [只有偏执狂才能生存](http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/08/09/intel/)
+*  [怎样招聘一名科学家](http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/05/14/hire/)
+*  [新闻推荐，追逐卡戴珊的“屁股”](http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/23/news-recsys/)
+*  [论推荐系统的Exploitation和Exploration](http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/13/exploration/)
+*  [个性化推荐是不是伪命题](http://column.hongliangjie.com/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/)
+
+***
+
 ## 访谈及媒体报道
 
-* [从雅虎到Etsy，机器学习与人工智能专家洪亮劼的技术初心](http://www.miaopai.com/show/UB-7jSRluJO2oWFoVMEUBXr-iazGEKHm7X1uNQ__.htm)
-* [对话AI专家洪亮劼：这次，我们全方位聊聊人工智能](https://mp.weixin.qq.com/s/8helfVF5jGcBQmze23Eeag)
-* [美国Etsy公司数据科学主管洪亮劼博士应邀访问计算机网络信息中心](http://www.cnic.cas.cn/hzjl/gjhz/hzdt/201706/t20170627_4818841.html)
+*  [从雅虎到Etsy，机器学习与人工智能专家洪亮劼的技术初心](http://www.miaopai.com/show/UB-7jSRluJO2oWFoVMEUBXr-iazGEKHm7X1uNQ__.htm)
+*  [对话AI专家洪亮劼：这次，我们全方位聊聊人工智能](https://mp.weixin.qq.com/s/8helfVF5jGcBQmze23Eeag)
+*  [美国Etsy公司数据科学主管洪亮劼博士应邀访问计算机网络信息中心](http://www.cnic.cas.cn/hzjl/gjhz/hzdt/201706/t20170627_4818841.html)
 
 ***
 
 ## 大众文章
 
-* [AI工程师vs产品团队，如何从相杀到相爱？](https://mp.weixin.qq.com/s/VcJKB_rdaoDcjID75yxzKw)
-* [来自Google团队的点击率系统模型](https://mp.weixin.qq.com/s/hs5oO56HLGxPJYy2pnt6HQ)
-* [数据科学家基础能力之概率统计](http://www.10tiao.com/html/680/201710/2655161654/1.html)
-* [为什么想学好人工智能，就一定要建立起系统的概念？](http://it.sohu.com/20171106/n521562601.shtml)
-* [机器学习在电商领域的应用](http://weibo.com/ttarticle/p/show?id=2309404111989793265923)
-* [知人知面需知心——论人工智能技术在推荐系统中的应用](http://geek.csdn.net/news/detail/112318)
-* [ACL 2017自然语言处理精选论文](http://geek.csdn.net/news/detail/236426)
-* [WWW 2017 精选论文](http://geek.csdn.net/news/detail/202634)
-* [WSDM 2017 精选论文解读](http://geek.csdn.net/news/detail/172475)
-* [2016年 AI技术发展综述](http://geek.csdn.net/news/detail/132057)
-* [NIPS 2016 十大机器学习精选论文](http://geek.csdn.net/news/detail/189766)
-* [ICML 2016 精选论文](http://geek.csdn.net/news/detail/126623)
-* [SIGIR 2016 信息检索精选论文](http://geek.csdn.net/news/detail/133916)
+*  [AI工程师vs产品团队，如何从相杀到相爱？](https://mp.weixin.qq.com/s/VcJKB_rdaoDcjID75yxzKw)
+*  [来自Google团队的点击率系统模型](https://mp.weixin.qq.com/s/hs5oO56HLGxPJYy2pnt6HQ)
+*  [数据科学家基础能力之概率统计](http://www.10tiao.com/html/680/201710/2655161654/1.html)
+*  [为什么想学好人工智能，就一定要建立起系统的概念？](http://it.sohu.com/20171106/n521562601.shtml)
+*  [机器学习在电商领域的应用](http://weibo.com/ttarticle/p/show?id=2309404111989793265923)
+*  [知人知面需知心——论人工智能技术在推荐系统中的应用](http://geek.csdn.net/news/detail/112318)
+*  [ACL 2017自然语言处理精选论文](http://geek.csdn.net/news/detail/236426)
+*  [WWW 2017 精选论文](http://geek.csdn.net/news/detail/202634)
+*  [WSDM 2017 精选论文解读](http://geek.csdn.net/news/detail/172475)
+*  [2016年 AI技术发展综述](http://geek.csdn.net/news/detail/132057)
+*  [NIPS 2016 十大机器学习精选论文](http://geek.csdn.net/news/detail/189766)
+*  [ICML 2016 精选论文](http://geek.csdn.net/news/detail/126623)
+*  [SIGIR 2016 信息检索精选论文](http://geek.csdn.net/news/detail/133916)
 
 ***
 
@@ -111,7 +122,7 @@ title: 关于
 
 ## 代表性演讲
 
-* **讲点击转换成购买**于Machine Learning Innovation Summit，美国旧金山，2018年5月. 
+* **讲点击转换成购买**于Machine Learning Innovation Summit，美国旧金山，2018年5月.
 * **机器学习和人工智能在Etsy电商平台中的实践**于Big Data Meetup，美国纽约，2018年3月
 * **Tutorial on Metrics of User Engagement** 于WSDM 2018， 美国洛杉矶， 2018年2月
 * **从点击率提升到用户长期行为优化：浅谈人工智能技术在电商搜索的落地应用** 于AICon 2018，中国北京，2018年1月

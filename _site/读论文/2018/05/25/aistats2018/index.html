@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      AISTATS 2018论文导读 &middot; 期望最大化（洪亮劼的专栏）
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18798718-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+
+  <body class="theme-base-08 sidebar-overlay">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">专栏首页</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">关于</a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+    <span class="sidebar-nav-item">当前版本: v1.0.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2018。保留全部权利。<a href="../atom.xml">RSS</a>
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">期望最大化（洪亮劼的专栏）</a>
+            <small>分享技术、管理、团队和业界的思考</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<div class="post">
+  <h1 class="post-title">AISTATS 2018论文导读</h1>
+  <span class="post-date">
+    2018年
+      5月
+      25号</span>
+  <p>2018年的第21届人工智能和统计学大会（The 21st International Conference on Artificial Intelligence and Statistics）在加那利群岛（Canary Islands）召开。我们在这篇短文里提供一些论文的快速导读，起到抛砖引玉的作用。</p>
+
+<h2 id="论文导读">论文导读</h2>
+<hr />
+
+<h3 id="boosting-variational-inference-an-optimization-perspective">Boosting Variational Inference: an Optimization Perspective</h3>
+
+<p><a href="http://proceedings.mlr.press/v84/locatello18a/locatello18a.pdf">PDF</a>
+<a href="http://proceedings.mlr.press/v84/locatello18a/locatello18a-supp.pdf">Supplementary PDF</a></p>
+
+<p>这篇文章主要是说最近提出的Boosting Variational Inference（BVI）是把Boosting的思想和Variational Inference相结合的一个新的研究方向，只不过这个方向目前并没有太多的理论支持。这篇论文通过和Frank-Wolfe算法建立联系从而对BVI的收敛性质进行了证明。本篇文章基本上是一个纯理论工作。</p>
+
+<p>之前的BVI的主要论文是：</p>
+
+<ul>
+  <li>Fangjian Guo, Xiangyu Wang, Kai Fan, Tamara Broderick, David B. Dunson:
+<a href="https://arxiv.org/abs/1611.05559">Boosting Variational Inference</a>. CoRR abs/1611.05559 (2016)</li>
+  <li>Andrew C. Miller, Nicholas J. Foti, Ryan P. Adams:
+<a href="http://proceedings.mlr.press/v70/miller17a.html">Variational Boosting: Iteratively Refining Posterior Approximations</a>. ICML 2017: 2420-2429</li>
+</ul>
+
+<h3 id="personalized-and-private-peer-to-peer-machine-learning">Personalized and Private Peer-to-Peer Machine Learning</h3>
+
+<p><a href="http://proceedings.mlr.press/v84/bellet18a/bellet18a.pdf">PDF</a>
+<a href="http://proceedings.mlr.press/v84/bellet18a/bellet18a-supp.pdf">Supplementary PDF</a></p>
+
+<p>这篇文章主要是把“隐私”（Privacy）领域和优化领域相结合，寻找一种可以保护每一个“个体”（Agent）的隐私但同时能够进行协作从而让最终的优化算法能够达到最优的情况。这方面的研究其实有很多现实的应用。例如说在手机应用中，传统的模式是让所有的手机把数据都集中到服务器上，然后在服务器端再进行机器学习。这种模式很明显具有最高的数据效率但是有可能对用户的数据隐私有侵害。而另一个极端则是把在每个手机上直接进行学习。然而，因为数据有限，这样往往无法学习到有用的模型。这篇文章就是提出了一种如何在这两个极端之间寻求平衡的“异步”（Asynchronous）分布式算法。</p>
+
+<h3 id="fast-threshold-tests-for-detecting-discrimination">Fast Threshold Tests for Detecting Discrimination</h3>
+
+<p><a href="http://proceedings.mlr.press/v84/pierson18a/pierson18a.pdf">PDF</a>
+<a href="http://proceedings.mlr.press/v84/pierson18a/pierson18a-supp.pdf">Supplementary PDF</a></p>
+
+<p>这篇文章说的是“阈值测试”（Threshold Test）在过去被提出来用于检测在一些社会活动（比如租房、招聘、警察活动等）中可能存在的“歧视”或“偏差”（Bias)。这篇文章则是提出了快速计算方法使得这样的测试能够快速进行。文章在270万纽约市警察阻止路人的数据集上进行了评测。这篇文章主要是帮助大家扩宽眼界，对于社会性的偏差，目前在学术界已经出现了专门的方法论。</p>
+
+<h3 id="batch-expansion-training-an-efficient-optimization-framework">Batch-Expansion Training: An Efficient Optimization Framework</h3>
+
+<p><a href="http://proceedings.mlr.press/v84/derezinski18b/derezinski18b.pdf">PDF</a>
+<a href="http://proceedings.mlr.press/v84/derezinski18b/derezinski18b-supp.pdf">Supplementary PDF</a></p>
+
+<p>这篇文章讲的是这样一种优化的场景，那就是一个不断增大的数据集，如何在这样的情况下进行“批量”（Batch）学习。这种场景和传统的“随机”（Stochastic）学习不同，因为可以更加有效得利用资源，减少磁盘的读取。这篇文章提出的方法可以和任意的其他优化算法结合，比如L-BFGS。文章展示了提出的方法的很强的收敛性质和以及在并行化下的效果。</p>
+
+<h3 id="topic-compositional-neural-language-model">Topic Compositional Neural Language Model</h3>
+
+<p><a href="http://proceedings.mlr.press/v84/wang18a/wang18a.pdf">PDF</a>
+<a href="http://proceedings.mlr.press/v84/wang18a/wang18a-supp.pdf">Supplementary PDF</a></p>
+
+<p>自从Neural Language Model（NLM）流行以来，期望能够把NLM和话题模型（Topic Model）进行结合的想法就屡见不鲜。这篇论文也是这个方向的一次尝试。NLM的主要优势是在句子以下的结构上对字句进行建模，而话题模型则往往能够在真个文档甚至更高的层次上对文本的语义进行建模。把这两者结合起来就是想利用这两方面的优势。在这篇文章里，话题模型通过Variational Autoencoder的框架来捕捉到文档的话题（Topic）隐变量。之后，这个变量成为了对不同的语言模型进行加权的权重，而语言文字的产生则利用了Mixture-of-Experts的框架来对不同的RNN语言模型进行整合。需要注意的是，在这篇文章提出的方法里，话题模型对文字的整体数据和语言模型对单独的字句都进行了建模，也就是说，一个文档分别有两个产生过程，一个针对全局文字，一个针对有顺序的字句。</p>
+
+<h3 id="making-tree-ensembles-interpretable-a-bayesian-model-selection-approach">Making Tree Ensembles Interpretable: A Bayesian Model Selection Approach</h3>
+
+<p><a href="http://proceedings.mlr.press/v84/hara18a/hara18a.pdf">PDF</a>
+<a href="http://proceedings.mlr.press/v84/hara18a/hara18a-supp.pdf">Supplementary PDF</a></p>
+
+<p>最近几年，机器学习的可解释性是一个新的研究领域，不少工作都围绕在如何能够让已经学习的模型或者在学习过程中产生容易被解释的模型。这篇文章针对的是“树集成”（Tree Ensembles）模型，希望通过贝叶斯模型选择（Bayesian Model Selection）的方法来对树模型进行简化从而达到能够可解释的目的。这篇文章的一个可以借鉴也可以精读的地方在于如何把树模型变为概率模型。传统上树模型的整套建模语言都是非概率的，那么如果要使用贝叶斯统计的方法，就一定需要做概率的转换。</p>
+
+<h3 id="can-clustering-scale-sublinearly-with-its-clusters-a-variational-em-acceleration-of-gmms-and-k-means">Can Clustering Scale Sublinearly with Its Clusters? A Variational EM Acceleration of GMMs and K-means</h3>
+
+<p><a href="http://proceedings.mlr.press/v84/forster18a/forster18a.pdf">PDF</a>
+<a href="http://proceedings.mlr.press/v84/forster18a/forster18a-supp.pdf">Supplementary PDF</a></p>
+
+<p>高斯混合模型（GMM）和K-means都是我们非常熟悉的聚类算法。然而传统上，这两个模型的解法都是和聚类数目C、数据点数N、以及数据的维度D呈线性关系。能不能在这个基础上再加速成为了很多实践者的疑问和困难。这篇文章是希望利用Variational EM来化简整个算法，使得其不依赖于C，而依赖于一个较小的参数G。这篇文章是典型的老树开新花的尝试。</p>
+
+<h3 id="parallelised-bayesian-optimisation-via-thompson-sampling">Parallelised Bayesian Optimisation via Thompson Sampling</h3>
+
+<p><a href="http://proceedings.mlr.press/v84/kandasamy18a/kandasamy18a.pdf">PDF</a>
+<a href="http://proceedings.mlr.press/v84/kandasamy18a/kandasamy18a-supp.pdf">Supplementary PDF</a></p>
+
+<p>贝叶斯优化（Bayesian Optimisation），或者简称BO，常常用来针对复杂而且昂贵（Expensive）的函数评价，例如超参数（Hyper-parameter）的调节。针对有一些可以并行化的情况下，这篇论文提出了使用“汤姆森采样”（Thompson Sampling）的方法来应对并行的场景有惊人好的效果，并且这篇文章最终提出了“异步并行化的汤姆森采样”。作者们认为这篇文章的一大亮点是给出了理论的结论，这在过去尝试把BO并行化的工作中并不多见。</p>
+
+<h3 id="on-the-challenges-of-learning-with-inference-networks-on-sparse-high-dimensional-data">On the challenges of learning with inference networks on sparse, high-dimensional data</h3>
+
+<p><a href="http://proceedings.mlr.press/v84/krishnan18a/krishnan18a.pdf">PDF</a>
+<a href="http://proceedings.mlr.press/v84/krishnan18a/krishnan18a-supp.pdf">Supplementary PDF</a></p>
+
+<p>这篇文章其实是在针对Variational Autoencoder，或者简称VAE，在训练的时候的一个普遍问题，那就是作者们认为VAE在计算过程中并没有最优化Variational参数，而仅仅是找到了或者说是计算出了一组解。因此，作者们认为VAE存在Underfitting的情况，就是说模型的参数学习得不完全。而在传统的Stochastic Variational Learning的语境中，每一步都是根据当前的参数进行的最优化。于是，这篇文章就是把这种思路给应用到VAE上。</p>
+
+<h3 id="scalable-generalized-dynamic-topic-models">Scalable Generalized Dynamic Topic Models</h3>
+
+<p><a href="http://proceedings.mlr.press/v84/jahnichen18a/jahnichen18a.pdf">PDF</a>
+<a href="http://proceedings.mlr.press/v84/jahnichen18a/jahnichen18a-supp.pdf">Supplementary PDF</a></p>
+
+<p>Dynamic Topic Model（DTM）相信作为对话题模型（Topic Model）研究者都会不陌生。这可以说是最有影响力的话题模型的扩展。DTM是把时间序列和话题模型结合在一起最直观的一种模型。这篇文章指出，其实DTM提出的模型仅仅是一种叫Weiner Processes（WP）的一个特殊情况。而把DTM给扩展到WP以后，作者们认为就可以使用各种不同的WP的Kernel来对时序建模，大大增强模型的效果。这篇文章还给出了大规模的Variational Inference的模型解法。</p>
+
+<h3 id="direct-learning-to-rank-and-rerank">Direct Learning to Rank And Rerank</h3>
+
+<p><a href="http://proceedings.mlr.press/v84/rudin18a/rudin18a.pdf">PDF</a>
+<a href="http://proceedings.mlr.press/v84/rudin18a/rudin18a-supp.pdf">Supplementary PDF</a></p>
+
+<p>“排序学习”（Learning to Rank）是不是一个已经完全被研究过的领域呢？答案当然不是。这篇论文就是尝试在一个似乎已经被反复研究过的领域里找到一些新的知识。这篇论文的看点主要是使用了一种目标函数对已有的排序指标例如AUC、NDCG、MAP、MRR等进行了高度总结。另外，这篇文章提出，传统上，我们在优化这些方法或者这些指标的时候，并不是直接去优化这些指标，而是优化这些指标的一些“代理”（Proxy），而就是这些代理可能出了问题，使得最后的结果有可能会有很大的偏差。于是，这篇文章提出了一种直接优化目标函数的方法。</p>
+
+</div>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<div class="related">
+  <h2>相关文章</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml/">
+            Facebook的应用机器学习平台
+            <small>22 Dec 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/">
+            KDD 2017大会综述
+            <small>30 Aug 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/">
+            ACL 2017文章精读（五）
+            <small>07 Aug 2017</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

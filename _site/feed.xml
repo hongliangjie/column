@@ -5,9 +5,111 @@
     <description>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
     <link>http://column.hongliangjie.com/</link>
     <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 May 2018 10:37:24 -0400</pubDate>
-    <lastBuildDate>Sun, 20 May 2018 10:37:24 -0400</lastBuildDate>
+    <pubDate>Mon, 28 May 2018 23:03:31 -0400</pubDate>
+    <lastBuildDate>Mon, 28 May 2018 23:03:31 -0400</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>AISTATS 2018论文导读</title>
+        <description>&lt;p&gt;2018年的第21届人工智能和统计学大会（The 21st International Conference on Artificial Intelligence and Statistics）在加那利群岛（Canary Islands）召开。我们在这篇短文里提供一些论文的快速导读，起到抛砖引玉的作用。&lt;/p&gt;
+
+&lt;h2 id=&quot;论文导读&quot;&gt;论文导读&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;boosting-variational-inference-an-optimization-perspective&quot;&gt;Boosting Variational Inference: an Optimization Perspective&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v84/locatello18a/locatello18a.pdf&quot;&gt;PDF&lt;/a&gt;
+&lt;a href=&quot;http://proceedings.mlr.press/v84/locatello18a/locatello18a-supp.pdf&quot;&gt;Supplementary PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这篇文章主要是说最近提出的Boosting Variational Inference（BVI）是把Boosting的思想和Variational Inference相结合的一个新的研究方向，只不过这个方向目前并没有太多的理论支持。这篇论文通过和Frank-Wolfe算法建立联系从而对BVI的收敛性质进行了证明。本篇文章基本上是一个纯理论工作。&lt;/p&gt;
+
+&lt;p&gt;之前的BVI的主要论文是：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Fangjian Guo, Xiangyu Wang, Kai Fan, Tamara Broderick, David B. Dunson:
+&lt;a href=&quot;https://arxiv.org/abs/1611.05559&quot;&gt;Boosting Variational Inference&lt;/a&gt;. CoRR abs/1611.05559 (2016)&lt;/li&gt;
+  &lt;li&gt;Andrew C. Miller, Nicholas J. Foti, Ryan P. Adams:
+&lt;a href=&quot;http://proceedings.mlr.press/v70/miller17a.html&quot;&gt;Variational Boosting: Iteratively Refining Posterior Approximations&lt;/a&gt;. ICML 2017: 2420-2429&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;personalized-and-private-peer-to-peer-machine-learning&quot;&gt;Personalized and Private Peer-to-Peer Machine Learning&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v84/bellet18a/bellet18a.pdf&quot;&gt;PDF&lt;/a&gt;
+&lt;a href=&quot;http://proceedings.mlr.press/v84/bellet18a/bellet18a-supp.pdf&quot;&gt;Supplementary PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这篇文章主要是把“隐私”（Privacy）领域和优化领域相结合，寻找一种可以保护每一个“个体”（Agent）的隐私但同时能够进行协作从而让最终的优化算法能够达到最优的情况。这方面的研究其实有很多现实的应用。例如说在手机应用中，传统的模式是让所有的手机把数据都集中到服务器上，然后在服务器端再进行机器学习。这种模式很明显具有最高的数据效率但是有可能对用户的数据隐私有侵害。而另一个极端则是把在每个手机上直接进行学习。然而，因为数据有限，这样往往无法学习到有用的模型。这篇文章就是提出了一种如何在这两个极端之间寻求平衡的“异步”（Asynchronous）分布式算法。&lt;/p&gt;
+
+&lt;h3 id=&quot;fast-threshold-tests-for-detecting-discrimination&quot;&gt;Fast Threshold Tests for Detecting Discrimination&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v84/pierson18a/pierson18a.pdf&quot;&gt;PDF&lt;/a&gt;
+&lt;a href=&quot;http://proceedings.mlr.press/v84/pierson18a/pierson18a-supp.pdf&quot;&gt;Supplementary PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这篇文章说的是“阈值测试”（Threshold Test）在过去被提出来用于检测在一些社会活动（比如租房、招聘、警察活动等）中可能存在的“歧视”或“偏差”（Bias)。这篇文章则是提出了快速计算方法使得这样的测试能够快速进行。文章在270万纽约市警察阻止路人的数据集上进行了评测。这篇文章主要是帮助大家扩宽眼界，对于社会性的偏差，目前在学术界已经出现了专门的方法论。&lt;/p&gt;
+
+&lt;h3 id=&quot;batch-expansion-training-an-efficient-optimization-framework&quot;&gt;Batch-Expansion Training: An Efficient Optimization Framework&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v84/derezinski18b/derezinski18b.pdf&quot;&gt;PDF&lt;/a&gt;
+&lt;a href=&quot;http://proceedings.mlr.press/v84/derezinski18b/derezinski18b-supp.pdf&quot;&gt;Supplementary PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这篇文章讲的是这样一种优化的场景，那就是一个不断增大的数据集，如何在这样的情况下进行“批量”（Batch）学习。这种场景和传统的“随机”（Stochastic）学习不同，因为可以更加有效得利用资源，减少磁盘的读取。这篇文章提出的方法可以和任意的其他优化算法结合，比如L-BFGS。文章展示了提出的方法的很强的收敛性质和以及在并行化下的效果。&lt;/p&gt;
+
+&lt;h3 id=&quot;topic-compositional-neural-language-model&quot;&gt;Topic Compositional Neural Language Model&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v84/wang18a/wang18a.pdf&quot;&gt;PDF&lt;/a&gt;
+&lt;a href=&quot;http://proceedings.mlr.press/v84/wang18a/wang18a-supp.pdf&quot;&gt;Supplementary PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;自从Neural Language Model（NLM）流行以来，期望能够把NLM和话题模型（Topic Model）进行结合的想法就屡见不鲜。这篇论文也是这个方向的一次尝试。NLM的主要优势是在句子以下的结构上对字句进行建模，而话题模型则往往能够在真个文档甚至更高的层次上对文本的语义进行建模。把这两者结合起来就是想利用这两方面的优势。在这篇文章里，话题模型通过Variational Autoencoder的框架来捕捉到文档的话题（Topic）隐变量。之后，这个变量成为了对不同的语言模型进行加权的权重，而语言文字的产生则利用了Mixture-of-Experts的框架来对不同的RNN语言模型进行整合。需要注意的是，在这篇文章提出的方法里，话题模型对文字的整体数据和语言模型对单独的字句都进行了建模，也就是说，一个文档分别有两个产生过程，一个针对全局文字，一个针对有顺序的字句。&lt;/p&gt;
+
+&lt;h3 id=&quot;making-tree-ensembles-interpretable-a-bayesian-model-selection-approach&quot;&gt;Making Tree Ensembles Interpretable: A Bayesian Model Selection Approach&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v84/hara18a/hara18a.pdf&quot;&gt;PDF&lt;/a&gt;
+&lt;a href=&quot;http://proceedings.mlr.press/v84/hara18a/hara18a-supp.pdf&quot;&gt;Supplementary PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;最近几年，机器学习的可解释性是一个新的研究领域，不少工作都围绕在如何能够让已经学习的模型或者在学习过程中产生容易被解释的模型。这篇文章针对的是“树集成”（Tree Ensembles）模型，希望通过贝叶斯模型选择（Bayesian Model Selection）的方法来对树模型进行简化从而达到能够可解释的目的。这篇文章的一个可以借鉴也可以精读的地方在于如何把树模型变为概率模型。传统上树模型的整套建模语言都是非概率的，那么如果要使用贝叶斯统计的方法，就一定需要做概率的转换。&lt;/p&gt;
+
+&lt;h3 id=&quot;can-clustering-scale-sublinearly-with-its-clusters-a-variational-em-acceleration-of-gmms-and-k-means&quot;&gt;Can Clustering Scale Sublinearly with Its Clusters? A Variational EM Acceleration of GMMs and K-means&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v84/forster18a/forster18a.pdf&quot;&gt;PDF&lt;/a&gt;
+&lt;a href=&quot;http://proceedings.mlr.press/v84/forster18a/forster18a-supp.pdf&quot;&gt;Supplementary PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;高斯混合模型（GMM）和K-means都是我们非常熟悉的聚类算法。然而传统上，这两个模型的解法都是和聚类数目C、数据点数N、以及数据的维度D呈线性关系。能不能在这个基础上再加速成为了很多实践者的疑问和困难。这篇文章是希望利用Variational EM来化简整个算法，使得其不依赖于C，而依赖于一个较小的参数G。这篇文章是典型的老树开新花的尝试。&lt;/p&gt;
+
+&lt;h3 id=&quot;parallelised-bayesian-optimisation-via-thompson-sampling&quot;&gt;Parallelised Bayesian Optimisation via Thompson Sampling&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v84/kandasamy18a/kandasamy18a.pdf&quot;&gt;PDF&lt;/a&gt;
+&lt;a href=&quot;http://proceedings.mlr.press/v84/kandasamy18a/kandasamy18a-supp.pdf&quot;&gt;Supplementary PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;贝叶斯优化（Bayesian Optimisation），或者简称BO，常常用来针对复杂而且昂贵（Expensive）的函数评价，例如超参数（Hyper-parameter）的调节。针对有一些可以并行化的情况下，这篇论文提出了使用“汤姆森采样”（Thompson Sampling）的方法来应对并行的场景有惊人好的效果，并且这篇文章最终提出了“异步并行化的汤姆森采样”。作者们认为这篇文章的一大亮点是给出了理论的结论，这在过去尝试把BO并行化的工作中并不多见。&lt;/p&gt;
+
+&lt;h3 id=&quot;on-the-challenges-of-learning-with-inference-networks-on-sparse-high-dimensional-data&quot;&gt;On the challenges of learning with inference networks on sparse, high-dimensional data&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v84/krishnan18a/krishnan18a.pdf&quot;&gt;PDF&lt;/a&gt;
+&lt;a href=&quot;http://proceedings.mlr.press/v84/krishnan18a/krishnan18a-supp.pdf&quot;&gt;Supplementary PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;这篇文章其实是在针对Variational Autoencoder，或者简称VAE，在训练的时候的一个普遍问题，那就是作者们认为VAE在计算过程中并没有最优化Variational参数，而仅仅是找到了或者说是计算出了一组解。因此，作者们认为VAE存在Underfitting的情况，就是说模型的参数学习得不完全。而在传统的Stochastic Variational Learning的语境中，每一步都是根据当前的参数进行的最优化。于是，这篇文章就是把这种思路给应用到VAE上。&lt;/p&gt;
+
+&lt;h3 id=&quot;scalable-generalized-dynamic-topic-models&quot;&gt;Scalable Generalized Dynamic Topic Models&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v84/jahnichen18a/jahnichen18a.pdf&quot;&gt;PDF&lt;/a&gt;
+&lt;a href=&quot;http://proceedings.mlr.press/v84/jahnichen18a/jahnichen18a-supp.pdf&quot;&gt;Supplementary PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Dynamic Topic Model（DTM）相信作为对话题模型（Topic Model）研究者都会不陌生。这可以说是最有影响力的话题模型的扩展。DTM是把时间序列和话题模型结合在一起最直观的一种模型。这篇文章指出，其实DTM提出的模型仅仅是一种叫Weiner Processes（WP）的一个特殊情况。而把DTM给扩展到WP以后，作者们认为就可以使用各种不同的WP的Kernel来对时序建模，大大增强模型的效果。这篇文章还给出了大规模的Variational Inference的模型解法。&lt;/p&gt;
+
+&lt;h3 id=&quot;direct-learning-to-rank-and-rerank&quot;&gt;Direct Learning to Rank And Rerank&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v84/rudin18a/rudin18a.pdf&quot;&gt;PDF&lt;/a&gt;
+&lt;a href=&quot;http://proceedings.mlr.press/v84/rudin18a/rudin18a-supp.pdf&quot;&gt;Supplementary PDF&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;“排序学习”（Learning to Rank）是不是一个已经完全被研究过的领域呢？答案当然不是。这篇论文就是尝试在一个似乎已经被反复研究过的领域里找到一些新的知识。这篇论文的看点主要是使用了一种目标函数对已有的排序指标例如AUC、NDCG、MAP、MRR等进行了高度总结。另外，这篇文章提出，传统上，我们在优化这些方法或者这些指标的时候，并不是直接去优化这些指标，而是优化这些指标的一些“代理”（Proxy），而就是这些代理可能出了问题，使得最后的结果有可能会有很大的偏差。于是，这篇文章提出了一种直接优化目标函数的方法。&lt;/p&gt;
+</description>
+        <pubDate>Fri, 25 May 2018 00:00:00 -0400</pubDate>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</guid>
+        
+        
+        <category>读论文</category>
+        
+      </item>
     
       <item>
         <title>Facebook的应用机器学习平台</title>
@@ -342,45 +444,6 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
         <pubDate>Sun, 18 Jun 2017 00:00:00 -0400</pubDate>
         <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</link>
         <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</guid>
-        
-        
-        <category>读论文</category>
-        
-      </item>
-    
-      <item>
-        <title>AIStats 2017文章精读（四）</title>
-        <description>&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Fast Bayesian Optimization of Machine Learning Hyper-parameters on Large Datasets进行一个简单的分析解读。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/klein17a/klein17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/klein17a/klein17a-supp.pdf&quot;&gt;文章附加信息&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;这篇文章的作者群是一队来自德国的学者，分别来自University of Freiburg和Max Planck Institute for Intelligent Systems。文章讨论了一个很实际的问题，那就是如何对一个机器学习算法进行自动调参数。文章针对这几年逐渐火热起来的Bayesian Optimization，开发了一个快速的、并且能够在大规模数据上运行的算法。&lt;/p&gt;
-
-&lt;p&gt;传统的机器学习算法有很多所谓叫超参数（Hyper-parameter）需要设置。而这些超参数往往对最后的算法性能有至关重要的影响。在一般的情况下，如何寻找最佳的超参数组合则成为了很多专家的必要“技能”。而对于机器算法本身而言，取决于算法的复杂程度，有时候寻找一组合适的超参数意味着非常大的计算代价。&lt;/p&gt;
-
-&lt;p&gt;这篇文章讨论了这么一个思路，那就是，既然在全局数据上对算法进行评估计算代价太大，可能对于直接调参过于困难，那能否在一个数据的子集上进行调参，然后把获得的结果看能否运用到更大一点的子集上，最终运用到全集上。&lt;/p&gt;
-
-&lt;p&gt;这里，我们来回顾一下Bayesian Optimization的简单原理。首先，我们有一个“黑盒”的目标函数。我们的任务是找到这个目标函数最小值所对应的参数值（超参数）。这里，我们需要一个这个目标函数的先验分布，同时我们还需要一个所谓的Acquisition Function，用来衡量在某个点的参数值的Utility。有了这些设置，一个通常情况下的Bayesian Optimization的步骤是这样的：&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;用数值优化的方法在Acquisition Function的帮助下，找到下一个Promising的点。&lt;/li&gt;
-  &lt;li&gt;带入这个Promising的点到黑盒函数中，得到当前的值，并且更新现在的数据集。&lt;/li&gt;
-  &lt;li&gt;更新目标函数的先验分布以及Acquisition Function。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;通常情况下，Bayesian Optimization的研究喜欢用Gaussian Processes（GP）来做目标函数的先验分布。这里就不复述具体的设置了。而对于Acquisition Function，这里有好几种可能性，比如文章举了Expected Improvement（EI）、Upper Confidence Bound（UCB）、Entropy Search（ES）等的例子。这篇文章使用了EI和ES。&lt;/p&gt;
-
-&lt;p&gt;这篇文章提出的方法的思路的第一步，是把原来那个黑盒函数增加了一个参数，也就是除了原来的超参数以外，增加了一个数据集大小的参数。这个参数是按照比例（从0到1的一个值）来调整相对的数据集大小的。那么，如何应用这个参数呢？这里的技巧是，在GP里，需要有一个Kernel的设置。原本这个Kernel是定义在两组超参数之间的。那么，在这篇文章里，这个Kernel就定义在“超参数和数据集大小”这个Pair与另外一个Pair之间。于是，这里就能够通过已经经典的设置得到需要的效果。文章还提出了一个新的Acquisition Function用来平衡Information Gain和Cost。&lt;/p&gt;
-
-&lt;p&gt;文章用SVM在MNIST做了实验，还用CNN在CIFAR-10以及SVHN上做了实验，以及还用ResNet在CIFAR-10上做了实验。总体上说，提出来的算法比之前的方法快10倍到100倍。并且，相比较的一些其他算法（比如一开始就在全集上进行计算的方法）都没法完成实验。&lt;/p&gt;
-
-&lt;p&gt;这篇文章的基本思路和相关研究值得机器学习实践者学习。&lt;/p&gt;
-</description>
-        <pubDate>Sat, 17 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/</guid>
         
         
         <category>读论文</category>

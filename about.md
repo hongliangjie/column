@@ -28,6 +28,7 @@ title: 关于
 
 ## 访谈及媒体报道
 
+*  [电商为什么知道你想买啥？](https://mp.weixin.qq.com/s/IRBv1BtBgAIQ5KGvR_YJHQ)
 *  [从雅虎到Etsy，机器学习与人工智能专家洪亮劼的技术初心](http://www.miaopai.com/show/UB-7jSRluJO2oWFoVMEUBXr-iazGEKHm7X1uNQ__.htm)
 *  [对话AI专家洪亮劼：这次，我们全方位聊聊人工智能](https://mp.weixin.qq.com/s/8helfVF5jGcBQmze23Eeag)
 *  [美国Etsy公司数据科学主管洪亮劼博士应邀访问计算机网络信息中心](http://www.cnic.cas.cn/hzjl/gjhz/hzdt/201706/t20170627_4818841.html)

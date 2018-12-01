@@ -7,7 +7,7 @@ title: 关于
 
 <br/>
 <img align="right" src="/assets/hongliangjie2.jpg" style="width: 285px;height:226.5px;margin-left:20px;">
-我目前担任总部位于纽约的电子商务平台[Etsy](https://www.etsy.com/)的**数据科学主管**（Head of Data Science）。Etsy是一个拥有超过4500万商品、2百万活跃卖家和3100万活跃买家的国际化电子交易市场。作为一个技术管理者，我发展并且管理着一支位于纽约、旧金山和多伦多的15人的数据科学家及工程团队，我团队的数据科学家绝大多数拥有硕士以及博士文凭，来自计算机科学、运筹学、统计、经济学、物理等多种背景，毕业于例如康奈尔大学、斯坦福大学、芝加哥大学、卡内基梅隆大学等知名学府。作为一名技术领导者，我团队主要职责是为Etsy提供全方位的数据科学支持，包括个性化与推荐、搜索、计算广告、图像处理及深度学习和文字信息挖掘等多方面的基于机器学习的产品优化方案。
+我目前担任总部位于纽约的电子商务平台[Etsy](https://www.etsy.com/)的**数据科学主管**（Head of Data Science）。Etsy是一个拥有超过4500万商品、2百万活跃卖家和3100万活跃买家的国际化电子交易市场。作为一个技术管理者，我发展并且管理着一支位于纽约和旧金山有近20人的数据科学家及工程团队。团队成员绝大多数拥有硕士以及博士文凭，来自计算机科学、运筹学、统计、经济学、物理等多种背景。作为一名技术领导者，我团队主要职责是为Etsy提供全方位的数据科学支持，包括个性化与推荐、搜索、计算广告、图像处理及深度学习和文字信息挖掘等多方面的基于机器学习的产品优化方案。
 
 在加入Etsy之前，我于2013年到2016年在[雅虎研究院（Yahoo Research）](https://research.yahoo.com/)工作，历任**科学家**、**资深科学家**和**高级研发经理**职位。在雅虎研究院工作期间，我亲自领导并参与了多项大数据大规模机器学习系统的研发工作，包括雅虎首页千万级用户个性化推荐系统、雅虎移动搜索千万级用户搜索优化系统以及大型个性化广告系统，对如何在产品中使用机器学习数据分析，以及如何在工程中实现高级机器学习模型有独到见解。
 
@@ -90,6 +90,7 @@ title: 关于
 ## 主要学术界服务
 
 * 国际会议组织工作：<br/>
+  [DAPA: The Workshop on Deep Matching in Practical Applications at WSDM 2019](https://wsdm2019-dapa.github.io/)<br/>
   [The Second Workshop on User Engagement Optimization at KDD 2014](http://www.ueo-workshop.com/)<br/>
   [The First Workshop on User Engagement Optimization at CIKM 2013](http://www.ueo-workshop.com/previous-editions/ueo-2013-at-cikm-2013/)
 * 国际会议程序委员会：<br/>

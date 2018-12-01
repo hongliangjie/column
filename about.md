@@ -90,7 +90,7 @@ title: 关于
 ## 主要学术界服务
 
 * 国际会议组织工作：<br/>
-  [DAPA: The Workshop on Deep Matching in Practical Applications at WSDM 2019](https://wsdm2019-dapa.github.io/)<br/>
+  [The Workshop on Deep Matching in Practical Applications at WSDM 2019](https://wsdm2019-dapa.github.io/)<br/>
   [The Second Workshop on User Engagement Optimization at KDD 2014](http://www.ueo-workshop.com/)<br/>
   [The First Workshop on User Engagement Optimization at CIKM 2013](http://www.ueo-workshop.com/previous-editions/ueo-2013-at-cikm-2013/)
 * 国际会议程序委员会：<br/>

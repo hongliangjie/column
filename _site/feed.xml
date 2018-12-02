@@ -3,11 +3,69 @@
   <channel>
     <title>期望最大化（洪亮劼的专栏）</title>
     <description>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
-    <link>http://column.hongliangjie.com/</link>
-    <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 01 Dec 2018 13:27:24 -0500</pubDate>
-    <lastBuildDate>Sat, 01 Dec 2018 13:27:24 -0500</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 02 Dec 2018 00:41:32 -0500</pubDate>
+    <lastBuildDate>Sun, 02 Dec 2018 00:41:32 -0500</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>CIKM 2018论文精读（一）</title>
+        <description>&lt;p&gt;今天我们要来分享一篇题目叫&lt;a href=&quot;https://drive.google.com/open?id=1m7-z2loy5iW-gcrGiT2XJTdr4LjQHf3H&quot;&gt;Collaborative Multi-objective Ranking&lt;/a&gt;的发表在&lt;a href=&quot;https://www.cikm2018.units.it/&quot;&gt;CIKM 2018&lt;/a&gt;上的论文。这篇论文的作者是来自于罗格斯大学（Rutgers University）的&lt;a href=&quot;https://sites.google.com/site/hujun1010/&quot;&gt;Jun Hu&lt;/a&gt;和&lt;a href=&quot;http://www.stat.rutgers.edu/home/pingli/&quot;&gt;Ping Li&lt;/a&gt;。文章的核心内容讲的是，传统的以矩阵分解为基础的“协同排序”（Collaborative Ranking）容易有无法有效学习“用户隐向量”（User Factor）和“物品隐向量”（Item Factor）的问题。这篇论文探究了这种问题的来源以及提出了一种“共同优化”（Joint Optimization）的策略来解决问题。&lt;/p&gt;
+
+&lt;h2 id=&quot;文章的基本设置&quot;&gt;文章的基本设置&lt;/h2&gt;
+
+&lt;p&gt;我们先来看一下文章的基本设置。首先，我们假设有一个评分矩阵$ \mathbf{R} \in \mathbb{R}^{M \times N} $，被一个用户矩阵$ \mathbf{U} \in \mathbb{R}^{M \times K} $和一个物品矩阵$ \mathbf{V} \in \mathbb{R}^{N \times K} $所表达$ \mathbf{R} = \mathbf{U} \times \mathbf{V} $。一个“单点”（Pointwise）目标函数常用来学习模型的参数：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L_{\mathrm{pointwise}} = \sum_{u=1}^{M} \sum_{v=1}^{N} (r_{ui} - \hat{r_{ui}})^{2} + \sum_{u=1}^{M}\lambda_{U,u}|| \mathbf{U}_{u} ||^{2} + \sum_{v=1}^{N}\lambda_{V,v}|| \mathbf{V}_{v} ||^{2}&lt;/script&gt;
+
+&lt;p&gt;这个目标函数的目的是希望能够学习到准确的用户隐向量和物品隐向量来逼近原有的评分矩阵。然而在真实的应用中，很多时候我们并不是在意&lt;script type=&quot;math/tex&quot;&gt;\mathbf{U}&lt;/script&gt;和&lt;script type=&quot;math/tex&quot;&gt;\mathbf{V}&lt;/script&gt;的绝对数值的准确性，而是它们之间的相对位置，也就是说“排序”。所以，这也就有了“协同排序”的出现。具体说来，“协同排序”就是希望利用“配对法”（Pairwise）的“排序学习”（Learning to Rank）确保物品的相对顺序得以保证。一个常见的针对顺序的损失目标函数是：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\varepsilon_{\mathrm{zero-one}} = - \sum_{(u, i_{1}, i_{2}) \in \Omega} \sigma \Bigr( \mathbf{U}_{u} \mathbf{V}_{v_{1}}^{T} - \mathbf{U}_{u} \mathbf{V}_{v_{2}}^{T}\Bigl)&lt;/script&gt;
+
+&lt;p&gt;其中&lt;script type=&quot;math/tex&quot;&gt;\Omega = \{ (u, i_{1}, i_{2}) : r_{ui_{1}} &gt; r_{ui_{2}} \}&lt;/script&gt;是一个比较集合，&lt;script type=&quot;math/tex&quot;&gt;\sigma(x)&lt;/script&gt;是一个$0-1$ 损失函数：当$x &amp;gt; 1$的时候&lt;script type=&quot;math/tex&quot;&gt;\sigma(x) =1&lt;/script&gt;，其他时候为$0$。这个损失函数无法微分，因此一个替代的方案则是利用Sigmoid函数：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\varepsilon_{\mathrm{zero-one-approximate}} = - \sum_{(u, i_{1}, i_{2}) \in \Omega} \frac{1}{1+\exp\Bigr( -\mathbf{U}_{u} (\mathbf{V}_{v_{1}} - \mathbf{V}_{v_{2}})^{T}\Bigl)}&lt;/script&gt;
+
+&lt;p&gt;我们有了上面的这个损失函数以后，在进行优化的过程中，往往会“保持住”（Fix）所有某个用户$u$所对应的&lt;script type=&quot;math/tex&quot;&gt;\mathbf{V}&lt;/script&gt;，然后更新&lt;script type=&quot;math/tex&quot;&gt;\mathbf{U}_{u}&lt;/script&gt;。&lt;/p&gt;
+
+&lt;h2 id=&quot;文章的核心观点&quot;&gt;文章的核心观点&lt;/h2&gt;
+
+&lt;p&gt;文章的作者们发现，在某些情况下在更新用户矩阵&lt;script type=&quot;math/tex&quot;&gt;\mathbf{U}_{u}&lt;/script&gt;的时候，算法不可能保持住所有用户所对应物品的顺序的。举例来说，我们有两组物品的比较顺序&lt;script type=&quot;math/tex&quot;&gt;\{ (u, a, b) : r_{ua} &gt; r_{ub} \} \in \Omega&lt;/script&gt;和&lt;script type=&quot;math/tex&quot;&gt;\{ (u, c, d) : r_{uc} &gt; r_{ud} \} \in \Omega&lt;/script&gt;。并且当前情况下，我们有这样的关系：&lt;script type=&quot;math/tex&quot;&gt;\mathbf{V}_{a} - \mathbf{V}_{b} =[0,-1]&lt;/script&gt;和&lt;script type=&quot;math/tex&quot;&gt;\mathbf{V}_{c} - \mathbf{V}_{d} =[0,1]&lt;/script&gt;。这也就意味着无论如何更新&lt;script type=&quot;math/tex&quot;&gt;\mathbf{U}_{u}&lt;/script&gt;，我们都无法同时满足&lt;script type=&quot;math/tex&quot;&gt;\mathbf{U}_{u}(\mathbf{V}_{a} - \mathbf{V}_{b})&gt;0&lt;/script&gt;和&lt;script type=&quot;math/tex&quot;&gt;\mathbf{U}_{u}(\mathbf{V}_{c} - \mathbf{V}_{d})&gt;0&lt;/script&gt;，因为这两组乘积必定是一正一负，无法调和。也就是说，在更新了&lt;script type=&quot;math/tex&quot;&gt;\mathbf{U}_{u}&lt;/script&gt;之后，我们反而无法保证原有的顺序了。&lt;/p&gt;
+
+&lt;p&gt;第二个作者们的发现来自于对于Sigmoid函数&lt;script type=&quot;math/tex&quot;&gt;\sigma(x) = \frac{1}{1+ \exp(-ax)}&lt;/script&gt;的认识。在这个函数中，&lt;script type=&quot;math/tex&quot;&gt;a&lt;/script&gt;控制了曲线多么接近&lt;script type=&quot;math/tex&quot;&gt;0-1&lt;/script&gt;损失函数：值越大，越接近。然而，在矩阵分解中，任何对于&lt;script type=&quot;math/tex&quot;&gt;\mathbf{U}_{u}&lt;/script&gt;的更新（例如把其值增大两倍），都可以利用更改其对应的所有&lt;script type=&quot;math/tex&quot;&gt;\mathbf{V}_{i}&lt;/script&gt;来达到恢复其之前的状态（例如把其值除以一半）。这样，更新&lt;script type=&quot;math/tex&quot;&gt;\mathbf{U}_{u}&lt;/script&gt;并不一定逼近&lt;script type=&quot;math/tex&quot;&gt;0-1&lt;/script&gt;损失函数。换句话说，我们必须要对&lt;script type=&quot;math/tex&quot;&gt;\mathbf{V}&lt;/script&gt;进行限制，不能无限制得任其发展。&lt;/p&gt;
+
+&lt;h2 id=&quot;文章提出的模型&quot;&gt;文章提出的模型&lt;/h2&gt;
+
+&lt;p&gt;有了上面的铺垫，作者们提出了一种新的损失函数，那就是把单点损失函数，基于物品的配对损失函数以及基于用户的配对损失函数结合起来，形成一个三个损失函数的某种平衡。&lt;/p&gt;
+
+&lt;p&gt;我们已经定义了单点损失函数，那这里就来看看一下基于物品的配对损失函数。作者们使用了一个叫Bradley-Terry模型来针对某个用户的两个物品进行比较的概率进行建模：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P(r_{ui_{1}} &gt; r_{ui_{2}}) = \frac{\exp(\mathbf{U}_{u}\mathbf{V}_{i_{1}}^{T})}{\exp(\mathbf{U}_{u}\mathbf{V}_{i_{1}}^{T}) + \exp(\mathbf{U}_{u}\mathbf{V}_{i_{2}}^{T})}&lt;/script&gt;
+
+&lt;p&gt;在有了这个概率之后，我们最小化其“负对数似然”（Negative Log Likelihood）:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L_{\mathrm{row-wise}} = - \sum_{(u, i_{1}, i_{2}) \in \Omega} \log P(r_{ui_{1}} &gt; r_{ui_{2}}) + \sum_{v} \lambda_{V,v}||\mathbf{V}_{v}||^{2}&lt;/script&gt;
+
+&lt;p&gt;非常类似的，我们还可以定义基于用户的配对损失函数，得到：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L_{\mathrm{column-wise}} = - \sum_{(u_{1} u_{1}, i) \in \Psi} \log P(r_{u_{1}i} &gt; r_{u_{2}i}) + \sum_{u} \lambda_{U,u}||\mathbf{U}_{u}||^{2}&lt;/script&gt;
+
+&lt;p&gt;于是我们可以定义最终的统一的损失函数为：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L = \alpha L_{\mathrm{row-wise}} + \beta L_{\mathrm{column-sie}} + (1-\alpha -\beta) L_{\mathrm{pointwise}}&lt;/script&gt;
+
+&lt;p&gt;其中，$\alpha \in [0, 1]$和$\beta \in [0, 1]$，并且&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
+\alpha + \beta &lt;1 %]]&gt;&lt;/script&gt;。作者们认为，这个新的损失函数可以解决之前提出的问题。针对这个新的目标函数，文章提出了详细的优化算法，这里就不赘述了。作者们提出的模型在MovieLens、Netflix以及Amazon的数据集上都要优于不使用排序的纯矩阵分解模型以及一般的协同排序算法。&lt;/p&gt;
+</description>
+        <pubDate>Sat, 01 Dec 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr/</guid>
+        
+        
+        <category>读论文</category>
+        
+      </item>
     
       <item>
         <title>AISTATS 2018论文导读</title>
@@ -103,8 +161,8 @@
 &lt;p&gt;“排序学习”（Learning to Rank）是不是一个已经完全被研究过的领域呢？答案当然不是。这篇论文就是尝试在一个似乎已经被反复研究过的领域里找到一些新的知识。这篇论文的看点主要是使用了一种目标函数对已有的排序指标例如AUC、NDCG、MAP、MRR等进行了高度总结。另外，这篇文章提出，传统上，我们在优化这些方法或者这些指标的时候，并不是直接去优化这些指标，而是优化这些指标的一些“代理”（Proxy），而就是这些代理可能出了问题，使得最后的结果有可能会有很大的偏差。于是，这篇文章提出了一种直接优化目标函数的方法。&lt;/p&gt;
 </description>
         <pubDate>Fri, 25 May 2018 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</guid>
         
         
         <category>读论文</category>
@@ -139,8 +197,8 @@
 &lt;p&gt;这篇文章还有很多细节的点值得关注。总之，如果你对机器学习在大型互联网公司的应用有兴趣，并且也想知道平台、软硬件的整体架构信息，这篇文章是一个不错的阅读材料。&lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Dec 2017 00:00:00 -0500</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml/</guid>
         
         
         <category>读论文</category>
@@ -197,8 +255,8 @@
 &lt;p&gt;总体最大的感觉是KDD已经成为了数据科学的盛宴。&lt;/p&gt;
 </description>
         <pubDate>Wed, 30 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</guid>
+        <link>http://localhost:4000/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</guid>
         
         
         <category>会议</category>
@@ -226,8 +284,8 @@
 &lt;p&gt;这篇文章适合对于最近所谓的Neural Programming有兴趣的读者泛读。对怎么改进强化学习或者MML有兴趣的读者精读。文章的“Related Work”部分也是非常详尽，有很多工作值得参考。&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</guid>
         
         
         <category>读论文</category>
@@ -253,8 +311,8 @@
 &lt;p&gt;总体说来，这篇文章非常值得对时序模型有兴趣的读者精读。文章的“Related Work”部分也很精彩，对相关研究有兴趣的朋友可以参考这部分看看最近都有哪些工作很类似。&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</guid>
         
         
         <category>读论文</category>
@@ -288,8 +346,8 @@
 &lt;p&gt;可以说整个文章真正值得借鉴主要还是那个“软查询”的思想。整个流程也值得参考。但是训练的困难可能使得这个系统作为一个可以更加扩展的系统的价值不高。本文值得对对话系统有研究的人泛读。&lt;/p&gt;
 </description>
         <pubDate>Sat, 05 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</guid>
         
         
         <category>读论文</category>
@@ -316,8 +374,8 @@
 &lt;p&gt;总体说来，这篇文章值得文字挖掘的研究者和NLP的研究者泛读。&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Aug 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</guid>
         
         
         <category>读论文</category>
@@ -345,8 +403,8 @@
 &lt;p&gt;这篇文章因为也有源代码（基于Tensorflow），推荐有兴趣的读者精读。&lt;/p&gt;
 </description>
         <pubDate>Thu, 27 Jul 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</guid>
         
         
         <category>读论文</category>
@@ -408,42 +466,8 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
 &lt;/ul&gt;
 </description>
         <pubDate>Sun, 09 Jul 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</guid>
-        
-        
-        <category>读论文</category>
-        
-      </item>
-    
-      <item>
-        <title>AIStats 2017文章精读（五）</title>
-        <description>&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Communication-Efficient Learning of Deep Networks from Decentralized Data进行一个简单的分析解读。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/mcmahan17a/mcmahan17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/mcmahan17a/mcmahan17a-supp.pdf&quot;&gt;文章附加信息&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;这篇文章的作者群来自Google。文章的核心内容讲的是一个非常有实际意义的问题，那就是在分布式网络的情况下，如何构建合理的机器学习框架。这里说的分布式网络，指的是类似于手机网络这样的系统，用户有不同的数据集合（按照统计意义来说，通常是非IID的），并且这里面主要的陈本是通信陈本，而非计算陈本。传统的设置是不同的分布的数据可能是均匀IID的，而作者们认为在现实情况下，这是很难达到的一种状态。这里面还需要考虑的一些情况就是，如果作为手机客户端的话，每天能够参与优化模型的时间和次数都是有限的（根据电量等因素），因此如何设计一套有效的优化方案就显得非常必要。&lt;/p&gt;
-
-&lt;p&gt;这篇文章提出的方案其实非常简单直观。算法总共有三个基本的参数，C（0到1）控制相对有多少数量的客户端参与优化，E控制每一轮多少轮SGD需要在客户端运行，B是每一轮的Mini-Batch的数目大小。算法的思路是：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;每一轮都随机选择出C那么多的客户端&lt;/li&gt;
-  &lt;li&gt;对于每个客户端进行Mini-Batch的大小为B，轮数为E的SGD更新&lt;/li&gt;
-  &lt;li&gt;对于参数直接进行加权平均（这里的权重是每个客户端的数据相对大小）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;文章对这里的最后一步进行了说明。之前有其他研究表明，如何直接对参数空间进行加权平均，特别是Non-Convex的问题，会得到任意坏的结果。这篇文章里，作者们对于这样的问题的处理是，让每一轮各个客户端的起始参数值相同（也就是前一轮的全局参数值）。这一步使得算法效果大幅度提高。&lt;/p&gt;
-
-&lt;p&gt;文章在一系列的数据集上做了大量的实验，基本上都是基于神经网络的模型，例如LSTM，CNN等。效果应该说是非常显著和惊人，绝大多数情况下，提出的算法能够在大幅度比较小的情况下，达到简单SGD很多轮才能达到的精读。&lt;/p&gt;
-
-&lt;p&gt;虽然这篇文章提出的算法简单可行，并且也有不错的实验结果。但是比较令人遗憾的是，作者们并没有给出更多的分析，证明这样做的确可以让参数达到全局最优或者局部最优。
-这篇文章对于大规模机器学习有兴趣的读者可以精读。&lt;/p&gt;
-</description>
-        <pubDate>Sun, 18 Jun 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</guid>
         
         
         <category>读论文</category>

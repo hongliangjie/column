@@ -5,8 +5,8 @@
     <description>Etsy数据科学主管、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
     <link>http://column.hongliangjie.com/</link>
     <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 16 Dec 2018 13:57:20 -0500</pubDate>
-    <lastBuildDate>Sun, 16 Dec 2018 13:57:20 -0500</lastBuildDate>
+    <pubDate>Sun, 27 Jan 2019 00:15:14 -0500</pubDate>
+    <lastBuildDate>Sun, 27 Jan 2019 00:15:14 -0500</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
     
       <item>
@@ -53,7 +53,7 @@
 
 &lt;p&gt;于是我们可以定义最终的统一的损失函数为：&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;L = \alpha L_{\mathrm{row-wise}} + \beta L_{\mathrm{column-sie}} + (1-\alpha -\beta) L_{\mathrm{pointwise}}&lt;/script&gt;
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;L = \alpha L_{\mathrm{row-wise}} + \beta L_{\mathrm{column-wise}} + (1-\alpha -\beta) L_{\mathrm{pointwise}}&lt;/script&gt;
 
 &lt;p&gt;其中，$\alpha \in [0, 1]$和$\beta \in [0, 1]$，并且&lt;script type=&quot;math/tex&quot;&gt;% &lt;![CDATA[
 \alpha + \beta &lt;1 %]]&gt;&lt;/script&gt;。作者们认为，这个新的损失函数可以解决之前提出的问题。针对这个新的目标函数，文章提出了详细的优化算法，这里就不赘述了。作者们提出的模型在MovieLens、Netflix以及Amazon的数据集上都要优于不使用排序的纯矩阵分解模型以及一般的协同排序算法。&lt;/p&gt;

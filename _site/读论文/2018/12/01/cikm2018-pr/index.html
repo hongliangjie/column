@@ -115,7 +115,7 @@
 
   <div class="sidebar-item">
     <p>
-      &copy; 2018。保留全部权利。<a href="../atom.xml">RSS</a>
+      &copy; 2019。保留全部权利。<a href="../atom.xml">RSS</a>
     </p>
   </div>
 </div>
@@ -185,7 +185,7 @@
 
 <p>于是我们可以定义最终的统一的损失函数为：</p>
 
-<script type="math/tex; mode=display">L = \alpha L_{\mathrm{row-wise}} + \beta L_{\mathrm{column-sie}} + (1-\alpha -\beta) L_{\mathrm{pointwise}}</script>
+<script type="math/tex; mode=display">L = \alpha L_{\mathrm{row-wise}} + \beta L_{\mathrm{column-wise}} + (1-\alpha -\beta) L_{\mathrm{pointwise}}</script>
 
 <p>其中，$\alpha \in [0, 1]$和$\beta \in [0, 1]$，并且<script type="math/tex">% <![CDATA[
 \alpha + \beta <1 %]]></script>。作者们认为，这个新的损失函数可以解决之前提出的问题。针对这个新的目标函数，文章提出了详细的优化算法，这里就不赘述了。作者们提出的模型在MovieLens、Netflix以及Amazon的数据集上都要优于不使用排序的纯矩阵分解模型以及一般的协同排序算法。</p>

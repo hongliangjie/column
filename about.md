@@ -57,7 +57,7 @@ title: 关于
 
 *  **[Etsy](https://www.etsy.com/)**<br/>
   2019年至今 <br/>
-  <u>工程总监-数据科学与机器学习</u>
+  <u>工程总监-数据科学与机器学习</u><br/>
   2016年 - 2019 年 <br/>
   <u>高级研发经理-数据科学主管</u>
 *  **[雅虎研究院（Yahoo Research）](https://research.yahoo.com/)**<br/>

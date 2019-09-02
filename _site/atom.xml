@@ -4,13 +4,64 @@
  <title>期望最大化（洪亮劼的专栏）</title>
  <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
  <link href="http://column.hongliangjie.com/"/>
- <updated>2019-07-21T11:33:27-04:00</updated>
+ <updated>2019-09-02T12:24:49-04:00</updated>
  <id>http://column.hongliangjie.com</id>
  <author>
    <name>洪亮劼</name>
    <email>hongliangjie@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>KDD 2019讲座 - “双次序实验”</title>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial/"/>
+   <updated>2019-09-02T00:00:00-04:00</updated>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial</id>
+   <content type="html">&lt;p&gt;今天我们要来分享一个叫&lt;a href=&quot;http://www.stat.cmu.edu/~aramdas/kdd19/&quot;&gt;Foundations of Large-scale “Doubly-Sequential” Experimentation&lt;/a&gt;的KDD 2019讲座（Tutorial)。这个讲座的作者是来自于时任卡内基梅隆大学（Carnegie Mellon University）助理教授的&lt;a href=&quot;http://www.stat.cmu.edu/~aramdas/&quot;&gt;Aaditya Ramdas&lt;/a&gt;。这个讲座清晰得梳理了基于单个实验的“内次序”（Inner Sequential Process）和基于多个实验的“外次序”（Outer Sequential Process），以及他们之间的关系。同时，这个讲座还涵盖了这方面的重要文献历史，是一份不可多的资料。&lt;/p&gt;
+
+&lt;h2 id=&quot;讲座的基本设置&quot;&gt;讲座的基本设置&lt;/h2&gt;
+
+&lt;p&gt;讲座的第一部分是对简单的A/B实验进行了回顾。诚如讲座里面讲的，这部分内容已经在最近几年的各大会议的很多其他类似讲座中已经有所涵盖。因此该讲座并没有再对基础知识进行重复。&lt;/p&gt;
+
+&lt;p&gt;讲座的内容很快转移到核心的两块内容，那就是基于单个实验的“内次序”（Inner Sequential Process）以及基于多个实验的“外次序”（Outer Sequential Process）。简单得来说，不管是“内次序”还是“外次序”，该讲座的目的就是来探讨如何让实验的结论能够成立。也就是说，如果进行简单的“假设检验”（Hypothesis Testing），例如我们经常做的T-Test，或者其他基于“置信区间”（Confidence Interval）的检验有可能得到错误的结论。讲座的核心内容就是来对已有的方法已经扩展。&lt;/p&gt;
+
+&lt;h2 id=&quot;内次序&quot;&gt;内次序&lt;/h2&gt;
+
+&lt;p&gt;“内次序”主要是探究在一个实验里的结论是否正确的问题。当然，这里的“正确”并不是指绝对意义上的“控制组”（Control Group）要比“对照组”（Treatment Group）好，或者反之。而是从统计意义来说，如何来衡量控制组和对照组之间的差别。上面我们提到，这种统计推断的核心是进行“假设检验”。&lt;/p&gt;
+
+&lt;p&gt;Aaditya首先指出，传统的假设检验的一个重大问题就是样本数量必须事先确定好。不管是p-value还是置信区间都依赖于这个&lt;strong&gt;事先确定好的&lt;/strong&gt;样本数量。这种静态的需求和很多平时在A/B实验中进行观测的行为是非常不同的。例如，一种非常普遍（并不是是正确）的观测实验的方式是，对一个实验的结果反复进行检查，看p-value是不是到达并且小于某个阈值$ \alpha $，一旦小于这个值，立马停止实验。利用这样的方法会得到“False Positive Rate”很可能远远大于事先的阈值$ \alpha $。换句话说，很多我们认为有作用的“对照组”其实很有可能并没有作用。&lt;/p&gt;
+
+&lt;p&gt;那么，内次序的核心问题就是如何对这样的监控算法进行扩展和改进，使得我们能够随时监控实验并且还能够得到正确的统计推断结果。&lt;/p&gt;
+
+&lt;p&gt;在该讲座中，Aaditya讲解了“Confidence Sequence”和“Sequential p-value”的概念，并且展示了如何利用这两种手段来进行单个实验的检测。同时，Aaditya还揭示了这两种概念之间的转化关系。&lt;/p&gt;
+
+&lt;h2 id=&quot;外次序&quot;&gt;外次序&lt;/h2&gt;
+
+&lt;p&gt;那么，如果我们能够很好得处理一个实验，是不是我们就可以放心大胆得进行多个实验来进行服务的改进了呢？答案是，对于多个实验，我们依然需要更加小心。&lt;/p&gt;
+
+&lt;p&gt;这部分的内容可能一开始会让人觉得很震惊。但Aaditya在讲座中举了很直观的例子来说明，即便单个实验我们都依靠某个$ \alpha_{i} $来控制“False Positive Rate”，并不代表多个实验的总体的”False Discovery Proportion”(FDP)是小于或等于这些$ \alpha_{i} $。&lt;/p&gt;
+
+&lt;p&gt;外次序的核心内容就是如何对多个实验进行监控，并且能够在“在线”（Online）的情况下进行统计推断。该讲座对几个最新的在线FDP算法进行讲解。细节可以参考讲座内容。&lt;/p&gt;
+
+&lt;h2 id=&quot;双次序实验&quot;&gt;双次序实验&lt;/h2&gt;
+
+&lt;p&gt;该讲座应该算是第一个把内次序和外次序都结合在一起的一个讲座。Aaditya在讲座内容中指出，这两个部分均可以进行“模块化”。意思是说，更好的内次序算法以及更好的外次序算法可以进行搭配使用。&lt;/p&gt;
+
+&lt;h2 id=&quot;高级内容&quot;&gt;高级内容&lt;/h2&gt;
+
+&lt;p&gt;Aaditya在该讲座也进行了部分高级内容的概括：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;在“内次序”中如何处理多个“对照组”。讲座提到了基于Multi-Armed Bandit（MAB）的算法。&lt;/li&gt;
+  &lt;li&gt;如何对Quantile进行估计。&lt;/li&gt;
+  &lt;li&gt;在“外次序”中，如何对过去远期的实验进行“忘却”（Forget）。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;历史信息&quot;&gt;历史信息&lt;/h2&gt;
+
+&lt;p&gt;Aaditya在讲座中回顾了内外次序的重要历史文献。&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>CIKM 2018论文精读（一）</title>

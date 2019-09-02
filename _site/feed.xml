@@ -5,9 +5,64 @@
     <description>Etsy工程总监、前雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
     <link>http://column.hongliangjie.com/</link>
     <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 21 Jul 2019 11:33:27 -0400</pubDate>
-    <lastBuildDate>Sun, 21 Jul 2019 11:33:27 -0400</lastBuildDate>
+    <pubDate>Mon, 02 Sep 2019 12:24:49 -0400</pubDate>
+    <lastBuildDate>Mon, 02 Sep 2019 12:24:49 -0400</lastBuildDate>
     <generator>Jekyll v3.7.4</generator>
+    
+      <item>
+        <title>KDD 2019讲座 - “双次序实验”</title>
+        <description>&lt;p&gt;今天我们要来分享一个叫&lt;a href=&quot;http://www.stat.cmu.edu/~aramdas/kdd19/&quot;&gt;Foundations of Large-scale “Doubly-Sequential” Experimentation&lt;/a&gt;的KDD 2019讲座（Tutorial)。这个讲座的作者是来自于时任卡内基梅隆大学（Carnegie Mellon University）助理教授的&lt;a href=&quot;http://www.stat.cmu.edu/~aramdas/&quot;&gt;Aaditya Ramdas&lt;/a&gt;。这个讲座清晰得梳理了基于单个实验的“内次序”（Inner Sequential Process）和基于多个实验的“外次序”（Outer Sequential Process），以及他们之间的关系。同时，这个讲座还涵盖了这方面的重要文献历史，是一份不可多的资料。&lt;/p&gt;
+
+&lt;h2 id=&quot;讲座的基本设置&quot;&gt;讲座的基本设置&lt;/h2&gt;
+
+&lt;p&gt;讲座的第一部分是对简单的A/B实验进行了回顾。诚如讲座里面讲的，这部分内容已经在最近几年的各大会议的很多其他类似讲座中已经有所涵盖。因此该讲座并没有再对基础知识进行重复。&lt;/p&gt;
+
+&lt;p&gt;讲座的内容很快转移到核心的两块内容，那就是基于单个实验的“内次序”（Inner Sequential Process）以及基于多个实验的“外次序”（Outer Sequential Process）。简单得来说，不管是“内次序”还是“外次序”，该讲座的目的就是来探讨如何让实验的结论能够成立。也就是说，如果进行简单的“假设检验”（Hypothesis Testing），例如我们经常做的T-Test，或者其他基于“置信区间”（Confidence Interval）的检验有可能得到错误的结论。讲座的核心内容就是来对已有的方法已经扩展。&lt;/p&gt;
+
+&lt;h2 id=&quot;内次序&quot;&gt;内次序&lt;/h2&gt;
+
+&lt;p&gt;“内次序”主要是探究在一个实验里的结论是否正确的问题。当然，这里的“正确”并不是指绝对意义上的“控制组”（Control Group）要比“对照组”（Treatment Group）好，或者反之。而是从统计意义来说，如何来衡量控制组和对照组之间的差别。上面我们提到，这种统计推断的核心是进行“假设检验”。&lt;/p&gt;
+
+&lt;p&gt;Aaditya首先指出，传统的假设检验的一个重大问题就是样本数量必须事先确定好。不管是p-value还是置信区间都依赖于这个&lt;strong&gt;事先确定好的&lt;/strong&gt;样本数量。这种静态的需求和很多平时在A/B实验中进行观测的行为是非常不同的。例如，一种非常普遍（并不是是正确）的观测实验的方式是，对一个实验的结果反复进行检查，看p-value是不是到达并且小于某个阈值$ \alpha $，一旦小于这个值，立马停止实验。利用这样的方法会得到“False Positive Rate”很可能远远大于事先的阈值$ \alpha $。换句话说，很多我们认为有作用的“对照组”其实很有可能并没有作用。&lt;/p&gt;
+
+&lt;p&gt;那么，内次序的核心问题就是如何对这样的监控算法进行扩展和改进，使得我们能够随时监控实验并且还能够得到正确的统计推断结果。&lt;/p&gt;
+
+&lt;p&gt;在该讲座中，Aaditya讲解了“Confidence Sequence”和“Sequential p-value”的概念，并且展示了如何利用这两种手段来进行单个实验的检测。同时，Aaditya还揭示了这两种概念之间的转化关系。&lt;/p&gt;
+
+&lt;h2 id=&quot;外次序&quot;&gt;外次序&lt;/h2&gt;
+
+&lt;p&gt;那么，如果我们能够很好得处理一个实验，是不是我们就可以放心大胆得进行多个实验来进行服务的改进了呢？答案是，对于多个实验，我们依然需要更加小心。&lt;/p&gt;
+
+&lt;p&gt;这部分的内容可能一开始会让人觉得很震惊。但Aaditya在讲座中举了很直观的例子来说明，即便单个实验我们都依靠某个$ \alpha_{i} $来控制“False Positive Rate”，并不代表多个实验的总体的”False Discovery Proportion”(FDP)是小于或等于这些$ \alpha_{i} $。&lt;/p&gt;
+
+&lt;p&gt;外次序的核心内容就是如何对多个实验进行监控，并且能够在“在线”（Online）的情况下进行统计推断。该讲座对几个最新的在线FDP算法进行讲解。细节可以参考讲座内容。&lt;/p&gt;
+
+&lt;h2 id=&quot;双次序实验&quot;&gt;双次序实验&lt;/h2&gt;
+
+&lt;p&gt;该讲座应该算是第一个把内次序和外次序都结合在一起的一个讲座。Aaditya在讲座内容中指出，这两个部分均可以进行“模块化”。意思是说，更好的内次序算法以及更好的外次序算法可以进行搭配使用。&lt;/p&gt;
+
+&lt;h2 id=&quot;高级内容&quot;&gt;高级内容&lt;/h2&gt;
+
+&lt;p&gt;Aaditya在该讲座也进行了部分高级内容的概括：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;在“内次序”中如何处理多个“对照组”。讲座提到了基于Multi-Armed Bandit（MAB）的算法。&lt;/li&gt;
+  &lt;li&gt;如何对Quantile进行估计。&lt;/li&gt;
+  &lt;li&gt;在“外次序”中，如何对过去远期的实验进行“忘却”（Forget）。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;历史信息&quot;&gt;历史信息&lt;/h2&gt;
+
+&lt;p&gt;Aaditya在讲座中回顾了内外次序的重要历史文献。&lt;/p&gt;
+</description>
+        <pubDate>Mon, 02 Sep 2019 00:00:00 -0400</pubDate>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial/</guid>
+        
+        
+        <category>读论文</category>
+        
+      </item>
     
       <item>
         <title>CIKM 2018论文精读（一）</title>
@@ -405,69 +460,6 @@
         <pubDate>Thu, 27 Jul 2017 00:00:00 -0400</pubDate>
         <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</link>
         <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/</guid>
-        
-        
-        <category>读论文</category>
-        
-      </item>
-    
-      <item>
-        <title>Google Scholar 2017学术指标之人工智能篇</title>
-        <description>&lt;p&gt;近日，Google Scholar发布了一个&lt;a href=&quot;https://scholar.googleblog.com/2017/07/2017-scholar-metrics-released.html&quot;&gt;2017年的“学术指标”&lt;/a&gt;，主要是对各个学科的众多领域的学术刊物（包括期刊、会议论文集以及在线论文出版集）做出了排名。这个排名主要是依靠&lt;a href=&quot;https://en.wikipedia.org/wiki/H-index&quot;&gt;H5-Index&lt;/a&gt;这一指标。我们在这篇文章里，对人工智能相关的领域学术出版刊物的排名进行一个简单的分析和导读。&lt;/p&gt;
-
-&lt;h2 id=&quot;人工智能主类&quot;&gt;人工智能主类&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/google_ai.png&quot; alt=&quot;&quot; /&gt;
-因为收率了在线论文出版集（主要是ArXiv），借着深度学习（Deep Learning）的春风，ArXiv的Learning子类成为了目前最有影响力的出版集。当然，考虑到目前在深度学习以及更加广阔的机器学习领域已经有了把论文的某一个版本率先发表到ArXiv的习惯，Learning子类的实际影响力可能要打一些折扣。不过，不可否认的则是这样的发布学术结果的方式的确对计算机科学（Computer Science）原本的发表模式有了很深远的挑战和影响。
-&lt;img src=&quot;/assets/google_ai_learning.png&quot; alt=&quot;&quot; /&gt;
-有意思的是，尽管引用度排名靠前的大多数文章最终都在传统的会议或者期刊上面发表，排名第四的&lt;a href=&quot;https://arxiv.org/abs/1212.5701&quot;&gt;ADADELTA: An Adaptive Learning Rate Method&lt;/a&gt;（应用数超过900）则并没有在任何传统刊物上有出版。还有引用度超过500的&lt;a href=&quot;https://arxiv.org/abs/1312.5602&quot;&gt;Playing Atari with Deep Reinforcement Learning&lt;/a&gt;也没有在传统的刊物上发表出版。这些都显示了ArXiv作为当前出版渠道的重要补充的这一作用。我们再来看一下传统刊物中排名第一的NIPS的排名靠前的文章：
-&lt;img src=&quot;/assets/google_ai_nips.png&quot; alt=&quot;&quot; /&gt;
-首先我们发现的是，排名靠前的无一例外地都是和深度学习有密切联系的文章。排名第一的则是Hinton及其学生提出的&lt;a href=&quot;http://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks&quot;&gt;AlexNet&lt;/a&gt;的这一开创性的研究成果，一举奠定了深度学习在计算机视觉领域的主导地位的历史性文章。排名第二的则是提出目前在NLP等领域广泛使用的&lt;a href=&quot;http://papers.nips.cc/paper/5021-distributed-representations-of-words-and-phrases-and-their-compositionality&quot;&gt;Word2Vec&lt;/a&gt;的论文，也可以说实至名归。总之，NIPS排名靠前的论文还是非常有含金量的标志性研究成果。和NIPS齐名的机器学习会议ICML也在排名上位列第4。
-&lt;img src=&quot;/assets/google_ai_icml.png&quot; alt=&quot;&quot; /&gt;
-和NIPS类似的也是排位靠前的文章基本上被深度学习相关的研究成果所把持。相比之下，排位稍微靠后的期刊&lt;a href=&quot;http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385&quot;&gt;IEEE Transactions on Neural Networks and Learning Systems&lt;/a&gt;以及&lt;a href=&quot;http://www.jmlr.org/&quot;&gt;The Journal of Machine Learning Research&lt;/a&gt;则多了不少机器学习其他领域的研究成果。
-&lt;img src=&quot;/assets/google_ai_jmlr.png&quot; alt=&quot;&quot; /&gt;
-比如，最近几年又重新红火起来的大规模Bayesian Inference的代表作&lt;a href=&quot;http://www.jmlr.org/papers/volume14/hoffman13a/hoffman13a.pdf&quot;&gt;Stochastic variational inference&lt;/a&gt;以及开创了Moment Matching旧瓶装新酒的&lt;a href=&quot;http://www.jmlr.org/papers/volume15/anandkumar14b/anandkumar14b.pdf&quot;&gt;Tensor decompositions for learning latent variable models&lt;/a&gt;也都名列前茅。通过我们这里简单的分析和总结，不难发现最近五年AI界的成果还是集中在深度学习界，而且是传统刊物NIPS和ICML都成为了推动深度学习发展的重要领军会议。而ArXiv则在这个过程中发挥着不可替代的辅助性作用。&lt;/p&gt;
-
-&lt;h2 id=&quot;计算机视觉&quot;&gt;计算机视觉&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/google_cv.png&quot; alt=&quot;&quot; /&gt;
-我们看了人工智能主类之后，我们来关注一下几个人工智能的分类的动态。那么要说最近几年发展得最迅猛的人工智能分支，无疑要数计算机视觉技术。不过，相比于人工智能主类的好几大主流会刊的情况，在计算机视觉领域，目前的格局依然是&lt;a href=&quot;https://en.wikipedia.org/wiki/Conference_on_Computer_Vision_and_Pattern_Recognition&quot;&gt;CVPR&lt;/a&gt;和&lt;a href=&quot;http://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34&quot;&gt;PAMI&lt;/a&gt;独秀的情况。而ArXiv的补充作用在这里也显示得很明显。
-&lt;img src=&quot;/assets/google_cv_cvpr.png&quot; alt=&quot;&quot; /&gt;
-我们来看看CVPR的这几年的有影响力的工作，无疑都和ImageNet的主要进步联系起来。比如排名第一的&lt;a href=&quot;http://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Szegedy_Going_Deeper_With_2015_CVPR_paper.pdf&quot;&gt;Going Deeper With Convolutions&lt;/a&gt;所代表的GoogleNet，以及排名第二的&lt;a href=&quot;http://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf&quot;&gt;Rich Feature Hierarchies for Accurate Object Detection and Semantic Segmentation&lt;/a&gt;所提出的R-CNN和排名第三的&lt;a href=&quot;http://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf&quot;&gt;Deep Residual Learning for Image Recognition&lt;/a&gt;所提出的ResNet。这些都是最近几年借助大幅度提高ImageNet的效果而在CV领域获得重点关注的文章。&lt;/p&gt;
-
-&lt;h2 id=&quot;计算语言学&quot;&gt;计算语言学&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/google_nlp.png&quot; alt=&quot;&quot; /&gt;
-人工智能在计算语言学的应用主要体现在自然语言处理（NLP）等领域。借着深度学习在NLP领域的影响和发展，ArXiv成为一个主要的文章发表场所似乎也是顺利成长的事情了。和人工智能主类相似的情况是，在ArXiv上面发布的重要文章最后都在相应的会议或者期刊有所发表，唯一例外的是有3600多引用的&lt;a href=&quot;https://arxiv.org/abs/1301.3781&quot;&gt;Efficient Estimation of Word Representations in Vector Space&lt;/a&gt;。从分布的情况上看，过去几年的大多数影响力大的文章主要分为在Word2Vec方面做文章，以及在Machine Translation或者Sequence Model方面做文章。排名第二第三的依然是NLP领域传统的旗舰会议ACL和EMNLP。
-&lt;img src=&quot;/assets/google_nlp_acl.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/assets/google_nlp_emnlp.png&quot; alt=&quot;&quot; /&gt;
-我们可以看到深度学习，特别是学习文字的Embedding（包括字、文章段落等等）占据了很重要的一个研究方向。另外一个重要的研究方向就是机器翻译，特别是如何应用深度学习在这方面的成果。需要特别注意的是，斯坦福大学&lt;a href=&quot;https://nlp.stanford.edu/manning/&quot;&gt;Christopher Manning&lt;/a&gt;的研究组最近几年可以说是成果颇丰。高排名的好几篇ACL以及EMNLP都看得见他的身影。&lt;/p&gt;
-
-&lt;h2 id=&quot;数据挖掘和信息系统&quot;&gt;数据挖掘和信息系统&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/google_dm_1.png&quot; alt=&quot;&quot; /&gt;
-&lt;img src=&quot;/assets/google_dm_2.png&quot; alt=&quot;&quot; /&gt;
-Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp; Analysis”和“Database &amp;amp; Information Systems”。然而在实际中这两类的文章和成果经常交叉出现，于是我们这里就一起讨论这两个分类。一个比较有意思的情况就是，ArXiv还并没有成为这个领域的主要发布工具。传统的&lt;a href=&quot;http://www.kdd.org/&quot;&gt;KDD&lt;/a&gt;以及&lt;a href=&quot;https://en.wikipedia.org/wiki/International_World_Wide_Web_Conference&quot;&gt;WWW&lt;/a&gt;依然占据着重要的成果发布平台的地位。我们来看一下KDD的最新经典论文：
-&lt;img src=&quot;/assets/google_dm_kdd.png&quot; alt=&quot;&quot; /&gt;
-可以说是涉及范围十分广泛。从Social Network Analysis到Time Series Analysis再到一般性质的Data Mining的算法和工具，KDD还是展现了这个发布平台的包容性和多样性。其中排名第二的&lt;a href=&quot;http://dl.acm.org/citation.cfm?id=2623623&quot;&gt;Knowledge vault: a web-scale approach to probabilistic knowledge fusion&lt;/a&gt;，这一讲述Google的知识图谱的技术论文和在2016年才发表的&lt;a href=&quot;http://dl.acm.org/citation.cfm?id=2939785&quot;&gt;XGBoost: A Scalable Tree Boosting System&lt;/a&gt;在短时间内吸引了不少相关学者的关注。下面我们来看看WWW的情况：
-&lt;img src=&quot;/assets/google_dm_www.png&quot; alt=&quot;&quot; /&gt;
-可以看出过去5年来，关于Social Media（以Twitter为主）和关于Social Network Analysis的相关研究还是如火如荼。而纵观KDD和WWW都可以看到斯坦福大学的明星学者&lt;a href=&quot;https://cs.stanford.edu/people/jure/&quot;&gt;Jure Leskovec&lt;/a&gt;的强大存在。&lt;/p&gt;
-
-&lt;h2 id=&quot;总结&quot;&gt;总结&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;p&gt;我们仅仅是在这里总结了和人工智能有关的几个分类的趋势。总体说来有这么几个特点：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;人工智能和机器学习的核心领域目前基本上完全围绕着深度学习展开。&lt;/li&gt;
-  &lt;li&gt;计算机视觉和自然语言处理目前也是和深度学习有很强的联系。&lt;/li&gt;
-  &lt;li&gt;数据挖掘相关的研究依然非常多样化。&lt;/li&gt;
-  &lt;li&gt;ArXiv已经成为了非常强有力的辅助性研究成果发布平台。然而有影响力的文章最终还是在核心刊物上发表。&lt;/li&gt;
-  &lt;li&gt;传统的NIPS、ICML、CVPR、ACL、EMNLP、KDD和WWW依然是人工智能的核心研究成果发布刊物。&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        <pubDate>Sun, 09 Jul 2017 00:00:00 -0400</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/</guid>
         
         
         <category>读论文</category>

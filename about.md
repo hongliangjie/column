@@ -7,7 +7,7 @@ title: 关于
 
 <br/>
 <img align="right" src="/assets/hongliangjie2.jpg" style="width: 285px;height:226.5px;margin-left:20px;">
-我目前担任总部位于纽约的电子商务平台[Etsy](https://www.etsy.com/)的**工程总监**（Director of Engineering），负责数据科学和机器学习的研发工作。Etsy是一个拥有超过4500万商品、2百万活跃卖家和4000万活跃买家的国际化电子交易市场。作为一个技术管理者，我发展并且管理着一支位于纽约和旧金山有近40人的数据科学家及工程团队。团队成员绝大多数拥有硕士以及博士文凭，来自计算机科学、运筹学、统计、经济学、物理等多种背景。作为一名技术领导者，我团队主要职责是为Etsy提供全方位的数据科学支持，包括个性化与推荐、搜索、计算广告、图像处理及深度学习和文字信息挖掘等多方面的基于机器学习的产品优化方案。
+我目前担任总部位于纽约的电子商务平台[Etsy](https://www.etsy.com/)的**工程总监**（Director of Engineering），负责数据科学和机器学习的研发工作。Etsy是一个拥有超过4500万商品、2.1百万活跃卖家和4000万活跃买家的国际化电子交易市场。作为一个技术管理者，我发展并且管理着一支位于纽约和旧金山有近40人的数据科学家及工程团队。团队成员绝大多数拥有硕士以及博士文凭，来自计算机科学、运筹学、统计、经济学、物理等多种背景。作为一名技术领导者，我团队主要职责是为Etsy提供全方位的数据科学支持，包括个性化与推荐、搜索、计算广告、图像处理及深度学习和文字信息挖掘等多方面的基于机器学习的产品优化方案。
 
 在加入Etsy之前，我于2013年到2016年在[雅虎研究院（Yahoo Research）](https://research.yahoo.com/)工作，历任**科学家**、**资深科学家**和**高级研发经理**职位。在雅虎研究院工作期间，我亲自领导并参与了多项大数据大规模机器学习系统的研发工作，包括雅虎首页千万级用户个性化推荐系统、雅虎移动搜索千万级用户搜索优化系统以及大型个性化广告系统，对如何在产品中使用机器学习数据分析，以及如何在工程中实现高级机器学习模型有独到见解。
 
@@ -56,10 +56,8 @@ title: 关于
 ## 主要工作经历
 
 *  **[Etsy](https://www.etsy.com/)**<br/>
-  2019年至今 <br/>
+  2016年至今 <br/>
   <u>工程总监-数据科学与机器学习</u><br/>
-  2016年 - 2019 年 <br/>
-  <u>高级研发经理-数据科学主管</u>
 *  **[雅虎研究院（Yahoo Research）](https://research.yahoo.com/)**<br/>
   2013年 - 2016 年 <br/>
   <u>高级研发经理</u><br/>
@@ -92,11 +90,13 @@ title: 关于
 ## 主要学术界服务
 
 * 国际会议组织工作：<br/>
+  [Tutorial “Online User Engagement: Metrics and Optimization” at WWWW 2019](https://onlineuserengagement.github.io/)<br/>
   [The Workshop on Deep Matching in Practical Applications at WSDM 2019](https://wsdm2019-dapa.github.io/)<br/>
+  [Tutorial on Metrics of User engagement — Applications to Search & E- Commerce at WSDM 2018](https://www.slideshare.net/mounialalmas/tutorial-on-metrics-of-user-engagement-applications-to-search-e-commerce)<br/>
   [The Second Workshop on User Engagement Optimization at KDD 2014](http://www.ueo-workshop.com/)<br/>
   [The First Workshop on User Engagement Optimization at CIKM 2013](http://www.ueo-workshop.com/previous-editions/ueo-2013-at-cikm-2013/)
 * 国际会议程序委员会：<br/>
-  [The Web Conference 2019](https://www2019.thewebconf.org/), [WSDM 2019](http://www.wsdm-conference.org/2019/), [CIKM 2018](http://www.cikm2018.units.it/), [KDD 2018](http://www.kdd.org/kdd2018/), [SIGIR 2018](http://sigir.org/sigir2018/), [WWW 2018](https://www2018.thewebconf.org/), [WSDM 2018](http://www.wsdm-conference.org/2018/), [CIKM 2017](http://cikm2017.org/), [SIGIR 2017](http://sigir.org/sigir2017/), [WSDM 2017](http://www.wsdm-conference.org/2017/), [WWW 2017](http://www.www2017.com.au/), [CIKM 2016](http://cikm2016.cs.iupui.edu/), [KDD 2016](http://www.kdd.org/kdd2016/), [SIGIR 2016](http://sigir.org/sigir2016/), [WWW 2016](http://www2016.ca/), [WSDM 2016](http://www.wsdm-conference.org/2016/), [IJCAI 2016](http://ijcai-16.org/), [ACL 2016](http://acl2016.org/), [EMNLP 2016](http://www.emnlp2016.net/), [CIKM 2015](http://www.cikm-2015.org/), [SIGIR 2015](http://www.sigir2015.org/), [KDD 2015](http://www.kdd.org/kdd2015/), [IUI 2015](http://iui.acm.org/2015/), [WWW 2015](http://www.www2015.it/), [AIRS 2015](http://airs-conference.org/2015/), [CIKM 2014](http://cikm2014.fudan.edu.cn/), [SIGIR 2014](http://sigir.org/sigir2014/), [WSDM 2014](http://www.wsdm-conference.org/2014/), [AAAI 2014](http://www.aaai.org/Conferences/AAAI/aaai14.php), [IEEE ICCC 2014 SNBD](http://www.ieee-iccc.org/index.html), [ICWSM 2013](http://www.icwsm.org/2013/index.php), [EMNLP-CoNLL 2012](http://emnlp-conll2012.unige.ch/)
+  [The Web Conference 2020](https://www2020.thewebconf.org/), [WSDM 2020](http://www.wsdm-conference.org/2020/),  [CIKM 2019](http://www.cikm2019.net/), [KDD 2019](https://www.kdd.org/kdd2019/), [RecSys 2019](https://recsys.acm.org/recsys19/), [SIGIR 2019](http://sigir.org/sigir2019/), [The Web Conference 2019](https://www2019.thewebconf.org/), [WSDM 2019](http://www.wsdm-conference.org/2019/), [CIKM 2018](http://www.cikm2018.units.it/), [KDD 2018](http://www.kdd.org/kdd2018/), [SIGIR 2018](http://sigir.org/sigir2018/), [WWW 2018](https://www2018.thewebconf.org/), [WSDM 2018](http://www.wsdm-conference.org/2018/), [CIKM 2017](http://cikm2017.org/), [SIGIR 2017](http://sigir.org/sigir2017/), [WSDM 2017](http://www.wsdm-conference.org/2017/), [WWW 2017](http://www.www2017.com.au/), [CIKM 2016](http://cikm2016.cs.iupui.edu/), [KDD 2016](http://www.kdd.org/kdd2016/), [SIGIR 2016](http://sigir.org/sigir2016/), [WWW 2016](http://www2016.ca/), [WSDM 2016](http://www.wsdm-conference.org/2016/), [IJCAI 2016](http://ijcai-16.org/), [ACL 2016](http://acl2016.org/), [EMNLP 2016](http://www.emnlp2016.net/), [CIKM 2015](http://www.cikm-2015.org/), [SIGIR 2015](http://www.sigir2015.org/), [KDD 2015](http://www.kdd.org/kdd2015/), [IUI 2015](http://iui.acm.org/2015/), [WWW 2015](http://www.www2015.it/), [AIRS 2015](http://airs-conference.org/2015/), [CIKM 2014](http://cikm2014.fudan.edu.cn/), [SIGIR 2014](http://sigir.org/sigir2014/), [WSDM 2014](http://www.wsdm-conference.org/2014/), [AAAI 2014](http://www.aaai.org/Conferences/AAAI/aaai14.php), [IEEE ICCC 2014 SNBD](http://www.ieee-iccc.org/index.html), [ICWSM 2013](http://www.icwsm.org/2013/index.php), [EMNLP-CoNLL 2012](http://emnlp-conll2012.unige.ch/)
 * 国际期刊审稿：<br/>
   [Data Mining and Knowledge Discovery](http://www.springer.com/computer/database+management+&+information+retrieval/journal/10618)<br/>
   [ACM Transactions on Knowledge Discovery from Data](http://tkdd.acm.org/)<br/>

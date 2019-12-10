@@ -90,7 +90,7 @@ title: 关于
 ## 主要学术界服务
 
 * 国际会议组织工作：<br/>
-  [Tutorial “Online User Engagement: Metrics and Optimization” at WWWW 2019](https://onlineuserengagement.github.io/)<br/>
+  [Tutorial “Online User Engagement: Metrics and Optimization” at WWW 2019](https://onlineuserengagement.github.io/)<br/>
   [The Workshop on Deep Matching in Practical Applications at WSDM 2019](https://wsdm2019-dapa.github.io/)<br/>
   [Tutorial on Metrics of User engagement — Applications to Search & E- Commerce at WSDM 2018](https://www.slideshare.net/mounialalmas/tutorial-on-metrics-of-user-engagement-applications-to-search-e-commerce)<br/>
   [The Second Workshop on User Engagement Optimization at KDD 2014](http://www.ueo-workshop.com/)<br/>

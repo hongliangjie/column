@@ -1,4 +1,0 @@
-# Use PHP5 Single php.ini as default
-AddHandler application/x-httpd-eig-php52 .php
-DirectoryIndex index.html
-

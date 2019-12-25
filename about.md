@@ -19,6 +19,7 @@ title: 关于
 
 ## 经典专栏文章
 
+*  [《经理人之路——技术领袖启航成长与变化的参考书》总结](http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/)
 *  [论互联网公司与研究院](http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2017/04/09/research-labs/)
 *  [只有偏执狂才能生存](http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/08/09/intel/)
 *  [怎样招聘一名科学家](http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/05/14/hire/)

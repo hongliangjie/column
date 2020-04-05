@@ -3,10 +3,10 @@
   <channel>
     <title>期望最大化（洪亮劼的专栏）</title>
     <description>LinkedIn工程总监、前Etsy工程总监、雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 05 Apr 2020 13:11:41 -0700</pubDate>
-    <lastBuildDate>Sun, 05 Apr 2020 13:11:41 -0700</lastBuildDate>
+    <link>http://column.hongliangjie.com/</link>
+    <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 05 Apr 2020 13:15:30 -0700</pubDate>
+    <lastBuildDate>Sun, 05 Apr 2020 13:15:30 -0700</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
     
       <item>
@@ -139,8 +139,8 @@
 &lt;p&gt;这本书可以说是作为技术管理人的“宝典”级别的职场参考书。因为作者卡米尔相对丰富的职业经理人晋升经历，因此这本书中提供的很多经验之谈都相当接地气并且有极高的参考价值。与更加通用的管理书籍相比，此书专注于科技公司的技术管理场景，因而对于有心于技术管理职场发展的各层级技术人员和技术管理人来说，这本书都能够提供不小的帮助。整本书的结构上来看，主要是相对比较松散组织起的四大块内容，以及穿插的各种技巧，因此可能在宏观上缺乏一定的架构，所以，本书可以作为可以反复阅读的经验总结之作。&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 Dec 2019 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/</guid>
         
         
         <category>读书笔记,管理</category>
@@ -194,8 +194,8 @@
 &lt;p&gt;Aaditya在讲座中回顾了内外次序的重要历史文献。&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Sep 2019 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial/</guid>
         
         
         <category>读论文</category>
@@ -252,8 +252,8 @@
 \alpha + \beta &lt;1 %]]&gt;&lt;/script&gt;。作者们认为，这个新的损失函数可以解决之前提出的问题。针对这个新的目标函数，文章提出了详细的优化算法，这里就不赘述了。作者们提出的模型在MovieLens、Netflix以及Amazon的数据集上都要优于不使用排序的纯矩阵分解模型以及一般的协同排序算法。&lt;/p&gt;
 </description>
         <pubDate>Sat, 01 Dec 2018 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr/</guid>
         
         
         <category>读论文</category>
@@ -354,8 +354,8 @@
 &lt;p&gt;“排序学习”（Learning to Rank）是不是一个已经完全被研究过的领域呢？答案当然不是。这篇论文就是尝试在一个似乎已经被反复研究过的领域里找到一些新的知识。这篇论文的看点主要是使用了一种目标函数对已有的排序指标例如AUC、NDCG、MAP、MRR等进行了高度总结。另外，这篇文章提出，传统上，我们在优化这些方法或者这些指标的时候，并不是直接去优化这些指标，而是优化这些指标的一些“代理”（Proxy），而就是这些代理可能出了问题，使得最后的结果有可能会有很大的偏差。于是，这篇文章提出了一种直接优化目标函数的方法。&lt;/p&gt;
 </description>
         <pubDate>Fri, 25 May 2018 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</guid>
         
         
         <category>读论文</category>
@@ -390,8 +390,8 @@
 &lt;p&gt;这篇文章还有很多细节的点值得关注。总之，如果你对机器学习在大型互联网公司的应用有兴趣，并且也想知道平台、软硬件的整体架构信息，这篇文章是一个不错的阅读材料。&lt;/p&gt;
 </description>
         <pubDate>Fri, 22 Dec 2017 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml/</guid>
         
         
         <category>读论文</category>
@@ -448,8 +448,8 @@
 &lt;p&gt;总体最大的感觉是KDD已经成为了数据科学的盛宴。&lt;/p&gt;
 </description>
         <pubDate>Wed, 30 Aug 2017 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</guid>
+        <link>http://column.hongliangjie.com/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/</guid>
         
         
         <category>会议</category>
@@ -477,8 +477,8 @@
 &lt;p&gt;这篇文章适合对于最近所谓的Neural Programming有兴趣的读者泛读。对怎么改进强化学习或者MML有兴趣的读者精读。文章的“Related Work”部分也是非常详尽，有很多工作值得参考。&lt;/p&gt;
 </description>
         <pubDate>Mon, 07 Aug 2017 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/</guid>
         
         
         <category>读论文</category>
@@ -504,8 +504,8 @@
 &lt;p&gt;总体说来，这篇文章非常值得对时序模型有兴趣的读者精读。文章的“Related Work”部分也很精彩，对相关研究有兴趣的朋友可以参考这部分看看最近都有哪些工作很类似。&lt;/p&gt;
 </description>
         <pubDate>Sun, 06 Aug 2017 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</guid>
         
         
         <category>读论文</category>
@@ -539,8 +539,8 @@
 &lt;p&gt;可以说整个文章真正值得借鉴主要还是那个“软查询”的思想。整个流程也值得参考。但是训练的困难可能使得这个系统作为一个可以更加扩展的系统的价值不高。本文值得对对话系统有研究的人泛读。&lt;/p&gt;
 </description>
         <pubDate>Sat, 05 Aug 2017 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</guid>
         
         
         <category>读论文</category>
@@ -567,8 +567,8 @@
 &lt;p&gt;总体说来，这篇文章值得文字挖掘的研究者和NLP的研究者泛读。&lt;/p&gt;
 </description>
         <pubDate>Fri, 04 Aug 2017 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/</guid>
         
         
         <category>读论文</category>

@@ -21,6 +21,7 @@ title: 关于
 
 ## 经典专栏文章
 
+*  [《值得信赖的在线可控实验——A/B实验实用向导》总结]({% post_url 2020-05-08-online-tests %})
 *  [《经理人之路——技术领袖启航成长与变化的参考书》总结](http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/)
 *  [论互联网公司与研究院](http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2017/04/09/research-labs/)
 *  [只有偏执狂才能生存](http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/08/09/intel/)

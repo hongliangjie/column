@@ -5,9 +5,133 @@
     <description>LinkedIn工程总监、前Etsy工程总监、雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</description>
     <link>http://column.hongliangjie.com/</link>
     <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 11 May 2020 09:10:34 -0700</pubDate>
-    <lastBuildDate>Mon, 11 May 2020 09:10:34 -0700</lastBuildDate>
+    <pubDate>Fri, 26 Jun 2020 21:40:04 -0700</pubDate>
+    <lastBuildDate>Fri, 26 Jun 2020 21:40:04 -0700</lastBuildDate>
     <generator>Jekyll v3.8.5</generator>
+    
+      <item>
+        <title>《从数据中学习》总结</title>
+        <description>&lt;p&gt;今天我们要来总结技术书籍&lt;a href=&quot;https://www.amazon.com/Learning-Data-Yaser-S-Abu-Mostafa/dp/1600490069&quot;&gt;《从数据中学习》&lt;/a&gt;。这本书是一本浅显易懂的机器学习理论知识的入门教材。对于机器学习感兴趣的工程师和希望在理论知识上更进一步的数据科学家可以通过本书来快速了解机器学习的核心思想，也就是“学习理论”（Learning Theory）的重要结论。本书的三位作者都来自学术界。全书书写通畅，公式和理论推导也很基础，适合自学的初学者。&lt;/p&gt;
+
+&lt;h2 id=&quot;作者简介&quot;&gt;作者简介&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/learningfromdata.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本书有三位作者。&lt;/p&gt;
+
+&lt;p&gt;第一作者&lt;a href=&quot;https://work.caltech.edu/&quot;&gt;Yaser Abu-Mostafa&lt;/a&gt;是加州理工学院&lt;a href=&quot;https://www.caltech.edu/&quot;&gt;（California Institute of Technology）&lt;/a&gt;电子工程与计算机系的教授。Yaser于1979年从开罗大学学士毕业之后于1981年从佐治亚理工学院获得硕士学位，然后于1983年从加州理工学院获得博士学位。Yaser和他人于1987年筹办了第一届此后享有盛誉的神经信息处理系统大会（NeurIPS）。&lt;/p&gt;
+
+&lt;p&gt;第二作者&lt;a href=&quot;https://www.cs.rpi.edu/~magdon/&quot;&gt;Malik Magdon-Ismail&lt;/a&gt;是伦斯勒理工学院&lt;a href=&quot;https://www.rpi.edu/&quot;&gt;（Rensselaer Polytechnic Institute）&lt;/a&gt;计算机科学系的教授。Malik于1993年从耶鲁获得物理学士学位，然后分别于1995年和1998年从加州理工学院获得物理硕士和计算机博士学位。&lt;/p&gt;
+
+&lt;p&gt;最后一个作者&lt;a href=&quot;https://www.csie.ntu.edu.tw/~htlin/&quot;&gt;Hsuan-Tien Lin&lt;/a&gt;是国立台湾大学计算机和信息工程系教授。Hsuan-Tien于2001年从国立台湾大学获得计算机和信息工程系学士然后于2008年从加州理工学院获得计算机博士学位。&lt;/p&gt;
+
+&lt;h2 id=&quot;全书结构&quot;&gt;全书结构&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;全书大体有下面五个章节&lt;/p&gt;
+
+&lt;p&gt;第一章，是对于“学习问题”（The Learning Problem）的一个总体的设置和介绍。这部分介绍了不同类型的“学习场景”，例如“监督学习”（Supervised Learning）、“强化学习”（Reinforcement Learning）以及“无监督学习”（Unsupervised Learning），以及最重要的内容“学习”的“可行性”（Feasibility）。&lt;/p&gt;
+
+&lt;p&gt;第二章，是进一步展开“学习”的“可行性”方面的内容，详细来探讨“泛化理论”（Theory of Generalization），也就是我们常说的为什么我们能够通过“训练集”（Training）上的一些结论来扩展到“测试集”（Testing）甚至是未知的数据上。在这一章，作者们介绍了重要的“VC维度”（The VC Dimension）以及如何理解“泛化界限”（Generalization Bound）。&lt;/p&gt;
+
+&lt;p&gt;第三章，作者们详细介绍了最简单的模型“线性模型”（The Linear Model）。这其中包括了针对回归问题的“线性回归”（Linear Regression）以及分类问题的“对数几率回归”（Logistic Regression）。&lt;/p&gt;
+
+&lt;p&gt;第四章，作者们详细的阐述了关于“过拟合”（Overfitting）的观点。在其他教材中，“过拟合”的内容往往是简单带过，和“线性模型”类似，这本书对于“过拟合”的讲解可以说是非常有阅读价值。&lt;/p&gt;
+
+&lt;p&gt;第五章，作者们讲解了三个重要的“学习”原理（Learning Principles）：“奥卡姆剃刀”（Occam’s Razor）、“采样偏差”（Sampling Bias）和“数据窥探”（Data Snooping）。如果在实践中不注意这些问题，那之前讲的“泛化保证”则不能提供有效的理论支持。&lt;/p&gt;
+
+&lt;p&gt;整本书可以说是把“学习理论”（Learning Theory）中的重要概念以及机器学习的核心思想深入浅出得进行了讲解，非常适合机器学习的初学者。&lt;/p&gt;
+
+&lt;h2 id=&quot;内容剖析&quot;&gt;内容剖析&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;我们接下来就针对书中的一些重点内容为大家进行剖析。&lt;/p&gt;
+
+&lt;h3 id=&quot;从训练集到未知数据的泛化历程&quot;&gt;从训练集到未知数据的泛化历程&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/lt.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;经典的“监督学习”设置可以简化为如何通过一组数据输入$ \mathbf{x} $来学习一个未知函数$ f $。这里面有两个难点，一是我们对$ f $一无所知，二是数据有限。如何能够构造出一套理论来对于这样一个问题进行描述成为了机器学习需要解决的核心问题，也就是“学习”的“可行性”问题。&lt;/p&gt;
+
+&lt;p&gt;书中在第1.3节解决了“学习可行性”的第一个障碍，也就是把“概率化”的语言引入关于“可行性”的讨论中。直观得说，希望能够“确定性”得学习一个未知的$ f $是很难的，我们没有数学工具来对这样的场景提供有效的结论。但如果我们用概率的眼光来看，则可以针对学习$ f $的精准度进行严格地描述。这个根本性的思路来自于对于随机事件的理解。例如有一个瓶子里放着一定数量的红球和一定数量的白球。如果我们的任务是根据已经从瓶子里拿出的一些球是否是红色或者白色来确定性得估计红球和白球的比例，这是没有保证的。但如果我们以一定正确的概率去估计红球和白球的比例则有定量的结论。&lt;/p&gt;
+
+&lt;p&gt;这个定量的结论来自于概率论中的“霍夫丁不等式”（Hoeffding Inequality）:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P(|\bar{X} - \mathbb{E}[X] | &gt; \epsilon ) \leq 2e^{-2\epsilon^{2}N}&lt;/script&gt;
+
+&lt;p&gt;这里，$ X $是一个随机变量，$ \bar{X} $是这个随机变量的均值，然后$ \epsilon $是一个误差项。简单说来，“霍夫丁不等式”对于样本均值作为参数的估计值和参数真值之间的差距给出了一个“界限”（Bound）。这个“界限”和样本数据量$ N $有关，并且随着数据的增多，参数的估计值和真值的差距大于一个事先约定的范围的可能性会以指数方式降低。这个结论的魅力来自于我们并不需要知道参数真值，我们只需要进行操作的是作为参数估计值的样本均值。另外，这个结论的优势在于它是概率意义上的。也就是说，我们并不能100%确保估计准确，但是准确性的保证来源于随着数据增多而减小的可能性。这个可能性虽然很小但一直存在。&lt;/p&gt;
+
+&lt;p&gt;把“霍夫丁不等式”应用到机器学习的场景我们需要两个概念。一个是根据样本数据集得来的“样本内误差”（In-Sample Error）:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbb{E}_{in}[h] = \frac{1}{N} \sum_{n=1}^{N} \mathbb{I}(h(\mathbf{x}_{n}) \neq f(\mathbf{x}_{n}))&lt;/script&gt;
+
+&lt;p&gt;这里的$ h $是对于$ f $的一个估计，然后$ \mathbb{I}(x) $在$ x $的时候等于$ 0 $另一个则是在全数据集上的“样本外误差”（Out-of-Sample Error）：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbb{E}_{out}[h] = P(h(\mathbf{x}) \neq f(\mathbf{x}))&lt;/script&gt;
+
+&lt;p&gt;我们无法衡量“样本外误差”，但是根据“霍夫丁不等式”，我们可以对其利用“样本内误差”进行估计，并且估计的错误率是一个随着样本数据量N增大而指数式减小的数值:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P(|\mathbb{E}_{in}[h] - \mathbb{E}_{out}[h] | &gt; \epsilon ) \leq 2e^{-2\epsilon^{2}N}&lt;/script&gt;
+
+&lt;p&gt;这可以说是“学习理论”的第一大步。我们可以利用样本数据集上的估计来针对参数的真值进行描述。接下来遇到的困难来自于，刚才所说的“样本内误差”和“样本外误差”都依赖于我们选择的某一个特定的“假设”（Hypothesis）$ h $。也就是说，我们如果要估计$ f $，我们只要选择一个$ h $，就能利用“霍夫丁不等式”来对$ h $和$ f $的“样本外误差”进行评估。但是，很明显，我们需要评价具有可能性的$ h $的总数目也许是无限多，这就造成了一个重大难题。在我们讨论无限数目的假设空间之前，作者们展示了“霍夫丁不等式”可以被推广到有限数目$ M $的情况，也就是参数的估计值和真值之间误差的“界限”是一个同时和$ N $以及$ M $有关的数量:&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;P(|\mathbb{E}_{in}[g] - \mathbb{E}_{out}[g] | &gt; \epsilon ) \leq 2Me^{-2\epsilon^{2}N}&lt;/script&gt;
+
+&lt;p&gt;注意，这里的$ g $和$ h $有所不同，书中详细讲了两者的关系，我们这里的讨论可以忽略这个差别。下面的进展需要我们拿掉对于$ M $的依赖。&lt;/p&gt;
+
+&lt;p&gt;第一个观察来源于我们对于所有M甚至是无限数目的假设空间的一个洞察，那就是这些假设往往很类似。在第2章里，作者们开始阐述我们需要真正在意的是有效的假设数目（Effective Number of Hypotheses）而不是所有的甚至是无限多个假设数目。这里一个巧妙的构造来自于我们理解一个假设h的视角并不专注于这个假设本身而在于这个假设在一个数据集上的表现。也就是说，我们通过数据来观察一个假设的表现。对于一个二分问题（Binary Classification），无论假设本身如何，我们都可以在一个给定的数据集上获得一个假设在这个数据集上作用所得到的一些“正例”和“负例”的判别结果。而两个不同的假设很可能在一个数据集上产生的“正负例”判别结果是一样的。我们把一组“正负例”结果叫做一个“二分”（Dichotomy）。那么，一个包含很多假设的“假设集合”就对应一个包含众多“二分”的“二分集合”。我们把一个数据集N上能够通过某个假设集合H所产生的最多的二分集合数目定义为“增长函数”（Growth Function）在这个数据集和假设集合上的取值。换句话说，“增长函数”是一个依赖于数据集和假设集合的函数。如果一个假设集合H可以产生一个数据集上所有可能的“二分”，我们就说这个假设集合H“散开”（Shatter）了这个数据集。回到之前提到的问题，那就是我们希望替换掉“霍夫丁不等式”中对于$ M $的依赖。整个这个部分的讲述就是要引出“增长函数”这个重要的工具。&lt;/p&gt;
+
+&lt;p&gt;有了“增长函数”的概念之后，我们肯定希望“增长函数”是有一个上界的，而这个上界最好和假设集合的总数目没有关系。这样，我们就可以达到目的从而让参数的估计值和真值之间的误差和我们需要评价的假设数目最好没有关系。&lt;/p&gt;
+
+&lt;p&gt;为了解决这个问题，我们就要引入最后一个重要定义。那就是“VC维度”。一个假设集合H的“VC维度”（VC Dimension）是这个假设集合所对应的“增长函数”等于$ 2^{N} $所能对应到的最大的$ N $值。形象地说，也就是我们不断增大$ N $，看假设集合H能否“散开”当前$ N $所对应的数据集，如果是，那就继续增大，直到最后一个可以“散开”的$ N $值。如果我们对于所有的$ N $值，我们总能“散开”当前N所对应的数据集，我们就定义“VC维度”为无限。&lt;/p&gt;
+
+&lt;p&gt;对于初学者来说，这一部分的内容概念比较密集而且抽象。作者们很快举了几个例子来说明“增长函数”以及“VC维度”在某一些特定的数据集上的存在以及给出了它们的表达式。&lt;/p&gt;
+
+&lt;p&gt;下面的一个难点就在于如何把“增长函数”给“界限”住。书中有不少的细节。我们这里直接引述结论，那就是如果对于某个假设集合$ H $我们可以找到“VC维度”，“增长函数”就有一个上限。这个上限是一个和N以及“VC维度”有关的多项式加和公式。简而言之，那就是“增长函数”在这样的情况下是被“VC维度”所“界限”住的。有了这些基石之后，作者们就推出了书中最重要的结论（公式2.21），我们在这里重复出来：&lt;/p&gt;
+
+&lt;script type=&quot;math/tex; mode=display&quot;&gt;\mathbb{E}_{out}[g] \leq \mathbb{E}_{in}[g] + \sqrt{\frac{8}{N}\ln \frac{4m_{N}(2N)}{\delta}}&lt;/script&gt;
+
+&lt;p&gt;公式的证明并没有在正文中，而是放到了附录里。但是公式的核心思想就是我们之前提到的“样本中误差”和“样本外误差”的关系被一个带有“增长函数”的不等式所“界限”。这个不等式和我们之前所说的“霍夫丁不等式”非常类似，只是其中没有了对于$ M $的依赖，而变成了对于“增长函数”的依赖。有了这个重要的工具之后，再加上上面所说的我们利用“VC维度”对于“增长函数”进行“界限”。我们就更进一步得到了一个“样本中误差”和“样本外误差”的关系被“VC维度”所“界限”的结论。而这个结论就具备可操作性了，因为很多情况下，我们可以直接计算“VC维度”。&lt;/p&gt;
+
+&lt;p&gt;这部分的讲解（整个第2章）可以说深入浅出得介绍了“学习理论”中最重要的一组结论。&lt;/p&gt;
+
+&lt;h3 id=&quot;机器学习的噩梦过拟合&quot;&gt;机器学习的噩梦——“过拟合”&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/overfit.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;本书在第4章详细探讨了机器学习中“过拟合”（Overfitting）的现象以及一些解决方案。&lt;/p&gt;
+
+&lt;p&gt;首先，书中利用一些例子来展示了“过拟合”现象的存在性，那就是有的模型可以在训练集上获得非常小甚至是零的“样本内误差”但在训练集之外有着非常惊人的“样本外误差”。换句话说，这些模型只有很弱的甚至是没有“泛化”能力。这种“过拟合”的现象在对于一个相对简单的模型和一个相对复杂的模型进行比较的时候会显得尤为明显。比如书中利用一个10阶多项式函数来产生一组有噪声的数据，然后利用一个2阶多项式和另一个10阶多项式来拟合产生的数据。如果我们来比较两个模型的“样本内误差”则可以发现10阶多项式好像能够更好得拟合10阶多项式所产生的训练数据。然而令人吃惊的是，如果我们来比较两个模型的“样本外误差”，则会发现2阶多项式相比于10阶多项式有更好的“泛化”能力。这里面可能会让人疑惑的就是，按理说，我们利用10阶多项式来拟合10阶多项式产生的数据应该会比2阶多项式有更好的“泛化”能力，因为这里相当于是利用了“真模型”（Ground Truth）的信息。书中提供的一种解释是虽然10阶多项式作为“真模型”这个信息有价值之处，但是总体而言，10阶多项式相比于2阶多项式需要更多的数据来拟合，同时对于有噪声的数据，复杂模型更容易去拟合数据中的噪声，从而导致了弱化的“泛化”能力。&lt;/p&gt;
+
+&lt;p&gt;机器学习中，一个经常使用的来减弱“过拟合”现象的工具叫做“正则化”（Regularization）。书中提醒，绝大多数“正则化”的方法都是“启发法”（Heuristics）。也就是说，这些方法可能并没有太多的理论基础，而是在实际使用中有比较好的效果。书中介绍了“权重衰减”（Weight Decay）这种“正则化”方法。简单来说，“权重衰减”就是指，我们把模型中学习到的参数，或者叫系数，或者叫权重，人为得进行数值上的“衰减”，也就是使其变小，甚至是归零。这种做法的初衷是让学习算法不因为一些数据中的异常值，通常是噪声，来误导模型学习到过大的权重。“权重衰减”往往会通过更改目标函数（Objective Function）的方式来达到同时拟合数据以及让参数变小这两个目的。&lt;/p&gt;
+
+&lt;p&gt;针对“过拟合”的另外一个工具是构造一个“验证集”（Validation）。“验证集”和“测试集”非常类似，也就是这部分数据不能用作模型的训练。“验证集”和“测试集”的区别在于，这部分数据可以用于对于模型的一些决策，例如帮助选择模型的参数。在日常的机器学习实践中，我们经常利用K个“验证集”来进行模型选择或者参数选择的流程，从而达到减小“过拟合”的效果。&lt;/p&gt;
+
+&lt;h3 id=&quot;三大学习原理&quot;&gt;三大学习原理&lt;/h3&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/or.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在本书的第5章，也就是全书的最后，作者们总结了三个重要的机器学习原理。&lt;/p&gt;
+
+&lt;p&gt;第一个原理是“奥卡姆剃刀”。简单说来“奥卡姆剃刀”讲的是，能够拟合数据中的最简单的模型往往是最有道理的。这个原理还可以被说成，在能够拟合数据的众多模型中，我们往往更偏向于简单的那个。需要说明的是，如何衡量模型的简单与否，或者说如何衡量模型的复杂度，是一个值得探讨的问题。例如书中讲过的VC维度以及“正则化”所代表的误差项等都是某种衡量模型复杂度的方法。另外，“奥卡姆剃刀”也提供了一种在实践中经常使用的方法，那就是对于一组数据，我们往往先开始尝试使用简单模型进行拟合，然后逐渐把模型复杂化，看是否能够增强拟合，同时注意“验证集”的错误率。&lt;/p&gt;
+
+&lt;p&gt;第二个原理是“样本偏差”，指的是如果数据是通过有偏差的采样所获得的，那么学习也会产生类似的有偏差的结果。“样本偏差”有时候非常难以发现。例如，书中举了一个例子，那就是我们利用华尔街的股票数据进行建模，可能会找到模型能够很好得拟合过去的股票高低起伏信息。然而这样的模型是带有很大的偏差的，原因就是，华尔街这十几年表现不好的股票有可能已经退市，而如果我们选择数据中仅仅包含一直存在的股票，这本身就是一种选择性“偏差”。&lt;/p&gt;
+
+&lt;p&gt;最后一个原理叫“数据窥探”。简而言之，“数据窥探”是说如果一个数据集影响了学习算法的任何一个流程，那么这个数据集对于结论的有效性就已经也受到了影响。这是在机器学习实践中经常遇到的陷阱。换句话说，我们要杜绝“测试集”的信息“泄露”并且影响到我们学习算法的任何一个流程。例如，我们首先看了数据貌似符合线性规律以后，然后采用线性模型进行拟合；再例如，我们利用了“测试集”数据和“训练集”数据一起对整个数据集进行一些数据预处理。更普遍的陷阱来源于，对同一个数据集反复使用，也就是说，在不同数据集上反复测试不同的算法，直到找到测试数据集上表现好的模型位置。书中重点解释了这样做的结果就是理论上我们推导的VC维度无法来对结论进行“泛化”保证。&lt;/p&gt;
+
+&lt;h2 id=&quot;总结点评&quot;&gt;总结点评&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;这本书可以说是作为机器学习入门的一个参考教材。和大多数希望涵盖众多内容的机器学习通用教材相比，本书可以说是短小精悍，而且专注在机器学习、特别是学习理论（Learning Theory）方面最基本的介绍。整本书的行文非常通顺而且理论证明部分也毫不晦涩，非常适合有了一定机器学习基础，又希望能够在理论上有所了解的工程师和数据科学家。&lt;/p&gt;
+</description>
+        <pubDate>Thu, 25 Jun 2020 00:00:00 -0700</pubDate>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data/</guid>
+        
+        
+        <category>读书笔记,机器学习,教材</category>
+        
+      </item>
     
       <item>
         <title>《值得信赖的在线可控实验——A/B实验实用向导》总结</title>
@@ -35,7 +159,7 @@
   &lt;li&gt;第二部分，是几个有针对性的专题，主要探讨了速度对于网站运行的重要性、“指标”（Metric）的选取以及如何建立“机构记忆”（Institutional Memory）等。&lt;/li&gt;
   &lt;li&gt;第三部分，是探讨了当可控实验变得不可能的时候，如何使用现有的数据进行&lt;a href=&quot;https://en.wikipedia.org/wiki/Observational_study&quot;&gt;“观察研究”（Observational Studies）&lt;/a&gt;。这部分技术是对可控实验的有效补充。&lt;/li&gt;
   &lt;li&gt;第四部分，是针对实验平台的高级内容，包括如何运行“客户端”（如手机）的实验、如何进行“检测设置”（Instrumentation）、如何选择“随机化单元”（Randomization Unit）、如何“发布实验”（Ramping Experiment）以及如何规模化实验分析。&lt;/li&gt;
-  &lt;li&gt;第五部分，是针对实验分析的高级内容，包括如何进行统计统计假设检验、“方差缩减”（Variance Reduction）、A/A实验、如何处理“样本比率偏差”（Sample Ratio Mismatch）以及衡量“长期效果”（Long-Term Treatment Effects）&lt;/li&gt;
+  &lt;li&gt;第五部分，是针对实验分析的高级内容，包括如何进行统计统计假设检验、“方差缩减”（Variance Reduction）、A/A实验、如何处理“样本比率偏差”（Sample Ratio Mismatch）以及衡量“长期效果”（Long-Term Treatment Effects）。&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;整本书可以说是包含了丰富的经验之谈和理论论述。&lt;/p&gt;
@@ -631,41 +755,6 @@
         <pubDate>Sun, 06 Aug 2017 00:00:00 -0700</pubDate>
         <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</link>
         <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/</guid>
-        
-        
-        <category>读论文</category>
-        
-      </item>
-    
-      <item>
-        <title>ACL 2017文章精读（三）</title>
-        <description>&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章Towards End-to-End Reinforcement Learning of Dialogue Agents for Information Access进行一个简单的分析解读。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1609.00777&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/MiuLab/KB-InfoBot&quot;&gt;代码地址&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;这篇文章的作者群来自于微软研究院、卡内基梅隆大学和台湾国立大学。文章中还有Lihong Li和Li Deng（邓力）这样的著名学者的影子。第一作者的Bhuwan Dhingra是在卡内基梅隆大学William W. Cohen和Ruslan Salakhutdinov的博士学生。两位导师都十分有名气。而这个学生这几年在NLP领域可以说是收获颇丰：在今年的ACL上已经发表2篇文章，之前在今天的ICLR和AAAI上都有论文发表。&lt;/p&gt;
-
-&lt;p&gt;这篇文章的核心思想是如何训练一个多轮（Multi-turn）的基于知识库（Knowledge Base）的对话系统。这个对话系统的目的主要还是帮助用户从这个知识库中来获取一些信息。那么，传统的基于知识库的对话系统的主要弊病在于中间有一个步骤是对于“知识库的查询”。也就是说，系统必须根据用户提交的查询（Query），进行分析并且产生结果。这一步，作者们称为“硬查询”（Hard-Lookup）。虽然这一步非常自然，但是这一步阻断了（Block）了整个流程，使得整个系统没法“端到端”（End-to-End）进行训练。并且，这一步由于是“硬查询”，并没有携带更多的不确定信息，不利于系统的整体优化。&lt;/p&gt;
-
-&lt;p&gt;这篇文章其实就是想提出一种“软查询”从而让整个系统可以得以“端到端”（End-to-End）得进行训练。这个新提出的“软查询”步骤，和强化学习（Reinforcement Learning）相结合，共同完成整个的回路，从而在这个对话系统上达到真正的“端到端”。这就是整个文章的核心思想。&lt;/p&gt;
-
-&lt;p&gt;那么，这个所谓的“软查询”是怎么回事？其实就是整个系统保持一个对知识库中的所有本体（Entities）所可能产生的值的一个后验分布（Posterior Distribution）。也就是说，作者们构建了这么一组后验分布，然后可以通过对这些分布的更新（这个过程是一个自然获取新数据，并且更新后验分布的过程），来对现在所有本体的确信度有一个重新的估计。这一步的转换，让对话系统从和跟知识库直接打交道，变成了如何针对后验分布打交道。而显然，从机器学习的角度来说，和分布打交道往往容易简单很多。具体说来，系统的后验分布是一个关于用户在第T轮，针对某个值是否有兴趣的概率分布。&lt;/p&gt;
-
-&lt;p&gt;整个对话系统是这样运行的。首先，用户通过输入的对话（Utterance）来触发系统进行不同的动作（Action）。动作空间（Action Space）包含向用户询问某个Slot的值，或者通知用户目前的结果。整个系统包含三个大模块：一个Belief Trackers、一个Soft-KB Lookup以及一个Policy Network。&lt;/p&gt;
-
-&lt;p&gt;Belief Trackers的作用是对整个系统现在的状态有一个全局的掌握。这里，每一个Slot都有一个Tracker，一个是根据用户当前的输入需要保持一个对于所有值的Multinomial分布，另外的则是需要保持一个对于用户是否知道这个Slot的值的置信值。文章中奖了Hand-Crafted Tracker和Neural Belief Tracker（基于GRU）的细节，这里就不复述了。有了Tracker以后，Soft-KB Lookup的作用是保持一个整个对于本体的所有值得后验分布。最后，这些后验概率统统被总结到了一个总结向量（Summary Vector）里。这个向量可以认为是把所有的后验信息给压缩到了这个向量里。而Policy Network则根据这个总结向量，来选择整个对话系统的下一个动作。这里文章也是介绍了Hand-Crafted的Policy和Neural Policy两种情况。我们就不复述了。&lt;/p&gt;
-
-&lt;p&gt;整个模型的训练过程还是有困难的。虽然作者用了REINFORCE的算法，但是，作者们发现根据随机初始化的算法没法得到想要的效果。于是作者们采用了所谓的Imitation Learning的方法，也就是说，最开始的时候去模拟Hand-Crafted Agents的效果。&lt;/p&gt;
-
-&lt;p&gt;在这篇文章里，作者们采用了模拟器（Simulator）的衡量方式。具体说来，就是通过与一个模拟器进行对话从而训练基于强化学习的对话系统。作者们用了MovieKB来做数据集。总体说来整个实验部分都显得比较“弱”。没有充足的真正的实验结果。&lt;/p&gt;
-
-&lt;p&gt;可以说整个文章真正值得借鉴主要还是那个“软查询”的思想。整个流程也值得参考。但是训练的困难可能使得这个系统作为一个可以更加扩展的系统的价值不高。本文值得对对话系统有研究的人泛读。&lt;/p&gt;
-</description>
-        <pubDate>Sat, 05 Aug 2017 00:00:00 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/</guid>
         
         
         <category>读论文</category>

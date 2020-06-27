@@ -27,7 +27,7 @@ categories: 读书笔记,在线实验
   *  第二部分，是几个有针对性的专题，主要探讨了速度对于网站运行的重要性、“指标”（Metric）的选取以及如何建立“机构记忆”（Institutional Memory）等。
   *  第三部分，是探讨了当可控实验变得不可能的时候，如何使用现有的数据进行[“观察研究”（Observational Studies）](https://en.wikipedia.org/wiki/Observational_study)。这部分技术是对可控实验的有效补充。
   *  第四部分，是针对实验平台的高级内容，包括如何运行“客户端”（如手机）的实验、如何进行“检测设置”（Instrumentation）、如何选择“随机化单元”（Randomization Unit）、如何“发布实验”（Ramping Experiment）以及如何规模化实验分析。
-  *  第五部分，是针对实验分析的高级内容，包括如何进行统计统计假设检验、“方差缩减”（Variance Reduction）、A/A实验、如何处理“样本比率偏差”（Sample Ratio Mismatch）以及衡量“长期效果”（Long-Term Treatment Effects）
+  *  第五部分，是针对实验分析的高级内容，包括如何进行统计统计假设检验、“方差缩减”（Variance Reduction）、A/A实验、如何处理“样本比率偏差”（Sample Ratio Mismatch）以及衡量“长期效果”（Long-Term Treatment Effects）。
 
 整本书可以说是包含了丰富的经验之谈和理论论述。
 

@@ -7,13 +7,15 @@ title: 关于
 
 <br/>
 <img align="right" src="/assets/hongliangjie2.jpg" style="width: 285px;height:226.5px;margin-left:20px;">
-我目前担任[LinkedIn](https://www.linkedin.com)的**人工智能工程总监**（Director of Engineering -- AI），负责企业级招聘的人工智能解决方案。LinkedIn是全球最大的职场社交网络，在全球200多个国家与地区运营并且拥有超过6.6亿用户。
+我目前担任[LinkedIn](https://www.linkedin.com)的**人工智能工程总监**（Director of Engineering -- AI）。LinkedIn是全球最大的职场社交网络，在全球200多个国家与地区运营并且拥有超过6.6亿用户。
+
+我的团队为多个LinkedIn核心产品群提供人工智能解决方案。这里包括涵盖企业级招聘、用户职位搜索以及推荐的“英才方案和职场规划产品群”（Talent Solutions and Careers），以及为营销人员提供一站式服务的“企业级营销解决方案产品群”（Sales Solutions）。团队开发的算法是LinkedIn核心竞争力的重要驱动力。在这些领域，我作为人工智能技术领导，与产品的其他功能领导一起制定产品的中长期发展规划，并且为团队的发展规划蓝图。
 
 在加入LinkedIn之前，我于2016年到2020年担任总部位于纽约的电子商务网站[Etsy](https://www.etsy.com/)的**数据科学与机器学习工程总监**（Director of Engineering -- Data Science and Machine Learning）。我发展并且管理了一支位于纽约和旧金山有近40人的数据科学家及机器学习工程师团队。团队成员绝大多数拥有硕士以及博士文凭，来自计算机科学、运筹学、统计、经济学、物理等学术背景。我的团队主要职责是为Etsy提供全方位的数据科学支持，包括个性化与推荐、搜索、计算广告、图像处理及深度学习和文字信息挖掘等多方面的基于机器学习的产品优化方案。
 
 在加入Etsy之前，我于2013年到2016年在[雅虎研究院（Yahoo Research）](https://research.yahoo.com/)工作，历任**科学家**、**资深科学家**和**高级研发经理**职位。在雅虎研究院工作期间，我亲自领导并参与了多项大数据大规模机器学习系统的研发工作，包括雅虎首页千万级用户个性化推荐系统、雅虎移动搜索千万级用户搜索优化系统以及大型个性化广告系统，对如何在产品中使用机器学习数据分析，以及如何在工程中实现高级机器学习模型有独到见解。
 
-我长期从事机器学习与人工智能的基础以及应用研究，对推荐系统、搜索引擎、计算广告学、社交网络以及自然语言处理等领域有深入理解，在国际顶级学术会议中发表重要论文40余篇，文章引用量超过[3600次（H-Index：20）](https://scholar.google.com/citations?user=4uaSNpYAAAAJ)。同时，我也长期担任多个国际著名会议及期刊的评审委员会成员和审稿人，并且组织过多个关于推荐、搜索、用户体验优化的国际研讨会。我拥有4项美国专利。
+我长期从事机器学习与人工智能的基础以及应用研究，对推荐系统、搜索引擎、计算广告学、社交网络以及自然语言处理等领域有深入理解，在国际顶级学术会议中发表重要论文近50篇，文章引用量超过[3800次（H-Index：20）](https://scholar.google.com/citations?user=4uaSNpYAAAAJ)。同时，我也长期担任多个国际著名会议及期刊的评审委员会成员和审稿人，并且组织过多个关于推荐、搜索、用户体验优化的国际研讨会。我拥有4项美国专利。
 
 我分别于2010年和2013年从[里海大学](https://zh.wikipedia.org/zh-cn/%E7%90%86%E6%B5%B7%E5%A4%A7%E5%AD%B8)获得计算机科学硕士和博士学位，之前于2007年从[北京化工大学](https://zh.wikipedia.org/zh-cn/%E5%8C%97%E4%BA%AC%E5%8C%96%E5%B7%A5%E5%A4%A7%E5%AD%A6)获得计算机科学学士学位。
 
@@ -101,13 +103,16 @@ title: 关于
 ## 主要学术界服务
 
 * 国际会议组织工作：<br/>
-  [Tutorial “Online User Engagement: Metrics and Optimization” at WWW 2019](https://onlineuserengagement.github.io/)<br/>
+  [Tutorial “Online User Engagement: Metrics and Optimization” at KDD 2020](https://onlineuserengagement.github.io/)<br/>
+  [Tutorial “Online User Engagement: Metrics and Optimization” at WWW 2019](https://onlineuserengagement.github.io/www2019)<br/>
   [The Workshop on Deep Matching in Practical Applications at WSDM 2019](https://wsdm2019-dapa.github.io/)<br/>
   [Tutorial on Metrics of User engagement — Applications to Search & E- Commerce at WSDM 2018](https://www.slideshare.net/mounialalmas/tutorial-on-metrics-of-user-engagement-applications-to-search-e-commerce)<br/>
   [The Second Workshop on User Engagement Optimization at KDD 2014](http://www.ueo-workshop.com/)<br/>
   [The First Workshop on User Engagement Optimization at CIKM 2013](http://www.ueo-workshop.com/previous-editions/ueo-2013-at-cikm-2013/)
+* 国际会议高级程序委员会：<br/>
+  [WSDM 2021](http://www.wsdm-conference.org/2021/), [WSDM 2020](http://www.wsdm-conference.org/2020/)
 * 国际会议程序委员会：<br/>
-  [SIGIR 2020](https://sigir.org/sigir2020/), [The Web Conference 2020](https://www2020.thewebconf.org/), [WSDM 2020](http://www.wsdm-conference.org/2020/),  [CIKM 2019](http://www.cikm2019.net/), [KDD 2019](https://www.kdd.org/kdd2019/), [RecSys 2019](https://recsys.acm.org/recsys19/), [SIGIR 2019](http://sigir.org/sigir2019/), [The Web Conference 2019](https://www2019.thewebconf.org/), [WSDM 2019](http://www.wsdm-conference.org/2019/), [CIKM 2018](http://www.cikm2018.units.it/), [KDD 2018](http://www.kdd.org/kdd2018/), [SIGIR 2018](http://sigir.org/sigir2018/), [WWW 2018](https://www2018.thewebconf.org/), [WSDM 2018](http://www.wsdm-conference.org/2018/), [CIKM 2017](http://cikm2017.org/), [SIGIR 2017](http://sigir.org/sigir2017/), [WSDM 2017](http://www.wsdm-conference.org/2017/), [WWW 2017](http://www.www2017.com.au/), [CIKM 2016](http://cikm2016.cs.iupui.edu/), [KDD 2016](http://www.kdd.org/kdd2016/), [SIGIR 2016](http://sigir.org/sigir2016/), [WWW 2016](http://www2016.ca/), [WSDM 2016](http://www.wsdm-conference.org/2016/), [IJCAI 2016](http://ijcai-16.org/), [ACL 2016](http://acl2016.org/), [EMNLP 2016](http://www.emnlp2016.net/), [CIKM 2015](http://www.cikm-2015.org/), [SIGIR 2015](http://www.sigir2015.org/), [KDD 2015](http://www.kdd.org/kdd2015/), [IUI 2015](http://iui.acm.org/2015/), [WWW 2015](http://www.www2015.it/), [AIRS 2015](http://airs-conference.org/2015/), [CIKM 2014](http://cikm2014.fudan.edu.cn/), [SIGIR 2014](http://sigir.org/sigir2014/), [WSDM 2014](http://www.wsdm-conference.org/2014/), [AAAI 2014](http://www.aaai.org/Conferences/AAAI/aaai14.php), [IEEE ICCC 2014 SNBD](http://www.ieee-iccc.org/index.html), [ICWSM 2013](http://www.icwsm.org/2013/index.php), [EMNLP-CoNLL 2012](http://emnlp-conll2012.unige.ch/)
+  [KDD 2020](https://www.kdd.org/kdd2020/), [SIGIR 2020](https://sigir.org/sigir2020/), [The Web Conference 2020](https://www2020.thewebconf.org/), [WSDM 2020](http://www.wsdm-conference.org/2020/),  [CIKM 2019](http://www.cikm2019.net/), [KDD 2019](https://www.kdd.org/kdd2019/), [RecSys 2019](https://recsys.acm.org/recsys19/), [SIGIR 2019](http://sigir.org/sigir2019/), [The Web Conference 2019](https://www2019.thewebconf.org/), [WSDM 2019](http://www.wsdm-conference.org/2019/), [CIKM 2018](http://www.cikm2018.units.it/), [KDD 2018](http://www.kdd.org/kdd2018/), [SIGIR 2018](http://sigir.org/sigir2018/), [WWW 2018](https://www2018.thewebconf.org/), [WSDM 2018](http://www.wsdm-conference.org/2018/), [CIKM 2017](http://cikm2017.org/), [SIGIR 2017](http://sigir.org/sigir2017/), [WSDM 2017](http://www.wsdm-conference.org/2017/), [WWW 2017](http://www.www2017.com.au/), [CIKM 2016](http://cikm2016.cs.iupui.edu/), [KDD 2016](http://www.kdd.org/kdd2016/), [SIGIR 2016](http://sigir.org/sigir2016/), [WWW 2016](http://www2016.ca/), [WSDM 2016](http://www.wsdm-conference.org/2016/), [IJCAI 2016](http://ijcai-16.org/), [ACL 2016](http://acl2016.org/), [EMNLP 2016](http://www.emnlp2016.net/), [CIKM 2015](http://www.cikm-2015.org/), [SIGIR 2015](http://www.sigir2015.org/), [KDD 2015](http://www.kdd.org/kdd2015/), [IUI 2015](http://iui.acm.org/2015/), [WWW 2015](http://www.www2015.it/), [AIRS 2015](http://airs-conference.org/2015/), [CIKM 2014](http://cikm2014.fudan.edu.cn/), [SIGIR 2014](http://sigir.org/sigir2014/), [WSDM 2014](http://www.wsdm-conference.org/2014/), [AAAI 2014](http://www.aaai.org/Conferences/AAAI/aaai14.php), [IEEE ICCC 2014 SNBD](http://www.ieee-iccc.org/index.html), [ICWSM 2013](http://www.icwsm.org/2013/index.php), [EMNLP-CoNLL 2012](http://emnlp-conll2012.unige.ch/)
 * 国际期刊审稿：<br/>
   [Data Mining and Knowledge Discovery](http://www.springer.com/computer/database+management+&+information+retrieval/journal/10618)<br/>
   [ACM Transactions on Knowledge Discovery from Data](http://tkdd.acm.org/)<br/>
@@ -138,9 +143,14 @@ title: 关于
 
 ## 代表性演讲
 
-* **Search for E-Commerce: (Not) Solved (Yet).**于SIGIR eCOM Workshop 2018，美国安娜堡，2018年7月
+* **工业级推荐系统最新挑战和发展**主题演讲 于“第一届工业级推荐系统研讨会”（KDD 2020），虚拟会议，2020年8月
+* **Tutorial on Online User Engagement: Metrics and Optimization** 于KDD 2020，虚拟会议，2020年8月
+* **电商搜索和推荐算法的最新发展和挑战** 于Southern Data Science Conference，虚拟会议，2020年8月
+* **电商搜索和推荐算法的最新发展和挑战** 于WSDM 2020工业界日，美国休斯敦，2020年2月
+* **Tutorial on Online User Engagement: Metrics and Optimization** 于WWW 2019，美国旧金山，2019年5月
+* **Search for E-Commerce: (Not) Solved (Yet).** 于SIGIR eCOM Workshop 2018，美国安娜堡，2018年7月
 * **讲点击转换成购买**于Machine Learning Innovation Summit，美国旧金山，2018年5月
-* **机器学习和人工智能在Etsy电商平台中的实践**于Big Data Meetup，美国纽约，2018年3月
+* **机器学习和人工智能在Etsy电商平台中的实践** 于Big Data Meetup，美国纽约，2018年3月
 * **Tutorial on Metrics of User Engagement** 于WSDM 2018， 美国洛杉矶， 2018年2月
 * **从点击率提升到用户长期行为优化：浅谈人工智能技术在电商搜索的落地应用** 于AICon 2018，中国北京，2018年1月
 * **A Gradient-based Framework for Personalization** 于印第安纳大学，2017年11月

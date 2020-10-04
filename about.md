@@ -23,6 +23,7 @@ title: 关于
 
 ## 经典专栏文章
 
+*  [浅谈工业级推荐系统]({% post_url 2020-10-04-industrial-recsys %})
 *  [《韧性管理》总结]({% post_url 2020-07-09-resilient-management %})
 *  [《从数据中学习》总结]({% post_url 2020-06-25-learning-from-data %})
 *  [《值得信赖的在线可控实验——A/B实验实用向导》总结]({% post_url 2020-05-08-online-tests %})

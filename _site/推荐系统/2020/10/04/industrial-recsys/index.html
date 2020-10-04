@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      浅谈工业级推荐系统 &middot; 期望最大化（洪亮劼的专栏）
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-18798718-3', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script
+    type="text/javascript"
+    charset="utf-8"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  >
+  </script>
+  <script
+    type="text/javascript"
+    charset="utf-8"
+    src="https://vincenttam.github.io/javascripts/MathJaxLocal.js"
+  >
+  </script>
+</head>
+
+  <body class="theme-base-08 sidebar-overlay">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>LinkedIn工程总监、前Etsy工程总监、雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">专栏首页</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">关于</a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+    <span class="sidebar-nav-item">当前版本: v1.0.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2020。保留全部权利。<a href="../atom.xml">RSS</a>
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">期望最大化（洪亮劼的专栏）</a>
+            <small>分享技术、管理、团队和业界的思考</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<div class="post" style="overflow-x: scroll;">
+  <h1 class="post-title">浅谈工业级推荐系统</h1>
+  <span class="post-date">
+    2020年
+      10月
+      4号</span>
+  <p>我于2020年8月受<a href="https://irsworkshop.github.io/2020/index.html">“第一届工业级推荐系统研讨会”</a>的邀请，做了题为<a href="https://www.hongliangjie.com/talks/IRS_KDD2020.pdf">“工业级推荐系统最新的挑战和发展”</a>的主题演讲。我们就依据这个演讲的内容作为一个起点，来聊一聊工业级推荐系统的一些特点，尤其是和推荐系统的学术研究有着哪些不同的侧重点。本文会关注那些学术研究中容易忽视的，但却是在工业级推荐系统研发的日常中需要思考的问题。</p>
+
+<h2 id="工业级推荐系统及其生态系统">工业级推荐系统及其生态系统</h2>
+<hr />
+<p><img src="/assets/in-recsys-1.png" alt="" /></p>
+
+<p>工业级推荐系统和学术研究中的推荐系统最大的一个区别，也是最容易忽视的一个区别在于，前者往往是某个产品中的一个环节，甚至有时候是一个很小的环节。一个产品往往有很多环节，而这些环节构成了一个复杂的生态系统。更进一步来说，某个公司之间的多个产品可以进一步构成更加高级的复杂生态系统。所以，理解工业级推荐系统就必须把推荐系统放回其所在的整体生态系统来进行审视和研究。</p>
+
+<p>传统学术研究中的推荐系统往往基于一个虚构的理想环境。那就是有一个物品的候选池（可以是新闻、电影、或者是商品等），而用户针对这个侯选池中的物品进行逐一评分，分数由低到高，可以是五分制，也可以是两分制，表达喜好程度。推荐系统的任务被抽象成为对用户评分（Rating）信息的预测或者是估计。一个完美的推荐系统就是毫无偏差得对所有的用户评分进行还原和预测。熟悉的读者可以发现，这个理想环境其实就是对推荐系统研究有着巨大推动作用的——<a href="https://en.wikipedia.org/wiki/Netflix_Prize">Netflix大奖赛</a>中任务场景更加抽象的一个版本。的确，把推荐系统抽象成用户评分信息预估极大得简化了推荐系统在实际产品中的作用，为十多年来推荐系统研究的蓬勃发展带来了有力的支持。一个更加抽象的任务描述则把评分预估看成是不完全信息的<a href="https://en.wikipedia.org/wiki/Matrix_completion">“矩阵完成”（Matrix Completion）</a>。也就是说评分预估可以看做是一个以用户为行物品为列的矩阵中有一些信息不完整。我们只有某一些单元中有数值，代表已经打过分的用户与物品的的交互。剩下有大量的单元需要来补全信息。这种“矩阵完成”的任务描述则更进一步得把推荐系统的任务变成了数学中的代数问题。</p>
+
+<p>实际上，研究人员和实践工作者很快意识到了把推荐系统研究如此简化带来的一个直接问题，那就是推荐系统性能的提高，或者说是对用户评分预测的精准与否，与我们期望推荐系统所承载的功能有不小的偏差。早在Netflix大奖赛之后，<a href="https://netflixtechblog.com/netflix-recommendations-beyond-the-5-stars-part-1-55838468f429">Netflix官方工程博客</a>就阐述了为什么团队最终没有采纳获奖的算法在产品中，并且因为种种原因，包括隐私和法律风险，Netflix最终放弃了举行第二届大奖赛的想法。对于Netflix这个产品群来说，真正的产品需求是希望用户能够喜欢其服务所带来的电影电视以及广泛的节目，从而让用户能够选择订阅Netflix服务，或者持续订阅。也就是说，Netflix所有产品，包括上面林林种种的搜索推荐功能都是为这同一目的而服务的。单一模块的好坏甚至是某个模块上面用户对于某一个节目的评分可能与这个用户是否选择继续订阅Netflix没有明显的联系。</p>
+
+<p>这种推荐模块仅仅是一个更大产品中的一个环节，并且更大产品的目标和推荐系统的目标完全不一样的情况不仅仅局限于Netflix。例如电商Amazon，虽然网站上有各种不同的页面和模块，但归结起来，总的目的还是希望能够吸引用户购买商品。例如专注构建职业社交圈的LinkedIn，网站上有丰富的各种模块和服务，但归根结底，LinkedIn是希望用户最终能够订阅其中的一些服务或者是成为其广告的点击者，为其服务产生商业价值。例如在线音乐和广播节目服务商Spotify的最终目的是吸引用户持续订阅其服务。因此，Spotify上的种种栏目和推荐模块都是为这一共同的目标而服务的。</p>
+
+<p>把单一推荐模块，和其他的模块页面放一起，都看做是达成产品最终目标的统一生态系统中的一个元素，是理解和开发工业级推荐系统的重要前提。</p>
+
+<p>对于多页面多模块的生态系统而言，有这么两个重要的挑战。第一，产品的最终目的往往和某一个模块的成功有着复杂的关系，并没有完全线性的相互联系。换句话说，即便衡量大多数甚至每一个模块的指标有了正向或者负向的变化，整个产品的最终目标并不一定会有相同方向的变化。例如，对于Netflix来说，某一个模块的点击率的变化，可能对每一个月的订阅人数的变化并不起决定性的作用。第二，理解多个模块之间的关系变得很困难。例如，Amazon商品页面上的多个模块，按理说，其目的是为了吸引用户更加了解当前产品并且进行购买，但是如果一个模块展示了其他更加有吸引力的产品，用户可能会从当前页面跳转到其他页面去。更加复杂的场景包括用户可能因为看了过多的产品后举棋不定，从而不准备在当下进行购买。于是，商品页面上的某一个模块虽然可能有了更多的点击，但是其他模块可能会受到影响，点击下降，达到某种“此消彼长”的态势。</p>
+
+<p>总而言之，把推荐系统放到整个生态系统中进行思考并且理解多个模块之间的关系是工业级推荐系统的重要挑战。</p>
+
+<h2 id="工业级推荐系统和产品长期目标的关系">工业级推荐系统和产品长期目标的关系</h2>
+<hr />
+<p><img src="/assets/in-recsys-2.jpg" alt="" /></p>
+
+<p>我们前面提到了工业级的推荐系统往往是庞大产品体系中的一个环节。而整个产品体系又是为公司的产品以及商业策略服务而最终获得商业和社会价值。大多数互联网公司都对如何衡量产品和商业策略有一些标准的做法，比如利用<a href="https://en.wikipedia.org/wiki/Active_users">“月活跃用户数”</a>（Monthly Active Users）、<a href="https://en.wikipedia.org/wiki/Gross_merchandise_volume">“商品毛利润”</a>（Gross Merchandise Value）来对一个公司的业务好坏进行最基本的判断。</p>
+
+<p>然而我们可以看到，公司对于产品衡量好坏的标准往往都是对于产品的一个相对长时间状态的描述。例如，如果我们要观测“月活跃用户数”的变化，则需要对产品进行好几个月的观察，仅仅观察一两个月就自然无法得到这种本身就需要多个月进行观测的指标的变化。同理，“商品毛利润”的变化有时候也需要少则数周多则数月才能观测出来，如有一些产品的计费方式是每一个月针对用户进行计费甚至有的是每一年才计费（例如有一些订阅服务）。LinkedIn的企业级招聘的重要指标是看有多少用户利用LinkedIn找到心仪的工作。而要衡量一个用户是否换了工作，这里面的数据信息的滞后性可能有几周到几个月不等。因此观察这个指标的变化也是需要长期衡量的。</p>
+
+<p>产品的业务指标需要长期观测这一特性为优化这些指标，特别是利用机器学习系统来优化这些指标，带来了巨大的困难。</p>
+
+<p>现代互联网产品迭代往往利用在线可控实验，或者简称的<a href="https://en.wikipedia.org/wiki/A/B_testing">A/B测试</a>，来对产品特性进行实验。具体说来，我们常常把当前版本的特性当做“控制组”，并把新版本的特性当做“参照组”，然后把用户流量各50%得导给“控制组”和“参照组”。一般来说，A/B测试运行一两周，有时候会有两三周，然后根据一些容易观测的指标，例如“点击率”来判断特性的新版本是不是比当前版本要有明显的优势（包括我们说的统计意义上的要更好）。然而，我们可以看到，在几周的在线测试的设置下，我们是很难去直接观测刚才我们提到的产品指标（如“月活跃用户数”、“商品毛利润”）的变化。大多数在线测试的时长都远远小于观测产品长期指标变化需要的时长。</p>
+
+<p>如果我们希望利用A/B测试来对产品的特性进行迭代，那势必就需要观测的指标能够在测试的时长中被有效得观测到其大小的变化。从更加专业的角度来说，这样的指标需要有足够的“敏感度”（Sensitivity）能够在测试的时长中很容易发现其变化。遗憾的是，大多数的产品长期指标的“敏感度”都比较小。例如“月活用户数”的变化往往需要我们对很大的流量数据进行观测一段时间。而“点击率”的变化则相对容易看到。</p>
+
+<p>于是，我们这里就有一个很大的障碍，那就是A/B测试指标和产品长期指标之间往往非常不一样，而建立两者之间的关系可能有不可逾越的鸿沟。</p>
+
+<p>推荐系统作为一种机器学习系统，往往采用我们熟知的指标来衡量其好坏。比如我们前面提到的Netflix大奖赛其实是看我们对评分预测的准确性。很多机器学习问题采用的<a href="https://en.wikipedia.org/wiki/Precision_and_recall">“精度”</a>或者一些排序问题采用的<a href="https://en.wikipedia.org/wiki/Discounted_cumulative_gain">NDCG</a>等，也是研发人员往往使用的指标。然而，我们可以看到，这些指标和A/B测试指标以及产品的长期指标有着本质的不同。一个例子是我们也可以推断，Netflix大奖赛的获胜算法虽然能够带来评分预测准确性大幅度的提升，但对于产品的重要指标，也就是用户的订阅数，并没有明显的影响。</p>
+
+<p>工业级推荐系统的一个重要发展方向就是建立有效的通过推荐系统性能的提高来达到产品的长期指标得以提高的方法论。</p>
+
+<h2 id="工业级推荐系统作为复杂的软件系统">工业级推荐系统作为复杂的软件系统</h2>
+<hr />
+<p><img src="/assets/in-recsys-3.jpeg" alt="" /></p>
+
+<p>这里要提到的最后一个工业级推荐系统的特性，也是推荐系统的学术研究往往会完全忽视的，那就是工业级推荐系统往往是一个复杂的软件系统。</p>
+
+<p>这里面的复杂性来自于两方面。第一，工业级的推荐系统作为一个复杂的软件系统，是由不同的软件模块和服务构建而成。而这些软件模块还需要利用很多的基础设置，例如数据平台，以及各种工具。这些不同的软件模块之间如何能够设计最优，会不会有复杂的依赖关系从而很难调优，都是需要思考的重要问题。第二，工业级的推荐系统作为一个复杂的软件系统，是多人甚至是多团队的研发结果。每一个团队往往维护着不同的软件模块。这些团队之间的协作往往并没有很多人想象的那样非常紧密。实际上，不同的团队通常有不同的开发周期，因此如何能够保证不同的团队协调一致是一个复杂软件工程问题。</p>
+
+<p>我们通常在推荐系统的研究论文中，看到所谓的“端到端”（End-to-End）的优化模式，也就是说，我们希望能够对模型的方方面面的所有参数以及各种输入信号一起都拿到一个统一的模型中去调优。这种思路在近年来的以深度学习为基础的论文中常常遇到。而通过论文，我们也看到，这样的“端到端”的学习方法往往有最优的效果。遗憾的是，针对多模块多团队的推荐系统，我们是很难做到真的“端到端”优化的。通常情况下，某一个团队的模块可以进行“端到端”优化。而各个模块之间则往往是“黑盒”交流（也就是说并不清楚互相模块的内部信息）。从软件系统的角度来看，工业级推荐系统和推荐系统研究有着比较大的差别。</p>
+
+<p>多模块和多团队的推荐系统还会遇到在研究中完全不需要考虑的问题，比如，如果不同的模块都在进行进度不同的研发，那么如何能够保证多个模块之间能够协调好，特别是在进行在线测试的时候，能够得到有效的结论，有时候是相当有挑战的。例如，某个推荐系统的新旧版本可能依赖不同的数据，或者一些不同的内部服务，这时候就可能并不是严格意义上的A/B测试，而可能有很多因素可以影响测试结果。</p>
+
+<p>从软件系统和软件工程的角度来看到工业级推荐系统，或者说一般的机器学习系统，是一个很值得探讨的课题。从推荐系统的学术研究中，我们很难看到这一类的讨论。</p>
+
+<h2 id="总结点评">总结点评</h2>
+<hr />
+
+<p>我们在这一篇文章中为大家阐述了三个工业级推荐系统的重要特征。这三个特征都有别于推荐系统的主流学术研究，但都是推荐系统应用到工业界产品中所需要思考的问题。我希望这三个特性所涵盖的三方面问题可以指导对工业级推荐系统产生更加有高度的认识，从而能够让我们对今后的研究工作有新的启发，起到抛砖引玉的作用。</p>
+
+</div>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<div class="related">
+  <h2>相关文章</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2020/07/09/resilient-management/">
+            《韧性管理》总结
+            <small>09 Jul 2020</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data/">
+            《从数据中学习》总结
+            <small>25 Jun 2020</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E5%9C%A8%E7%BA%BF%E5%AE%9E%E9%AA%8C/2020/05/08/online-tests/">
+            《值得信赖的在线可控实验——A/B实验实用向导》总结
+            <small>08 May 2020</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

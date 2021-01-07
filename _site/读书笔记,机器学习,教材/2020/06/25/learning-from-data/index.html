@@ -119,7 +119,7 @@
 
   <div class="sidebar-item">
     <p>
-      &copy; 2020。保留全部权利。<a href="../atom.xml">RSS</a>
+      &copy; 2021。保留全部权利。<a href="../atom.xml">RSS</a>
     </p>
   </div>
 </div>
@@ -193,25 +193,25 @@
 
 <p>这个定量的结论来自于概率论中的“霍夫丁不等式”（Hoeffding Inequality）:</p>
 
-<script type="math/tex; mode=display">P(|\bar{X} - \mathbb{E}[X] | > \epsilon ) \leq 2e^{-2\epsilon^{2}N}</script>
+\[P(|\bar{X} - \mathbb{E}[X] | &gt; \epsilon ) \leq 2e^{-2\epsilon^{2}N}\]
 
 <p>这里，$ X $是一个随机变量，$ \bar{X} $是这个随机变量的均值，然后$ \epsilon $是一个误差项。简单说来，“霍夫丁不等式”对于样本均值作为参数的估计值和参数真值之间的差距给出了一个“界限”（Bound）。这个“界限”和样本数据量$ N $有关，并且随着数据的增多，参数的估计值和真值的差距大于一个事先约定的范围的可能性会以指数方式降低。这个结论的魅力来自于我们并不需要知道参数真值，我们只需要进行操作的是作为参数估计值的样本均值。另外，这个结论的优势在于它是概率意义上的。也就是说，我们并不能100%确保估计准确，但是准确性的保证来源于随着数据增多而减小的可能性。这个可能性虽然很小但一直存在。</p>
 
 <p>把“霍夫丁不等式”应用到机器学习的场景我们需要两个概念。一个是根据样本数据集得来的“样本内误差”（In-Sample Error）:</p>
 
-<script type="math/tex; mode=display">\mathbb{E}_{in}[h] = \frac{1}{N} \sum_{n=1}^{N} \mathbb{I}(h(\mathbf{x}_{n}) \neq f(\mathbf{x}_{n}))</script>
+\[\mathbb{E}_{in}[h] = \frac{1}{N} \sum_{n=1}^{N} \mathbb{I}(h(\mathbf{x}_{n}) \neq f(\mathbf{x}_{n}))\]
 
 <p>这里的$ h $是对于$ f $的一个估计，然后$ \mathbb{I}(x) $在$ x $的时候等于$ 0 $另一个则是在全数据集上的“样本外误差”（Out-of-Sample Error）：</p>
 
-<script type="math/tex; mode=display">\mathbb{E}_{out}[h] = P(h(\mathbf{x}) \neq f(\mathbf{x}))</script>
+\[\mathbb{E}_{out}[h] = P(h(\mathbf{x}) \neq f(\mathbf{x}))\]
 
 <p>我们无法衡量“样本外误差”，但是根据“霍夫丁不等式”，我们可以对其利用“样本内误差”进行估计，并且估计的错误率是一个随着样本数据量N增大而指数式减小的数值:</p>
 
-<script type="math/tex; mode=display">P(|\mathbb{E}_{in}[h] - \mathbb{E}_{out}[h] | > \epsilon ) \leq 2e^{-2\epsilon^{2}N}</script>
+\[P(|\mathbb{E}_{in}[h] - \mathbb{E}_{out}[h] | &gt; \epsilon ) \leq 2e^{-2\epsilon^{2}N}\]
 
 <p>这可以说是“学习理论”的第一大步。我们可以利用样本数据集上的估计来针对参数的真值进行描述。接下来遇到的困难来自于，刚才所说的“样本内误差”和“样本外误差”都依赖于我们选择的某一个特定的“假设”（Hypothesis）$ h $。也就是说，我们如果要估计$ f $，我们只要选择一个$ h $，就能利用“霍夫丁不等式”来对$ h $和$ f $的“样本外误差”进行评估。但是，很明显，我们需要评价具有可能性的$ h $的总数目也许是无限多，这就造成了一个重大难题。在我们讨论无限数目的假设空间之前，作者们展示了“霍夫丁不等式”可以被推广到有限数目$ M $的情况，也就是参数的估计值和真值之间误差的“界限”是一个同时和$ N $以及$ M $有关的数量:</p>
 
-<script type="math/tex; mode=display">P(|\mathbb{E}_{in}[g] - \mathbb{E}_{out}[g] | > \epsilon ) \leq 2Me^{-2\epsilon^{2}N}</script>
+\[P(|\mathbb{E}_{in}[g] - \mathbb{E}_{out}[g] | &gt; \epsilon ) \leq 2Me^{-2\epsilon^{2}N}\]
 
 <p>注意，这里的$ g $和$ h $有所不同，书中详细讲了两者的关系，我们这里的讨论可以忽略这个差别。下面的进展需要我们拿掉对于$ M $的依赖。</p>
 
@@ -225,7 +225,7 @@
 
 <p>下面的一个难点就在于如何把“增长函数”给“界限”住。书中有不少的细节。我们这里直接引述结论，那就是如果对于某个假设集合$ H $我们可以找到“VC维度”，“增长函数”就有一个上限。这个上限是一个和N以及“VC维度”有关的多项式加和公式。简而言之，那就是“增长函数”在这样的情况下是被“VC维度”所“界限”住的。有了这些基石之后，作者们就推出了书中最重要的结论（公式2.21），我们在这里重复出来：</p>
 
-<script type="math/tex; mode=display">\mathbb{E}_{out}[g] \leq \mathbb{E}_{in}[g] + \sqrt{\frac{8}{N}\ln \frac{4m_{N}(2N)}{\delta}}</script>
+\[\mathbb{E}_{out}[g] \leq \mathbb{E}_{in}[g] + \sqrt{\frac{8}{N}\ln \frac{4m_{N}(2N)}{\delta}}\]
 
 <p>公式的证明并没有在正文中，而是放到了附录里。但是公式的核心思想就是我们之前提到的“样本中误差”和“样本外误差”的关系被一个带有“增长函数”的不等式所“界限”。这个不等式和我们之前所说的“霍夫丁不等式”非常类似，只是其中没有了对于$ M $的依赖，而变成了对于“增长函数”的依赖。有了这个重要的工具之后，再加上上面所说的我们利用“VC维度”对于“增长函数”进行“界限”。我们就更进一步得到了一个“样本中误差”和“样本外误差”的关系被“VC维度”所“界限”的结论。而这个结论就具备可操作性了，因为很多情况下，我们可以直接计算“VC维度”。</p>
 

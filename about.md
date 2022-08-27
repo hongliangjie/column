@@ -145,7 +145,7 @@ title: 关于
 ## 代表性演讲
 
 * **计算英才市场**于Melbourne Search and Recommendation Group Meetup，虚拟会议，2021年11月
-* **计算英才市场**于The AI Summit | Silicon Valley，虚拟会议，2021年11月
+* **计算英才市场**于The AI Summit - Silicon Valley，虚拟会议，2021年11月
 * **搜索科学与自然语言处理在工业界的应用**于宾夕法尼亚州立大学，虚拟会议，2021年4月
 * **工业级推荐系统最新挑战和发展**主题演讲于Booking.Com，虚拟会议，2020年12月
 * **工业级推荐系统最新挑战和发展**主题演讲于“第一届工业级推荐系统研讨会”（KDD 2020），虚拟会议，2020年8月

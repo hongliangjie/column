@@ -35,6 +35,20 @@ title: 关于
 
 ***
 
+## 学习经历
+
+*  **[里海大学（Lehigh University）](http://www.lehigh.edu/)**<br/>
+  2007年 - 2013年 <br/>
+  <u>计算机科学博士</u>，博士生导师：[Brian D. Davison教授](http://www.cse.lehigh.edu/~brian/)
+*  **[里海大学（Lehigh University）](http://www.lehigh.edu/)**<br/>
+  2007年 - 2010年 <br/>
+  <u>计算机科学硕士</u><br/>
+*  **[北京化工大学](http://www.buct.edu.cn/)**<br/>
+  2003年 - 2007年 <br/>
+  <u>计算机科学学士</u><br/>
+
+***
+
 ## 经典专栏文章
 
 *  [浅谈工业级推荐系统]({% post_url 2020-10-04-industrial-recsys %})
@@ -51,17 +65,12 @@ title: 关于
 
 ***
 
-## 访谈及媒体报道
+## 访谈、媒体报道和大众文章
 
 *  [电商为什么知道你想买啥？](https://mp.weixin.qq.com/s/IRBv1BtBgAIQ5KGvR_YJHQ)
 *  [从雅虎到Etsy，机器学习与人工智能专家洪亮劼的技术初心](http://www.miaopai.com/show/UB-7jSRluJO2oWFoVMEUBXr-iazGEKHm7X1uNQ__.htm)
 *  [对话AI专家洪亮劼：这次，我们全方位聊聊人工智能](https://mp.weixin.qq.com/s/8helfVF5jGcBQmze23Eeag)
 *  [美国Etsy公司数据科学主管洪亮劼博士应邀访问计算机网络信息中心](http://www.cnic.cas.cn/hzjl/gjhz/hzdt/201706/t20170627_4818841.html)
-
-***
-
-## 大众文章
-
 *  [AI工程师vs产品团队，如何从相杀到相爱？](https://mp.weixin.qq.com/s/VcJKB_rdaoDcjID75yxzKw)
 *  [来自Google团队的点击率系统模型](https://mp.weixin.qq.com/s/hs5oO56HLGxPJYy2pnt6HQ)
 *  [数据科学家基础能力之概率统计](http://www.10tiao.com/html/680/201710/2655161654/1.html)
@@ -75,20 +84,6 @@ title: 关于
 *  [NIPS 2016 十大机器学习精选论文](http://geek.csdn.net/news/detail/189766)
 *  [ICML 2016 精选论文](http://geek.csdn.net/news/detail/126623)
 *  [SIGIR 2016 信息检索精选论文](http://geek.csdn.net/news/detail/133916)
-
-***
-
-## 学习经历
-
-*  **[里海大学（Lehigh University）](http://www.lehigh.edu/)**<br/>
-  2007年 - 2013年 <br/>
-  <u>计算机科学博士</u>，博士生导师：[Brian D. Davison教授](http://www.cse.lehigh.edu/~brian/)
-*  **[里海大学（Lehigh University）](http://www.lehigh.edu/)**<br/>
-  2007年 - 2010年 <br/>
-  <u>计算机科学硕士</u><br/>
-*  **[北京化工大学](http://www.buct.edu.cn/)**<br/>
-  2003年 - 2007年 <br/>
-  <u>计算机科学学士</u><br/>
 
 ***
 

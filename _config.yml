@@ -7,7 +7,7 @@ relative_permalinks: false
 # Setup
 title:               期望最大化（洪亮劼的专栏）
 tagline:             '分享技术、管理、团队和业界的思考'
-description:         'LinkedIn工程总监、前Etsy工程总监、雅虎研究院高级研发经理，长期从事机器学习、大数据分析、个性化系统架构的研究；这是一个分享技术、管理、团队和业界思考的专栏。'
+description:         'Nokia全球副总裁、前LinkedIn工程总监、前Etsy工程总监、雅虎研究院高级研发经理；长期从事人工智能和机器学习在工业界广泛落地的研究和实践工作；这是一个分享技术、管理、团队和业界思考的专栏。'
 url:                 http://column.hongliangjie.com
 baseurl:             ''
 paginate:            10

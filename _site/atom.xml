@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>期望最大化（洪亮劼的专栏）</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2025-08-04T21:09:53-07:00</updated>
- <id>http://localhost:4000</id>
+ <link href="http://column.hongliangjie.com/atom.xml" rel="self"/>
+ <link href="http://column.hongliangjie.com/"/>
+ <updated>2025-08-16T10:27:48-07:00</updated>
+ <id>http://column.hongliangjie.com</id>
  <author>
    <name>洪亮劼</name>
    <email>hongliangjie@gmail.com</email>
@@ -13,10 +13,152 @@
 
  
  <entry>
+   <title>《团队管理的五大障碍》总结</title>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2025/08/16/five/"/>
+   <updated>2025-08-16T00:00:00-07:00</updated>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2025/08/16/five</id>
+   <content type="html">&lt;p&gt;技术管理常常被视为复杂而抽象，但最近读到的一本小书《团队管理的五大障碍》(The Five Dysfunctions of a Team)，却以清晰的框架和简明的结构，把管理拆解得非常务实。全书围绕五个核心主题展开：认识团队、帮助成长、设定清晰预期、有效沟通、构建韧性。更重要的是，作者将这些主题与团队发展的四个阶段——组建、风暴、成规、高效——对应起来，帮助我们精准判断团队所处的状态，并采取合适的管理手段。书中提供的技巧极具可操作性：从识别团队成员的核心需求，到如何在风暴期切换导师、教练、支持者的角色，再到建立清晰的愿景与沟通机制。在后文中，我会逐章拆解这些方法，供正在成长中的管理者参考。&lt;/p&gt;
+
+&lt;h2 id=&quot;作者简介&quot;&gt;作者简介&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_patrick.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;作者Patrick Lencioni是美国商业管理畅销书作者，写了多达13本关于团队管理和运营的书籍。他最知名的作品就是本文要介绍的《团队管理的五大障碍》。Patrick目前担任Table Group的总裁，负责领导力、团队和咨询等工作。在Table Group之前，Patrick在Bain &amp;amp; Company、Oracle Corporation 和Sybase担任过工作。&lt;/p&gt;
+
+&lt;h2 id=&quot;全书结构&quot;&gt;全书结构&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;《团队管理的五大障碍》(The Five Dysfunctions of a Team)非常短小精悍，分为以下这么五章内容。&lt;/p&gt;
+
+&lt;p&gt;第一章，主要是讲如何认识你的团队，也就是书中讲的结识你的团队（Meet Your Team）。&lt;/p&gt;
+
+&lt;p&gt;第二章，主要是讲如何是你的团队成员得以成长（Grow Your Teammates）。&lt;/p&gt;
+
+&lt;p&gt;第三章，主要是讲如何设置明确清晰的期望（Set Clear Expectations）。&lt;/p&gt;
+
+&lt;p&gt;第四章，主要是讲如何有效的进行沟通（Communicate Effectively）。&lt;/p&gt;
+
+&lt;p&gt;第五章，主要是讲如何构建韧性管理（Build Resiliency）。&lt;/p&gt;
+
+&lt;h2 id=&quot;内容剖析&quot;&gt;内容剖析&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_stages.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在对全书的五个章节进行剖析之前，有必要说一说作者在序章中提及的团队发展的四个阶段，分别是“组建”（Forming）、“风暴”（Storming）、“成规”（Norming）和“高效”（Performing）。&lt;/p&gt;
+
+&lt;p&gt;简而言之，“组建”阶段可以认为是当一个团队的成员初次集合到一起的时候，团队需要的各种协作和流程都还没有建立。一切方兴未艾。“风暴”阶段是团队的成员之间开始产生“摩擦”（Friction）。作者认为，这个阶段是团队成长的必要阶段，需要有这个阶段的“疑惑”（Confusion）和“冲突”（Clashing）来达到下一个阶段。“成规”阶段是事情慢慢得到了解决，团队成员之间的差别得到了调和。最后，“高效”阶段是整个团队有序得运行，你们开始“交付”（Ship）产品。&lt;/p&gt;
+
+&lt;p&gt;需要指出的是，这四个阶段并不是一次性的，而是循环往复的团队生存周期。这是因为团队永远处于持续地变化中，例如有新成员加入、团队的宗旨发生了变化等。全书也算是围绕着这四个阶段来进行展开讨论的。&lt;/p&gt;
+
+&lt;p&gt;接下来，我们针对书中的五个章节为大家进行剖析。&lt;/p&gt;
+
+&lt;h2 id=&quot;结识你的团队&quot;&gt;结识你的团队&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_1.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这一章主要是讲在团队“组建”阶段，我们如何去了解团队成员的“核心需求”（Core Needs）以及他们的工作模式（Work Styles）。同时，这个阶段也需要让团队成员了解你。&lt;/p&gt;
+
+&lt;p&gt;书中提到了六个和工作相关的“核心需求”:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;第一个是“归属感”（Belonging），也就是团队成员对一个社群（Community）或者团队的一种认同度，是否觉得自己是其中一员。当你觉得被团队“遗漏”（Left Out）的时候，这个“核心需求”就受到了伤害，例如团队某一个重要的会议，你没有被邀请参加，或是一个重要的产品发布没有通知你。&lt;/li&gt;
+  &lt;li&gt;第二个是“进步感”（Improvement/Progress），也就是说你希望在团队中体会到某种程度上的进步或者是进展。这种进展可以是来自个人的，也可以是整个团队的。有时候，这种“进步感”可能会很难体会到，特别是在比较大的公司中。&lt;/li&gt;
+  &lt;li&gt;第三个是“选择感”（Choice），也就是你是否感到对自己的生活和工作进行决策。也许你原本对自己的工作有很大的自主权，但突然公司新加入的一个负责产品的副总裁开始对你的之前计划开始发表意见。这时你可能开始感到“选择感”的失去。另一方面，如果有太多的决策需要做，也可能会造成你不知所措的情况。因此，对于“选择感”而言，我们需要注意“平衡”（Balance）。&lt;/li&gt;
+  &lt;li&gt;第四个是“平等感”（Equality/Fairness），也就是你是否收到了平等的对待。当有决策通过的时候，所有参与决策的各个方面是否都有平等地接收到信息，是否平等地接收到了资源。&lt;/li&gt;
+  &lt;li&gt;第五个是“预测感”（Predictability），也就是你是否能够对可预见的未来有一个初步的感知，而不是充满了“惊奇”（Surprise）。在日常工作中，大家度希望对未来有一定的把握程度。&lt;/li&gt;
+  &lt;li&gt;第六个是“重要感”（Significance），也就是你个人的“地位”（Status），或者说是在团队中扮演什么样的角色，是否能够体现你的价值。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;值得注意的是，这六个核心需求对于每个人而言，并不是有同样的效果。面对一些事情，或者书中提到了“刺激物”（Stimulus），每个人可能会有非常不一样的反应。文中提到了让员工换座位这个例子来说明，这么一件看似简单的事情，有可能会“刺激”到不同人关于上述六个核心需求的反应，值得仔细阅读。&lt;/p&gt;
+
+&lt;p&gt;这一章的第二部分，作者则是在讨论不同人的工作模式，具体说来就是遇到一些问题的时候，不同的人可能会有不尽相同的偏好。作者总结了下面五个方面的模式问题值得每一个经理逐一了解自己的员工:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;“不高兴”（Grumpiness）：什么样的事情可以可以导致员工不高兴，例如缺少咖啡因、没有睡好、不喜欢被“微观管理”（Micromanage）等。&lt;/li&gt;
+  &lt;li&gt;“反馈和认可”（Feedback and Recognition）：当需要探讨反馈和认可的时候，每个人可能希望利用不同的媒介来达到目的，例如面对面、电子邮件还是即时聊天工具。特别是一些比较艰难的反馈，媒介的选择就显得尤为重要。&lt;/li&gt;
+  &lt;li&gt;“目标和支持”（Goals and Support）：如何支持一个员工的成长以及如何知道员工需要怎样的支持都是作为经理和员工沟通的一个重要话题。&lt;/li&gt;
+  &lt;li&gt;“员工成长”（Grow and Learn）：员工成长是一个很难以衡量的事情。然而，帮助员工成长又是经理们责无旁贷的职责。至少每一个季度都花一些时间来确定员工具体的，可以有行动的成长目标。&lt;/li&gt;
+  &lt;li&gt;“款待自己”（Treat Yourself）：花时间去了解每一个员工如何款待自己的喜好，也许在未来某个时候需要奖励和表彰员工的时候能够用得上。这里面的偏好差异可能会非常大。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这一章最后的内容是帮助你的团队认识你，或者反过来说，你希望如何呈现在你的团队面前。&lt;/p&gt;
+
+&lt;p&gt;有两个方面的话题是需要你去思考的。第一，就是你优化的目标是什么？作者认为，这一个问题直接决定了一个经理的“风格”（Style）和“管理哲学”（Philosophy）。当然，优化一个目标往往会伴随着其他目标的缺失，这是需要注意的。第二，一旦你有了优化目标之后，和团队成员交流你这些目标有助于整个团队统一思想，同时也能够帮助你的团队成员设置有效的预期。&lt;/p&gt;
+
+&lt;h2 id=&quot;扩展你的团队&quot;&gt;扩展你的团队&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_2.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我们之前提到的团队发展的四个阶段，这一章主要在讲“风暴”阶段团队的成长。&lt;/p&gt;
+
+&lt;p&gt;为什么会有“风暴”阶段呢？团队在之前每一个个体的运作阶段可能并没有太多的问题。因为从本质上来说，团队并不是一个有机的整体，而是个体的集合，因此，一旦我们开始整合团队的所有人，开始设立一些流程，团队在协作、沟通等方面就都会出现广泛的“摩擦”。这几乎是可以预期的。&lt;/p&gt;
+
+&lt;p&gt;书中说，在这个阶段，作为经理的你，需要做好下面四件事情。&lt;/p&gt;
+
+&lt;p&gt;第一件事情，就是扮演好“导师”的角色（Mentoring），也就是直接给出建议并且帮助员工解决问题。这里，我们依靠的更多的是自己的经验。作为一名“导师”，我们需要注意的是对提供建议的人与环境有一定敏感程度。对一个人有意义的建议可能会对另一个人有伤害。另外，“导师”这个角色往往对初入角色（Role）的新人更有帮助，而对于已经有了一些成长的员工而言，更需要另外的指导手段。&lt;/p&gt;
+
+&lt;p&gt;第二件事情，就是扮演好“教练”的角色（Coaching），也就是通过和指导对象进行对话，问“开放式”问题（Open Questions）来达到引导员工自省并且找到解决问题的方案。这个角色和“导师”是很不一样的。“导师”需要对问题以及解决方案都有所关注，而“教练”的角色则更加注重在分析问题上。两个重要的技巧是问“开放式问题”和“反思”（Reflection）。“开放式问题”必须让人觉得真诚，是你带有真正的好奇心来问的问题。这些问题有助于指导对象来进行更深层次的思考。“反思”是希望你能作为对方的一面“镜子”。把对方已经表达过的观点进行二次“翻译”，看是否能够抓住问题的核心。在这样的反复对话中，我们可以帮助指导对象来达到对当前问题的更深层次的理解和提出更好的解决方案。&lt;/p&gt;
+
+&lt;p&gt;第三件事情，就是扮演好“支持者”（Sponsoring）的角色。如果说“导师”和“教练”是你和员工在面对面情况下互动的角色，那么“支持者”这个角色则是你在其他场合所要扮演的角色。这里的“支持”指的是你为指导对象提供并且争取机会，从而能够有力地进入到他职场的下一个层级。&lt;/p&gt;
+
+&lt;p&gt;第四件事情，就是提供“反馈”（Delivering Feedback）。这一部分可能是最难以做好的角色。作者在这里讲了一个“反馈”公式。也就是，我们提供反馈需要首先来自某种行为的“观察”（Observation），然后我们需要描述这个行为的“影响”（Impact），接着，我们需要直接说出需要改变的事情或者是进入“教练”的角色，开始问一些开放式问题，最后，我们需要达到非常具体的，能够执行的反馈。&lt;/p&gt;
+
+&lt;p&gt;在日常的工作中，我们经常需要对这四种角色进行有机得结合，并且在这些角色之间频繁互换。当然，书中也讲了，并不是这些手段都能够永远有效，总有员工可能并不理会你和他互动的好意，因此书中也讲了讲其他的渠道。&lt;/p&gt;
+
+&lt;h2 id=&quot;设置明确的期望&quot;&gt;设置明确的期望&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这一章主要在讲“成规”阶段的团队发展话题。&lt;/p&gt;
+
+&lt;p&gt;顾名思义，无规矩不成方圆，当团队发展到一定程度，就需要设置一些规则和流程来保证团队运行的顺畅和解决分歧。&lt;/p&gt;
+
+&lt;p&gt;这一章一开始主要讲了如何定义团队中的“角色和职责”（Roles and Responsibilities）。在团队发展的早期，都没有真正定义不同角色和职责的实际需要，一是因为人比较少，二是因为很多时候需要有人能够兼顾多种不同的角色从而能够达到某种情况下的灵活度。然而，随着团队的发展，每个人在日常运行中究竟是什么角色，不同人之间怎么协作，就需要我们开始思考这方面的问题。&lt;/p&gt;
+
+&lt;p&gt;书中介绍了RACI角色定义方法和“维恩图表”（Venn Diagram）来定义“角色和职责”并且用了“工程经理”（Engineering Manager）、“产品经理”（Product Manager）以及“工程负责人”（Engineering Lead）如何建立清晰的职责界限来解释了这些方法的实际使用方法，建议读者精读这部分内容。&lt;/p&gt;
+
+&lt;p&gt;这一章的第二部分讲了如何设置一个团队的“视野”（Vision）以及“优先级”（Priorities）。“视野”是回答你们这个团队为什么存在，究竟是要解决什么终极问题，这样的疑问。这里细分的话，有“视野”（Vision）、“使命”（Mission）、“策略”（Strategy）以及“目标”（Objective）的区别。简单来说，这几类定义是从最宏观到最微观的逐层表述。书中有详细的解释，建议大家读一读。有读者可能会问，对于一个团队来说，设置这些空洞的宏大的主题是否有实际的意义。这里的目的是让一个团队有章可循，特别是团队有任何分歧、有疑虑的时候都随时能够根据团队的“视野”和“优先级”来排除这些纷扰。&lt;/p&gt;
+
+&lt;p&gt;这一章的第三部分讲的是团队的“实践”（Practice）。这一部分主要是指一个团队日常运作的模式，包括有什么样的会议以及交流的渠道（邮件或者即时通讯工具），和这些运作模式都是处理哪些问题。作者认为，即便每一个团队在具体的实践中可能都有了约定俗成的一套流程，最好能够利用文档工具（例如“维基”Wiki）来把这些实践记录下来。同时，作者认为，需要把团队的协作和交互给融合到日常的运作中去。&lt;/p&gt;
+
+&lt;h2 id=&quot;有效的沟通&quot;&gt;有效的沟通&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_4.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在现代团队发展和运作过程中会遇到大大小小的很多事情，例如公司的目标发生了变化、公司开始经历裁员、新的产品线、公司上市等等。所有这些事情，作为一个经理，你都需要和员工保持良好有效的沟通。有不小挑战性的是，很多这些事情，你并不是直接的决策者，甚至也没有参与其中，但作为当前团队的负责人，你需要有很清晰的头脑如何和团队进行交互和沟通。&lt;/p&gt;
+
+&lt;p&gt;书中首先介绍了如何来规划沟通一些重要的信息。很明显，你需要一个计划。作者介绍了一些沟通计划的模板。总而言之，这些模板的目的是帮助你能够为一些相对复杂的情况有一个更加全面的沟通有所准备。书中作者用一个虚拟的经理离职作为例子，展示了如何为这样一个可能会比较棘手的事件进行沟通准备。&lt;/p&gt;
+
+&lt;p&gt;在这一章的第二部分，作者讲了讲对敏感信息沟通的技巧。敏感信息的挑战来自于可能会触及一些员工的核心需求。比如，我们要沟通一次组织架构的调整，团队的工作方向也许会有调整，那么一些员工的“选择感”和“预测感”都会受到不小的影响。一些员工可能会觉得自己的意见或者声音没有得到抒发的机会。作者认为，敏感信息沟通的核心来自于“迅速”（Swift）而不是拖延好几天甚至是更长时间。有很多事情有可能在更长的等待中发生变化，也就是我们经常说的“夜长梦多”。同时，如何有效得分享一些机密信息，也是需要特别注意拿捏分寸的事情。在一个较大的公司和团队中，任何机密的信息都有可能被泄露出去，作者认为在这种时候，首要任务是沟通并且阐明一些事情的事实，而事后对有可能把机密信息泄露这样的事情进行反思。&lt;/p&gt;
+
+&lt;p&gt;本章的第三个部分，作者探讨了一下，作为经理的你，如何沟通你并不十分认可的决定。在一个比较大的公司中，这样的情况其实比比皆是。公司有很多决策或者变化无法邀请所有人参与。这一方面是不现实一方面也没必要。因此，在公司的运作中，我们就需要学会传达和沟通我们自己并不认同的决定。这里的核心是做到“不认同但负责”（Disagree and Commit）这样一种职业态度。也就是说，虽然你对于某一些决策的内容并不能完全认可，但是你需要去完全执行这些决策的内容并且利用沟通的技巧和团队进行沟通。不过，作者也提出，这种时刻，也是你重新审视自己和当前的团队以及公司还是否能够契合到一起，如果有重大的分歧，离开这样的团队和公司可能是更好的选择。&lt;/p&gt;
+
+&lt;p&gt;本章的第四部分作者讲了讲不同媒介的区别，例如会议、邮件以及即时通讯工具，都具有自身不同的特点，适用于沟通不同的内容。比如，一些重大的决定或者是变化，最好能够通过面对面的会议，甚至是“全公司会议”（All Hands Meeting）来首先传达。而另一方面，邮件沟通可以传达一些没有太多歧义内容的信息，并且能够起到提醒人的作用。&lt;/p&gt;
+
+&lt;p&gt;最后，作者强调，沟通不是一次性的工作，而是本身就需要反复迭代和演化的工作。也就是说，我们需要反复重复重要的信息，在很多场合，和很多媒介。同时，每个公司可能对于如何沟通有不同的企业文化的偏好。&lt;/p&gt;
+
+&lt;h2 id=&quot;构建韧性管理&quot;&gt;构建韧性管理&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_5.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;作者把最后一章的内容献给了如何让当经理的人自身更加富有“韧性”。也许你的团队已经到达了“高效运行”的阶段，但是一个突然的变化，使得你做的很多工作回归原点。千万不要以为变化是一时的，作者认为，处在高速发展的科技公司中，变化是随时随地都在发生的。因此，如何让经理变得更有“韧性”，也就是如何处置随时的变化，以及一一种不变应万变的心态就成为了很重要的议题。&lt;/p&gt;
+
+&lt;p&gt;这一章一开始，作者讨论了如何管理危机时刻（Times of Crisis）。这里的关键是了解你有什么样的资源和工具。每一个公司对待很多情况都有相应的流程。对这些流程有所了解，是你需要处理危机的必备信息。另一方面，是和员工有良性的和真挚的沟通，让他们觉得你是可以依赖的伙伴。&lt;/p&gt;
+
+&lt;p&gt;这一章的第二部分，则在讨论如何管理你自己的“能量”。简而言之，那就是如何能够使自己保持一个正能量的心态。作者的一个建议是时刻关注我们被什么样的事情所消耗时间和精力。也就是看看自己的日历，平时都参加什么样的会议。这里，需要你对自己的时间有一个深层次的了解以及有一些如何应对这些事物的想法。然后，书中介绍了不少的技巧，可以用于管理自己的时间使自己更高效，例如重新安排自己的任务，把一部分任务给代理出去、对一些事情说“不”等等。读者可以好好阅读一下这部分内容。&lt;/p&gt;
+
+&lt;p&gt;本章的最后是探讨如何构建自己的“支持网络”（Support Network）。作为一个经理而言，“你不是一个人在战斗”，但往往，我们可能觉得自己是“孤家寡人”。作者提出了“支持网络”这个概念，也就是说，我们需要去构建自己的网络来获取更多的信息，学习更多的技能，以及扩宽自己的社交网络。同时，作者也提到了“第一团队”（The First Team）的概念，也就是当发生任何变化以及需要做一些复杂决策的时候，你最先寻求帮助和信息的人都是什么人，而这些人都能够提供哪一些不同的视角。这一部分内容可以算是经理职业发展的高级话题。&lt;/p&gt;
+
+&lt;h2 id=&quot;总结点评&quot;&gt;总结点评&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;这本书可以说是作为技术管理人的经典入门的参考书。作者Patrick Lencioni作为在工业界有丰富经验的技术经理人所写作的本书可以说是有非常强的实战指导价值。书中有不少可以直接拿来用的技巧、模板和方法。同时，书中的一些案例也是来源于实际工作。与同类型的《经理人之路》相比，本书更加短小精悍，并且非常适合需要对技术管理快速入门的初级技术管理人员。从结构上看，全书的五个章节都相对独立但又和在序章中讲到的团队的发展历程的几个阶段有着紧密的联系。建议对技术管理有兴趣的读者精读。&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>《No Rules Rules》总结</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2022/10/15/netflix/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2022/10/15/netflix/"/>
    <updated>2022-10-15T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2022/10/15/netflix</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2022/10/15/netflix</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Netflix&quot;&gt;网飞（Netflix）&lt;/a&gt;的公司文化一直以来在业界都有一种神秘的色彩。我在2012年左右也有幸到网飞面试，非常短暂得近距离解接触了这个公司的某个切面。虽然之后因为种种原因并没有加入网飞，但这家公司却一直吸引着我的注意力。&lt;/p&gt;
 
 &lt;p&gt;2020年出版的&lt;a href=&quot;https://www.amazon.com/No-Rules-Netflix-Culture-Reinvention/dp/1984877860&quot;&gt;“No Rules Rules – Netflix and the Culture of Reinvention”&lt;/a&gt;应该算是网飞的首席执行官&lt;a href=&quot;https://en.wikipedia.org/wiki/Reed_Hastings&quot;&gt;Reed Hastings&lt;/a&gt;在这家公司的巅峰时刻对过去20多年公司文化以及管理哲学的一次系统性总结。同时，有意思的是，仅仅2年之后，这家公司的市值就跌到了最高点的五分之一，让人去琢磨这些在疫情前进行的公司文化总结，是否能够真正经得起时间的考验。然而，不可否认的是，抛开最近的波折，这本书的确提出了一些不少从经典的管理思维来看是相对比较有争议的观点，这都值得所有对管理有兴趣的读者甄别、思考和学习。&lt;/p&gt;
@@ -71,9 +213,9 @@
  
  <entry>
    <title>浅谈工业级推荐系统</title>
-   <link href="http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2020/10/04/industrial-recsys/"/>
+   <link href="http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2020/10/04/industrial-recsys/"/>
    <updated>2020-10-04T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2020/10/04/industrial-recsys</id>
+   <id>http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2020/10/04/industrial-recsys</id>
    <content type="html">&lt;p&gt;我于2020年8月受&lt;a href=&quot;https://irsworkshop.github.io/2020/index.html&quot;&gt;“第一届工业级推荐系统研讨会”&lt;/a&gt;的邀请，做了题为&lt;a href=&quot;https://www.hongliangjie.com/talks/IRS_KDD2020.pdf&quot;&gt;“工业级推荐系统最新的挑战和发展”&lt;/a&gt;的主题演讲。我们就依据这个演讲的内容作为一个起点，来聊一聊工业级推荐系统的一些特点，尤其是和推荐系统的学术研究有着哪些不同的侧重点。本文会关注那些学术研究中容易忽视的，但却是在工业级推荐系统研发的日常中需要思考的问题。&lt;/p&gt;
 
 &lt;h2 id=&quot;工业级推荐系统及其生态系统&quot;&gt;工业级推荐系统及其生态系统&lt;/h2&gt;
@@ -137,9 +279,9 @@
  
  <entry>
    <title>《韧性管理》总结</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2020/07/09/resilient-management/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2020/07/09/resilient-management/"/>
    <updated>2020-07-09T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2020/07/09/resilient-management</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2020/07/09/resilient-management</id>
    <content type="html">&lt;p&gt;今天我们要来总结技术管理书籍&lt;a href=&quot;https://resilient-management.com/&quot;&gt;Resilient Management&lt;/a&gt;。作者&lt;a href=&quot;https://www.linkedin.com/in/larachogan/&quot;&gt;Lara Hogan&lt;/a&gt;是资深的科技公司领导人。她先后于Etsy和Kickstarter担任重要的技术领导人职务，其长期在发表关于技术管理的博客文章以及提供相应的咨询和培训服务。书中有不少可以直接拿来用的技巧、模板和方法。同时，书中的一些案例也是来源于实际工作。本书非常适合需要对技术管理快速入门的初级技术管理人员。&lt;/p&gt;
 
 &lt;h2 id=&quot;作者简介&quot;&gt;作者简介&lt;/h2&gt;
@@ -277,9 +419,9 @@
  
  <entry>
    <title>《从数据中学习》总结</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data/"/>
    <updated>2020-06-25T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data</id>
    <content type="html">&lt;p&gt;今天我们要来总结技术书籍&lt;a href=&quot;https://www.amazon.com/Learning-Data-Yaser-S-Abu-Mostafa/dp/1600490069&quot;&gt;《从数据中学习》&lt;/a&gt;。这本书是一本浅显易懂的机器学习理论知识的入门教材。对于机器学习感兴趣的工程师和希望在理论知识上更进一步的数据科学家可以通过本书来快速了解机器学习的核心思想，也就是“学习理论”（Learning Theory）的重要结论。本书的三位作者都来自学术界。全书书写通畅，公式和理论推导也很基础，适合自学的初学者。&lt;/p&gt;
 
 &lt;h2 id=&quot;作者简介&quot;&gt;作者简介&lt;/h2&gt;
@@ -397,9 +539,9 @@
  
  <entry>
    <title>《值得信赖的在线可控实验——A/B实验实用向导》总结</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E5%9C%A8%E7%BA%BF%E5%AE%9E%E9%AA%8C/2020/05/08/online-tests/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E5%9C%A8%E7%BA%BF%E5%AE%9E%E9%AA%8C/2020/05/08/online-tests/"/>
    <updated>2020-05-08T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E5%9C%A8%E7%BA%BF%E5%AE%9E%E9%AA%8C/2020/05/08/online-tests</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E5%9C%A8%E7%BA%BF%E5%AE%9E%E9%AA%8C/2020/05/08/online-tests</id>
    <content type="html">&lt;p&gt;今天我们要来总结技术书籍&lt;a href=&quot;https://doi.org/10.1017/9781108653985&quot;&gt;Trustworthy Online Controlled Experiments: A Practical Guide to A/B Testing&lt;/a&gt;。这本书的三位作者在业界享有盛誉，他们在在线可控实验、实验平台的搭建和运维以及如何构建数据驱动化的公司企业文化有着丰富的经验。全书是数据科学家、机器学习工程师、产品经理以及一切对在线可控实验有兴趣的研发人员的必读参考书，是技术书籍领域的经典。&lt;/p&gt;
 
 &lt;h2 id=&quot;作者简介&quot;&gt;作者简介&lt;/h2&gt;
@@ -518,9 +660,9 @@
  
  <entry>
    <title>《经理人之路——技术领袖启航成长与变化的参考书》总结</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/"/>
    <updated>2019-12-25T00:00:00-08:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path</id>
    <content type="html">&lt;p&gt;今天我们要来总结技术管理书籍&lt;a href=&quot;https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897&quot;&gt;The Manager’s Path – A Guide for Tech Leaders Navigating Growth &amp;amp; Change&lt;/a&gt;。这本书的作者是&lt;a href=&quot;https://en.wikipedia.org/wiki/Camille_Fournier&quot;&gt;卡米尔福尔聂尔（Camille Fournier）&lt;/a&gt;，其在技术管理领域有丰富的经验。全书是针对技术管理人在职场发展不同阶段所需技能以及面对诸多管理场景的经验总结，是技术管理领域不可多得的参考书籍。&lt;/p&gt;
 
 &lt;h2 id=&quot;作者简介&quot;&gt;作者简介&lt;/h2&gt;
@@ -652,9 +794,9 @@
  
  <entry>
    <title>KDD 2019讲座 - “双次序实验”</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial/"/>
    <updated>2019-09-02T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial</id>
    <content type="html">&lt;p&gt;今天我们要来分享一个叫&lt;a href=&quot;http://www.stat.cmu.edu/~aramdas/kdd19/&quot;&gt;Foundations of Large-scale “Doubly-Sequential” Experimentation&lt;/a&gt;的KDD 2019讲座（Tutorial)。这个讲座的作者是来自于时任卡内基梅隆大学（Carnegie Mellon University）助理教授的&lt;a href=&quot;http://www.stat.cmu.edu/~aramdas/&quot;&gt;Aaditya Ramdas&lt;/a&gt;。这个讲座清晰得梳理了基于单个实验的“内次序”（Inner Sequential Process）和基于多个实验的“外次序”（Outer Sequential Process），以及他们之间的关系。同时，这个讲座还涵盖了这方面的重要文献历史，是一份不可多的资料。&lt;/p&gt;
 
 &lt;h2 id=&quot;讲座的基本设置&quot;&gt;讲座的基本设置&lt;/h2&gt;
@@ -703,9 +845,9 @@
  
  <entry>
    <title>CIKM 2018论文精读（一）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr/"/>
    <updated>2018-12-01T00:00:00-08:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr</id>
    <content type="html">&lt;p&gt;今天我们要来分享一篇题目叫&lt;a href=&quot;https://drive.google.com/open?id=1m7-z2loy5iW-gcrGiT2XJTdr4LjQHf3H&quot;&gt;Collaborative Multi-objective Ranking&lt;/a&gt;的发表在&lt;a href=&quot;https://www.cikm2018.units.it/&quot;&gt;CIKM 2018&lt;/a&gt;上的论文。这篇论文的作者是来自于罗格斯大学（Rutgers University）的&lt;a href=&quot;https://sites.google.com/site/hujun1010/&quot;&gt;Jun Hu&lt;/a&gt;和&lt;a href=&quot;http://www.stat.rutgers.edu/home/pingli/&quot;&gt;Ping Li&lt;/a&gt;。文章的核心内容讲的是，传统的以矩阵分解为基础的“协同排序”（Collaborative Ranking）容易有无法有效学习“用户隐向量”（User Factor）和“物品隐向量”（Item Factor）的问题。这篇论文探究了这种问题的来源以及提出了一种“共同优化”（Joint Optimization）的策略来解决问题。&lt;/p&gt;
 
 &lt;h2 id=&quot;文章的基本设置&quot;&gt;文章的基本设置&lt;/h2&gt;
@@ -756,9 +898,9 @@
  
  <entry>
    <title>AISTATS 2018论文导读</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/"/>
    <updated>2018-05-25T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018</id>
    <content type="html">&lt;p&gt;2018年的第21届人工智能和统计学大会（The 21st International Conference on Artificial Intelligence and Statistics）在加那利群岛（Canary Islands）召开。我们在这篇短文里提供一些论文的快速导读，起到抛砖引玉的作用。&lt;/p&gt;
 
 &lt;h2 id=&quot;论文导读&quot;&gt;论文导读&lt;/h2&gt;
@@ -854,9 +996,9 @@
  
  <entry>
    <title>Facebook的应用机器学习平台</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml/"/>
    <updated>2017-12-22T00:00:00-08:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml</id>
    <content type="html">&lt;p&gt;我们在这里对Facebook应用机器学习（Applied Machine Learning）组发布的文章&lt;a href=&quot;https://research.fb.com/publications/applied-machine-learning-at-facebook-a-datacenter-infrastructure-perspective/&quot;&gt;Applied Machine Learning at Facebook: A Datacenter Infrastructure Perspective&lt;/a&gt;进行一个简单的分析解读。这篇文章可以让我们对Facebook里机器学习平台以及各个产品应用这个平台的情况有一个很不错的了解。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://research.fb.com/wp-content/uploads/2017/12/hpca-2018-facebook.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -886,9 +1028,9 @@
  
  <entry>
    <title>KDD 2017大会综述</title>
-   <link href="http://localhost:4000/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/"/>
+   <link href="http://column.hongliangjie.com/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017/"/>
    <updated>2017-08-30T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017</id>
+   <id>http://column.hongliangjie.com/%E4%BC%9A%E8%AE%AE/2017/08/30/kdd2017</id>
    <content type="html">&lt;p&gt;每年，Association for Computing Machinery（ACM）旗下的Special Interest Group (SIG) on Knowledge Discovery and Data Mining（简称SIGKDD）都要举办年度的SIGKDD Conference on Knowledge Discovery and Data Mining（KDD）大会，为学术界和工业界的数据科学学者、研究人员、工程师以及学生提供一个交流、学习和发展的平台。今年，The 23rd SIGKDD Conference on Knowledge Discovery and Data Mining（KDD）于2017年8月13日到17日在加拿大的Halifax, Nova Scotia举行。&lt;/p&gt;
 
 &lt;p&gt;KDD是数据挖掘以及数据科学领域的顶级会议。KDD最早从1989年开始的KDD 研讨班（Workshop）发展而来。当时的研讨班依托于IJCAI大会或者AAAI大会（另一个有影响力的人工智能大会），由Gregory Piatetsky-Shapiro创办。研讨班成功举办几届之后，1995年Usama Fayyad和Ramasamy (Sam) Uthurusamy把研讨班升级成为了会议，并且在加拿大的蒙特利尔举办了第一届的KDD大会。大会至今已经有20多年的历史。&lt;/p&gt;
@@ -940,9 +1082,9 @@
  
  <entry>
    <title>ACL 2017文章精读（五）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program/"/>
    <updated>2017-08-07T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/07/acl2017-language-to-program</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章From Language to Programs: Bridging Reinforcement Learning and Maximum Marginal Likelihood进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1704.07926&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -965,9 +1107,9 @@
  
  <entry>
    <title>ACL 2017文章精读（四）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text/"/>
    <updated>2017-08-06T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/06/acl2017-skim-text</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章Learning to Skim Text进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1704.06877&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -988,9 +1130,9 @@
  
  <entry>
    <title>ACL 2017文章精读（三）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl/"/>
    <updated>2017-08-05T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/05/acl2017-rl-dl</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章Towards End-to-End Reinforcement Learning of Dialogue Agents for Information Access进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1609.00777&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1019,9 +1161,9 @@
  
  <entry>
    <title>ACL 2017文章精读（二）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm/"/>
    <updated>2017-08-04T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/08/04/acl2017-neural-lm</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章Topically Driven Neural Language Model进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1704.08012&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1043,9 +1185,9 @@
  
  <entry>
    <title>ACL 2017文章精读（一）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal/"/>
    <updated>2017-07-27T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/27/acl2017-multimodal</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://acl2017.org/&quot;&gt;ACL 2017&lt;/a&gt;文章Multimodal Word Distributions进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1704.08424&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1068,9 +1210,9 @@
  
  <entry>
    <title>Google Scholar 2017学术指标之人工智能篇</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar/"/>
    <updated>2017-07-09T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/07/09/google-scholar</id>
    <content type="html">&lt;p&gt;近日，Google Scholar发布了一个&lt;a href=&quot;https://scholar.googleblog.com/2017/07/2017-scholar-metrics-released.html&quot;&gt;2017年的“学术指标”&lt;/a&gt;，主要是对各个学科的众多领域的学术刊物（包括期刊、会议论文集以及在线论文出版集）做出了排名。这个排名主要是依靠&lt;a href=&quot;https://en.wikipedia.org/wiki/H-index&quot;&gt;H5-Index&lt;/a&gt;这一指标。我们在这篇文章里，对人工智能相关的领域学术出版刊物的排名进行一个简单的分析和导读。&lt;/p&gt;
 
 &lt;h2 id=&quot;人工智能主类&quot;&gt;人工智能主类&lt;/h2&gt;
@@ -1127,9 +1269,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>AIStats 2017文章精读（五）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd/"/>
    <updated>2017-06-18T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/18/aistats2017-dist-sgd</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Communication-Efficient Learning of Deep Networks from Decentralized Data进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/mcmahan17a/mcmahan17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1157,9 +1299,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>AIStats 2017文章精读（四）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian/"/>
    <updated>2017-06-17T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/17/aistats2017-fast-bayesian</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Fast Bayesian Optimization of Machine Learning Hyper-parameters on Large Datasets进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/klein17a/klein17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1192,9 +1334,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>AIStats 2017文章精读（三）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1/"/>
    <updated>2017-06-12T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/12/aistats2017-personal-model1</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Decentralized Collaborative Learning of Personalized Models over Networks进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/vanhaesebrouck17a/vanhaesebrouck17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1221,9 +1363,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>AIStats 2017文章精读（二）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd/"/>
    <updated>2017-06-11T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/11/aistats2017-less-sgd</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Less than a Single Pass: Stochastically Controlled Stochastic Gradient Method
 进行一个简单的分析解读。&lt;/p&gt;
 
@@ -1253,9 +1395,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>AIStats 2017文章精读（一）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits/"/>
    <updated>2017-06-10T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/06/10/aistats2017-rank1-bandits</id>
    <content type="html">&lt;p&gt;我们在这里对&lt;a href=&quot;http://www.aistats.org/&quot;&gt;AIStats 2017&lt;/a&gt;文章Stochastic Rank-1 Bandits进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://proceedings.mlr.press/v54/katariya17a/katariya17a.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1280,9 +1422,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（七）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice/"/>
    <updated>2017-04-30T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/30/www2017-slice</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Monetary Discount Strategies for Real-Time Promotion Campaign进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://oak.cs.ucla.edu/~chucheng/publication/www17.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1305,9 +1447,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（六）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search/"/>
    <updated>2017-04-28T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/28/www2017-personal-search</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Situational Context for Ranking in Personal Search进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://ciir-publications.cs.umass.edu/pub/web/getpdf.php?id=1268&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1335,9 +1477,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（五）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream/"/>
    <updated>2017-04-27T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/27/www2017-stream</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Streaming Recommender Systems进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.yichang-cs.com/yahoo/WWW17_StreamingRec.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1366,9 +1508,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（四）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec/"/>
    <updated>2017-04-26T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/26/www2017-ec</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Modeling Consumer Preferences and Price Sensitivities from Large-Scale Grocery Shopping Transaction Logs进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://cseweb.ucsd.edu/~m5wan/paper/www17_mwan.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1399,9 +1541,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（三）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/19/www2017-cloud/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/19/www2017-cloud/"/>
    <updated>2017-04-19T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/19/www2017-cloud</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/19/www2017-cloud</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Usage Patterns and the Economics of the Public Cloud进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://vita.mcafee.cc/PDF/EconPublicCloud.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1424,9 +1566,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（二）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/16/www2017-cml/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/16/www2017-cml/"/>
    <updated>2017-04-16T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/16/www2017-cml</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/16/www2017-cml</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Collaborative Metric Learning进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://www.cs.cornell.edu/~ylongqi/paper/HsiehYCLBE17.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1457,9 +1599,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>WWW 2017文章精读（一）</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/13/www2017-beyond-globally-optimal/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/13/www2017-beyond-globally-optimal/"/>
    <updated>2017-04-13T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/13/www2017-beyond-globally-optimal</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/04/13/www2017-beyond-globally-optimal</id>
    <content type="html">&lt;p&gt;我们在这里对WWW 2017文章Beyond Globally Optimal: Focused Learning for Improved Recommendations进行一个简单的分析解读。&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://alexbeutel.com/papers/www2017_focused_learning.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
@@ -1480,9 +1622,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>论互联网公司与研究院</title>
-   <link href="http://localhost:4000/%E7%AE%A1%E7%90%86/2017/04/09/research-labs/"/>
+   <link href="http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2017/04/09/research-labs/"/>
    <updated>2017-04-09T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E7%AE%A1%E7%90%86/2017/04/09/research-labs</id>
+   <id>http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2017/04/09/research-labs</id>
    <content type="html">&lt;p&gt;随着吴恩达离开百度研究院，关于互联网公司设立研究院的话题又被推到了风口浪尖。一时间，大家对互联网公司到底该不该设立研究院、研究院在公司内部又该起到怎样的作用、怎么能够设置一个有效的研究院架构、怎么来衡量研究院是否成功等问题展开了激烈的讨论。我打算在这篇专栏文章里，以本人在雅虎研究院的经历为基础，来剖析一下现代高科技企业尤其是互联网公司如何设置一个成功的研究院，研究院究竟该如何运作。这篇文章是在公开领域少有的论述研究院的系统性文章，值得大家精读。&lt;/p&gt;
 
 &lt;h2 id=&quot;什么是研究院&quot;&gt;什么是研究院&lt;/h2&gt;
@@ -1579,9 +1721,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>数据科学发展的一些感悟</title>
-   <link href="http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2017/03/02/san_diego/"/>
+   <link href="http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2017/03/02/san_diego/"/>
    <updated>2017-03-02T00:00:00-08:00</updated>
-   <id>http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2017/03/02/san_diego</id>
+   <id>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2017/03/02/san_diego</id>
    <content type="html">&lt;p&gt;上个星期，我参加了位于San Diego召开的一个工业界数据科学会议Predictive Analytics Innovation Summit。在这里分享一些参会后对于数据科学在工业界发展状况及前景的感悟。&lt;/p&gt;
 
 &lt;h2 id=&quot;感悟一数据科学的思潮席卷各个行业&quot;&gt;感悟一：数据科学的思潮席卷各个行业&lt;/h2&gt;
@@ -1613,9 +1755,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>只有偏执狂才能生存</title>
-   <link href="http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/08/09/intel/"/>
+   <link href="http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/08/09/intel/"/>
    <updated>2016-08-09T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/08/09/intel</id>
+   <id>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/08/09/intel</id>
    <content type="html">&lt;p&gt;今年初，Intel传奇领导人物&lt;a href=&quot;https://en.wikipedia.org/wiki/Andrew_Grove&quot;&gt;安德鲁格罗夫（Andrew Grove）&lt;/a&gt;病逝。格罗夫的很多思想在90年代WinTel时代曾对中国的早期IT产业带来巨大启发。他所领导的Intel几乎是个人电脑时代的代名词。而他所著的&lt;a href=&quot;https://www.amazon.com/Only-Paranoid-Survive-Exploit-Challenge/dp/0385483821&quot;&gt;《只有偏执狂才能生存》&lt;/a&gt;作为危机管理的经典著作，影响了好几代人。最近买了这本书的原版来阅读，感触良多，在这篇文章中和大家分享一些读书心得。&lt;/p&gt;
 
 &lt;h2 id=&quot;战略拐点&quot;&gt;战略拐点&lt;/h2&gt;
@@ -1692,9 +1834,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>怎样招聘一名科学家</title>
-   <link href="http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/05/14/hire/"/>
+   <link href="http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/05/14/hire/"/>
    <updated>2016-05-14T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/05/14/hire</id>
+   <id>http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/05/14/hire</id>
    <content type="html">&lt;p&gt;看了&lt;a href=&quot;https://zhuanlan.zhihu.com/p/20865434&quot;&gt;韩春雨&lt;/a&gt;的事迹以后，很是感动，我于是在微博上谈论一下&lt;a href=&quot;http://weibo.com/3193816967/DuGAd9tmD&quot;&gt;简历背景是否等于一个人的成就和水平&lt;/a&gt;，里面谈及了一些在招聘科学家过程中的遇到的经历和水平的问题。后来，我感觉需要系统得总结一下招聘科学家的流程，一是为了记录下在招聘过程中的一些思考，另一方面也是为了帮助年轻学者或者博士生，能够提高自身的水平。当然，一个高水平的流程，也是对自己的一种鞭策。我时常也会想，在这样的流程里，我是否能够体现自己的能力和水平。&lt;/p&gt;
 
 &lt;h2 id=&quot;面试的目的&quot;&gt;面试的目的&lt;/h2&gt;
@@ -1869,9 +2011,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>新闻推荐，追逐卡戴珊的“屁股”</title>
-   <link href="http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/23/news-recsys/"/>
+   <link href="http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/23/news-recsys/"/>
    <updated>2016-04-23T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/23/news-recsys</id>
+   <id>http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/23/news-recsys</id>
    <content type="html">&lt;p&gt;前一阵子，有一篇新闻文章叫&lt;a href=&quot;http://www.businessinsider.com/yahoo-reporters-frustrated-competing-against-kim-kardashians-ass-2016-4&quot;&gt;“雅虎记者的困扰：与卡戴珊的屁股竞争”&lt;/a&gt;，讲的是雅虎公司的一群高级记者所写的文章与推荐系统所推荐的文章相互竞争协调的事情，里面提到的现象可能很多做推荐系统开发的人都感同身受，似曾相识。那么今天，我们不谈具体的公司具体的案例，而来聊一下推荐系统开发中遇到“&lt;strong&gt;推荐结果和自己的直觉不相符合怎么办&lt;/strong&gt;”这个事情该怎么办。&lt;/p&gt;
 
 &lt;h2 id=&quot;记者和编辑的抱怨&quot;&gt;记者和编辑的抱怨&lt;/h2&gt;
@@ -1938,9 +2080,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>论推荐系统的Exploitation和Exploration</title>
-   <link href="http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/13/exploration/"/>
+   <link href="http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/13/exploration/"/>
    <updated>2016-04-13T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/13/exploration</id>
+   <id>http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/13/exploration</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/&quot;&gt;上一篇文章&lt;/a&gt;讲到，一个推荐系统，如果片面优化用户的喜好，很可能导致千篇一律的推荐结果。文中曾经用了一节来讨论为什么使用Exploitation &amp;amp; Exploration (E &amp;amp; E)结果可能依然不能“免俗”。其实，E &amp;amp; E是推荐系统里很有意思，但也非常有争议的一个算法。一方面，大家都基本明白这类算法的目的，每年有很多相关论文发表。另一方面，这是工业界对于部署这类算法非常谨慎，有的产品经理甚至视之为“洪水猛兽”。这篇文章就是要分析一下导致这个现象的一些因素。&lt;/p&gt;
 
 &lt;h2 id=&quot;走一步看一步的策略&quot;&gt;走一步看一步的策略&lt;/h2&gt;
@@ -2072,9 +2214,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>个性化推荐是不是伪命题</title>
-   <link href="http://localhost:4000/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/"/>
+   <link href="http://column.hongliangjie.com/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/"/>
    <updated>2016-04-07T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not</id>
+   <id>http://column.hongliangjie.com/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not</id>
    <content type="html">&lt;p&gt;最近，有一位网友在微博上说，&lt;a href=&quot;http://weibo.com/1830516311/Dp4Vs81ih?from=page_1005051830516311_profile&amp;amp;wvr=6&amp;amp;mod=weibotime&amp;amp;type=comment&quot;&gt;推荐是不是个伪命题？连续几天试用了据说很好的某头条，某资讯以及某快报，感觉逃脱不了看什么就是什么的套路&lt;/a&gt;。也有人说，这是Exploitation &amp;amp; Exploration出了问题，没有很好得Exploration导致的结果。那么，个性化推荐到底是不是伪命题呢？为什么很多推荐系统过了一段时间以后就老是推荐类似的东西呢？本篇文章就要尝试分析和探讨这个“千篇一律”的问题。&lt;/p&gt;
 
 &lt;h2 id=&quot;推荐是为了预测用户喜好的物品吗&quot;&gt;推荐是为了预测用户喜好的物品吗&lt;/h2&gt;
@@ -2196,9 +2338,9 @@ Google把整个数据挖掘和信息系统分为了两类“Data Mining &amp;amp
  
  <entry>
    <title>我为什么开设这个专栏</title>
-   <link href="http://localhost:4000/%E7%AB%99%E5%8A%A1/2016/04/05/start-column/"/>
+   <link href="http://column.hongliangjie.com/%E7%AB%99%E5%8A%A1/2016/04/05/start-column/"/>
    <updated>2016-04-05T00:00:00-07:00</updated>
-   <id>http://localhost:4000/%E7%AB%99%E5%8A%A1/2016/04/05/start-column</id>
+   <id>http://column.hongliangjie.com/%E7%AB%99%E5%8A%A1/2016/04/05/start-column</id>
    <content type="html">&lt;p&gt;经过一段时间的思考，我决定开一个技术、管理和团队的专栏，分享和探讨关于大数据、人工智能（AI）及机器学习（Machine Learning）的话题，以及这些相关技术的行业思考。在已经有不少优质内容（包括博客、微信公众号）的情况下，我希望这个专栏能够更加专注、专业，少一些关注个别技术的细节，多一些对数据在一个生态系统中的把握以及行业动态的分析。&lt;/p&gt;
 
 &lt;p&gt;在接下来的文章中，我准备着重分享和探讨如下这些方面的内容：&lt;/p&gt;

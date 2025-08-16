@@ -3,11 +3,157 @@
   <channel>
     <title>期望最大化（洪亮劼的专栏）</title>
     <description>Nokia全球副总裁、前LinkedIn工程总监、前Etsy工程总监、雅虎研究院高级研发经理；长期从事人工智能和机器学习在工业界广泛落地的研究和实践工作；这是一个分享技术、管理、团队和业界思考的专栏。</description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 04 Aug 2025 21:09:53 -0700</pubDate>
-    <lastBuildDate>Mon, 04 Aug 2025 21:09:53 -0700</lastBuildDate>
+    <link>http://column.hongliangjie.com/</link>
+    <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 16 Aug 2025 10:27:48 -0700</pubDate>
+    <lastBuildDate>Sat, 16 Aug 2025 10:27:48 -0700</lastBuildDate>
     <generator>Jekyll v3.10.0</generator>
+    
+      <item>
+        <title>《团队管理的五大障碍》总结</title>
+        <description>&lt;p&gt;技术管理常常被视为复杂而抽象，但最近读到的一本小书《团队管理的五大障碍》(The Five Dysfunctions of a Team)，却以清晰的框架和简明的结构，把管理拆解得非常务实。全书围绕五个核心主题展开：认识团队、帮助成长、设定清晰预期、有效沟通、构建韧性。更重要的是，作者将这些主题与团队发展的四个阶段——组建、风暴、成规、高效——对应起来，帮助我们精准判断团队所处的状态，并采取合适的管理手段。书中提供的技巧极具可操作性：从识别团队成员的核心需求，到如何在风暴期切换导师、教练、支持者的角色，再到建立清晰的愿景与沟通机制。在后文中，我会逐章拆解这些方法，供正在成长中的管理者参考。&lt;/p&gt;
+
+&lt;h2 id=&quot;作者简介&quot;&gt;作者简介&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_patrick.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;作者Patrick Lencioni是美国商业管理畅销书作者，写了多达13本关于团队管理和运营的书籍。他最知名的作品就是本文要介绍的《团队管理的五大障碍》。Patrick目前担任Table Group的总裁，负责领导力、团队和咨询等工作。在Table Group之前，Patrick在Bain &amp;amp; Company、Oracle Corporation 和Sybase担任过工作。&lt;/p&gt;
+
+&lt;h2 id=&quot;全书结构&quot;&gt;全书结构&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;《团队管理的五大障碍》(The Five Dysfunctions of a Team)非常短小精悍，分为以下这么五章内容。&lt;/p&gt;
+
+&lt;p&gt;第一章，主要是讲如何认识你的团队，也就是书中讲的结识你的团队（Meet Your Team）。&lt;/p&gt;
+
+&lt;p&gt;第二章，主要是讲如何是你的团队成员得以成长（Grow Your Teammates）。&lt;/p&gt;
+
+&lt;p&gt;第三章，主要是讲如何设置明确清晰的期望（Set Clear Expectations）。&lt;/p&gt;
+
+&lt;p&gt;第四章，主要是讲如何有效的进行沟通（Communicate Effectively）。&lt;/p&gt;
+
+&lt;p&gt;第五章，主要是讲如何构建韧性管理（Build Resiliency）。&lt;/p&gt;
+
+&lt;h2 id=&quot;内容剖析&quot;&gt;内容剖析&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_stages.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在对全书的五个章节进行剖析之前，有必要说一说作者在序章中提及的团队发展的四个阶段，分别是“组建”（Forming）、“风暴”（Storming）、“成规”（Norming）和“高效”（Performing）。&lt;/p&gt;
+
+&lt;p&gt;简而言之，“组建”阶段可以认为是当一个团队的成员初次集合到一起的时候，团队需要的各种协作和流程都还没有建立。一切方兴未艾。“风暴”阶段是团队的成员之间开始产生“摩擦”（Friction）。作者认为，这个阶段是团队成长的必要阶段，需要有这个阶段的“疑惑”（Confusion）和“冲突”（Clashing）来达到下一个阶段。“成规”阶段是事情慢慢得到了解决，团队成员之间的差别得到了调和。最后，“高效”阶段是整个团队有序得运行，你们开始“交付”（Ship）产品。&lt;/p&gt;
+
+&lt;p&gt;需要指出的是，这四个阶段并不是一次性的，而是循环往复的团队生存周期。这是因为团队永远处于持续地变化中，例如有新成员加入、团队的宗旨发生了变化等。全书也算是围绕着这四个阶段来进行展开讨论的。&lt;/p&gt;
+
+&lt;p&gt;接下来，我们针对书中的五个章节为大家进行剖析。&lt;/p&gt;
+
+&lt;h2 id=&quot;结识你的团队&quot;&gt;结识你的团队&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_1.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这一章主要是讲在团队“组建”阶段，我们如何去了解团队成员的“核心需求”（Core Needs）以及他们的工作模式（Work Styles）。同时，这个阶段也需要让团队成员了解你。&lt;/p&gt;
+
+&lt;p&gt;书中提到了六个和工作相关的“核心需求”:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;第一个是“归属感”（Belonging），也就是团队成员对一个社群（Community）或者团队的一种认同度，是否觉得自己是其中一员。当你觉得被团队“遗漏”（Left Out）的时候，这个“核心需求”就受到了伤害，例如团队某一个重要的会议，你没有被邀请参加，或是一个重要的产品发布没有通知你。&lt;/li&gt;
+  &lt;li&gt;第二个是“进步感”（Improvement/Progress），也就是说你希望在团队中体会到某种程度上的进步或者是进展。这种进展可以是来自个人的，也可以是整个团队的。有时候，这种“进步感”可能会很难体会到，特别是在比较大的公司中。&lt;/li&gt;
+  &lt;li&gt;第三个是“选择感”（Choice），也就是你是否感到对自己的生活和工作进行决策。也许你原本对自己的工作有很大的自主权，但突然公司新加入的一个负责产品的副总裁开始对你的之前计划开始发表意见。这时你可能开始感到“选择感”的失去。另一方面，如果有太多的决策需要做，也可能会造成你不知所措的情况。因此，对于“选择感”而言，我们需要注意“平衡”（Balance）。&lt;/li&gt;
+  &lt;li&gt;第四个是“平等感”（Equality/Fairness），也就是你是否收到了平等的对待。当有决策通过的时候，所有参与决策的各个方面是否都有平等地接收到信息，是否平等地接收到了资源。&lt;/li&gt;
+  &lt;li&gt;第五个是“预测感”（Predictability），也就是你是否能够对可预见的未来有一个初步的感知，而不是充满了“惊奇”（Surprise）。在日常工作中，大家度希望对未来有一定的把握程度。&lt;/li&gt;
+  &lt;li&gt;第六个是“重要感”（Significance），也就是你个人的“地位”（Status），或者说是在团队中扮演什么样的角色，是否能够体现你的价值。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;值得注意的是，这六个核心需求对于每个人而言，并不是有同样的效果。面对一些事情，或者书中提到了“刺激物”（Stimulus），每个人可能会有非常不一样的反应。文中提到了让员工换座位这个例子来说明，这么一件看似简单的事情，有可能会“刺激”到不同人关于上述六个核心需求的反应，值得仔细阅读。&lt;/p&gt;
+
+&lt;p&gt;这一章的第二部分，作者则是在讨论不同人的工作模式，具体说来就是遇到一些问题的时候，不同的人可能会有不尽相同的偏好。作者总结了下面五个方面的模式问题值得每一个经理逐一了解自己的员工:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;“不高兴”（Grumpiness）：什么样的事情可以可以导致员工不高兴，例如缺少咖啡因、没有睡好、不喜欢被“微观管理”（Micromanage）等。&lt;/li&gt;
+  &lt;li&gt;“反馈和认可”（Feedback and Recognition）：当需要探讨反馈和认可的时候，每个人可能希望利用不同的媒介来达到目的，例如面对面、电子邮件还是即时聊天工具。特别是一些比较艰难的反馈，媒介的选择就显得尤为重要。&lt;/li&gt;
+  &lt;li&gt;“目标和支持”（Goals and Support）：如何支持一个员工的成长以及如何知道员工需要怎样的支持都是作为经理和员工沟通的一个重要话题。&lt;/li&gt;
+  &lt;li&gt;“员工成长”（Grow and Learn）：员工成长是一个很难以衡量的事情。然而，帮助员工成长又是经理们责无旁贷的职责。至少每一个季度都花一些时间来确定员工具体的，可以有行动的成长目标。&lt;/li&gt;
+  &lt;li&gt;“款待自己”（Treat Yourself）：花时间去了解每一个员工如何款待自己的喜好，也许在未来某个时候需要奖励和表彰员工的时候能够用得上。这里面的偏好差异可能会非常大。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;这一章最后的内容是帮助你的团队认识你，或者反过来说，你希望如何呈现在你的团队面前。&lt;/p&gt;
+
+&lt;p&gt;有两个方面的话题是需要你去思考的。第一，就是你优化的目标是什么？作者认为，这一个问题直接决定了一个经理的“风格”（Style）和“管理哲学”（Philosophy）。当然，优化一个目标往往会伴随着其他目标的缺失，这是需要注意的。第二，一旦你有了优化目标之后，和团队成员交流你这些目标有助于整个团队统一思想，同时也能够帮助你的团队成员设置有效的预期。&lt;/p&gt;
+
+&lt;h2 id=&quot;扩展你的团队&quot;&gt;扩展你的团队&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_2.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;我们之前提到的团队发展的四个阶段，这一章主要在讲“风暴”阶段团队的成长。&lt;/p&gt;
+
+&lt;p&gt;为什么会有“风暴”阶段呢？团队在之前每一个个体的运作阶段可能并没有太多的问题。因为从本质上来说，团队并不是一个有机的整体，而是个体的集合，因此，一旦我们开始整合团队的所有人，开始设立一些流程，团队在协作、沟通等方面就都会出现广泛的“摩擦”。这几乎是可以预期的。&lt;/p&gt;
+
+&lt;p&gt;书中说，在这个阶段，作为经理的你，需要做好下面四件事情。&lt;/p&gt;
+
+&lt;p&gt;第一件事情，就是扮演好“导师”的角色（Mentoring），也就是直接给出建议并且帮助员工解决问题。这里，我们依靠的更多的是自己的经验。作为一名“导师”，我们需要注意的是对提供建议的人与环境有一定敏感程度。对一个人有意义的建议可能会对另一个人有伤害。另外，“导师”这个角色往往对初入角色（Role）的新人更有帮助，而对于已经有了一些成长的员工而言，更需要另外的指导手段。&lt;/p&gt;
+
+&lt;p&gt;第二件事情，就是扮演好“教练”的角色（Coaching），也就是通过和指导对象进行对话，问“开放式”问题（Open Questions）来达到引导员工自省并且找到解决问题的方案。这个角色和“导师”是很不一样的。“导师”需要对问题以及解决方案都有所关注，而“教练”的角色则更加注重在分析问题上。两个重要的技巧是问“开放式问题”和“反思”（Reflection）。“开放式问题”必须让人觉得真诚，是你带有真正的好奇心来问的问题。这些问题有助于指导对象来进行更深层次的思考。“反思”是希望你能作为对方的一面“镜子”。把对方已经表达过的观点进行二次“翻译”，看是否能够抓住问题的核心。在这样的反复对话中，我们可以帮助指导对象来达到对当前问题的更深层次的理解和提出更好的解决方案。&lt;/p&gt;
+
+&lt;p&gt;第三件事情，就是扮演好“支持者”（Sponsoring）的角色。如果说“导师”和“教练”是你和员工在面对面情况下互动的角色，那么“支持者”这个角色则是你在其他场合所要扮演的角色。这里的“支持”指的是你为指导对象提供并且争取机会，从而能够有力地进入到他职场的下一个层级。&lt;/p&gt;
+
+&lt;p&gt;第四件事情，就是提供“反馈”（Delivering Feedback）。这一部分可能是最难以做好的角色。作者在这里讲了一个“反馈”公式。也就是，我们提供反馈需要首先来自某种行为的“观察”（Observation），然后我们需要描述这个行为的“影响”（Impact），接着，我们需要直接说出需要改变的事情或者是进入“教练”的角色，开始问一些开放式问题，最后，我们需要达到非常具体的，能够执行的反馈。&lt;/p&gt;
+
+&lt;p&gt;在日常的工作中，我们经常需要对这四种角色进行有机得结合，并且在这些角色之间频繁互换。当然，书中也讲了，并不是这些手段都能够永远有效，总有员工可能并不理会你和他互动的好意，因此书中也讲了讲其他的渠道。&lt;/p&gt;
+
+&lt;h2 id=&quot;设置明确的期望&quot;&gt;设置明确的期望&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_3.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这一章主要在讲“成规”阶段的团队发展话题。&lt;/p&gt;
+
+&lt;p&gt;顾名思义，无规矩不成方圆，当团队发展到一定程度，就需要设置一些规则和流程来保证团队运行的顺畅和解决分歧。&lt;/p&gt;
+
+&lt;p&gt;这一章一开始主要讲了如何定义团队中的“角色和职责”（Roles and Responsibilities）。在团队发展的早期，都没有真正定义不同角色和职责的实际需要，一是因为人比较少，二是因为很多时候需要有人能够兼顾多种不同的角色从而能够达到某种情况下的灵活度。然而，随着团队的发展，每个人在日常运行中究竟是什么角色，不同人之间怎么协作，就需要我们开始思考这方面的问题。&lt;/p&gt;
+
+&lt;p&gt;书中介绍了RACI角色定义方法和“维恩图表”（Venn Diagram）来定义“角色和职责”并且用了“工程经理”（Engineering Manager）、“产品经理”（Product Manager）以及“工程负责人”（Engineering Lead）如何建立清晰的职责界限来解释了这些方法的实际使用方法，建议读者精读这部分内容。&lt;/p&gt;
+
+&lt;p&gt;这一章的第二部分讲了如何设置一个团队的“视野”（Vision）以及“优先级”（Priorities）。“视野”是回答你们这个团队为什么存在，究竟是要解决什么终极问题，这样的疑问。这里细分的话，有“视野”（Vision）、“使命”（Mission）、“策略”（Strategy）以及“目标”（Objective）的区别。简单来说，这几类定义是从最宏观到最微观的逐层表述。书中有详细的解释，建议大家读一读。有读者可能会问，对于一个团队来说，设置这些空洞的宏大的主题是否有实际的意义。这里的目的是让一个团队有章可循，特别是团队有任何分歧、有疑虑的时候都随时能够根据团队的“视野”和“优先级”来排除这些纷扰。&lt;/p&gt;
+
+&lt;p&gt;这一章的第三部分讲的是团队的“实践”（Practice）。这一部分主要是指一个团队日常运作的模式，包括有什么样的会议以及交流的渠道（邮件或者即时通讯工具），和这些运作模式都是处理哪些问题。作者认为，即便每一个团队在具体的实践中可能都有了约定俗成的一套流程，最好能够利用文档工具（例如“维基”Wiki）来把这些实践记录下来。同时，作者认为，需要把团队的协作和交互给融合到日常的运作中去。&lt;/p&gt;
+
+&lt;h2 id=&quot;有效的沟通&quot;&gt;有效的沟通&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_4.webp&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;在现代团队发展和运作过程中会遇到大大小小的很多事情，例如公司的目标发生了变化、公司开始经历裁员、新的产品线、公司上市等等。所有这些事情，作为一个经理，你都需要和员工保持良好有效的沟通。有不小挑战性的是，很多这些事情，你并不是直接的决策者，甚至也没有参与其中，但作为当前团队的负责人，你需要有很清晰的头脑如何和团队进行交互和沟通。&lt;/p&gt;
+
+&lt;p&gt;书中首先介绍了如何来规划沟通一些重要的信息。很明显，你需要一个计划。作者介绍了一些沟通计划的模板。总而言之，这些模板的目的是帮助你能够为一些相对复杂的情况有一个更加全面的沟通有所准备。书中作者用一个虚拟的经理离职作为例子，展示了如何为这样一个可能会比较棘手的事件进行沟通准备。&lt;/p&gt;
+
+&lt;p&gt;在这一章的第二部分，作者讲了讲对敏感信息沟通的技巧。敏感信息的挑战来自于可能会触及一些员工的核心需求。比如，我们要沟通一次组织架构的调整，团队的工作方向也许会有调整，那么一些员工的“选择感”和“预测感”都会受到不小的影响。一些员工可能会觉得自己的意见或者声音没有得到抒发的机会。作者认为，敏感信息沟通的核心来自于“迅速”（Swift）而不是拖延好几天甚至是更长时间。有很多事情有可能在更长的等待中发生变化，也就是我们经常说的“夜长梦多”。同时，如何有效得分享一些机密信息，也是需要特别注意拿捏分寸的事情。在一个较大的公司和团队中，任何机密的信息都有可能被泄露出去，作者认为在这种时候，首要任务是沟通并且阐明一些事情的事实，而事后对有可能把机密信息泄露这样的事情进行反思。&lt;/p&gt;
+
+&lt;p&gt;本章的第三个部分，作者探讨了一下，作为经理的你，如何沟通你并不十分认可的决定。在一个比较大的公司中，这样的情况其实比比皆是。公司有很多决策或者变化无法邀请所有人参与。这一方面是不现实一方面也没必要。因此，在公司的运作中，我们就需要学会传达和沟通我们自己并不认同的决定。这里的核心是做到“不认同但负责”（Disagree and Commit）这样一种职业态度。也就是说，虽然你对于某一些决策的内容并不能完全认可，但是你需要去完全执行这些决策的内容并且利用沟通的技巧和团队进行沟通。不过，作者也提出，这种时刻，也是你重新审视自己和当前的团队以及公司还是否能够契合到一起，如果有重大的分歧，离开这样的团队和公司可能是更好的选择。&lt;/p&gt;
+
+&lt;p&gt;本章的第四部分作者讲了讲不同媒介的区别，例如会议、邮件以及即时通讯工具，都具有自身不同的特点，适用于沟通不同的内容。比如，一些重大的决定或者是变化，最好能够通过面对面的会议，甚至是“全公司会议”（All Hands Meeting）来首先传达。而另一方面，邮件沟通可以传达一些没有太多歧义内容的信息，并且能够起到提醒人的作用。&lt;/p&gt;
+
+&lt;p&gt;最后，作者强调，沟通不是一次性的工作，而是本身就需要反复迭代和演化的工作。也就是说，我们需要反复重复重要的信息，在很多场合，和很多媒介。同时，每个公司可能对于如何沟通有不同的企业文化的偏好。&lt;/p&gt;
+
+&lt;h2 id=&quot;构建韧性管理&quot;&gt;构建韧性管理&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/five_5.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;作者把最后一章的内容献给了如何让当经理的人自身更加富有“韧性”。也许你的团队已经到达了“高效运行”的阶段，但是一个突然的变化，使得你做的很多工作回归原点。千万不要以为变化是一时的，作者认为，处在高速发展的科技公司中，变化是随时随地都在发生的。因此，如何让经理变得更有“韧性”，也就是如何处置随时的变化，以及一一种不变应万变的心态就成为了很重要的议题。&lt;/p&gt;
+
+&lt;p&gt;这一章一开始，作者讨论了如何管理危机时刻（Times of Crisis）。这里的关键是了解你有什么样的资源和工具。每一个公司对待很多情况都有相应的流程。对这些流程有所了解，是你需要处理危机的必备信息。另一方面，是和员工有良性的和真挚的沟通，让他们觉得你是可以依赖的伙伴。&lt;/p&gt;
+
+&lt;p&gt;这一章的第二部分，则在讨论如何管理你自己的“能量”。简而言之，那就是如何能够使自己保持一个正能量的心态。作者的一个建议是时刻关注我们被什么样的事情所消耗时间和精力。也就是看看自己的日历，平时都参加什么样的会议。这里，需要你对自己的时间有一个深层次的了解以及有一些如何应对这些事物的想法。然后，书中介绍了不少的技巧，可以用于管理自己的时间使自己更高效，例如重新安排自己的任务，把一部分任务给代理出去、对一些事情说“不”等等。读者可以好好阅读一下这部分内容。&lt;/p&gt;
+
+&lt;p&gt;本章的最后是探讨如何构建自己的“支持网络”（Support Network）。作为一个经理而言，“你不是一个人在战斗”，但往往，我们可能觉得自己是“孤家寡人”。作者提出了“支持网络”这个概念，也就是说，我们需要去构建自己的网络来获取更多的信息，学习更多的技能，以及扩宽自己的社交网络。同时，作者也提到了“第一团队”（The First Team）的概念，也就是当发生任何变化以及需要做一些复杂决策的时候，你最先寻求帮助和信息的人都是什么人，而这些人都能够提供哪一些不同的视角。这一部分内容可以算是经理职业发展的高级话题。&lt;/p&gt;
+
+&lt;h2 id=&quot;总结点评&quot;&gt;总结点评&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;这本书可以说是作为技术管理人的经典入门的参考书。作者Patrick Lencioni作为在工业界有丰富经验的技术经理人所写作的本书可以说是有非常强的实战指导价值。书中有不少可以直接拿来用的技巧、模板和方法。同时，书中的一些案例也是来源于实际工作。与同类型的《经理人之路》相比，本书更加短小精悍，并且非常适合需要对技术管理快速入门的初级技术管理人员。从结构上看，全书的五个章节都相对独立但又和在序章中讲到的团队的发展历程的几个阶段有着紧密的联系。建议对技术管理有兴趣的读者精读。&lt;/p&gt;
+</description>
+        <pubDate>Sat, 16 Aug 2025 00:00:00 -0700</pubDate>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2025/08/16/five/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2025/08/16/five/</guid>
+        
+        
+        <category>读书笔记,管理</category>
+        
+      </item>
     
       <item>
         <title>《No Rules Rules》总结</title>
@@ -62,8 +208,8 @@
 &lt;p&gt;这本书可以说是作为洞察网飞管理模式以及熟悉其CEO思维模式的一本不可多得的好书。书中深入浅出得讲解了不少网飞独特的管理模式，如人才密度、放弃管控并且进行分布式管理等等很值得借鉴的经验。这些理念虽然不可能完全能够在不同的公司中进行复制，但Reed提供了很多完全不同的思考方式，来帮助大家了解了公司治理并非是一成不变的教条，而是需要拥抱不同的挑战。同时，书中不光是这些理念的堆砌，作者也囊括了十分丰富的案例来支撑这些论点。与同类型的很多管理经验书籍相比，本书很浅显易懂，并且非常适合需要对互联网公司运营有兴趣的管理人员。&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Oct 2022 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2022/10/15/netflix/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2022/10/15/netflix/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2022/10/15/netflix/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2022/10/15/netflix/</guid>
         
         
         <category>读书笔记,管理</category>
@@ -132,8 +278,8 @@
 &lt;p&gt;我们在这一篇文章中为大家阐述了三个工业级推荐系统的重要特征。这三个特征都有别于推荐系统的主流学术研究，但都是推荐系统应用到工业界产品中所需要思考的问题。我希望这三个特性所涵盖的三方面问题可以指导对工业级推荐系统产生更加有高度的认识，从而能够让我们对今后的研究工作有新的启发，起到抛砖引玉的作用。&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Oct 2020 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2020/10/04/industrial-recsys/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2020/10/04/industrial-recsys/</guid>
+        <link>http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2020/10/04/industrial-recsys/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2020/10/04/industrial-recsys/</guid>
         
         
         <category>推荐系统</category>
@@ -276,8 +422,8 @@
 &lt;p&gt;这本书可以说是作为技术管理人的经典入门的参考书。作者Lara Hogan作为在工业界有丰富经验的技术经理人写作的次数可以说是有非常强的实战指导价值。书中有不少可以直接拿来用的技巧、模板和方法。同时，书中的一些案例也是来源于实际工作。与同类型的&lt;a href=&quot;http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/&quot;&gt;《经理人之路——技术领袖启航成长与变化的参考书》&lt;/a&gt;相比，本书更加短小精悍，并且非常适合需要对技术管理快速入门的初级技术管理人员。从结构上看，全书的五个章节都相对独立但又和在序章中讲到的团队的发展历程的几个阶段有着紧密的联系。建议对技术管理有兴趣的读者精读。&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Jul 2020 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2020/07/09/resilient-management/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2020/07/09/resilient-management/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2020/07/09/resilient-management/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2020/07/09/resilient-management/</guid>
         
         
         <category>读书笔记,管理</category>
@@ -400,8 +546,8 @@
 &lt;p&gt;这本书可以说是作为机器学习入门的一个参考教材。和大多数希望涵盖众多内容的机器学习通用教材相比，本书可以说是短小精悍，而且专注在机器学习、特别是学习理论（Learning Theory）方面最基本的介绍。整本书的行文非常通顺而且理论证明部分也毫不晦涩，非常适合有了一定机器学习基础，又希望能够在理论上有所了解的工程师和数据科学家。&lt;/p&gt;
 </description>
         <pubDate>Thu, 25 Jun 2020 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data/</guid>
         
         
         <category>读书笔记,机器学习,教材</category>
@@ -525,8 +671,8 @@
 &lt;p&gt;这本书可以说是作为数据科学家、机器学习工程师、产品经理以及一切对于在线可控实验有兴趣的研发人员“宝典”级别的参考书。全书包含了丰富的理论基础、实践指导以及案例分析，是一本难能可贵的集科普与进阶为一体的技术书籍。三位作者，特别是第一作者Ron在微软多年从事在线可控实验研发和领导工作的经历，使得这本书从某种意义上成为了他对这些年工作的一种总结之作。本书高阶部分的内容可以直接连接到当前研究和实践的热点内容，可以使程度较高的读者也能有比较享受的阅读体验。总体而言，本书可以作为可以反复阅读的业界经典之作。&lt;/p&gt;
 </description>
         <pubDate>Fri, 08 May 2020 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E5%9C%A8%E7%BA%BF%E5%AE%9E%E9%AA%8C/2020/05/08/online-tests/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E5%9C%A8%E7%BA%BF%E5%AE%9E%E9%AA%8C/2020/05/08/online-tests/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E5%9C%A8%E7%BA%BF%E5%AE%9E%E9%AA%8C/2020/05/08/online-tests/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E5%9C%A8%E7%BA%BF%E5%AE%9E%E9%AA%8C/2020/05/08/online-tests/</guid>
         
         
         <category>读书笔记,在线实验</category>
@@ -663,8 +809,8 @@
 &lt;p&gt;这本书可以说是作为技术管理人的“宝典”级别的职场参考书。因为作者卡米尔相对丰富的职业经理人晋升经历，因此这本书中提供的很多经验之谈都相当接地气并且有极高的参考价值。与更加通用的管理书籍相比，此书专注于科技公司的技术管理场景，因而对于有心于技术管理职场发展的各层级技术人员和技术管理人来说，这本书都能够提供不小的帮助。整本书的结构上来看，主要是相对比较松散组织起的四大块内容，以及穿插的各种技巧，因此可能在宏观上缺乏一定的架构，所以，本书可以作为可以反复阅读的经验总结之作。&lt;/p&gt;
 </description>
         <pubDate>Wed, 25 Dec 2019 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/</guid>
         
         
         <category>读书笔记,管理</category>
@@ -718,8 +864,8 @@
 &lt;p&gt;Aaditya在讲座中回顾了内外次序的重要历史文献。&lt;/p&gt;
 </description>
         <pubDate>Mon, 02 Sep 2019 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2019/09/02/kdd-sequencial/</guid>
         
         
         <category>读论文</category>
@@ -775,8 +921,8 @@
 &lt;p&gt;其中，$\alpha \in [0, 1]$和$\beta \in [0, 1]$，并且\(\alpha + \beta &amp;lt;1\)。作者们认为，这个新的损失函数可以解决之前提出的问题。针对这个新的目标函数，文章提出了详细的优化算法，这里就不赘述了。作者们提出的模型在MovieLens、Netflix以及Amazon的数据集上都要优于不使用排序的纯矩阵分解模型以及一般的协同排序算法。&lt;/p&gt;
 </description>
         <pubDate>Sat, 01 Dec 2018 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/12/01/cikm2018-pr/</guid>
         
         
         <category>读论文</category>
@@ -877,44 +1023,8 @@
 &lt;p&gt;“排序学习”（Learning to Rank）是不是一个已经完全被研究过的领域呢？答案当然不是。这篇论文就是尝试在一个似乎已经被反复研究过的领域里找到一些新的知识。这篇论文的看点主要是使用了一种目标函数对已有的排序指标例如AUC、NDCG、MAP、MRR等进行了高度总结。另外，这篇文章提出，传统上，我们在优化这些方法或者这些指标的时候，并不是直接去优化这些指标，而是优化这些指标的一些“代理”（Proxy），而就是这些代理可能出了问题，使得最后的结果有可能会有很大的偏差。于是，这篇文章提出了一种直接优化目标函数的方法。&lt;/p&gt;
 </description>
         <pubDate>Fri, 25 May 2018 00:00:00 -0700</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</guid>
-        
-        
-        <category>读论文</category>
-        
-      </item>
-    
-      <item>
-        <title>Facebook的应用机器学习平台</title>
-        <description>&lt;p&gt;我们在这里对Facebook应用机器学习（Applied Machine Learning）组发布的文章&lt;a href=&quot;https://research.fb.com/publications/applied-machine-learning-at-facebook-a-datacenter-infrastructure-perspective/&quot;&gt;Applied Machine Learning at Facebook: A Datacenter Infrastructure Perspective&lt;/a&gt;进行一个简单的分析解读。这篇文章可以让我们对Facebook里机器学习平台以及各个产品应用这个平台的情况有一个很不错的了解。&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://research.fb.com/wp-content/uploads/2017/12/hpca-2018-facebook.pdf&quot;&gt;全文PDF&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;这篇文章的作者群来自Facebook的17位工程师和科学家。这些人可能仅仅是整个平台的骨干成员。可以看出整个Facebook的机器学习平台是一个有非常多人协作搭建的复杂环境。&lt;/p&gt;
-
-&lt;p&gt;这篇文章可以说是帮助外界解惑了很多迷思或者说是误解。同时，也给了大家一个学习大型互联网公司构建机器学习平台的机会。文章首先提出了一系列的重要观察：&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Facebook有很多机器学习的应用场景。计算机视觉的应用仅仅是一个小部分。&lt;/li&gt;
-  &lt;li&gt;Facebook有一个很丰富的机器学习库，包括Support Vector Machines、Logistic Regression、GBDT、MultiLayer Perceptron、CNN和RNN。&lt;/li&gt;
-  &lt;li&gt;Facebook目前的机器学习场景同时利用GPU和CPU。在训练的时候，有很多是根据需要使用GPU和CPU，但是在Inference的时候，绝大多数还是使用CPU。&lt;/li&gt;
-  &lt;li&gt;Facebook的机器学习架构很在乎分布式训练。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;文章中列举了一些主要的Facebook机器学习应用场景包括我们熟知的News Feed、Ads和Search以外，还包括一些不那么为人知的应用，如Sigma（Facebook内部的Anomaly Detection的框架）、Lumos（看似是Image的Embedding和信息提取工具）、Facer（Facebook人脸识别框架）、Language Translation（顾名思义，就是一个语言翻译的平台）以及Speech Recognition（顾名思义，一个语音识别的平台）。由此可见，机器学习在Facebook里已经有了很广泛的应用。&lt;/p&gt;
-
-&lt;p&gt;那么，这些应用究竟在使用什么模型呢？Facer在使用SVM。Sigma在使用GBDT。Ads、News Feed和Sigma都在使用MLP。而Lumos、Facer在使用CNN。Text Understanding、Translation、Speech Recognition在使用RNN。&lt;/p&gt;
-
-&lt;p&gt;对于深度学习框架方面，目前Facebook支持两个框架：Caffe2和PyTorch。它们分别是生产环境和研究环境。作者们阐述了一下为什么要让这两个环境各不同。简而言之就是这两个环境的需求不用，一个要求稳定高效，一个要求能够灵活多变。当然，作者们也看到了多个深度学习框架带来的潜在问题。于是作者们提到了一个叫做Open Neural Network Exchange（ONNX）的交换格式。想来这个交换格式就是为了加快从一个框架到另外一个框架的转换速度。&lt;/p&gt;
-
-&lt;p&gt;从模型训练的时效性来看，有些应用的训练是每天，比如News Feed，而Search是每个小时，而其他应用则有些是每个星期或者每好几个月。而在Inference来看，第一，作者们提到了，不同的应用有可能需要不同的Inference的架构（Architecture）。同时，作者们还提到了并不是一开始就需要最精确的预测，有时候可以先展现给用户看没那么精确的结果，然后更加精确的结果可以算好以后再推给用户。&lt;/p&gt;
-
-&lt;p&gt;这篇文章还有很多细节的点值得关注。总之，如果你对机器学习在大型互联网公司的应用有兴趣，并且也想知道平台、软硬件的整体架构信息，这篇文章是一个不错的阅读材料。&lt;/p&gt;
-</description>
-        <pubDate>Fri, 22 Dec 2017 00:00:00 -0800</pubDate>
-        <link>http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml/</link>
-        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E8%AE%BA%E6%96%87/2017/12/22/facebook-ml/</guid>
+        <link>http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</link>
+        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E8%AE%BA%E6%96%87/2018/05/25/aistats2018/</guid>
         
         
         <category>读论文</category>

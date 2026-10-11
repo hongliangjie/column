@@ -3,11 +3,121 @@
   <channel>
     <title>期望最大化（洪亮劼的专栏）</title>
     <description>Nokia全球副总裁、前LinkedIn工程总监、前Etsy工程总监、雅虎研究院高级研发经理；长期从事人工智能和机器学习在工业界广泛落地的研究和实践工作；这是一个分享技术、管理、团队和业界思考的专栏。</description>
-    <link>http://column.hongliangjie.com/</link>
-    <atom:link href="http://column.hongliangjie.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 11 Oct 2026 13:53:28 -0700</pubDate>
-    <lastBuildDate>Sun, 11 Oct 2026 13:53:28 -0700</lastBuildDate>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 11 Oct 2026 14:25:25 -0700</pubDate>
+    <lastBuildDate>Sun, 11 Oct 2026 14:25:25 -0700</lastBuildDate>
     <generator>Jekyll v3.9.5</generator>
+    
+      <item>
+        <title>我在诺基亚搭企业级AI Harness</title>
+        <description>&lt;p&gt;从 0 到 3 千用户数，100 天的搭建复盘。5 月 13 日，我们给诺基亚的工程师推出了企业级 AI Harness（AI 开发驾驭平台）的第一版。上线第 100 天，约 2500 名工程师在用。到今天，已经 3000+ 了。中间发了 9 个版本，从 v1 一路干到 v3。这篇想聊聊我们是怎么做到的。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/nokia-ai-harness-growth.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;先说我们到底做了啥&quot;&gt;先说我们到底做了啥&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;p&gt;“企业级 Harness”听着挺虚，说白了就三块：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;市场（Marketplace）&lt;/strong&gt;：600 多个智能体（agents）、工具（tools）和技能（skills），覆盖诺基亚整个产品研发全生命周期（PDLC），从产品定义、设计，到写代码、测试、部署，甚至更后面。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;效能平台（Efficiency Platform）&lt;/strong&gt;：用遥测数据（telemetry）、技能优化（skill optimization）、定制的电信行业模型，盯着 AI 到底用得好不好，并且引导、规范怎么用。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;智能体控制平面（Agent Control Plane）&lt;/strong&gt;：工程师不用懂底层的”管道”，就能把这 600 多个资产编排（orchestrate）、运行、部署起来。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;三块合在一起，就是把工程师和他们真实的开发工作流接上 AI 的那一层。&lt;/p&gt;
+
+&lt;p&gt;下面三点心得，没有一条是关于模型的 :)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;心得一别指望用老的组织架构交付-ai&quot;&gt;心得一：别指望用老的组织架构交付 AI&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;!-- 配图：待定 --&gt;
+
+&lt;p&gt;这是我最先意识到的、也最不舒服的一点：按我们原来的团队结构和运作方式，根本做不出 AI 产品和系统。&lt;/p&gt;
+
+&lt;p&gt;问题不光是人才，是思维和设计。人在固定的章程、范围、边界里干活，每个新想法冒出来，第一句话都是”这归谁管”，而不是”用户要什么”。在一个每个月都在变的领域，这是要命的。&lt;/p&gt;
+
+&lt;p&gt;所以我把组织从头重搭了，围绕两类很不一样的人。&lt;/p&gt;
+
+&lt;h3 id=&quot;ai-构建者ai-builders&quot;&gt;AI 构建者（AI Builders）&lt;/h3&gt;
+
+&lt;p&gt;带头的是通才型产品负责人，懂数据、懂系统、对结果负责。手下是真正的全栈（full-stack）工程师。一个人能把想法从产品定义、设计、架构、开发、测试、上线一路带到底，上线后还接着管。日常最大的变化是：对齐、路演少了，真正动手干的多了。好几个合作伙伴都惊讶，这么点人，几个月就把市场、效能平台、控制平面都做出来了。&lt;/p&gt;
+
+&lt;h3 id=&quot;应用研究员applied-researchers&quot;&gt;应用研究员（Applied Researchers）&lt;/h3&gt;
+
+&lt;p&gt;和构建者的负责人坐在一起，但他们不是学院派，是做产品、做系统的研究者。要判断产品往哪走，哪些想法现在就该开始，给三个月、六个月后的项目埋种子。我们定制的电信模型，就是一颗长成了平台核心的种子。我还要求研究员直接坐进构建者团队一起做项目。研究不落到产品上，在这套模式里活不下去，也不该活下去。&lt;/p&gt;
+
+&lt;p&gt;这就是我说的：要把 R&amp;amp;D 里的”R”（研究）和”D”（开发）都救回来。这些年很多研发组织悄悄变成了几乎只剩”D”，照着路线图执行。AI 时代，奖励的是在同一个房间里同时做好这两件事的团队。&lt;/p&gt;
+
+&lt;p&gt;这些人也不是现成的，市场上几乎找不到。过去一年，我招了、也带出了一小批很棒的负责人，陪我做这场 AI 原生（AI-native）的实验。今年秋天，我们看到结果了。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;心得二ai-系统是产品product不是工具tool&quot;&gt;心得二：AI 系统是产品（Product），不是工具（Tool）&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;!-- 配图：待定 --&gt;
+
+&lt;p&gt;企业 AI 里最常见的误区，就是把 AI 系统当工具。&lt;/p&gt;
+
+&lt;p&gt;工具的逻辑是：用途固定、范围固定，做完交付、转身走人。这和旧组织架构是同一种障碍，只是换了件外衣。&lt;/p&gt;
+
+&lt;p&gt;产品不一样。产品是为了解决用户的痛点而存在的，痛点变了（有时变得很快），产品就得跟着变。&lt;/p&gt;
+
+&lt;p&gt;我们 Harness 里每个重要的想法，都是从观察开发者哪里疼开始的：为什么现有的平台和工具补不上这个缺口？而不是从”这个模型能干嘛”开始。&lt;/p&gt;
+
+&lt;p&gt;然后，我们就按产品的方式来运营：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;看格局&lt;/strong&gt;：每次大版本发布前都做竞品分析（competitive review），搞清楚自己的定位，既和公司内部的方案比，也和市场上的比。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;泡在数据里&lt;/strong&gt;：每天看用户数和完整的漏斗（funnel），从第一次点击、转化（conversion）到重复使用，我自己也看。我盯得最紧的不是总用户数，而是有多少人会一直回来：现在 93% 的用户是活跃的。工程师不会因为”上面让用”就一直用，只会因为真解决了问题才留下。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;自建增长引擎&lt;/strong&gt;：做了一个新的通知平台（notification platform），直连用户和系统。借鉴了消费互联网的用户增长经验，给不同人群（cohort）写不同的消息，结果成了拉动采用率最有效的杠杆之一。&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;自己先用（Dogfooding）&lt;/strong&gt;：每个版本我都是第一批测试用户。开会我会让负责人和工程师直接把线上产品投屏演示，别讲 PPT。产品文化，得从领导者自己用产品开始。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;心得三每周都和用户待在一个房间里&quot;&gt;心得三：每周都和用户待在一个房间里&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;!-- 配图：待定 --&gt;
+
+&lt;p&gt;今年年初，我发起了每周一的 AI 论坛（AI Forum），全公司几百名工程师都能来。&lt;/p&gt;
+
+&lt;p&gt;形式特别简单，工程师演示（demo）自己用 AI 做出的真实成果。不看纯 PPT，不念状态汇报。我要求大家少用幻灯片，没错，PPT 页数太多的时候，我不止一次打断过演讲的同事。&lt;/p&gt;
+
+&lt;p&gt;这个论坛很快就不只是个展示会了，它成了我们的”神经系统”。每周都能知道谁是重度用户（heavy users）、大家总在问什么、卡在了哪。这些信号直接回流到我们要做的东西里。&lt;/p&gt;
+
+&lt;p&gt;后来它也成了我们的发布渠道：9 个版本，全都是先在这儿发布、演示的，台下坐的就是真正要用它的人。&lt;/p&gt;
+
+&lt;p&gt;我给团队的要求只有一句：快速迭代，往前走。不到五个月从 v1 到 v3，前提是你敢转向。有时候意味着要做狠心的决定：用户数据说明某个方向没解决真痛点，哪怕我们再喜欢，也停。数据会说话，我们认真听。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;结语这个赛道比你看到的开阔&quot;&gt;结语：这个赛道，比你看到的开阔&lt;/h2&gt;
+&lt;hr /&gt;
+&lt;!-- 配图：待定 --&gt;
+
+&lt;p&gt;在企业级 AI 系统的最前线搭东西，是我职业生涯里最过瘾的经历之一。&lt;/p&gt;
+
+&lt;p&gt;说个反直觉的：每周都有一堆 AI 平台和工具发布，很容易让人觉得”已经够挤了，没啥可做了”。从外面看，确实是这样。&lt;/p&gt;
+
+&lt;p&gt;但从里面看，完全不是。每家正在做 AI 转型的大公司，都有自己一堆很具体、很场景化的痛点，现成工具没有一个能完全搞定。我们那 600 多个资产之所以存在，就是因为诺基亚的工程师需要市面上没有的东西，比如贴合我们造产品方式的电信专属工作流（telecom-specific workflows）。只要你肯盯着这些痛点看，要做现代 AI 产品和系统的空间，大得很。&lt;/p&gt;
+
+&lt;p&gt;这件事不是我们单打独斗做成的。感谢一起共建的伙伴：Cursor、Google、AWS 和 AG2，一路上学到很多。&lt;/p&gt;
+
+&lt;p&gt;最后问一句：如果你也在大公司里做 AI，你觉得更难的是技术，还是组织？&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Sat, 10 Oct 2026 00:00:00 -0700</pubDate>
+        <link>http://localhost:4000/%E7%AE%A1%E7%90%86/2026/10/10/nokia-enterprise-ai-harness/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E7%AE%A1%E7%90%86/2026/10/10/nokia-enterprise-ai-harness/</guid>
+        
+        
+        <category>管理</category>
+        
+      </item>
     
       <item>
         <title>工业界论文该不该上线？</title>
@@ -204,8 +314,8 @@
 &lt;p&gt;这不是工业界单独能解决的问题。但工业界是最有能力开始改变的一方。&lt;/p&gt;
 </description>
         <pubDate>Sun, 10 May 2026 00:00:00 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E7%A0%94%E7%A9%B6/2026/05/10/industry-paper-legitimacy/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E7%A0%94%E7%A9%B6/2026/05/10/industry-paper-legitimacy/</guid>
+        <link>http://localhost:4000/%E7%A0%94%E7%A9%B6/2026/05/10/industry-paper-legitimacy/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E7%A0%94%E7%A9%B6/2026/05/10/industry-paper-legitimacy/</guid>
         
         
         <category>研究</category>
@@ -340,8 +450,8 @@
 &lt;hr /&gt;
 </description>
         <pubDate>Sat, 02 May 2026 00:00:00 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2026/05/02/ai-as-service/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2026/05/02/ai-as-service/</guid>
+        <link>http://localhost:4000/%E7%AE%A1%E7%90%86/2026/05/02/ai-as-service/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E7%AE%A1%E7%90%86/2026/05/02/ai-as-service/</guid>
         
         
         <category>管理</category>
@@ -571,8 +681,8 @@
 &lt;p&gt;这才是在 AI 时代真正可持续的竞争优势。不是谁的模型更大，不是谁的工程师更多，而是谁的研究和产品之间，有一条真正跑通了的知识飞轮。&lt;/p&gt;
 </description>
         <pubDate>Sat, 25 Apr 2026 00:00:00 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2026/04/25/ai_end-to-end/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2026/04/25/ai_end-to-end/</guid>
+        <link>http://localhost:4000/%E7%AE%A1%E7%90%86/2026/04/25/ai_end-to-end/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E7%AE%A1%E7%90%86/2026/04/25/ai_end-to-end/</guid>
         
         
         <category>管理</category>
@@ -717,8 +827,8 @@
 &lt;p&gt;这本书可以说是作为技术管理人的经典入门的参考书。作者Patrick Lencioni作为在工业界有丰富经验的技术经理人所写作的本书可以说是有非常强的实战指导价值。书中有不少可以直接拿来用的技巧、模板和方法。同时，书中的一些案例也是来源于实际工作。与同类型的《经理人之路》相比，本书更加短小精悍，并且非常适合需要对技术管理快速入门的初级技术管理人员。从结构上看，全书的五个章节都相对独立但又和在序章中讲到的团队的发展历程的几个阶段有着紧密的联系。建议对技术管理有兴趣的读者精读。&lt;/p&gt;
 </description>
         <pubDate>Sat, 16 Aug 2025 00:00:00 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2025/08/16/five/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2025/08/16/five/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2025/08/16/five/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2025/08/16/five/</guid>
         
         
         <category>读书笔记,管理</category>
@@ -778,8 +888,8 @@
 &lt;p&gt;这本书可以说是作为洞察网飞管理模式以及熟悉其CEO思维模式的一本不可多得的好书。书中深入浅出得讲解了不少网飞独特的管理模式，如人才密度、放弃管控并且进行分布式管理等等很值得借鉴的经验。这些理念虽然不可能完全能够在不同的公司中进行复制，但Reed提供了很多完全不同的思考方式，来帮助大家了解了公司治理并非是一成不变的教条，而是需要拥抱不同的挑战。同时，书中不光是这些理念的堆砌，作者也囊括了十分丰富的案例来支撑这些论点。与同类型的很多管理经验书籍相比，本书很浅显易懂，并且非常适合需要对互联网公司运营有兴趣的管理人员。&lt;/p&gt;
 </description>
         <pubDate>Sat, 15 Oct 2022 00:00:00 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2022/10/15/netflix/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2022/10/15/netflix/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2022/10/15/netflix/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2022/10/15/netflix/</guid>
         
         
         <category>读书笔记,管理</category>
@@ -848,8 +958,8 @@
 &lt;p&gt;我们在这一篇文章中为大家阐述了三个工业级推荐系统的重要特征。这三个特征都有别于推荐系统的主流学术研究，但都是推荐系统应用到工业界产品中所需要思考的问题。我希望这三个特性所涵盖的三方面问题可以指导对工业级推荐系统产生更加有高度的认识，从而能够让我们对今后的研究工作有新的启发，起到抛砖引玉的作用。&lt;/p&gt;
 </description>
         <pubDate>Sun, 04 Oct 2020 00:00:00 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2020/10/04/industrial-recsys/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2020/10/04/industrial-recsys/</guid>
+        <link>http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2020/10/04/industrial-recsys/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2020/10/04/industrial-recsys/</guid>
         
         
         <category>推荐系统</category>
@@ -992,8 +1102,8 @@
 &lt;p&gt;这本书可以说是作为技术管理人的经典入门的参考书。作者Lara Hogan作为在工业界有丰富经验的技术经理人写作的次数可以说是有非常强的实战指导价值。书中有不少可以直接拿来用的技巧、模板和方法。同时，书中的一些案例也是来源于实际工作。与同类型的&lt;a href=&quot;http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/&quot;&gt;《经理人之路——技术领袖启航成长与变化的参考书》&lt;/a&gt;相比，本书更加短小精悍，并且非常适合需要对技术管理快速入门的初级技术管理人员。从结构上看，全书的五个章节都相对独立但又和在序章中讲到的团队的发展历程的几个阶段有着紧密的联系。建议对技术管理有兴趣的读者精读。&lt;/p&gt;
 </description>
         <pubDate>Thu, 09 Jul 2020 00:00:00 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2020/07/09/resilient-management/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2020/07/09/resilient-management/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2020/07/09/resilient-management/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2020/07/09/resilient-management/</guid>
         
         
         <category>读书笔记,管理</category>
@@ -1116,8 +1226,8 @@
 &lt;p&gt;这本书可以说是作为机器学习入门的一个参考教材。和大多数希望涵盖众多内容的机器学习通用教材相比，本书可以说是短小精悍，而且专注在机器学习、特别是学习理论（Learning Theory）方面最基本的介绍。整本书的行文非常通顺而且理论证明部分也毫不晦涩，非常适合有了一定机器学习基础，又希望能够在理论上有所了解的工程师和数据科学家。&lt;/p&gt;
 </description>
         <pubDate>Thu, 25 Jun 2020 00:00:00 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0,%E6%95%99%E6%9D%90/2020/06/25/learning-from-data/</guid>
         
         
         <category>读书笔记,机器学习,教材</category>
@@ -1241,149 +1351,11 @@
 &lt;p&gt;这本书可以说是作为数据科学家、机器学习工程师、产品经理以及一切对于在线可控实验有兴趣的研发人员“宝典”级别的参考书。全书包含了丰富的理论基础、实践指导以及案例分析，是一本难能可贵的集科普与进阶为一体的技术书籍。三位作者，特别是第一作者Ron在微软多年从事在线可控实验研发和领导工作的经历，使得这本书从某种意义上成为了他对这些年工作的一种总结之作。本书高阶部分的内容可以直接连接到当前研究和实践的热点内容，可以使程度较高的读者也能有比较享受的阅读体验。总体而言，本书可以作为可以反复阅读的业界经典之作。&lt;/p&gt;
 </description>
         <pubDate>Fri, 08 May 2020 00:00:00 -0700</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E5%9C%A8%E7%BA%BF%E5%AE%9E%E9%AA%8C/2020/05/08/online-tests/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E5%9C%A8%E7%BA%BF%E5%AE%9E%E9%AA%8C/2020/05/08/online-tests/</guid>
+        <link>http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E5%9C%A8%E7%BA%BF%E5%AE%9E%E9%AA%8C/2020/05/08/online-tests/</link>
+        <guid isPermaLink="true">http://localhost:4000/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E5%9C%A8%E7%BA%BF%E5%AE%9E%E9%AA%8C/2020/05/08/online-tests/</guid>
         
         
         <category>读书笔记,在线实验</category>
-        
-      </item>
-    
-      <item>
-        <title>《经理人之路——技术领袖启航成长与变化的参考书》总结</title>
-        <description>&lt;p&gt;今天我们要来总结技术管理书籍&lt;a href=&quot;https://www.amazon.com/Managers-Path-Leaders-Navigating-Growth/dp/1491973897&quot;&gt;The Manager’s Path – A Guide for Tech Leaders Navigating Growth &amp;amp; Change&lt;/a&gt;。这本书的作者是&lt;a href=&quot;https://en.wikipedia.org/wiki/Camille_Fournier&quot;&gt;卡米尔福尔聂尔（Camille Fournier）&lt;/a&gt;，其在技术管理领域有丰富的经验。全书是针对技术管理人在职场发展不同阶段所需技能以及面对诸多管理场景的经验总结，是技术管理领域不可多得的参考书籍。&lt;/p&gt;
-
-&lt;h2 id=&quot;作者简介&quot;&gt;作者简介&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/cf.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Camille_Fournier&quot;&gt;卡米尔福尔聂尔（Camille Fournier）&lt;/a&gt;从2017年起在对冲基金&lt;a href=&quot;https://en.wikipedia.org/wiki/Two_Sigma&quot;&gt;Two Sigma&lt;/a&gt;担任“董事总经理”（Managing Director）。之前在&lt;a href=&quot;https://en.wikipedia.org/wiki/Rent_the_Runway&quot;&gt;Rent The Runway&lt;/a&gt;历任总监、高级副总裁以及首席科技官等职务。其早年从卡内基梅隆大学毕业或计算机科学学士，毕业后在微软以及高盛任职。&lt;/p&gt;
-
-&lt;h2 id=&quot;全书结构&quot;&gt;全书结构&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;全书大体上可以分为以下这么四部分内容:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;第一部分，是对从“个人岗位”（Individual Contributor）向“管理岗位”（Managerial Contributor）转换过程的经验总结，面向的对象主要是有一定经验的技术人员，内容涵盖了“导师”（Mentor）和“技术负责人”（Tech Lead）。这部分内容是“技术管理”（Technical Management）的重要准备。在书中大体对应第二章、第三章和一部分第四章的内容。&lt;/li&gt;
-  &lt;li&gt;第二部分，是对“初级经理人”（Entry-Level Manager）的经验总结，面向的对象主要是“经理”（Manager）这一级别的职务。这一部分是“技术管理”的奠基石。在书中大体对应一部分第四章的内容和第五章的内容。&lt;/li&gt;
-  &lt;li&gt;第三部分，是对“中层经理人”（Manager of Managers）的经验总结。面向的对象主要是“资深经理”和“总监”这一级别的职务。这一部分是技术管理的重要进阶。在书中大体对应第六章和第七章的内容。&lt;/li&gt;
-  &lt;li&gt;第四部分，是对“高级经理人”（Senior Leaders）的经验总结，面向的对象主要是“首席科技官”（CTO）和“高级副总裁”（SVP）这一级别的职务。这一部分是技术管理的高级阶段。在书中大体对应第八章的内容。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;除了这四部分的主要内容以外，这本书的第一章主要是从“被管理”的角度讲如何和自己的经理打交道，可以说是非常有用的经验总结。而第九章，也就是最后一章，则讲了讲对于塑造团队和企业技术文化的一些经验之谈。&lt;/p&gt;
-
-&lt;h2 id=&quot;内容剖析&quot;&gt;内容剖析&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;我们接下来就针对书中的四个重点内容为大家进行剖析。&lt;/p&gt;
-
-&lt;h3 id=&quot;技术管理的准备&quot;&gt;技术管理的准备&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/mentor.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;要想胜任技术管理的岗位往往不是一蹴而就。从个人岗位到管理岗位有时候有着不可逾越的鸿沟。现实中的技术人员，特别是资深技术人员，通常情况下都在自身技术水平不断得到提升的基础上，希望能够对自己的管理能力也进行扩展，从而来试探自己是否有朝一日能够走上管理岗位。于是，在非管理岗位进行技术管理的技能培养和训练就显得尤其重要。&lt;/p&gt;
-
-&lt;p&gt;本书对于技术管理的准备阶段着重从“导师”和“技术负责人”这两个重要“角色”（Role）入手，来引导资深技术人员来理解“人员管理”（People Management）的入门技能。&lt;/p&gt;
-
-&lt;p&gt;另一方面，从中层经理人的角度来说，“导师”和“技术负责人”这两个角色也是考察资深技术人员是否具备转换为潜在“初级经理人”（所谓的内部提拔）的重要过度性角色。也就是说，把有一定资质的技术人员放在这样的角色上是相对风险较低得考察一个技术人员是否能够适应管理工作的重要方法。&lt;/p&gt;
-
-&lt;p&gt;“导师”这个角色往往比较简单。书中涵盖了两种“导师”关系：实习生导师和新员工导师。在这些初级的技术管理角色中，技术人员需要开始学习和掌握三种重要的管理技能（Skill）：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;聆听&lt;/strong&gt;（Listen）：“聆听”可以说是从简单技术岗位到管理岗位转换中非常难以驾驭的一个技能。同时，聆听是建立“共情”（Empathy），也就是另一个重要的管理技能，的重要步骤，或者说是第一步。培养“聆听”技能的核心在于“专注”。也就是说，“聆听”需要你专注于你所聆听对象目前在表达的事情。“聆听”的目的是了解对方所希望表达的内容和观点，而不是迅速切换到你自己的回应。另外，“聆听”的难点在于很多人并不善于表达自己的观点。于是，在“聆听”的过程中去真正理解对方的意图就变得尤为重要。这种时候，通过反复问问题的方式来调整对于意图和内容的理解是一种有效的手段。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;沟通&lt;/strong&gt;（Communication）：“沟通”是指对于沟通对象明确表达或者明确传达某种信息。沟通最忌讳预设立场。也就是说，不要预期沟通对象在没有沟通的情况下依然知道或者能够猜测到你所希望表达的信息。“沟通”的目的是明确表达出你对于对方的期待。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;调整&lt;/strong&gt;（Calibration）：“调整”是指通过“聆听”和“沟通”来针对目前的状况调整计划。有很多情况是你实现意料不到的：你的指导对象也许比你想象得要慢；或许项目的进行不如你的预期；或许你的指导对象完全依靠自己完成了任务，等等。在这些意料之外的情况发生的时候，都需要你针对这些情况进行调整，并且能够和你的指导对象进行沟通。这种调整往往有一定周期性，比如每天或者每周。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;相较于“导师”，“技术负责人”则更像一个完整的“初级经理人”。在很多公司，“技术负责人”往往承担起很多经理的职责。值得注意的是，很多“技术负责人”也为团队中的年轻技术人员提供指导工作，起到“导师”的作用。&lt;/p&gt;
-
-&lt;p&gt;然而，“技术负责人”往往需要具备一些相较于“导师”而言更加高阶的技能：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;平衡&lt;/strong&gt;（Balance）：“技术负责人”要开始学会在诸多完全不同的任务之间平衡自己的精力和时间。在最开始的一些时间里，人们往往倾向于做自己熟悉的任务（例如编写代码）。然而要想能够在技术管理的路上前行，“技术负责人”要开始学习新的技能并且在自己并不是那么熟悉的领域（例如组织会议、指导更多的年轻技术人员）多花时间。于是，“平衡”就成为了一种重要的技能。另外一个通常需要平衡的关系就是自己写代码解决复杂问题和如何调动团队来合作解决问题。&lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;项目管理&lt;/strong&gt;（Project Management）：理解和掌握项目管理的精髓并不需要你成为“项目经理”（Project Manager）。这里所说的项目管理指的是如何把一个复杂的技术问题转换成为细致的多种任务同时能够对这些任务进行简单的分配和管理。更加高阶一些的项目管理技能需要“技术负责人”能够收集项目需求（Requirements）同时能够对项目的长度进行有效的估计。一个好的“技术负责人”更是能够发现目前项目进度的主要挑战（Challenge），并且能够带领团队进行技术攻坚。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;不管是“导师”还是“技术负责人”，作为一个资深技术人员，这两种角色都是让你能够开始学习和锻炼管理技能的重要过度角色。你可以审视自己是否喜欢这样的角色，是否真正愿意在技术管理的道路上继续前行。&lt;/p&gt;
-
-&lt;h3 id=&quot;初级经理人&quot;&gt;初级经理人&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/junior.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;在绝大多数科技公司，“初级经理人”一般指的是管理单一团队的技术经理人。单一团队的人数通常在三到十人不等。&lt;/p&gt;
-
-&lt;p&gt;从“初级经理人”开始，技术管理的一些重要技能开始把个人岗位和管理岗位完全地区分开：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;开始一段新的汇报关系：在之后的技术管理工作中，经常会产生新的汇报关系。如何对待这些新出现的汇报关系则成为了技术管理中的重要技能。书中提到了一系列重要手段。例如和新的汇报对象逐渐建立&lt;strong&gt;互信&lt;/strong&gt;。说到底好的管理还是建立在人与人的关系上的，而在西方管理学中一个核心的内容就是人与人的互信。再例如就是建立一个30天60天90天的计划从而为新的汇报关系之间提供一个清晰的预期。同时，在确立新的汇报关系的过程中，“聆听”和“沟通”技能也起着至关重要的作用。这些技能是为了和新的汇报关系慢慢建立一个反馈机制。&lt;/li&gt;
-  &lt;li&gt;一对一会议（1-1）：在这本书中，“一对一会议”的重要性被作者反复强调。“一对一会议”的安排（例如每周）和内容以及如何在这些会议中和汇报对象建立起稳健的反馈机制都是初级经理人需要掌握的重要人事管理的技能。书中还列举了不同类型的“一对一会议”诸如解决问题型、反馈型或者最新进展型。显然，要想在不同的情况下和汇报对象建立长久的关系，在不同类型的“一对一会议”之间熟练切换就成为了重要的手段。&lt;/li&gt;
-  &lt;li&gt;绩效反馈评定：对汇报关系进行绩效反馈以及评定是技术管理的核心组成部分。这项技能是之前提及的“初级经理人”有别于之前提及的“技术负责人”的重要标杆。书中提及了一系列实际的技巧，例如“使用实际的事例”、“还需要加强的领域需要专注”等。
-“初级经理人”一个非常重要的职责就是关注和协助团队成员的职业发展。很明显，不同公司不同行业的职级（Level）有区别。作为一线的“初级经理人”，你需要对团队中不同成员的晋升负责并且和他们一起提供一个完整的路线图。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;另外一个“初级经理人”需要开始学习的职责，就是管理员工的“离职”。“离职”分“主动离职”和“被动离职”（也就是俗称的“解雇”）。对于很多“初级经理人”而言，管理汇报对象的“离职”往往比想象中的要困难。这里关键的步骤是有效得建立起绩效的反馈机制以及比较详细的记录，从而为“离职”进行材料准备。&lt;/p&gt;
-
-&lt;p&gt;“初级经理人”的相对比较高阶的话题还包括：&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;观察和调试（Debug）团队：因为“技术经理人”不再是技术人员，需要利用新的技能和流程来对团队的整体绩效进行有效的评估。这里面包括的场景有团队的产出下降、团队有“人事混乱”（People Drama）、团队有合作问题等等。这里面的每一个场景都需要你建立一整套的机制来获取、筛选和处理信息，从而能够达到调试团队的目的。&lt;/li&gt;
-  &lt;li&gt;矛盾和分歧的处理：很快，“初级经理人”就会发现其周围充满了矛盾和分歧。这些矛盾和分歧有来自于团队内部的，有来自其他合作团队的，有来自于上层的，等等。如何在复杂的环境下处理这些矛盾和分歧就成为了“初级经理人”所要学习的技能。这些技能会在“高级经理人”的阶段变得更加关键。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;成为一个有效的“初级经理人”还需要对项目管理有更加高阶的提升，包括你要开始针对团队的短期和长期的任务有一个比较完整的理解以及理解公司的运作周期（每个季度的时间安排），从而使得你对项目的分配以及团队的产出和合作都有一个全新的更高层次的认知。&lt;/p&gt;
-
-&lt;h3 id=&quot;中层经理人&quot;&gt;中层经理人&lt;/h3&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/middle.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;在绝大多数科技公司，“中层经理人”一般指的是管理多个团队的技术经理人。这个时候，“中层经理人”所管理的多个子团队本身往往有一线的“初级经理人”。而“中层经理人”的职责则转移到如何管理好这些初级经理人以及通过这些“初级经理人”来对所有的多个团队进行间接的管理。管理多个团队是技术管理人从初级阶段向更加复杂的管理场景提升的重要标志。&lt;/p&gt;
-
-&lt;p&gt;书中认为“中层经理人”一项非常的技能是如何更加合理得管理自己的时间。的确，对于一个“中层经理人”来说，在某一个瞬间，都有太多的事情可以聚焦，那么如何专注在最需要的事情上就变得尤为重要。书中介绍了一种经典的时间管理方法，那就是把事情按照重要与否和紧急与否两个维度分为如下的四种类别：&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;重要而且紧急：一件事情如果是重要且紧急，那么这明显是当前需要专注的工作。尽管这样的分类方法有一定道理，作者提醒我们要注意在日常工作中把“显然”（Obvious）的工作当做是“紧急”（Urgent）的。例如，一个在日历上的会议邀请并不意味着这个会议就一定是紧急的事件。有时候，分清楚什么事情是否重要或者紧急并不是那么显然的事情。&lt;/li&gt;
-  &lt;li&gt;重要但不紧急：很多事情都可以归为这个类别。例如，写一份新的“职位描述”（Job Description），抑或是思考一个新的招聘计划。这类事情的一个特点就是如果一点不花时间去做，那么长期积累下来就会对你的工作产生负面影响。一个“中层经理人”需要利用“平衡”等技能来找到时间花在重要但不紧急的事情上。&lt;/li&gt;
-  &lt;li&gt;不重要且不紧急：这是很明显需要避免的一个类别。&lt;/li&gt;
-  &lt;li&gt;不重要但紧急：作者认为这个类别的事情都是潜在的“分心”（Distraction）。例如，很多会议都显得很紧急，但作为一个“中层经理人”是否需要参与这些会议是需要仔细拿捏的意见事情。还有类似电子邮件或者聊天工具（Slack）上面的信息，会显得很紧急。但这些事情并不一定需要你现在就去处理。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;在管理时间的基础上，作者提到了第二个“中层经理人”的重要技能“决策”（Decision）和“代理”（Delegation）。这个技能是中级经理人需要获取和发展的。类似于时间管理，作者按照经常与否和复杂与否两个维度，把事情的决策和代理分为了以下四个类别：&lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt;简单且不经常：这类事情的典型代表如运行一些每个季度需要的报表，或订会议的票等，一般需要你自己去做。主要的原因是这类事情不具备利用来培养团队“初级经理人”的目的。&lt;/li&gt;
-  &lt;li&gt;简单且经常：这类事情的典型代表如团队每日的例会、团队的进度报告等，一般需要你代理别人去做。一般来说，团队中的技术负责人或者一些资深技术人员都可以胜任这样的任务。&lt;/li&gt;
-  &lt;li&gt;复杂且经常：这类事情的典型代表如项目计划、系统设计或者是在“事故”（Outage）的处理中担任核心的任务，一般需要你小心得去代理给团队。这些任务可以认为是发展团队中核心成员的重要手段和工具。然而因为这些事情相对都比较复杂，因此在代理的过程中需要注意方式方法和速度。简单来说，就是不能贸然把这类事物都不假思索得代理给团队。&lt;/li&gt;
-  &lt;li&gt;复杂且不经常：这类事情的典型代表是写绩效评定、或者是建立一个新的招聘计划，一般来说需要你自己去做，但是也可以慢慢来代理给团队中未来的领袖。&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;学会如何平衡所有事物的决策和代理权是一个动态并且需要慢慢体会的技能。&lt;/p&gt;
-
-&lt;p&gt;对于“中层经理人”来说，第三个重要的技能就是需要策略性地说“不”。对于多团队管理来说，有太多的场景需要你来斟酌并且表达否定的决策。然而，这里面的问题是，很多时候，简单说“不”并不能解决问题，尤其是有矛盾和分歧的时候。书中介绍了一系列的“说不”的技巧。总结说来，这些技巧都是要在“说不”的情况下提供更多的“上下文”（Context）以及尝试创造一个“说不”以后的计划，而不是简单的“说不”。&lt;/p&gt;
-
-&lt;p&gt;我们在前面总结“初级经理人”的时候提及了“一对一会议”的重要性。当一个“中层经理人”开始管理多个团队时，与所有团队所有人进行“一对一会议”已经不现实，然而，书中还是强调了在这种新形势下的“一对一会议”，也就是“隔层会议”（Skip-Level Meetings）的必要性。总的来说，“隔层会议”是让你保持和一线员工有稳固联系的重要手段。通过这些“隔层会议”，你可以发现团队运行存在问题的蛛丝马迹。&lt;/p&gt;
-
-&lt;p&gt;最后，“中层经理人”还需要有效管理起各个团队的“初级经理人”。这些“初级经理人”有可能是完全的新手，也有可能是富有经验的技术管理者。对于这些人的管理最重要的有两点，那就是如何建立有效的调试机制来得知他们管理的团队是否是高效运行还是存在不少潜在的问题，另外设置有效的预期以及提供反馈都是非常重要的中层管理手段。&lt;/p&gt;
-
-&lt;p&gt;值得一提的是，“中层经理人”由于隔了一层“初级经理人”，因此对于团队的管控往往都是通过间接的手段，因此书中介绍的种种经验和技能都依赖于能够对初级经理人能够进行有效管理，因此“中层经理人”需要同时具备管理多个团队以及管理多个个人（也就是多个“初级经理人”）的技能和手段。这对经理人的要求明显高于初级经理人。&lt;/p&gt;
-
-&lt;h2 id=&quot;高级经理人&quot;&gt;高级经理人&lt;/h2&gt;
-&lt;hr /&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/senior.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;书中的“高级经理人”指的是“工程副总裁”（VP of Engineering）或者“首席技术官”（CTO）这样的职位。很显然，“高级经理人”需要相比于“中级经理人”和“初级经理人”而言完全不同的一整套技能。&lt;/p&gt;
-
-&lt;p&gt;书中提及的第一个重要技能就是如何对待“变化的优先级”（Changing Priorities）。这里提及的场景主要是指公司高层，例如CEO突然觉得公司应该专注于新的事情或者目前事情的优先级发生了变化。这些变化有可能并不是深思熟虑的结果。那么，如何带领一个复杂的机构（这时候已经不是单单几个团队了）来应对优先级的变化就是高级经理人往往需要掌握的技能。优先级的改变有可能对团队产生极大负面的效果。每个团队都潜在有一个常常的任务列表。很多项目之间还有依赖关系。因此，转变一个机构的优先级，并且能够有一个匹配的计划就变得尤为关键。另外，“沟通”在这种场景下也是不可缺少的重要技能。&lt;/p&gt;
-
-&lt;p&gt;作为“高级经理人”的第二个重要技能就是如何设置“战略”（Strategy）。向董事会成员、或者是管理高层讲述、汇报部门甚至是公司在某一个方面的战略思想将成为“高级经理人”的一项核心工作。那么，如果能够建立战略的思路以及如何表述这样的战略就成为了高级经理人阶段的新技能。再之前的中层以及初级经理人阶段，主要是强调在执行的层面。&lt;/p&gt;
-
-&lt;p&gt;最后，作为“高级经理人”，一个非常重要也是一个新的技能领域，那就是如何与诸多“跨部门”（Cross-Functional）“高级经理人”协作。尽管在科技公司中，有不少项目是跨部门协作的，例如需要设计、前台、后台、算法的齐心协力，然而在“高级经理人”阶段，你往往代表了一整个职能部门（例如工程副总裁或者是首席科技官代表了整个工程研发团队）与其他职能部门，例如产品、法务、人事，在整个公司的层面上进行合作。这势必是对你沟通表达能力以及协作能力的全新考验。&lt;/p&gt;
-
-&lt;h2 id=&quot;总结点评&quot;&gt;总结点评&lt;/h2&gt;
-&lt;hr /&gt;
-
-&lt;p&gt;这本书可以说是作为技术管理人的“宝典”级别的职场参考书。因为作者卡米尔相对丰富的职业经理人晋升经历，因此这本书中提供的很多经验之谈都相当接地气并且有极高的参考价值。与更加通用的管理书籍相比，此书专注于科技公司的技术管理场景，因而对于有心于技术管理职场发展的各层级技术人员和技术管理人来说，这本书都能够提供不小的帮助。整本书的结构上来看，主要是相对比较松散组织起的四大块内容，以及穿插的各种技巧，因此可能在宏观上缺乏一定的架构，所以，本书可以作为可以反复阅读的经验总结之作。&lt;/p&gt;
-</description>
-        <pubDate>Wed, 25 Dec 2019 00:00:00 -0800</pubDate>
-        <link>http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/</link>
-        <guid isPermaLink="true">http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/</guid>
-        
-        
-        <category>读书笔记,管理</category>
         
       </item>
     

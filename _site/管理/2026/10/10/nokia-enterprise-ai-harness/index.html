@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      我在诺基亚搭企业级AI Harness &middot; 期望最大化（洪亮劼的专栏）
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/lanyon.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700%7CPT+Sans:400">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5L7WRC7PQE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5L7WRC7PQE');
+</script>
+  <script
+    type="text/javascript"
+    charset="utf-8"
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+  >
+  </script>
+  <script
+    type="text/javascript"
+    charset="utf-8"
+    src="https://vincenttam.github.io/javascripts/MathJaxLocal.js"
+  >
+  </script>
+</head>
+
+  <body class="theme-base-08 sidebar-overlay">
+
+    <!-- Target for toggling the sidebar `.sidebar-checkbox` is for regular
+     styles, `#sidebar-checkbox` for behavior. -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <p>Nokia全球副总裁、前LinkedIn工程总监、前Etsy工程总监、雅虎研究院高级研发经理；长期从事人工智能和机器学习在工业界广泛落地的研究和实践工作；这是一个分享技术、管理、团队和业界思考的专栏。</p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item" href="/">专栏首页</a>
+
+    
+
+    
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <a class="sidebar-nav-item" href="/about/">关于</a>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+    
+      
+    
+    <span class="sidebar-nav-item">当前版本: v1.0.0</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; 2026。保留全部权利。<a href="../atom.xml">RSS</a>
+    </p>
+  </div>
+</div>
+
+
+    <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+    <div class="wrap">
+      <div class="masthead">
+        <div class="container">
+          <h3 class="masthead-title">
+            <a href="/" title="Home">期望最大化（洪亮劼的专栏）</a>
+            <small>分享技术、管理、团队和业界的思考</small>
+          </h3>
+        </div>
+      </div>
+
+      <div class="container content">
+        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<div class="post" style="overflow-x: scroll;">
+  <h1 class="post-title">我在诺基亚搭企业级AI Harness</h1>
+  <span class="post-date">
+    2026年
+      10月
+      10号</span>
+  <p>从 0 到 3 千用户数，100 天的搭建复盘。5 月 13 日，我们给诺基亚的工程师推出了企业级 AI Harness（AI 开发驾驭平台）的第一版。上线第 100 天，约 2500 名工程师在用。到今天，已经 3000+ 了。中间发了 9 个版本，从 v1 一路干到 v3。这篇想聊聊我们是怎么做到的。</p>
+
+<p><img src="/assets/nokia-ai-harness-growth.png" alt="" /></p>
+
+<h2 id="先说我们到底做了啥">先说我们到底做了啥</h2>
+<hr />
+<p>“企业级 Harness”听着挺虚，说白了就三块：</p>
+
+<ul>
+  <li><strong>市场（Marketplace）</strong>：600 多个智能体（agents）、工具（tools）和技能（skills），覆盖诺基亚整个产品研发全生命周期（PDLC），从产品定义、设计，到写代码、测试、部署，甚至更后面。</li>
+  <li><strong>效能平台（Efficiency Platform）</strong>：用遥测数据（telemetry）、技能优化（skill optimization）、定制的电信行业模型，盯着 AI 到底用得好不好，并且引导、规范怎么用。</li>
+  <li><strong>智能体控制平面（Agent Control Plane）</strong>：工程师不用懂底层的”管道”，就能把这 600 多个资产编排（orchestrate）、运行、部署起来。</li>
+</ul>
+
+<p>三块合在一起，就是把工程师和他们真实的开发工作流接上 AI 的那一层。</p>
+
+<p>下面三点心得，没有一条是关于模型的 :)</p>
+
+<hr />
+
+<h2 id="心得一别指望用老的组织架构交付-ai">心得一：别指望用老的组织架构交付 AI</h2>
+<hr />
+<!-- 配图：待定 -->
+
+<p>这是我最先意识到的、也最不舒服的一点：按我们原来的团队结构和运作方式，根本做不出 AI 产品和系统。</p>
+
+<p>问题不光是人才，是思维和设计。人在固定的章程、范围、边界里干活，每个新想法冒出来，第一句话都是”这归谁管”，而不是”用户要什么”。在一个每个月都在变的领域，这是要命的。</p>
+
+<p>所以我把组织从头重搭了，围绕两类很不一样的人。</p>
+
+<h3 id="ai-构建者ai-builders">AI 构建者（AI Builders）</h3>
+
+<p>带头的是通才型产品负责人，懂数据、懂系统、对结果负责。手下是真正的全栈（full-stack）工程师。一个人能把想法从产品定义、设计、架构、开发、测试、上线一路带到底，上线后还接着管。日常最大的变化是：对齐、路演少了，真正动手干的多了。好几个合作伙伴都惊讶，这么点人，几个月就把市场、效能平台、控制平面都做出来了。</p>
+
+<h3 id="应用研究员applied-researchers">应用研究员（Applied Researchers）</h3>
+
+<p>和构建者的负责人坐在一起，但他们不是学院派，是做产品、做系统的研究者。要判断产品往哪走，哪些想法现在就该开始，给三个月、六个月后的项目埋种子。我们定制的电信模型，就是一颗长成了平台核心的种子。我还要求研究员直接坐进构建者团队一起做项目。研究不落到产品上，在这套模式里活不下去，也不该活下去。</p>
+
+<p>这就是我说的：要把 R&amp;D 里的”R”（研究）和”D”（开发）都救回来。这些年很多研发组织悄悄变成了几乎只剩”D”，照着路线图执行。AI 时代，奖励的是在同一个房间里同时做好这两件事的团队。</p>
+
+<p>这些人也不是现成的，市场上几乎找不到。过去一年，我招了、也带出了一小批很棒的负责人，陪我做这场 AI 原生（AI-native）的实验。今年秋天，我们看到结果了。</p>
+
+<hr />
+
+<h2 id="心得二ai-系统是产品product不是工具tool">心得二：AI 系统是产品（Product），不是工具（Tool）</h2>
+<hr />
+<!-- 配图：待定 -->
+
+<p>企业 AI 里最常见的误区，就是把 AI 系统当工具。</p>
+
+<p>工具的逻辑是：用途固定、范围固定，做完交付、转身走人。这和旧组织架构是同一种障碍，只是换了件外衣。</p>
+
+<p>产品不一样。产品是为了解决用户的痛点而存在的，痛点变了（有时变得很快），产品就得跟着变。</p>
+
+<p>我们 Harness 里每个重要的想法，都是从观察开发者哪里疼开始的：为什么现有的平台和工具补不上这个缺口？而不是从”这个模型能干嘛”开始。</p>
+
+<p>然后，我们就按产品的方式来运营：</p>
+
+<ul>
+  <li><strong>看格局</strong>：每次大版本发布前都做竞品分析（competitive review），搞清楚自己的定位，既和公司内部的方案比，也和市场上的比。</li>
+  <li><strong>泡在数据里</strong>：每天看用户数和完整的漏斗（funnel），从第一次点击、转化（conversion）到重复使用，我自己也看。我盯得最紧的不是总用户数，而是有多少人会一直回来：现在 93% 的用户是活跃的。工程师不会因为”上面让用”就一直用，只会因为真解决了问题才留下。</li>
+  <li><strong>自建增长引擎</strong>：做了一个新的通知平台（notification platform），直连用户和系统。借鉴了消费互联网的用户增长经验，给不同人群（cohort）写不同的消息，结果成了拉动采用率最有效的杠杆之一。</li>
+  <li><strong>自己先用（Dogfooding）</strong>：每个版本我都是第一批测试用户。开会我会让负责人和工程师直接把线上产品投屏演示，别讲 PPT。产品文化，得从领导者自己用产品开始。</li>
+</ul>
+
+<hr />
+
+<h2 id="心得三每周都和用户待在一个房间里">心得三：每周都和用户待在一个房间里</h2>
+<hr />
+<!-- 配图：待定 -->
+
+<p>今年年初，我发起了每周一的 AI 论坛（AI Forum），全公司几百名工程师都能来。</p>
+
+<p>形式特别简单，工程师演示（demo）自己用 AI 做出的真实成果。不看纯 PPT，不念状态汇报。我要求大家少用幻灯片，没错，PPT 页数太多的时候，我不止一次打断过演讲的同事。</p>
+
+<p>这个论坛很快就不只是个展示会了，它成了我们的”神经系统”。每周都能知道谁是重度用户（heavy users）、大家总在问什么、卡在了哪。这些信号直接回流到我们要做的东西里。</p>
+
+<p>后来它也成了我们的发布渠道：9 个版本，全都是先在这儿发布、演示的，台下坐的就是真正要用它的人。</p>
+
+<p>我给团队的要求只有一句：快速迭代，往前走。不到五个月从 v1 到 v3，前提是你敢转向。有时候意味着要做狠心的决定：用户数据说明某个方向没解决真痛点，哪怕我们再喜欢，也停。数据会说话，我们认真听。</p>
+
+<hr />
+
+<h2 id="结语这个赛道比你看到的开阔">结语：这个赛道，比你看到的开阔</h2>
+<hr />
+<!-- 配图：待定 -->
+
+<p>在企业级 AI 系统的最前线搭东西，是我职业生涯里最过瘾的经历之一。</p>
+
+<p>说个反直觉的：每周都有一堆 AI 平台和工具发布，很容易让人觉得”已经够挤了，没啥可做了”。从外面看，确实是这样。</p>
+
+<p>但从里面看，完全不是。每家正在做 AI 转型的大公司，都有自己一堆很具体、很场景化的痛点，现成工具没有一个能完全搞定。我们那 600 多个资产之所以存在，就是因为诺基亚的工程师需要市面上没有的东西，比如贴合我们造产品方式的电信专属工作流（telecom-specific workflows）。只要你肯盯着这些痛点看，要做现代 AI 产品和系统的空间，大得很。</p>
+
+<p>这件事不是我们单打独斗做成的。感谢一起共建的伙伴：Cursor、Google、AWS 和 AG2，一路上学到很多。</p>
+
+<p>最后问一句：如果你也在大公司里做 AI，你觉得更难的是技术，还是组织？</p>
+
+<hr />
+
+</div>
+<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a><a title="分享到Facebook" href="#" class="bds_fbook" data-cmd="fbook"></a><a title="分享到Twitter" href="#" class="bds_twi" data-cmd="twi"></a><a title="分享到linkedin" href="#" class="bds_linkedin" data-cmd="linkedin"></a><a title="分享到复制网址" href="#" class="bds_copy" data-cmd="copy"></a></div>
+<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+<div class="related">
+  <h2>相关文章</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/%E7%A0%94%E7%A9%B6/2026/05/10/industry-paper-legitimacy/">
+            工业界论文该不该上线？
+            <small>10 May 2026</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E7%AE%A1%E7%90%86/2026/05/02/ai-as-service/">
+            AI as a Service：一门注定被侵蚀的生意
+            <small>02 May 2026</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/%E7%AE%A1%E7%90%86/2026/04/25/ai_end-to-end/">
+            如何搭建端到端 AI 团队
+            <small>25 Apr 2026</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+      </div>
+    </div>
+
+    <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+    <script>
+      (function(document) {
+        var toggle = document.querySelector('.sidebar-toggle');
+        var sidebar = document.querySelector('#sidebar');
+        var checkbox = document.querySelector('#sidebar-checkbox');
+
+        document.addEventListener('click', function(e) {
+          var target = e.target;
+
+          if(!checkbox.checked ||
+             sidebar.contains(target) ||
+             (target === checkbox || target === toggle)) return;
+
+          checkbox.checked = false;
+        }, false);
+      })(document);
+    </script>
+  </body>
+</html>

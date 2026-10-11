@@ -1,4 +1,6 @@
 #!/bin/bash
-export SDKROOT=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.1.sdk
+export SDKROOT=$(xcrun --show-sdk-path)
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 export LIBRARY_PATH=/usr/local/lib
 bundle exec jekyll serve

@@ -4,3 +4,4 @@ gem 'jekyll-sitemap'
 gem "webrick"
 gem 'faraday-retry'
 
+gem 'ffi', '< 1.17'

@@ -3,30 +3,37 @@ layout: page
 title: 关于
 ---
 
-# 洪亮劼，博士 -- 诺基亚全球副总裁，AI
+# 洪亮劼，博士 -- 瑞思迈（Resmed）全球副总裁，AI
 
 <br/>
 <img align="right" src="/assets/hongliangjie2.jpg" style="width: 285px;height:226.5px;margin-left:20px;">
-我目前担任诺基亚[Nokia](https://www.nokia.com/){:target="_blank"}的**全球副总裁——人工智能**（VP of Engineering -- AI）的职务，带领人工智能赋能通信行业，为诺基亚这一百年企业打造全新的技术创新和未来导向的高效团队。
+我目前担任[瑞思迈（Resmed）](https://www.resmed.com/){:target="_blank"}的**全球副总裁——人工智能**（VP of Engineering -- AI），负责瑞思迈全线产品的人工智能研发。瑞思迈是全球领先的数字健康与睡眠呼吸医疗企业，年营收约57亿美元，拥有超过3600万台云端互联设备，其AirView平台管理着超过3700万名患者。我带领团队将人工智能深入应用于医疗健康领域，探索“物理世界智能”（Physical Intelligence）的落地。我同时是IEEE高级会员（IEEE Senior Member）。
 
-我于2020年到2025年之间担任[LinkedIn](https://www.linkedin.com){:target="_blank"}的**人工智能工程总监**（Director of Engineering -- AI）。LinkedIn是全球最大的职场社交网络，在全球200多个国家与地区运营并且拥有超过6.6亿用户。我领导多个机器学习研发团队，为LinkedIn核心产品涵盖企业级招聘、用户职位搜索以及推荐的“英才方案和职场规划产品群”（Talent Solutions and Careers）提供人工智能解决方案。另外，我也领导过领英中国（LinkedIn China）的招聘职场产品（InCareer）以及面向企业市场营销人员的“营销解决方案”（Sales Solution）的人工智能团队。在这些领域，我作为人工智能核心领导，与产品的其他功能领导一起制定产品的中长期发展规划，并且为团队的发展规划蓝图。
+我于2025年到2026年之间担任[诺基亚（Nokia）](https://www.nokia.com/){:target="_blank"}的**全球副总裁——人工智能**（VP of Engineering -- AI），为下一代核心网络平台打造人工智能基础能力，主导了产品研发全生命周期的AI转型，并推动企业级AI Harness在公司内部落地，用户规模超过3000人（参见[我在诺基亚搭企业级AI Harness]({% post_url 2026-10-10-nokia-enterprise-ai-harness %})）。
 
-在此之前，我于2016年到2020年担任总部位于纽约的电子商务网站[Etsy](https://www.etsy.com/){:target="_blank"}的**数据科学与机器学习工程总监**（Director of Engineering -- Data Science and Machine Learning）。我发展并且管理了一支位于纽约和旧金山有近40人的数据科学家及机器学习工程师团队。团队成员绝大多数拥有硕士以及博士文凭，来自计算机科学、运筹学、统计、经济学、物理等学术背景。我的团队主要职责是为Etsy提供全方位的数据科学支持，包括个性化与推荐、搜索、计算广告、图像处理及深度学习和文字信息挖掘等多方面的基于机器学习的产品优化方案。
+我于2020年到2025年之间担任[领英（LinkedIn）](https://www.linkedin.com){:target="_blank"}的**人工智能工程总监**（Director of Engineering -- AI），领导“人才市场”（Talent Marketplace）人工智能部门，团队由约60名机器学习工程师和应用研究员组成，为领英企业级招聘、职位搜索与推荐等核心产品提供人工智能解决方案，带来约10%的用户参与度提升以及超过1亿美元的年化营收增长。另外，我也担任过领英中国（LinkedIn China）以及“销售解决方案”（Sales Solutions）的人工智能负责人。
 
-在此之前，我于2013年到2016年在[雅虎研究院（Yahoo Research）](https://en.wikipedia.org/wiki/Yahoo_Labs){:target="_blank"}工作，历任**科学家**、**资深科学家**和**高级研发经理**职位。在雅虎研究院工作期间，我亲自领导并参与了多项大数据大规模机器学习系统的研发工作，包括雅虎首页千万级用户个性化推荐系统、雅虎移动搜索千万级用户搜索优化系统以及大型个性化广告系统，对如何在产品中使用机器学习数据分析，以及如何在工程中实现高级机器学习模型有独到见解。
+在此之前，我于2016年到2020年担任总部位于纽约的电子商务网站[Etsy](https://www.etsy.com/){:target="_blank"}的**数据科学与机器学习工程总监**（Director of Engineering -- Data Science and Machine Learning），将一个集中式的人工智能团队从5人发展到近40名科学家和工程师，覆盖个性化与推荐、搜索、计算广告、图像处理及深度学习和文字信息挖掘等方向，为Etsy带来1.2亿美元的增量商品交易总额（GMV）以及每年1000万美元的营收。
 
-我长期从事机器学习与人工智能的基础以及应用研究，对推荐系统、搜索引擎、计算广告学、社交网络以及自然语言处理等领域有深入理解，在国际顶级学术会议中发表重要论文近50篇，文章引用量超过[7100次（H-Index：30）](https://scholar.google.com/citations?user=4uaSNpYAAAAJ){:target="_blank"}。同时，我也长期担任多个国际著名会议及期刊的评审委员会成员和审稿人，并且组织过多个关于推荐、搜索、用户体验优化的国际研讨会。我拥有5项美国专利。
+在此之前，我于2013年到2016年在[雅虎研究院（Yahoo Research）](https://en.wikipedia.org/wiki/Yahoo_Labs){:target="_blank"}工作，历任**科学家**、**资深科学家**和**高级研究经理**（搜索与个性化科学）职位，领导研究与工程团队打造了雅虎首页千万级用户个性化推荐系统、雅虎移动搜索优化系统以及大型个性化广告系统。
+
+我长期从事机器学习与人工智能的基础以及应用研究，关注AI优先的产品战略与市场平台设计、面向通信和医疗健康的物理世界智能、大语言模型与智能体（Agentic）系统、推荐系统以及生产环境中的因果机器学习，并致力于构建和扩展高绩效的机器学习组织，连接研究创新与可衡量的业务价值。我在国际顶级学术会议中发表重要论文50余篇，文章引用量超过[7400次（H-Index：30）](https://scholar.google.com/citations?user=4uaSNpYAAAAJ){:target="_blank"}。同时，我也长期担任多个国际著名会议及期刊的评审委员会成员和审稿人，并且组织过多个关于推荐、搜索、用户体验优化以及计算就业市场的国际研讨会。我拥有5项美国专利。
 
 我分别于2010年和2013年从[里海大学](https://zh.wikipedia.org/zh-cn/%E7%90%86%E6%B5%B7%E5%A4%A7%E5%AD%B8){:target="_blank"}获得计算机科学硕士和博士学位，之前于2007年从[北京化工大学](https://zh.wikipedia.org/zh-cn/%E5%8C%97%E4%BA%AC%E5%8C%96%E5%B7%A5%E5%A4%A7%E5%AD%A6){:target="_blank"}获得计算机科学学士学位。
+
+更多信息请访问我的[英文主页](https://www.hongliangjie.com/){:target="_blank"}、[简历（CV）](https://www.hongliangjie.com/cv/){:target="_blank"}以及[LinkedIn](https://www.linkedin.com/in/liangjiehong/){:target="_blank"}。
 
 ***
 
 ## 主要工作经历
 
-*  **[Nokia](https://www.nokia.com/){:target="_blank"}**<br/>
-  2025年 至今 <br/>
+*  **[瑞思迈（Resmed）](https://www.resmed.com/){:target="_blank"}**<br/>
+  2026年 至今 <br/>
   <u>全球副总裁-人工智能</u><br/>
-*  **[LinkedIn](https://www.linkedin.com/){:target="_blank"}**<br/>
+*  **[诺基亚（Nokia）](https://www.nokia.com/){:target="_blank"}**<br/>
+  2025年 - 2026年 <br/>
+  <u>全球副总裁-人工智能</u><br/>
+*  **[领英（LinkedIn）](https://www.linkedin.com/){:target="_blank"}**<br/>
   2020年 - 2025年 <br/>
   <u>工程总监-人工智能</u><br/>
 *  **[Etsy](https://www.etsy.com/){:target="_blank"}**<br/>
@@ -34,7 +41,7 @@ title: 关于
   <u>工程总监-数据科学与机器学习</u><br/>
 *  **[雅虎研究院（Yahoo Research）](https://en.wikipedia.org/wiki/Yahoo_Labs){:target="_blank"}**<br/>
   2013年 - 2016年 <br/>
-  <u>高级研发经理</u><br/>
+  <u>高级研究经理-搜索与个性化科学</u><br/>
 
 ***
 
@@ -54,17 +61,21 @@ title: 关于
 
 ## 经典专栏文章
 
+*  [我在诺基亚搭企业级AI Harness]({% post_url 2026-10-10-nokia-enterprise-ai-harness %})
+*  [工业界论文该不该上线？]({% post_url 2026-05-10-industry-paper-legitimacy %})
+*  [AI as a Service：一门注定被侵蚀的生意]({% post_url 2026-05-02-ai-as-service %})
+*  [如何搭建端到端 AI 团队]({% post_url 2026-04-25-ai_end-to-end %})
 *  [浅谈工业级推荐系统]({% post_url 2020-10-04-industrial-recsys %})
 *  [《韧性管理》总结]({% post_url 2020-07-09-resilient-management %})
 *  [《从数据中学习》总结]({% post_url 2020-06-25-learning-from-data %})
 *  [《值得信赖的在线可控实验——A/B实验实用向导》总结]({% post_url 2020-05-08-online-tests %})
-*  [《经理人之路——技术领袖启航成长与变化的参考书》总结](http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2019/12/25/the-manager-path/)
-*  [论互联网公司与研究院](http://column.hongliangjie.com/%E7%AE%A1%E7%90%86/2017/04/09/research-labs/)
-*  [只有偏执狂才能生存](http://column.hongliangjie.com/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0,%E7%AE%A1%E7%90%86/2016/08/09/intel/)
-*  [怎样招聘一名科学家](http://column.hongliangjie.com/%E6%95%B0%E6%8D%AE%E7%A7%91%E5%AD%A6/2016/05/14/hire/)
-*  [新闻推荐，追逐卡戴珊的“屁股”](http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/23/news-recsys/)
-*  [论推荐系统的Exploitation和Exploration](http://column.hongliangjie.com/%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/13/exploration/)
-*  [个性化推荐是不是伪命题](http://column.hongliangjie.com/%E4%B8%AA%E6%80%A7%E5%8C%96,%E6%8E%A8%E8%8D%90%E7%B3%BB%E7%BB%9F/2016/04/07/personalization-or-not/)
+*  [《经理人之路——技术领袖启航成长与变化的参考书》总结]({% post_url 2019-12-25-the-manager-path %})
+*  [论互联网公司与研究院]({% post_url 2017-04-09-research-labs %})
+*  [只有偏执狂才能生存]({% post_url 2016-08-09-intel %})
+*  [怎样招聘一名科学家]({% post_url 2016-05-14-hire %})
+*  [新闻推荐，追逐卡戴珊的“屁股”]({% post_url 2016-04-23-news-recsys %})
+*  [论推荐系统的Exploitation和Exploration]({% post_url 2016-04-13-exploration %})
+*  [个性化推荐是不是伪命题]({% post_url 2016-04-07-personalization-or-not %})
 
 ***
 
@@ -92,7 +103,7 @@ title: 关于
 
 ## 主要荣誉
 
-* 雅虎专利里程碑奖 2016、ACM RecSys会议最佳论文 2014、ACM WSDM会议最佳论文提名 2013、WWW会议最佳展板（Poster）论文 2011
+* 雅虎专利里程碑奖 2016、ACM RecSys会议最佳论文 2014、ACM WSDM会议最佳论文提名 2013、里海大学Rossin博士奖学金（Rossin Doctoral Fellow）2012、里海大学院长教学与研究助理奖学金 2012、KDD学生旅行奖学金 2011、WWW会议最佳展板（Poster）论文 2011
 
 ***
 
@@ -119,6 +130,7 @@ title: 关于
 
 ## 代表性演讲
 
+* **Building AI-Native Telecom Technology for Connecting Intelligence**主题演讲于International Workshop on Resource-Efficient Learning for Knowledge Discovery@KDD 2026，2026年8月；同题特邀报告于里海大学数据、智能系统与计算研究院（I-DISC），2026年4月。
 * **Supercharging Jobs Marketplace**主题演讲于AdKDD 2024@KDD 2024和AI4HR-PES@ECML-PKDD 2024。
 * **Computational Jobs Marketplace**主题演讲于 SDCon 2023, Decision Making for Information Retrieval and Recommender Systems Workshop at The Web Conference 2023, CS Dept. at Michigan State University 2023, RecSys in HR 2022, Southern Data Science 2022, CBA AI Frontiers event, Melbourne Search and Recommendation Group Meetup 2021和The AI Summit - Silicon Valley 2021。
 * **搜索科学与自然语言处理在工业界的应用**于宾夕法尼亚州立大学，虚拟会议，2021年4月。

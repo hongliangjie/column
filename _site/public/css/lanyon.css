@@ -349,7 +349,7 @@ a.sidebar-nav-item:focus {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #268bd2;
+  color: #0D0A15;
   text-decoration: none;
 }
 .related-posts li a:hover small {
@@ -446,13 +446,13 @@ a.pagination-item:hover {
 .theme-base-08 .sidebar-toggle:active,
 .theme-base-08 #sidebar-checkbox:checked ~ .sidebar-toggle {
   /* background-color: #ac4142; */
-  background-color: #0065ed;
+  background-color: #0D0A15;
 }
 .theme-base-08 .container a,
 .theme-base-08 .sidebar-toggle,
 .theme-base-08 .related-posts li a:hover {
   /* color: #ac4142; */
-  color:#0065ed;
+  color:#0D0A15;
 
 }
 
